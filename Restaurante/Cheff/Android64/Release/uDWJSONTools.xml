@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="uDWJSONTools" platform="Android">
+  <const name="ReTablebase64" type="string">
+    <value>
+      @@@@@@@@@@&gt;@@@?456789:;&lt;=@@@@@@@&#0;&#1;&#2;&#3;&#4;&#5;&#6;&#7;&#8;&#9;&#10;&#11;&#12;&#13;&#14;&#15;&#16;&#17;&#18;&#19;&#20;&#21;&#22;&#23;&#24;&#25;@@@@@@&#26;&#27;&#28;&#29;&#30;&#31; !&quot;#$%%&amp;'()*+,-./0123@@@@@@
+    </value>
+  </const>
+  <const name="TableBase64" type="string">
+    <value>
+      ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=
+    </value>
+  </const>
+  <const name="B64Table" type="string">
+    <value>
+      ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+    </value>
+  </const>
+  <function name="DecodeBase64" visibility="public">
+    <parameters>
+      <parameter name="Value" type="string" paramflags="const" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="EncodeBase64" visibility="public">
+    <parameters>
+      <parameter name="Value" type="string" paramflags="const" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="EncodeBytes" visibility="public">
+    <parameters>
+      <parameter name="Value" type="string" />
+      <parameter name="Encoding" type="TEncoding" />
+      <retval type="TIdBytes" />
+    </parameters>
+  </function>
+  <function name="HexStringToString" visibility="public">
+    <parameters>
+      <parameter name="Value" type="string" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <procedure name="HexStringToStream" visibility="public">
+    <parameters>
+      <parameter name="Value" type="string" />
+      <parameter name="BinaryStream" type="TStringStream" paramflags="var" />
+    </parameters>
+  </procedure>
+  <function name="BookmarkToHex" visibility="public">
+    <parameters>
+      <parameter name="Value" type="Integer" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="HexToBookmark" visibility="public">
+    <parameters>
+      <parameter name="Value" type="string" />
+      <retval type="Integer" />
+    </parameters>
+  </function>
+  <function name="StreamToHex" visibility="public">
+    <parameters>
+      <parameter name="Value" type="TStream" paramflags="const" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="Encodeb64Stream" visibility="public">
+    <parameters>
+      <parameter name="Value" type="TStream" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="aEncodeStrings" visibility="public">
+    <parameters>
+      <parameter name="Value" type="string" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="EncodeStrings" visibility="public">
+    <parameters>
+      <parameter name="Value" type="string" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="Decodeb64Stream" visibility="public">
+    <parameters>
+      <parameter name="Value" type="string" />
+      <retval type="TMemoryStream" />
+    </parameters>
+  </function>
+  <function name="DecodeStrings" visibility="public">
+    <parameters>
+      <parameter name="Value" type="string" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="GetPairJSON" visibility="public" procflags="overload">
+    <parameters>
+      <parameter name="Tag" type="string" />
+      <parameter name="MessageText" type="string" />
+      <parameter name="Encoding" type="TEncodeSelect">
+        <value>
+          esUtf8
+        </value>
+      </parameter>
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="GetPairJSON" visibility="public" procflags="overload">
+    <parameters>
+      <parameter name="Status" type="Integer" />
+      <parameter name="MessageText" type="string" />
+      <parameter name="Encoding" type="TEncodeSelect">
+        <value>
+          esUtf8
+        </value>
+      </parameter>
+      <retval type="string" />
+    </parameters>
+  </function>
+</namespace>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/06/19 10:59:07.000.579,=C:\Users\desenvolvimento\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/07/06 14:20:01.000.534,=C:\Users\desenvolvimento\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/07/06 14:24:08.000.043,C:\Users\desenvolvimento\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Delivery\uWthas.dfm</Transaction>
+    <Transaction>2020/07/06 14:24:08.000.043,C:\Users\desenvolvimento\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Delivery\uWthas.pas</Transaction>
+    <Transaction>2020/07/06 14:24:14.000.804,C:\Users\desenvolvimento\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Delivery\Whats.dproj</Transaction>
+    <Transaction>2020/07/06 14:35:11.000.297,=C:\Dev\Projetos\Prodo\View\uBotGestor.pas</Transaction>
+    <Transaction>2020/07/06 14:36:38.000.858,=C:\Dev\Projetos\Prodo\View\uBotConversa.pas</Transaction>
+    <Transaction>2020/11/26 18:17:23.000.795,=D:\00Dev\Delphi\System ERP\View\uBotConversa.pas</Transaction>
+    <Transaction>2020/11/26 18:17:23.000.851,=D:\00Dev\Delphi\System ERP\View\uBotGestor.pas</Transaction>
+  </Transactions>
+</BorlandProject>

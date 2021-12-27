@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file original="C:\Users\Public\Documents\Embarcadero\Studio\21.0\Bpl\LicenseMSoftArena.drc" source-language="pt-BR" target-language="es-ES" datatype="cpp" tool="ETM v10.0" ts="C:\Users\Public\Documents\Embarcadero\Studio\21.0\Bpl\LicenseMSoftArena.drc">
+    <header>
+      <prop-group name="ITEHeaderProp">
+        <prop prop-type="Version">9.0</prop>
+        <prop prop-type="SelfDateTime">44112.4768518519</prop>
+        <prop prop-type="OrigDateTime">44112.4768287037</prop>
+        <prop prop-type="XlatDateTime">44112.4768287037</prop>
+        <prop prop-type="Translated">0</prop>
+        <prop prop-type="UnTranslated">0</prop>
+      </prop-group>
+    </header>
+    <body>
+    </body>
+  </file>
+</xliff>

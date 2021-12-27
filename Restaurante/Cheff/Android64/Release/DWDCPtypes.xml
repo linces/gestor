@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="DWDCPtypes" platform="Android">
+  <pointer name="Pbyte" type="Byte" indircnt="1" />
+  <pointer name="Pword" type="Word" indircnt="1" />
+  <pointer name="Pdword" type="LongWord" indircnt="1" />
+  <pointer name="Pint64" type="Int64" indircnt="1" />
+  <type name="dword" type="Int64" file="System.pas" line="12" />
+  <pointer name="Pwordarray" type="Twordarray" indircnt="1" />
+  <array name="Twordarray" low="0" high="19383">
+    <element type="Word" />
+  </array>
+  <pointer name="Pdwordarray" type="Tdwordarray" indircnt="1" />
+  <array name="Tdwordarray" low="0" high="8191">
+    <element type="LongWord" />
+  </array>
+  <pointer name="PointerToInt" alias="DWDCPtypes.Pbyte" type="Byte" indircnt="1" />
+  <type name="DWDCPRawString" type="UnicodeString" file="System.pas" line="12" />
+  <type name="DWDCPUtf8String" type="UnicodeString" file="System.pas" line="12" />
+  <type name="DWDCPUnicodeString" type="UnicodeString" file="System.pas" line="12" />
+</namespace>

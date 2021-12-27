@@ -1,0 +1,1060 @@
+object Dados: TDados
+  OldCreateOrder = False
+  OnCreate = DataModuleCreate
+  Height = 437
+  Width = 657
+  object conexao: TFDConnection
+    Params.Strings = (
+      'OpenMode=ReadWrite'
+      'DriverID=SQLite')
+    LoginPrompt = False
+    Transaction = Transacao
+    UpdateTransaction = Transacao
+    Left = 32
+    Top = 226
+  end
+  object Transacao: TFDTransaction
+    Connection = conexao
+    Left = 96
+    Top = 224
+  end
+  object FDQLite: TFDPhysSQLiteDriverLink
+    Left = 160
+    Top = 224
+  end
+  object WaitCursor: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 231
+    Top = 224
+  end
+  object qryConfigura: TFDQuery
+    Connection = conexao
+    SQL.Strings = (
+      'select * from configura')
+    Left = 328
+    Top = 224
+    object qryConfiguracodigo: TFDAutoIncField
+      FieldName = 'codigo'
+      Origin = 'codigo'
+      ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
+    end
+    object qryConfiguraip: TStringField
+      FieldName = 'ip'
+      Origin = 'ip'
+      Size = 30
+    end
+    object qryConfigurausuario: TStringField
+      FieldName = 'usuario'
+      Origin = 'usuario'
+      Size = 10
+    end
+    object qryConfigurasenha: TStringField
+      FieldName = 'senha'
+      Origin = 'senha'
+      Size = 10
+    end
+    object qryConfigurausabluetooth: TStringField
+      FieldName = 'usabluetooth'
+      Origin = 'usabluetooth'
+      Size = 1
+    end
+  end
+  object qryImpressoras: TFDQuery
+    Connection = conexao
+    SQL.Strings = (
+      'select * from impressoras'
+      'where'
+      'ativo like :ativo'
+      'order by descricao')
+    Left = 408
+    Top = 224
+    ParamData = <
+      item
+        Name = 'ATIVO'
+        DataType = ftString
+        ParamType = ptInput
+        Value = '%'
+      end>
+    object qryImpressorasid: TFDAutoIncField
+      FieldName = 'id'
+      Origin = 'id'
+      ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
+    end
+    object qryImpressorasdescricao: TStringField
+      FieldName = 'descricao'
+      Origin = 'descricao'
+      Size = 30
+    end
+    object qryImpressorastipo: TStringField
+      FieldName = 'tipo'
+      Origin = 'tipo'
+    end
+    object qryImpressorasativo: TStringField
+      FieldName = 'ativo'
+      Origin = 'ativo'
+      Size = 1
+    end
+    object qryImpressorasvias: TStringField
+      FieldName = 'vias'
+      Origin = 'vias'
+      Size = 30
+    end
+  end
+  object RDWDataBase: TRESTDWDataBase
+    Active = False
+    Compression = True
+    CriptOptions.Use = False
+    CriptOptions.Key = 'RDWBASEKEY256'
+    AuthenticationOptions.AuthorizationOption = rdwAONone
+    Proxy = False
+    ProxyOptions.Port = 8888
+    PoolerService = 'localhost'
+    PoolerPort = 8082
+    PoolerName = 'TServerMethodDM.RESTDWPoolerFD'
+    StateConnection.AutoCheck = False
+    StateConnection.InTime = 1000
+    RequestTimeOut = 10000
+    EncodeStrings = False
+    Encoding = esUtf8
+    StrsTrim = False
+    StrsEmpty2Null = False
+    StrsTrim2Len = True
+    HandleRedirects = False
+    RedirectMaximum = 0
+    ParamCreate = True
+    FailOver = False
+    FailOverConnections = <>
+    FailOverReplaceDefaults = False
+    ClientConnectionDefs.Active = False
+    UserAgent = 
+      'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, l' +
+      'ike Gecko) Chrome/41.0.2227.0 Safari/537.36'
+    Left = 48
+    Top = 16
+  end
+  object qryMesas: TRESTDWClientSQL
+    Active = False
+    OnCalcFields = qryMesasCalcFields
+    Filtered = False
+    FieldDefs = <>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    BinaryCompatibleMode = False
+    MasterCascadeDelete = True
+    BinaryRequest = False
+    Datapacks = -1
+    DataCache = False
+    Params = <>
+    DataBase = RDWDataBase
+    SQL.Strings = (
+      'select * from mesa'
+      'order by nome')
+    UpdateTableName = 'mesa'
+    CacheUpdateRecords = True
+    AutoCommitData = True
+    AutoRefreshAfterCommit = True
+    RaiseErrors = True
+    ActionCursor = crSQLWait
+    ReflectChanges = False
+    Left = 128
+    Top = 16
+    object qryMesasCODIGO: TIntegerField
+      FieldName = 'CODIGO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object qryMesasNOME: TStringField
+      FieldName = 'NOME'
+      Size = 30
+    end
+    object qryMesasQTD: TIntegerField
+      FieldName = 'QTD'
+    end
+    object qryMesasFK_MOVIMENTO: TIntegerField
+      FieldName = 'FK_MOVIMENTO'
+    end
+    object qryMesasDATA: TSQLTimeStampField
+      FieldName = 'DATA'
+    end
+    object qryMesasSITUACAO: TStringField
+      FieldName = 'SITUACAO'
+      Size = 1
+    end
+    object qryMesasVIRTUAL_SITUACAO: TStringField
+      FieldKind = fkCalculated
+      FieldName = 'VIRTUAL_SITUACAO'
+      Calculated = True
+    end
+    object qryMesasICONE: TIntegerField
+      FieldKind = fkCalculated
+      FieldName = 'ICONE'
+      Calculated = True
+    end
+  end
+  object qryComanda_pessoa: TRESTDWClientSQL
+    Active = False
+    OnCalcFields = qryComanda_pessoaCalcFields
+    Filtered = False
+    FieldDefs = <>
+    IndexDefs = <>
+    AggregatesActive = True
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    BinaryCompatibleMode = False
+    MasterCascadeDelete = True
+    BinaryRequest = False
+    Datapacks = -1
+    DataCache = False
+    Params = <
+      item
+        DataType = ftString
+        Name = 'comanda'
+        ParamType = ptInput
+      end>
+    DataBase = RDWDataBase
+    SQL.Strings = (
+      'select * from comanda_pessoa'
+      'where'
+      'fk_comanda=:comanda and situacao='#39'A'#39' and fk_comanda>0'
+      'order by nome')
+    UpdateTableName = 'comanda_pessoa'
+    CacheUpdateRecords = True
+    AutoCommitData = True
+    AutoRefreshAfterCommit = True
+    RaiseErrors = True
+    ActionCursor = crSQLWait
+    ReflectChanges = False
+    Left = 216
+    Top = 16
+    object qryComanda_pessoaCODIGO: TIntegerField
+      FieldName = 'CODIGO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object qryComanda_pessoaFK_COMANDA: TIntegerField
+      FieldName = 'FK_COMANDA'
+    end
+    object qryComanda_pessoaNOME: TStringField
+      FieldName = 'NOME'
+      Size = 30
+    end
+    object qryComanda_pessoaSITUACAO: TStringField
+      FieldName = 'SITUACAO'
+      Size = 1
+    end
+    object qryComanda_pessoaTOTAL: TFMTBCDField
+      FieldName = 'TOTAL'
+      currency = True
+      Size = 0
+    end
+    object qryComanda_pessoaTOTAL_RATEIO: TFMTBCDField
+      FieldName = 'TOTAL_RATEIO'
+      currency = True
+      Size = 0
+    end
+    object qryComanda_pessoaIMPRIMIU: TStringField
+      FieldName = 'IMPRIMIU'
+      Size = 1
+    end
+    object qryComanda_pessoaPDV: TStringField
+      FieldName = 'PDV'
+      Size = 1
+    end
+    object qryComanda_pessoaSALDOCO: TExtendedField
+      FieldKind = fkCalculated
+      FieldName = 'SALDOCO'
+      DisplayFormat = ',0.00'
+      currency = True
+      Precision = 19
+      Calculated = True
+    end
+    object qryComanda_pessoaPERCENTUAL: TFMTBCDField
+      FieldName = 'PERCENTUAL'
+      Size = 0
+    end
+    object qryComanda_pessoaTPAGOME: TAggregateField
+      FieldName = 'TPAGOME'
+      Visible = True
+      Active = True
+      currency = True
+      DisplayName = ''
+      DisplayFormat = '0,00'
+      Expression = 'SUM(TOTAL_RATEIO)'
+    end
+    object qryComanda_pessoaTSALDOME: TAggregateField
+      FieldName = 'TSALDOME'
+      Visible = True
+      Active = True
+      currency = True
+      DisplayName = ''
+      DisplayFormat = '0,00'
+      Expression = 'SUM(TOTAL-TOTAL_RATEIO)'
+    end
+  end
+  object qryComanda_Itens: TRESTDWClientSQL
+    Active = False
+    Filtered = False
+    FieldDefs = <>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    BinaryCompatibleMode = False
+    MasterCascadeDelete = True
+    BinaryRequest = False
+    Datapacks = -1
+    DataCache = False
+    Params = <
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptInput
+      end>
+    DataBase = RDWDataBase
+    SQL.Strings = (
+      'Select'
+      'ci.*,'
+      'pro.descricao as virtual_produto,'
+      
+        '(cast(coalesce(ci.qtd,0) as numeric(15,2))||'#39' X '#39'||cast(coalesce' +
+        '(ci.preco,0) as numeric(15,2)) ||'#39' = '#39'||cast(coalesce(ci.total,0' +
+        ') as numeric(15,2))) as virtual_qtd'
+      'from comanda_itens ci'
+      'left join produto pro on pro.codigo=ci.fk_produto'
+      'where'
+      'ci.fk_comanda_pessoa=:codigo and ci.fk_comanda_pessoa>0'
+      'order by ci.codigo')
+    CacheUpdateRecords = True
+    AutoCommitData = True
+    AutoRefreshAfterCommit = True
+    RaiseErrors = True
+    ActionCursor = crSQLWait
+    ReflectChanges = False
+    Left = 320
+    Top = 16
+    object qryComanda_ItensCODIGO: TIntegerField
+      FieldName = 'CODIGO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object qryComanda_ItensFK_COMANDA_PESSOA: TIntegerField
+      FieldName = 'FK_COMANDA_PESSOA'
+    end
+    object qryComanda_ItensFK_PRODUTO: TIntegerField
+      FieldName = 'FK_PRODUTO'
+    end
+    object qryComanda_ItensQTD: TFMTBCDField
+      FieldName = 'QTD'
+      DisplayFormat = '0'
+      Size = 0
+    end
+    object qryComanda_ItensPRECO: TFMTBCDField
+      FieldName = 'PRECO'
+      Size = 0
+    end
+    object qryComanda_ItensTOTAL: TFMTBCDField
+      FieldName = 'TOTAL'
+      Size = 0
+    end
+    object qryComanda_ItensPERCENTUAL: TFMTBCDField
+      FieldName = 'PERCENTUAL'
+      Size = 0
+    end
+    object qryComanda_ItensSITUACAO: TStringField
+      FieldName = 'SITUACAO'
+      Size = 1
+    end
+    object qryComanda_ItensDATA_HORA: TSQLTimeStampField
+      FieldName = 'DATA_HORA'
+    end
+    object qryComanda_ItensVIRTUAL_PRODUTO: TStringField
+      FieldName = 'VIRTUAL_PRODUTO'
+      Size = 100
+    end
+    object qryComanda_ItensVIRTUAL_QTD: TStringField
+      FieldName = 'VIRTUAL_QTD'
+      Size = 69
+    end
+  end
+  object qryProdutos: TRESTDWClientSQL
+    Active = False
+    Filtered = False
+    FieldDefs = <>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    BinaryCompatibleMode = False
+    MasterCascadeDelete = True
+    BinaryRequest = False
+    Datapacks = -1
+    DataCache = False
+    Params = <
+      item
+        DataType = ftString
+        Name = 'DESCRI'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftString
+        Name = 'REFE'
+        ParamType = ptInput
+      end>
+    DataBase = RDWDataBase
+    SQL.Strings = (
+      
+        'SELECT CODIGO,REFERENCIA,  DESCRICAO, UNIDADE, PR_VENDA, COMPLEM' +
+        'ENTO FROM PRODUTO'
+      'WHERE'
+      '(DESCRICAO LIKE :DESCRI OR REFERENCIA LIKE :REFE) AND'
+      'RESTAUTANTE='#39'S'#39' AND ATIVO='#39'S'#39
+      'ORDER BY DESCRICAO')
+    UpdateTableName = 'produto'
+    CacheUpdateRecords = True
+    AutoCommitData = False
+    AutoRefreshAfterCommit = False
+    RaiseErrors = True
+    ActionCursor = crSQLWait
+    ReflectChanges = False
+    Left = 400
+    Top = 16
+    object qryProdutosCODIGO: TIntegerField
+      FieldName = 'CODIGO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object qryProdutosREFERENCIA: TStringField
+      FieldName = 'REFERENCIA'
+    end
+    object qryProdutosDESCRICAO: TStringField
+      FieldName = 'DESCRICAO'
+      Size = 100
+    end
+    object qryProdutosUNIDADE: TStringField
+      FieldName = 'UNIDADE'
+      Required = True
+      Size = 3
+    end
+    object qryProdutosPR_VENDA: TFMTBCDField
+      FieldName = 'PR_VENDA'
+      Required = True
+      DisplayFormat = 'R$ ,0.00'
+      Size = 0
+    end
+    object qryProdutosCOMPLEMENTO: TStringField
+      FieldName = 'COMPLEMENTO'
+      Size = 50
+    end
+  end
+  object qryExecute: TRESTDWClientSQL
+    Active = False
+    Filtered = False
+    FieldDefs = <>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    BinaryCompatibleMode = False
+    MasterCascadeDelete = True
+    BinaryRequest = False
+    Datapacks = -1
+    DataCache = False
+    Params = <>
+    DataBase = RDWDataBase
+    CacheUpdateRecords = True
+    AutoCommitData = False
+    AutoRefreshAfterCommit = False
+    RaiseErrors = True
+    ActionCursor = crSQLWait
+    ReflectChanges = False
+    Left = 496
+    Top = 16
+  end
+  object qryComanda_Rateio: TRESTDWClientSQL
+    Active = False
+    Filtered = False
+    FieldDefs = <>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    BinaryCompatibleMode = False
+    MasterCascadeDelete = True
+    BinaryRequest = False
+    Datapacks = -1
+    DataCache = False
+    Params = <
+      item
+        DataType = ftString
+        Name = 'pessoa'
+        ParamType = ptInput
+      end>
+    DataBase = RDWDataBase
+    SQL.Strings = (
+      'select * from comanda_rateio'
+      'where'
+      'fk_comanda_pessoa=:pessoa'
+      'order by 1')
+    UpdateTableName = 'comanda_rateio'
+    CacheUpdateRecords = True
+    AutoCommitData = True
+    AutoRefreshAfterCommit = True
+    RaiseErrors = True
+    ActionCursor = crSQLWait
+    ReflectChanges = False
+    Left = 56
+    Top = 96
+    object qryComanda_RateioCODIGO: TIntegerField
+      FieldName = 'CODIGO'
+      Required = True
+    end
+    object qryComanda_RateioFK_COMANDA_PESSOA: TIntegerField
+      FieldName = 'FK_COMANDA_PESSOA'
+    end
+    object qryComanda_RateioFK_COMANDA: TIntegerField
+      FieldName = 'FK_COMANDA'
+    end
+    object qryComanda_RateioFK_PRODUTO: TIntegerField
+      FieldName = 'FK_PRODUTO'
+    end
+    object qryComanda_RateioPERCENTUAL: TFMTBCDField
+      FieldName = 'PERCENTUAL'
+      Size = 0
+    end
+    object qryComanda_RateioQTD: TFMTBCDField
+      FieldName = 'QTD'
+      Size = 0
+    end
+    object qryComanda_RateioTOTAL: TFMTBCDField
+      FieldName = 'TOTAL'
+      Size = 0
+    end
+    object qryComanda_RateioPRECO: TFMTBCDField
+      FieldName = 'PRECO'
+      Size = 0
+    end
+  end
+  object qrycomanda_master: TRESTDWClientSQL
+    Active = False
+    Filtered = False
+    FieldDefs = <>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    BinaryCompatibleMode = False
+    MasterCascadeDelete = True
+    BinaryRequest = False
+    Datapacks = -1
+    DataCache = False
+    Params = <
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptInput
+      end>
+    DataBase = RDWDataBase
+    SQL.Strings = (
+      'Select * from comanda_master'
+      'where'
+      'codigo=:codigo and situacao='#39'A'#39' and codigo>0;')
+    UpdateTableName = 'comanda_master'
+    CacheUpdateRecords = True
+    AutoCommitData = True
+    AutoRefreshAfterCommit = True
+    RaiseErrors = True
+    ActionCursor = crSQLWait
+    ReflectChanges = False
+    Left = 152
+    Top = 96
+    object qrycomanda_masterCODIGO: TIntegerField
+      FieldName = 'CODIGO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object qrycomanda_masterFK_MESA: TIntegerField
+      FieldName = 'FK_MESA'
+    end
+    object qrycomanda_masterTOTAL: TFMTBCDField
+      FieldName = 'TOTAL'
+      Size = 0
+    end
+    object qrycomanda_masterSITUACAO: TStringField
+      FieldName = 'SITUACAO'
+      Size = 1
+    end
+    object qrycomanda_masterDATA_HORA: TSQLTimeStampField
+      FieldName = 'DATA_HORA'
+    end
+  end
+  object UpdItens: TRESTDWClientSQL
+    Active = False
+    Filtered = False
+    FieldDefs = <>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    BinaryCompatibleMode = False
+    MasterCascadeDelete = True
+    BinaryRequest = False
+    Datapacks = -1
+    DataCache = False
+    Params = <
+      item
+        DataType = ftInteger
+        Name = 'CODIGO'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftInteger
+        Name = 'FK_COMANDA_PESSOA'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftFloat
+        Name = 'QTD'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftFloat
+        Name = 'PRECO'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftFloat
+        Name = 'TOTAL'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftFloat
+        Name = 'PERCENTUAL'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftString
+        Name = 'SITUACAO'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftString
+        Name = 'DATA_HORA'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftInteger
+        Name = 'FK_PRODUTO'
+        ParamType = ptInput
+      end>
+    DataBase = RDWDataBase
+    SQL.Strings = (
+      
+        'UPDATE OR INSERT INTO COMANDA_ITENS (CODIGO, FK_COMANDA_PESSOA, ' +
+        'FK_PRODUTO, QTD, PRECO, TOTAL, PERCENTUAL, SITUACAO, DATA_HORA)'
+      
+        '                             VALUES (:CODIGO, :FK_COMANDA_PESSOA' +
+        ', :FK_PRODUTO , :QTD, :PRECO, :TOTAL, :PERCENTUAL , :SITUACAO, :' +
+        'DATA_HORA)'
+      '                           MATCHING (CODIGO);')
+    UpdateTableName = 'comanda_itens'
+    CacheUpdateRecords = True
+    AutoCommitData = False
+    AutoRefreshAfterCommit = False
+    RaiseErrors = True
+    ActionCursor = crSQLWait
+    ReflectChanges = False
+    Left = 224
+    Top = 96
+  end
+  object qryEmpresa: TRESTDWClientSQL
+    Active = False
+    Filtered = False
+    FieldDefs = <>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    BinaryCompatibleMode = False
+    MasterCascadeDelete = True
+    BinaryRequest = False
+    Datapacks = -1
+    DataCache = False
+    Params = <>
+    DataBase = RDWDataBase
+    SQL.Strings = (
+      'select * from empresa')
+    CacheUpdateRecords = True
+    AutoCommitData = False
+    AutoRefreshAfterCommit = False
+    RaiseErrors = True
+    ActionCursor = crSQLWait
+    ReflectChanges = False
+    Left = 312
+    Top = 96
+    object qryEmpresaCODIGO: TIntegerField
+      FieldName = 'CODIGO'
+      Required = True
+    end
+    object qryEmpresaFANTASIA: TStringField
+      FieldName = 'FANTASIA'
+      Required = True
+      Size = 50
+    end
+    object qryEmpresaRAZAO: TStringField
+      FieldName = 'RAZAO'
+      Required = True
+      Size = 50
+    end
+    object qryEmpresaTIPO: TStringField
+      FieldName = 'TIPO'
+      Required = True
+      Size = 10
+    end
+    object qryEmpresaCNPJ: TStringField
+      FieldName = 'CNPJ'
+      Required = True
+    end
+    object qryEmpresaIE: TStringField
+      FieldName = 'IE'
+      Required = True
+    end
+    object qryEmpresaIM: TStringField
+      FieldName = 'IM'
+    end
+    object qryEmpresaENDERECO: TStringField
+      FieldName = 'ENDERECO'
+      Required = True
+      Size = 50
+    end
+    object qryEmpresaNUMERO: TStringField
+      FieldName = 'NUMERO'
+      Size = 10
+    end
+    object qryEmpresaCOMPLEMENTO: TStringField
+      FieldName = 'COMPLEMENTO'
+      Size = 40
+    end
+    object qryEmpresaBAIRRO: TStringField
+      FieldName = 'BAIRRO'
+      Required = True
+      Size = 35
+    end
+    object qryEmpresaCIDADE: TStringField
+      FieldName = 'CIDADE'
+      Required = True
+      Size = 35
+    end
+    object qryEmpresaUF: TStringField
+      FieldName = 'UF'
+      Required = True
+      Size = 2
+    end
+    object qryEmpresaCEP: TStringField
+      FieldName = 'CEP'
+      Required = True
+      Size = 8
+    end
+    object qryEmpresaFONE: TStringField
+      FieldName = 'FONE'
+      Required = True
+      Size = 30
+    end
+  end
+  object qryImpPedido: TRESTDWClientSQL
+    Active = False
+    Filtered = False
+    FieldDefs = <>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    BinaryCompatibleMode = False
+    MasterCascadeDelete = True
+    BinaryRequest = False
+    Datapacks = -1
+    DataCache = False
+    Params = <
+      item
+        DataType = ftString
+        Name = 'codigo'
+        ParamType = ptInput
+      end>
+    DataBase = RDWDataBase
+    SQL.Strings = (
+      'Select'
+      'me.nome as mesa,'
+      'ci.fk_comanda_pessoa,'
+      'cp.nome as comanda,'
+      'cm.data_hora,'
+      'pro.codigo,'
+      'pro.descricao as virtual_produto,'
+      'sum(coalesce(ci.qtd,0)) as qtd'
+      'from comanda_itens ci'
+      'left join produto pro on pro.codigo=ci.fk_produto'
+      'left join comanda_pessoa cp on cp.codigo=ci.fk_comanda_pessoa'
+      'left join comanda_master cm on cm.codigo=cp.fk_comanda'
+      'left join mesa me on me.codigo=cm.fk_mesa'
+      'where'
+      'ci.fk_comanda_pessoa=:codigo'
+      'group by 1,2,3,4,5,6')
+    CacheUpdateRecords = True
+    AutoCommitData = False
+    AutoRefreshAfterCommit = False
+    RaiseErrors = True
+    ActionCursor = crSQLWait
+    ReflectChanges = False
+    Left = 392
+    Top = 88
+    object qryImpPedidoMESA: TStringField
+      FieldName = 'MESA'
+      Size = 30
+    end
+    object qryImpPedidoCOMANDA: TStringField
+      FieldName = 'COMANDA'
+      Size = 30
+    end
+    object qryImpPedidoDATA_HORA: TSQLTimeStampField
+      FieldName = 'DATA_HORA'
+    end
+    object qryImpPedidoCODIGO: TIntegerField
+      FieldName = 'CODIGO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+    end
+    object qryImpPedidoVIRTUAL_PRODUTO: TStringField
+      FieldName = 'VIRTUAL_PRODUTO'
+      Size = 100
+    end
+    object qryImpPedidoQTD: TFMTBCDField
+      FieldName = 'QTD'
+      Size = 0
+    end
+    object qryImpPedidoFK_COMANDA_PESSOA: TIntegerField
+      FieldName = 'FK_COMANDA_PESSOA'
+    end
+  end
+  object qryConsulta: TRESTDWClientSQL
+    Active = False
+    Filtered = False
+    FieldDefs = <>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    BinaryCompatibleMode = False
+    MasterCascadeDelete = True
+    BinaryRequest = False
+    Datapacks = -1
+    DataCache = False
+    Params = <>
+    DataBase = RDWDataBase
+    CacheUpdateRecords = True
+    AutoCommitData = True
+    AutoRefreshAfterCommit = True
+    RaiseErrors = True
+    ActionCursor = crSQLWait
+    ReflectChanges = False
+    Left = 496
+    Top = 88
+  end
+  object updComandaMaster: TRESTDWClientSQL
+    Active = False
+    Filtered = False
+    FieldDefs = <>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    BinaryCompatibleMode = False
+    MasterCascadeDelete = True
+    BinaryRequest = False
+    Datapacks = -1
+    DataCache = False
+    Params = <
+      item
+        DataType = ftString
+        Name = 'CODIGO'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftString
+        Name = 'FK_MESA'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftString
+        Name = 'TOTAL'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftString
+        Name = 'SITUACAO'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftString
+        Name = 'DATA_HORA'
+        ParamType = ptInput
+      end>
+    DataBase = RDWDataBase
+    SQL.Strings = (
+      
+        'UPDATE OR INSERT INTO COMANDA_MASTER (CODIGO, FK_MESA, TOTAL, SI' +
+        'TUACAO, DATA_HORA)'
+      'VALUES (:CODIGO,:FK_MESA, :TOTAL, :SITUACAO, :DATA_HORA)'
+      'MATCHING (CODIGO)')
+    UpdateTableName = 'comanda_master'
+    CacheUpdateRecords = True
+    AutoCommitData = True
+    AutoRefreshAfterCommit = True
+    RaiseErrors = True
+    ActionCursor = crSQLWait
+    ReflectChanges = False
+    Left = 64
+    Top = 160
+  end
+  object updComandaRateio: TRESTDWClientSQL
+    Active = False
+    Filtered = False
+    FieldDefs = <>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    BinaryCompatibleMode = False
+    MasterCascadeDelete = True
+    BinaryRequest = False
+    Datapacks = -1
+    DataCache = False
+    Params = <
+      item
+        DataType = ftString
+        Name = 'CODIGO'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftString
+        Name = 'FK_COMANDA_PESSOA'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftString
+        Name = 'FK_COMANDA'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftString
+        Name = 'FK_PRODUTO'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftString
+        Name = 'PERCENTUAL'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftString
+        Name = 'QTD'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftString
+        Name = 'TOTAL'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftString
+        Name = 'PRECO'
+        ParamType = ptInput
+      end>
+    DataBase = RDWDataBase
+    SQL.Strings = (
+      'UPDATE OR INSERT INTO COMANDA_RATEIO '
+      
+        '(CODIGO, FK_COMANDA_PESSOA, FK_COMANDA, FK_PRODUTO, PERCENTUAL, ' +
+        'QTD, TOTAL, PRECO)'
+      'VALUES '
+      
+        '(:CODIGO, :FK_COMANDA_PESSOA, :FK_COMANDA, :FK_PRODUTO, :PERCENT' +
+        'UAL, :QTD, :TOTAL, :PRECO)'
+      'MATCHING (CODIGO);')
+    UpdateTableName = 'comanda_rateio'
+    CacheUpdateRecords = True
+    AutoCommitData = False
+    AutoRefreshAfterCommit = False
+    RaiseErrors = True
+    ActionCursor = crSQLWait
+    ReflectChanges = False
+    Left = 200
+    Top = 160
+  end
+end

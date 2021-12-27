@@ -1,0 +1,53 @@
+unit uclassCBR_REMESSA;
+
+interface
+
+uses
+  FireDAC.Comp.Client, Forms, SysUtils, Data.DB, System.Classes;
+
+type
+  TCbrREMESSA = class(TObject)
+  private
+  public
+    function GetNewID:Integer;
+  end;
+
+var
+  oCbrREMESSA: TCbrREMESSA;
+
+implementation
+
+
+{ TProduto }
+
+function TCbrREMESSA.GetNewID: Integer;
+begin
+  Result := 1;
+
+  if oEmpresa.ID <= 0 then
+    raise Exception.Create('Erro com o Identificador da Empresa!');
+
+  try
+    dtmDefault.qryTmp.Close;
+    dtmDefault.qryTmp.SQL.Clear;
+    dtmDefault.qryTmp.SQL.Text := 'select MAX(ID_CBR_REMESSA) from CBR_REMESSA';
+    dtmDefault.qryTmp.Open;
+
+    if Not dtmDefault.qryTmp.IsEmpty then
+      Result := dtmDefault.qryTmp.Fields[0].AsInteger + 1;
+  finally
+    dtmDefault.qryTmp.Close;
+  end;
+
+  if Result <= 0 then
+    raise Exception.Create('Erro na geração do identificador das Remessas!');
+end;
+
+
+initialization
+  oCbrREMESSA := TCbrREMESSA.Create;
+
+finalization
+  FreeAndNil(oCbrREMESSA);
+
+end.

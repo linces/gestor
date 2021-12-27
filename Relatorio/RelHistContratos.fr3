@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="6.6.17" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="41869,3897582755" ReportOptions.Description.Text="" ReportOptions.LastChange="44135,7517689815" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frxDBEmpresa" DataSetName="frxDBEmpresa"/>
+    <item DataSet="frxDBOrcamento" DataSetName="frxDBOrcamento"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Compra" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="5" RightMargin="5" TopMargin="5" BottomMargin="5" ColumnWidth="0" ColumnPositions.Text="" Frame.Typ="0" MirrorMode="0" HGuides.Text="" VGuides.Text="">
+    <TfrxReportSummary Name="Totais" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Font.Charset="0" Font.Color="0" Font.Height="-12" Font.Name="Courier New" Font.Style="1" Height="28,8" Left="0" ParentFont="False" Top="385,51206" Width="755,906" OnBeforePrint="TotaisOnBeforePrint">
+      <TfrxMemoView Name="Memo12" Align="baClient" AllowVectorExport="True" Left="0" Top="0" Width="755,906" Height="28,8" Font.Charset="0" Font.Color="0" Font.Height="-12" Font.Name="Courier New" Font.Style="1" Frame.Typ="15" ParentFont="False" Text=""/>
+      <TfrxSysMemoView Name="SysMemo2" AllowVectorExport="True" Left="875,6" Top="2,60000000000002" Width="96" Height="19,2" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Courier New" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="Pág.[PAGE#]"/>
+      <TfrxMemoView Name="Memo9" AllowVectorExport="True" Left="489,6" Top="6,60000000000002" Width="153,6" Height="19,2" Font.Charset="0" Font.Color="0" Font.Height="-12" Font.Name="Courier New" Font.Style="1" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="Total &#62;&#62;&#62;"/>
+      <TfrxSysMemoView Name="SysMemo4" AllowVectorExport="True" Left="645,24" Top="6,60000000000002" Width="104,64" Height="19,2" DisplayFormat.FormatStr="%2.2f" DisplayFormat.Kind="fkNumeric" Font.Charset="0" Font.Color="0" Font.Height="-12" Font.Name="Courier New" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="[SUM(&#60;frxDBOrcamento.&#34;TOTAL&#34;&#62;,MasterData1)]"/>
+    </TfrxReportSummary>
+    <TfrxColumnHeader Name="Cabecalho" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="22,67718" Left="0" Top="196,53556" Width="755,906">
+      <TfrxMemoView Name="Memo18" Align="baClient" AllowVectorExport="True" Left="0" Top="0" Width="755,906" Height="22,67718" Frame.Typ="15" Text=""/>
+      <TfrxMemoView Name="Memo11" AllowVectorExport="True" Left="2,88" Top="1,77952999999999" Width="95,04" Height="19,2" Font.Charset="0" Font.Color="0" Font.Height="-12" Font.Name="Courier New" Font.Style="0" Frame.Typ="2" Fill.BackColor="12632256" ParentFont="False" Text="EMISSÃO"/>
+      <TfrxMemoView Name="Memo7" AllowVectorExport="True" Left="667,2" Top="2" Width="85,44" Height="19,2" Font.Charset="0" Font.Color="0" Font.Height="-12" Font.Name="Courier New" Font.Style="0" Frame.Typ="0" Fill.BackColor="12632256" HAlign="haRight" ParentFont="False" Text="TOTAL"/>
+      <TfrxMemoView Name="Memo14" AllowVectorExport="True" Left="165,12" Top="2" Width="289,92" Height="19,2" Font.Charset="0" Font.Color="0" Font.Height="-12" Font.Name="Courier New" Font.Style="0" Frame.Typ="2" Fill.BackColor="12632256" ParentFont="False" Text="CLIENTE"/>
+      <TfrxMemoView Name="Memo6" AllowVectorExport="True" Left="100,8" Top="2" Width="61,44" Height="19,2" Font.Charset="0" Font.Color="0" Font.Height="-12" Font.Name="Courier New" Font.Style="0" Frame.Typ="2" Fill.BackColor="12632256" ParentFont="False" Text="NÚMERO"/>
+      <TfrxMemoView Name="Memo17" AllowVectorExport="True" Left="457,92" Top="2" Width="206,4" Height="19,2" Font.Charset="0" Font.Color="0" Font.Height="-12" Font.Name="Courier New" Font.Style="0" Frame.Typ="2" Fill.BackColor="12632256" ParentFont="False" Text="VENDEDOR"/>
+    </TfrxColumnHeader>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="24" Left="0" Top="279,68522" Width="755,906" ColumnWidth="0" ColumnGap="0" DataSet="frxDBOrcamento" DataSetName="frxDBOrcamento" RowCount="0">
+      <TfrxMemoView Name="Memo5" AllowVectorExport="True" Left="0" Top="0" Width="756,48" Height="24" DataSet="FrmParametros.frxDBCompra" DataSetName="frxDBCompra" Font.Charset="0" Font.Color="0" Font.Height="-12" Font.Name="Courier New" Font.Style="0" Frame.Typ="3" HAlign="haRight" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo10" AllowVectorExport="True" Left="2,88" Top="2,88" Width="95,04" Height="17,28" DataField="DATA" DataSet="frxDBOrcamento" DataSetName="frxDBOrcamento" Font.Charset="0" Font.Color="0" Font.Height="-12" Font.Name="Courier New" Font.Style="1" Frame.Typ="2" ParentFont="False" Text="[frxDBOrcamento.&#34;DATA&#34;]"/>
+      <TfrxMemoView Name="Memo16" AllowVectorExport="True" Left="667,2" Top="2,88" Width="85,44" Height="17,28" DataField="TOTAL" DataSet="frxDBOrcamento" DataSetName="frxDBOrcamento" DisplayFormat.FormatStr="%2.2f" DisplayFormat.Kind="fkNumeric" Font.Charset="0" Font.Color="0" Font.Height="-12" Font.Name="Courier New" Font.Style="1" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="[frxDBOrcamento.&#34;TOTAL&#34;]"/>
+      <TfrxMemoView Name="Memo4" AllowVectorExport="True" Left="100,8" Top="2,88" Width="61,44" Height="17,28" DataField="CODIGO" DataSet="frxDBOrcamento" DataSetName="frxDBOrcamento" Font.Charset="0" Font.Color="0" Font.Height="-12" Font.Name="Courier New" Font.Style="1" Frame.Typ="2" ParentFont="False" Text="[frxDBOrcamento.&#34;CODIGO&#34;]"/>
+      <TfrxMemoView Name="Memo15" AllowVectorExport="True" Left="457,92" Top="2,88" Width="206,4" Height="17,28" DataField="VENDEDOR" DataSet="frxDBOrcamento" DataSetName="frxDBOrcamento" Font.Charset="0" Font.Color="0" Font.Height="-12" Font.Name="Courier New" Font.Style="1" Frame.Typ="2" ParentFont="False" Text="[frxDBOrcamento.&#34;VENDEDOR&#34;]"/>
+      <TfrxMemoView Name="Memo13" AllowVectorExport="True" Left="165,12" Top="2,88" Width="289,92" Height="17,28" DataField="CLIENTE" DataSet="frxDBOrcamento" DataSetName="frxDBOrcamento" Font.Charset="0" Font.Color="0" Font.Height="-12" Font.Name="Courier New" Font.Style="1" Frame.Typ="2" ParentFont="False" Text="[frxDBOrcamento.&#34;CLIENTE&#34;]"/>
+    </TfrxMasterData>
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="153,6" Left="0" Top="18,89765" Width="755,906">
+      <TfrxShapeView Name="Shape5" AllowVectorExport="True" Left="0" Top="0" Width="756,48" Height="153,6" Frame.Typ="0"/>
+      <TfrxMemoView Name="Memo1" AllowVectorExport="True" Left="121,30402" Top="6,85671" Width="578,26809" Height="18,89765" DataSetName="frxDBEmp" Font.Charset="0" Font.Color="0" Font.Height="-19" Font.Name="Courier New" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="[frxDBEmpresa.&#34;FANTASIA&#34;]"/>
+      <TfrxMemoView Name="frxDBEmpresaENDERECO" AllowVectorExport="True" Left="120,6" Top="49,6" Width="624" Height="19,2" AutoWidth="True" DataSet="frxDBEmpresa" DataSetName="frxDBEmpresa" Font.Charset="1" Font.Color="0" Font.Height="-15" Font.Name="Courier New" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="END:[frxDBEmpresa.&#34;ENDERECO&#34;],[frxDBEmpresa.&#34;NUMERO&#34;] - [frxDBEmpresa.&#34;BAIRRO&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo3" AllowVectorExport="True" Left="121,2" Top="71,4" Width="624" Height="19,2" AutoWidth="True" DataSet="frxDBEmpresa" DataSetName="frxDBEmpresa" Font.Charset="1" Font.Color="0" Font.Height="-15" Font.Name="Courier New" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="FONE:[frxDBEmpresa.&#34;FONE&#34;] EMAIL:[frxDBEmpresa.&#34;EMAIL&#34;]"/>
+      <TfrxMemoView Name="frxDBEmpresaRAZAO" AllowVectorExport="True" Left="120,6" Top="28,8" Width="403,2" Height="19,2" DataField="RAZAO" DataSet="frxDBEmpresa" DataSetName="frxDBEmpresa" Font.Charset="0" Font.Color="0" Font.Height="-15" Font.Name="Courier New" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[frxDBEmpresa.&#34;RAZAO&#34;]"/>
+      <TfrxPictureView Name="Picture1" AllowVectorExport="True" Left="15,2" Top="13,2" Width="86,4" Height="76,8" DataField="LOGOMARCA" DataSet="frxDBEmpresa" DataSetName="frxDBEmpresa" Frame.Typ="0" HightQuality="False" Transparent="False" TransparentColor="16777215"/>
+      <TfrxMemoView Name="Memo2" AllowVectorExport="True" Left="4,08188" Top="106,37953" Width="725,3671" Height="18,89765" Font.Charset="0" Font.Color="0" Font.Height="-19" Font.Name="Courier New" Font.Style="1" Frame.Typ="0" HAlign="haCenter" ParentFont="False" Text="HISTÓRICO DE CONTRATOS"/>
+      <TfrxLineView Name="Line4" AllowVectorExport="True" Left="0" Top="101,6" Width="756,48" Height="0" Color="0" Frame.Typ="0" Diagonal="True"/>
+      <TfrxMemoView Name="Memo8" AllowVectorExport="True" Left="1,6" Top="128,8" Width="746,88" Height="19,2" Font.Charset="0" Font.Color="0" Font.Height="-11" Font.Name="Courier New" Font.Style="0" Frame.Typ="0" HAlign="haCenter" ParentFont="False" Text="[PARAMETRO]"/>
+    </TfrxPageHeader>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="22,67718" Left="0" Top="438,42548" Width="755,906">
+      <TfrxSysMemoView Name="SysMemo1" AllowVectorExport="True" Left="3,77953" Top="0" Width="489,6" Height="19,2" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Courier New" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="Relatório emitido em [DATE]- [TIME]"/>
+      <TfrxSysMemoView Name="SysMemo3" AllowVectorExport="True" Left="657,17953" Top="1" Width="96" Height="19,2" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Courier New" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="Pág.[PAGE#]"/>
+    </TfrxPageFooter>
+    <TfrxColumnFooter Name="ColumnFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="0" Left="0" Top="362,83488" Width="755,906">
+      <TfrxMemoView Name="Memo20" Align="baClient" AllowVectorExport="True" Left="0" Top="0" Width="755,906" Height="0" Frame.Typ="4" Text=""/>
+    </TfrxColumnFooter>
+  </TfrxReportPage>
+</TfrxReport>

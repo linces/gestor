@@ -1,0 +1,54 @@
+{
+	"hash": "d41d8cd98f00b204e9800998ecf8427e",
+	"updated": "2020-12-25T15:03:16.0503183-03:00",
+	"installedModules": {
+		"github.com/hashload/horse": {
+			"name": "horse",
+			"version": "v2.0.6",
+			"hash": "c6443a19c0bc902a115475eb5c2f27d1",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"https://github.com/bittencourtthulio/horse-paginate": {
+			"name": "horse-paginate",
+			"version": "master",
+			"hash": "7e55331eae8827c82bb3513da18973ef",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"https://github.com/dliocode/horse-utils-clientip": {
+			"name": "horse-utils-clientip",
+			"version": "0.0.5",
+			"hash": "e70e774b0e0e7248d1e9028fc9c4542e",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"https://github.com/hashload/horse-compression": {
+			"name": "horse-compression",
+			"version": "v1.1.2",
+			"hash": "1db94e5a74f0806c7bc1235c26a90f16",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"https://github.com/hashload/horse-cors": {
+			"name": "horse-cors",
+			"version": "1.0.2",
+			"hash": "4eb376bd08e1836f1cc637023edc75f5",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"https://github.com/hashload/jhonson": {
+			"name": "jhonson",
+			"version": "1.0.9",
+			"hash": "33dbabbc71337960896f74728ec2548a",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		}
+	}
+}

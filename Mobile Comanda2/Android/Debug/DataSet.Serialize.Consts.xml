@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="DataSet.Serialize.Consts" platform="Android">
+  <const name="FIELD_TYPE_NOT_FOUND" type="string" file="DataSet.Serialize.Consts.pas" line="6">
+    <value>
+      Cannot find type for field &quot;%%s&quot;
+    </value>
+  </const>
+  <const name="DATASET_ACTIVATED" type="string" file="DataSet.Serialize.Consts.pas" line="7">
+    <value>
+      The DataSet can not be active.
+    </value>
+  </const>
+  <const name="PREDEFINED_FIELDS" type="string" file="DataSet.Serialize.Consts.pas" line="8">
+    <value>
+      The DataSet can not have predefined fields
+    </value>
+  </const>
+  <const name="DATASET_HAS_NO_DEFINED_FIELDS" type="string" file="DataSet.Serialize.Consts.pas" line="9">
+    <value>
+      DataSet has no defined fields
+    </value>
+  </const>
+  <const name="JSON_NOT_DIFINED" type="string" file="DataSet.Serialize.Consts.pas" line="10">
+    <value>
+      JSON not defined
+    </value>
+  </const>
+  <const name="SIZE_NOT_DEFINED_FOR_FIELD" type="string" file="DataSet.Serialize.Consts.pas" line="11">
+    <value>
+      Size not defined for field &quot;%%s&quot;.
+    </value>
+  </const>
+  <const name="TO_CONVERT_STRUCTURE_ONLY_JSON_ARRAY_ALLOWED" type="string" file="DataSet.Serialize.Consts.pas" line="12">
+    <value>
+      To convert a structure only JSONArray is allowed
+    </value>
+  </const>
+  <const name="INVALID_FIELD_COUNT" type="string" file="DataSet.Serialize.Consts.pas" line="13">
+    <value>
+      [%%s] Invalid field count
+    </value>
+  </const>
+  <const name="FIELD_PROPERTY_ALIGNMENT" type="string" file="DataSet.Serialize.Consts.pas" line="15">
+    <value>
+      alignment
+    </value>
+  </const>
+  <const name="FIELD_PROPERTY_FIELD_NAME" type="string" file="DataSet.Serialize.Consts.pas" line="16">
+    <value>
+      fieldName
+    </value>
+  </const>
+  <const name="FIELD_PROPERTY_DISPLAY_LABEL" type="string" file="DataSet.Serialize.Consts.pas" line="17">
+    <value>
+      displayLabel
+    </value>
+  </const>
+  <const name="FIELD_PROPERTY_DATA_TYPE" type="string" file="DataSet.Serialize.Consts.pas" line="18">
+    <value>
+      dataType
+    </value>
+  </const>
+  <const name="FIELD_PROPERTY_SIZE" type="string" file="DataSet.Serialize.Consts.pas" line="19">
+    <value>
+      size
+    </value>
+  </const>
+  <const name="FIELD_PROPERTY_KEY" type="string" file="DataSet.Serialize.Consts.pas" line="20">
+    <value>
+      key
+    </value>
+  </const>
+  <const name="FIELD_PROPERTY_ORIGIN" type="string" file="DataSet.Serialize.Consts.pas" line="21">
+    <value>
+      origin
+    </value>
+  </const>
+  <const name="FIELD_PROPERTY_REQUIRED" type="string" file="DataSet.Serialize.Consts.pas" line="22">
+    <value>
+      required
+    </value>
+  </const>
+  <const name="FIELD_PROPERTY_VISIBLE" type="string" file="DataSet.Serialize.Consts.pas" line="23">
+    <value>
+      visible
+    </value>
+  </const>
+  <const name="FIELD_PROPERTY_READ_ONLY" type="string" file="DataSet.Serialize.Consts.pas" line="24">
+    <value>
+      readOnly
+    </value>
+  </const>
+  <const name="FIELD_PROPERTY_AUTO_GENERATE_VALUE" type="string" file="DataSet.Serialize.Consts.pas" line="25">
+    <value>
+      autoGenerateValue
+    </value>
+  </const>
+</namespace>

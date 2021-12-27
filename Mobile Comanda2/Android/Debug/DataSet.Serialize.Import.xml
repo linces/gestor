@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="DataSet.Serialize.Import" platform="Android">
+  <class name="TJSONSerialize" file="DataSet.Serialize.Import.pas" line="18">
+    <ancestor name="TObject" namespace="System">
+      <methodref name="Create" visibility="public" procflags="constructor">
+      </methodref>
+      <methodref name="Free" visibility="public">
+      </methodref>
+      <methodref name="DisposeOf" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="InitInstance" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="CleanupInstance" visibility="public">
+      </methodref>
+      <methodref name="ClassType" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="ClassName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassNameIs" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassParent" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassInfo" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="InstanceSize" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="InheritsFrom" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="QualifiedClassName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="GetInterface" visibility="public">
+      </methodref>
+      <methodref name="GetInterfaceEntry" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="GetInterfaceTable" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="UnitName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="UnitScope" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="Equals" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="GetHashCode" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="ToString" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="SafeCallException" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="AfterConstruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="BeforeDestruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Dispatch" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="DefaultHandler" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="NewInstance" visibility="public" procflags="class virtual">
+      </methodref>
+      <methodref name="FreeInstance" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Destroy" visibility="public" procflags="destructor virtual">
+      </methodref>
+      <methodref name="CPP_ABI_1" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="CPP_ABI_2" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="CPP_ABI_3" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="GetDisposed" visibility="protected" procflags="inline">
+      </methodref>
+      <methodref name="CheckDisposed" visibility="protected" procflags="inline">
+      </methodref>
+      <propertyref name="Disposed" visibility="protected">
+      </propertyref>
+    </ancestor>
+    <members>
+      <field name="FMerging" type="Boolean" visibility="private" size="1" offset="4" file="DataSet.Serialize.Import.pas" line="20" />
+      <field name="FJSONObject" type="TJSONObject" visibility="private" size="4" offset="8" file="DataSet.Serialize.Import.pas" line="21" />
+      <field name="FJSONArray" type="TJSONArray" visibility="private" size="4" offset="12" file="DataSet.Serialize.Import.pas" line="22" />
+      <field name="FOwns" type="Boolean" visibility="private" size="1" offset="16" file="DataSet.Serialize.Import.pas" line="23" />
+      <procedure name="ClearDataSet" visibility="private" file="DataSet.Serialize.Import.pas" line="30">
+        <devnotes>
+           <summary>
+             Delete all records from dataset.
+           </summary>
+           <param name="ADataSet">
+             DataSet that will be cleared.
+           </param>
+        </devnotes>
+        <parameters>
+          <parameter name="ADataSet" type="TDataSet" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="LoadBlobFieldFromStream" visibility="private" file="DataSet.Serialize.Import.pas" line="40">
+        <devnotes>
+           <summary>
+             Load a field of type blob with the value of a JSON.
+           </summary>
+           <param name="AField">
+             It refers to the field that you want to be loaded with the JSONValue.
+           </param>
+           <param name="AJSONValue">
+             It refers to the value that is assigned to the field.
+           </param>
+        </devnotes>
+        <parameters>
+          <parameter name="AField" type="TField" paramflags="const" />
+          <parameter name="AJSONValue" type="TJSONValue" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="JSONArrayToStructure" visibility="private" file="DataSet.Serialize.Import.pas" line="55">
+        <devnotes>
+           <summary>
+             Loads the fields of a DataSet based on a JSONArray.
+           </summary>
+           <param name="AJSONArray">
+             JSONArray with the DataSet structure.
+           </param>
+           <param name="ADataSet">
+             Refers to the DataSet that will be configured.
+           </param>
+           <remarks>
+             The DataSet can not have predefined fields.
+             The DataSet can not be active.
+             To convert a structure only JSONArray is allowed.
+           </remarks>
+        </devnotes>
+        <parameters>
+          <parameter name="AJSONArray" type="TJSONArray" paramflags="const" />
+          <parameter name="ADataSet" type="TDataSet" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="JSONObjectToDataSet" visibility="private" file="DataSet.Serialize.Import.pas" line="68">
+        <devnotes>
+           <summary>
+             Loads a DataSet with a JSONObject.
+           </summary>
+           <param name="AJSONObject">
+             Refers to the JSON in with the data that must be loaded in the DataSet.
+           </param>
+           <param name="ADataSet">
+             Refers to the DataSet which must be loaded with the JSON data.
+           </param>
+           <param name="ADetail">
+             Indicates if it's a dataset detail.
+           </param>
+        </devnotes>
+        <parameters>
+          <parameter name="AJSONObject" type="TJSONObject" paramflags="const" />
+          <parameter name="ADataSet" type="TDataSet" paramflags="const" />
+          <parameter name="ADetail" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="JSONValueToDataSet" visibility="private" file="DataSet.Serialize.Import.pas" line="78">
+        <devnotes>
+           <summary>
+             Loads a DataSet with a JSONOValue.
+           </summary>
+           <param name="AJSONValue">
+             Refers to the JSON value that must be loaded in the DataSet.
+           </param>
+           <param name="ADataSet">
+             Refers to the DataSet which must be loaded with the JSON value.
+           </param>
+        </devnotes>
+        <parameters>
+          <parameter name="AJSONValue" type="TJSONValue" paramflags="const" />
+          <parameter name="ADataSet" type="TDataSet" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="JSONArrayToDataSet" visibility="private" file="DataSet.Serialize.Import.pas" line="88">
+        <devnotes>
+           <summary>
+             Loads a DataSet with a JSONArray.
+           </summary>
+           <param name="AJSONArray">
+             Refers to the JSON in with the data that must be loaded in the DataSet.
+           </param>
+           <param name="ADataSet">
+             Refers to the DataSet which must be loaded with the JSON data.
+           </param>
+        </devnotes>
+        <parameters>
+          <parameter name="AJSONArray" type="TJSONArray" paramflags="const" />
+          <parameter name="ADataSet" type="TDataSet" paramflags="const" />
+          <parameter name="ADetail" type="Boolean" paramflags="const">
+            <value>
+              False
+            </value>
+          </parameter>
+        </parameters>
+      </procedure>
+      <function name="AddFieldNotFound" visibility="private" file="DataSet.Serialize.Import.pas" line="104">
+        <devnotes>
+           <summary>
+             Creates a JSON informing the required field.
+           </summary>
+           <param name="AFieldName">
+             Field name in the DataSet.
+           </param>
+           <param name="ADisplayLabel">
+             Formatted field name.
+           </param>
+           <param name="ALang">
+             Language used to mount messages.
+           </param>
+           <returns>
+             Returns a JSON with the message and field name.
+           </returns>
+        </devnotes>
+        <parameters>
+          <parameter name="AFieldName" type="string" paramflags="const" />
+          <parameter name="ADisplayLabel" type="string" paramflags="const" />
+          <parameter name="ALang" type="TLanguageType" paramflags="const">
+            <value>
+              enUS
+            </value>
+          </parameter>
+          <retval type="TJSONObject" />
+        </parameters>
+      </function>
+      <function name="LoadFieldStructure" visibility="private" file="DataSet.Serialize.Import.pas" line="114">
+        <devnotes>
+           <summary>
+             Load field structure.
+           </summary>
+           <param name="AJSONValue">
+             JSON with field data.
+           </param>
+           <returns>
+             Record of field structure.
+           </returns>
+        </devnotes>
+        <parameters>
+          <parameter name="AJSONValue" type="TJSONValue" paramflags="const" />
+          <retval type="TFieldStructure">
+            <devnotes>
+               <summary>
+                 Record representing the structure of a dataset field.
+               </summary>
+            </devnotes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="GetKeyFieldsDataSet" visibility="private" file="DataSet.Serialize.Import.pas" line="118">
+        <devnotes>
+           <returns>
+             The key fields name of the ADataSet parameter.
+           </returns>
+        </devnotes>
+        <parameters>
+          <parameter name="ADataSet" type="TDataSet" paramflags="const" />
+          <retval type="string" />
+        </parameters>
+      </function>
+      <function name="GetKeyValuesDataSet" visibility="private" file="DataSet.Serialize.Import.pas" line="122">
+        <devnotes>
+           <returns>
+             The key values of the ADataSet parameter.
+           </returns>
+        </devnotes>
+        <parameters>
+          <parameter name="ADataSet" type="TDataSet" paramflags="const" />
+          <parameter name="AJSONObject" type="TJSONObject" paramflags="const" />
+          <retval type="TKeyValues">
+            <devnotes>
+               <summary>
+                 Type to get key values of an dataset.
+               </summary>
+            </devnotes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="JSONPairToFieldName" visibility="private" file="DataSet.Serialize.Import.pas" line="126">
+        <devnotes>
+           <summary>
+             Convert string in FieldName.
+           </summary>
+        </devnotes>
+        <parameters>
+          <parameter name="AValue" type="string" paramflags="const" />
+          <retval type="string" />
+        </parameters>
+      </function>
+      <procedure name="LoadFieldsFromJSON" visibility="private" file="DataSet.Serialize.Import.pas" line="130">
+        <devnotes>
+           <summary>
+             Load the fields into the dataset.
+           </summary>
+        </devnotes>
+        <parameters>
+          <parameter name="ADataSet" type="TDataSet" paramflags="const" />
+          <parameter name="AJSONObject" type="TJSONObject" paramflags="const" />
+        </parameters>
+      </procedure>
+      <constructor name="Create" visibility="public" file="DataSet.Serialize.Import.pas" line="138">
+        <devnotes>
+           <summary>
+             Responsible for creating a new instance of TDataSetSerialize class.
+           </summary>
+           <param name="AJSONArray">
+             Refers to the JSON in with the data that must be loaded in the DataSet.
+           </param>
+        </devnotes>
+        <parameters>
+          <parameter name="AJSONArray" type="TJSONArray" paramflags="const" />
+          <parameter name="AOwns" type="Boolean" paramflags="const" />
+        </parameters>
+      </constructor>
+      <constructor name="Create" visibility="public" file="DataSet.Serialize.Import.pas" line="145">
+        <devnotes>
+           <summary>
+             Responsible for creating a new instance of TDataSetSerialize class.
+           </summary>
+           <param name="AJSONObject">
+             Refers to the JSON in with the data that must be loaded in the DataSet.
+           </param>
+        </devnotes>
+        <parameters>
+          <parameter name="AJSONObject" type="TJSONObject" paramflags="const" />
+          <parameter name="AOwns" type="Boolean" paramflags="const" />
+        </parameters>
+      </constructor>
+      <procedure name="LoadStructure" visibility="public" file="DataSet.Serialize.Import.pas" line="152">
+        <devnotes>
+           <summary>
+             Loads fields from a DataSet based on JSON.
+           </summary>
+           <param name="ADataSet">
+             Refers to the DataSet to which you want to load the structure.
+           </param>
+        </devnotes>
+        <parameters>
+          <parameter name="ADataSet" type="TDataSet" paramflags="const" />
+        </parameters>
+      </procedure>
+      <function name="Validate" visibility="public" file="DataSet.Serialize.Import.pas" line="169">
+        <devnotes>
+           <summary>
+             Responsible for validating whether JSON has all the necessary information for a particular DataSet.
+           </summary>
+           <param name="ADataSet">
+             Refers to the DataSet that will be loaded with JSON.
+           </param>
+           <param name="ALang">
+             Language used to mount messages.
+           </param>
+           <returns>
+             Returns a JSONArray with the fields that were not informed.
+           </returns>
+           <remarks>
+             Walk the DataSet fields by checking the required property.
+             Uses the DisplayLabel property to mount the message.
+           </remarks>
+        </devnotes>
+        <parameters>
+          <parameter name="ADataSet" type="TDataSet" paramflags="const" />
+          <parameter name="ALang" type="TLanguageType" paramflags="const">
+            <value>
+              enUS
+            </value>
+          </parameter>
+          <retval type="TJSONArray" />
+        </parameters>
+      </function>
+      <procedure name="Merge" visibility="public" file="DataSet.Serialize.Import.pas" line="176">
+        <devnotes>
+           <summary>
+             Runs the merge between the record of DataSet and JSONObject.
+           </summary>
+           <param name="ADataSet">
+             Refers to the DataSet that you want to merge with the JSON object.
+           </param>
+        </devnotes>
+        <parameters>
+          <parameter name="ADataSet" type="TDataSet" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="ToDataSet" visibility="public" file="DataSet.Serialize.Import.pas" line="183">
+        <devnotes>
+           <summary>
+             Loads the DataSet with JSON content.
+           </summary>
+           <param name="ADataSet">
+             Refers to the DataSet you want to load.
+           </param>
+        </devnotes>
+        <parameters>
+          <parameter name="ADataSet" type="TDataSet" paramflags="const" />
+        </parameters>
+      </procedure>
+      <destructor name="Destroy" visibility="public" file="DataSet.Serialize.Import.pas" line="190">
+        <devnotes>
+           <summary>
+             Responsible for destroying the TJSONSerialize class instance.
+           </summary>
+           <remarks>
+             If owner of the JSON, destroys the same.
+           </remarks>
+        </devnotes>
+        <parameters>
+        </parameters>
+      </destructor>
+    </members>
+  </class>
+</namespace>

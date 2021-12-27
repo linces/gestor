@@ -1,0 +1,1629 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="uDWConsts" platform="Android">
+  <variable name="InitStrPos" type="Integer" />
+  <variable name="FinalStrPos" type="Integer" />
+  <const name="tScriptsDetected" type=":1" visibility="public" />
+  <const name="cCompressionLevel" type="TCompressionLevel">
+    <value>
+      clFastest
+    </value>
+  </const>
+  <const name="TDecimalChar" type="Char">
+    <value>
+      $44
+    </value>
+  </const>
+  <const name="TNullString" type="Char">
+    <value>
+      $0
+    </value>
+  </const>
+  <const name="TSepParams" type="string">
+    <value>
+      |xxx|xxx|%%
+    </value>
+  </const>
+  <const name="TValueFormatJSON" type="string">
+    <value>
+      {&quot;%%s&quot;:&quot;%%s&quot;, &quot;%%s&quot;:&quot;%%s&quot;, &quot;%%s&quot;:&quot;%%s&quot;, &quot;%%s&quot;:&quot;%%s&quot;, &quot;%%s&quot;:[%%s]}
+    </value>
+  </const>
+  <const name="TDatasetRequestJSON" type="string">
+    <value>
+      {&quot;SQL&quot;:&quot;%%s&quot;, &quot;PARAMS&quot;:&quot;%%s&quot;, &quot;BinaryRequest&quot;:%%s, &quot;Metadata&quot;:%%s, &quot;BinaryCompatibleMode&quot;:%%s}
+    </value>
+  </const>
+  <const name="TMassiveFormatJSON" type="string">
+    <value>
+      {&quot;%%s&quot;:&quot;%%s&quot;, &quot;%%s&quot;:&quot;%%s&quot;, &quot;%%s&quot;:&quot;%%s&quot;, &quot;%%s&quot;:&quot;%%s&quot;, &quot;%%s&quot;:&quot;%%s&quot;, &quot;%%s&quot;:[%%s], &quot;reflectionchanges&quot;:&quot;%%s&quot;, &quot;sequencename&quot;:&quot;%%s&quot;, &quot;sequencefield&quot;:&quot;%%s&quot;, &quot;mycomptag&quot;:&quot;%%s&quot;, &quot;mastercomptag&quot;:&quot;%%s&quot;, &quot;mastercompfields&quot;:&quot;%%s&quot;}
+    </value>
+  </const>
+  <const name="TValueDisp" type="string">
+    <value>
+      {&quot;PARAMS&quot;:[%%s], &quot;RESULT&quot;:[%%s]}
+    </value>
+  </const>
+  <const name="TValueArrayJSON" type="string">
+    <value>
+      [%%s]
+    </value>
+  </const>
+  <const name="TValueFormatJSONValueS" type="string">
+    <value>
+      {&quot;%%s&quot;:&quot;%%s&quot;, &quot;%%s&quot;:&quot;%%s&quot;, &quot;%%s&quot;:&quot;%%s&quot;, &quot;%%s&quot;:&quot;%%s&quot;, &quot;%%s&quot;:&quot;%%s&quot;}
+    </value>
+  </const>
+  <const name="TValueFormatJSONValue" type="string">
+    <value>
+      {&quot;%%s&quot;:&quot;%%s&quot;, &quot;%%s&quot;:&quot;%%s&quot;, &quot;%%s&quot;:&quot;%%s&quot;, &quot;%%s&quot;:&quot;%%s&quot;, &quot;%%s&quot;:%%s}
+    </value>
+  </const>
+  <const name="TJsonDatasetHeader" type="string">
+    <value>
+      {&quot;Field&quot;:&quot;%%s&quot;, &quot;Type&quot;:&quot;%%s&quot;, &quot;Primary&quot;:&quot;%%s&quot;, &quot;Required&quot;:&quot;%%s&quot;, &quot;Size&quot;:%%d, &quot;Precision&quot;:%%d, &quot;ReadOnly&quot;:&quot;%%s&quot;, &quot;Autogeneration&quot;:&quot;%%s&quot;}
+    </value>
+  </const>
+  <const name="TJsonValueFormat" type="string">
+    <value>
+      %%s
+    </value>
+  </const>
+  <const name="TJsonStringValue" type="string">
+    <value>
+      &quot;%%s&quot;
+    </value>
+  </const>
+  <const name="cNullvalue" type="string">
+    <value>
+      null
+    </value>
+  </const>
+  <const name="cUndefined" type="string">
+    <value>
+      undefined
+    </value>
+  </const>
+  <const name="cRDWDetailField" type="string">
+    <value>
+      rdwdetailfield
+    </value>
+  </const>
+  <const name="cNullvalueTag" type="string">
+    <value>
+      &quot;null&quot;
+    </value>
+  </const>
+  <const name="cBlanckStringJSON" type="string">
+    <value>
+      &quot;&quot;
+    </value>
+  </const>
+  <const name="TSepValueMemString" type="string">
+    <value>
+      \\
+    </value>
+  </const>
+  <const name="TQuotedValueMemString" type="string">
+    <value>
+      \&quot;
+    </value>
+  </const>
+  <const name="TReplyOK" type="string">
+    <value>
+      {&quot;MESSAGE&quot;:&quot;OK&quot;,  &quot;RESULT&quot;:&quot;OK&quot;}
+    </value>
+  </const>
+  <const name="TReplyNOK" type="string">
+    <value>
+      {&quot;MESSAGE&quot;:&quot;NOK&quot;, &quot;RESULT&quot;:&quot;NOK&quot;}
+    </value>
+  </const>
+  <const name="TReplyTagError" type="string">
+    <value>
+      {&quot;MESSAGE&quot;:&quot;NOK&quot;, &quot;RESULT&quot;:&quot;Invalid Access tag...&quot;}
+    </value>
+  </const>
+  <const name="TReplyInvalidPooler" type="string">
+    <value>
+      {&quot;MESSAGE&quot;:&quot;NOK&quot;, &quot;RESULT&quot;:&quot;Invalid Pooler Name...&quot;}
+    </value>
+  </const>
+  <const name="TReplyInvalidWelcome" type="string">
+    <value>
+      {&quot;MESSAGE&quot;:&quot;NOK&quot;, &quot;RESULT&quot;:&quot;Invalid welcomemessage...&quot;}
+    </value>
+  </const>
+  <const name="TReplyError" type="string">
+    <value>
+      {&quot;MESSAGE&quot;:&quot;NOK&quot;, &quot;RESULT&quot;:&quot;%%s&quot;}
+    </value>
+  </const>
+  <const name="TServerStatusHTML" type="string">
+    <value>
+      &lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;UTF-8&quot;/&gt;&lt;title&gt;REST Dataware - CORE&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;REST Dataware - CORE&lt;/h1&gt;&lt;h2&gt;Server Status - Online&lt;/h2&gt;&lt;/body&gt;&lt;/html&gt;
+    </value>
+  </const>
+  <const name="AuthRealm" type="string">
+    <value>
+      Provide Authentication
+    </value>
+  </const>
+  <const name="UrlBase" type="string">
+    <value>
+      %%s://%%s:%%d/%%s
+    </value>
+  </const>
+  <const name="UrlBaseA" type="string">
+    <value>
+      %%s://%%s:%%d/%%s%%s
+    </value>
+  </const>
+  <const name="UrlBaseB" type="string">
+    <value>
+      %%s://%%s:%%d/%%s%%s%%s
+    </value>
+  </const>
+  <const name="ByteBuffer" type="Integer">
+    <value>
+      $2000
+    </value>
+  </const>
+  <const name="CompressBuffer" type="Integer">
+    <value>
+      $800
+    </value>
+  </const>
+  <const name="UnixDate" type="Integer">
+    <value>
+      $0
+    </value>
+  </const>
+  <const name="SecondsInDay" type="Integer">
+    <value>
+      $15180
+    </value>
+  </const>
+  <const name="SecondsInHour" type="Integer">
+    <value>
+      $E10
+    </value>
+  </const>
+  <const name="SecondsInMinute" type="Integer">
+    <value>
+      $3C
+    </value>
+  </const>
+  <const name="HoursInDay" type="Integer">
+    <value>
+      $18
+    </value>
+  </const>
+  <const name="MinutesInHour" type="Integer">
+    <value>
+      $3C
+    </value>
+  </const>
+  <const name="MinutesInDay" type="Integer">
+    <value>
+      $5A0
+    </value>
+  </const>
+  <const name="AssyncCommandMSG" type="string">
+    <value>
+      {&quot;status&quot;:&quot;OK&quot;, &quot;assyncmsg&quot;:&quot;AssyncCommand Executed&quot;}
+    </value>
+  </const>
+  <const name="DWDialogoTitulo" type="string">
+    <value>
+      DW REST DataWare Components
+    </value>
+  </const>
+  <const name="DWSobreTitulo" type="string">
+    <value>
+      DW VCL
+    </value>
+  </const>
+  <const name="DWSobreDescricao" type="string">
+    <value>
+      DW VCL http://www.restdw.com.br/&#10;Components REST DataWare Core&#10;CORE Version
+    </value>
+  </const>
+  <const name="DWSobreLicencaStatus" type="string">
+    <value>
+      Open Source - Free Version
+    </value>
+  </const>
+  <const name="DWVersionINFO" type="string">
+    <value>
+      1.4.3.
+    </value>
+  </const>
+  <const name="DWRelease" type="string">
+    <value>
+      2607
+    </value>
+  </const>
+  <const name="DwParamsHeaderVersion" type="Integer">
+    <value>
+      $6
+    </value>
+  </const>
+  <const name="DWCodeProject" type="string">
+    <value>
+      The Crystal of Kings
+    </value>
+  </const>
+  <const name="DWVersao" type="string">
+    <value>
+      1.4.3.2607(The Crystal of Kings)
+    </value>
+  </const>
+  <const name="DWFieldBookmark" type="string">
+    <value>
+      DWFIELDBOOKMARK
+    </value>
+  </const>
+  <const name="rsLazarusDWPackage" type="string">
+    <value>
+      REST Dataware - Tools
+    </value>
+  </const>
+  <const name="rsDwRequestDBGName" type="string">
+    <value>
+      REST Dataware - Request Debbuger
+    </value>
+  </const>
+  <const name="cValueKey" type="string">
+    <value>
+      {&quot;serverinforequest&quot;:&quot;%%s&quot;, &quot;inforequest&quot;:&quot;%%s&quot;, &quot;lifecycle&quot;:&quot;%%s&quot;}
+    </value>
+  </const>
+  <const name="cValueKeyToken" type="string">
+    <value>
+      {&quot;secrets&quot;:&quot;%%s&quot;, &quot;md5&quot;:&quot;%%s&quot;}
+    </value>
+  </const>
+  <const name="cValueToken" type="string">
+    <value>
+      {%%s&quot;exp&quot;:&quot;%%s&quot;, &quot;iat&quot;:&quot;%%s&quot;, &quot;secrets&quot;:&quot;%%s&quot;}
+    </value>
+  </const>
+  <const name="cValueTokenNoLife" type="string">
+    <value>
+      {%%s&quot;iat&quot;:&quot;%%s&quot;, &quot;secrets&quot;:&quot;%%s&quot;}
+    </value>
+  </const>
+  <const name="cTokenStringRDWTS" type="string">
+    <value>
+      {&quot;token&quot;:&quot;%%s&quot;}
+    </value>
+  </const>
+  <const name="cInvalidBinaryRequest" type="string">
+    <value>
+      Invalid Binary Request. Resource unsupported...
+    </value>
+  </const>
+  <const name="cInvalidEvent" type="string">
+    <value>
+      Invalid Event Name
+    </value>
+  </const>
+  <const name="cInvalidContextName" type="string">
+    <value>
+      Invalid Context Name
+    </value>
+  </const>
+  <const name="cInvalidParamName" type="string">
+    <value>
+      Invalid Param Name
+    </value>
+  </const>
+  <const name="cInvalidDWParam" type="string">
+    <value>
+      Invalid DWParam
+    </value>
+  </const>
+  <const name="cInvalidPoolerName" type="string">
+    <value>
+      Invalid Pooler Name...
+    </value>
+  </const>
+  <const name="cInvalidContextRule" type="string">
+    <value>
+      Invalid ContextRule Name
+    </value>
+  </const>
+  <const name="cServerEventNotFound" type="string">
+    <value>
+      ServerEvent not found...
+    </value>
+  </const>
+  <const name="cInvalidServerEventName" type="string">
+    <value>
+      Invalid ServerEvent name
+    </value>
+  </const>
+  <const name="cInvalidRDWServer" type="string">
+    <value>
+      Invalid REST Dataware Server...
+    </value>
+  </const>
+  <const name="cInvalidConnectionName" type="string">
+    <value>
+      Invalid ConnectionName
+    </value>
+  </const>
+  <const name="cPoolerNotFound" type="string">
+    <value>
+      Pooler not found
+    </value>
+  </const>
+  <const name="cRequestRejectedMethods" type="string">
+    <value>
+      Request rejected. Acceptable HTTP methods: 
+    </value>
+  </const>
+  <const name="cRequestAcceptableMethods" type="string">
+    <value>
+      Acceptable HTTP methods not defined on server
+    </value>
+  </const>
+  <const name="cRequestRejected" type="string">
+    <value>
+      The Requested URL was Rejected
+    </value>
+  </const>
+  <const name="cInvalidRequest" type="string">
+    <value>
+      Invalid request url.
+    </value>
+  </const>
+  <const name="cNotWorkYet" type="string">
+    <value>
+      It doesn''t work yet
+    </value>
+  </const>
+  <const name="cAuthenticationError" type="string">
+    <value>
+      Error : &#13;Authentication Error...
+    </value>
+  </const>
+  <const name="cInvalidConnection" type="string">
+    <value>
+      Invalid connection. The server maybe offline...
+    </value>
+  </const>
+  <const name="cInvalidDataToApply" type="string">
+    <value>
+      No data to &quot;Applyupdates&quot;...
+    </value>
+  </const>
+  <const name="cEmptyDBName" type="string">
+    <value>
+      Empty Database Property
+    </value>
+  </const>
+  <const name="cErrorDatabaseNotFound" type="string">
+    <value>
+      Database not found...
+    </value>
+  </const>
+  <const name="cErrorOpenDataset" type="string">
+    <value>
+      Error when try open Dataset...
+    </value>
+  </const>
+  <const name="cErrorNoFieldsDataset" type="string">
+    <value>
+      No Fields to add on Dataset...
+    </value>
+  </const>
+  <const name="cExprIncorrect" type="string">
+    <value>
+      Incorrectly formed filter expression
+    </value>
+  </const>
+  <const name="cExprExpected" type="string">
+    <value>
+      Expression expected but %%s found
+    </value>
+  </const>
+  <const name="cFieldNotFound" type="string">
+    <value>
+      Field '%%s' not found
+    </value>
+  </const>
+  <const name="cInvalidStream" type="string">
+    <value>
+      Invalid Stream...
+    </value>
+  </const>
+  <const name="cCreatedToken" type="string">
+    <value>
+      201 Created
+    </value>
+  </const>
+  <const name="cEventNotFound" type="string">
+    <value>
+      HTTP/1.1 404 Url Not Found
+    </value>
+  </const>
+  <const name="cInvalidAuth" type="string">
+    <value>
+      HTTP/1.1 401 Unauthorized
+    </value>
+  </const>
+  <const name="cInvalidInternalError" type="string">
+    <value>
+      Internal Server Error
+    </value>
+  </const>
+  <const name="cUserAgent" type="string">
+    <value>
+      Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.0 Safari/537.36
+    </value>
+  </const>
+  <const name="cParamDetails" type="string">
+    <value>
+      %%s|%%s|%%d|%%d
+    </value>
+  </const>
+  <type name="TDWString" type="UnicodeString" file="System.pas" line="12" />
+  <class name="TRESTDWUriOptions">
+    <ancestor name="TObject" namespace="System">
+      <methodref name="Create" visibility="public" procflags="constructor">
+      </methodref>
+      <methodref name="Free" visibility="public">
+      </methodref>
+      <methodref name="DisposeOf" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="InitInstance" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="CleanupInstance" visibility="public">
+      </methodref>
+      <methodref name="ClassType" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="ClassName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassNameIs" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassParent" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassInfo" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="InstanceSize" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="InheritsFrom" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="QualifiedClassName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="GetInterface" visibility="public">
+      </methodref>
+      <methodref name="GetInterfaceEntry" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="GetInterfaceTable" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="UnitName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="UnitScope" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="Equals" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="GetHashCode" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="ToString" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="SafeCallException" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="AfterConstruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="BeforeDestruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Dispatch" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="DefaultHandler" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="NewInstance" visibility="public" procflags="class virtual">
+      </methodref>
+      <methodref name="FreeInstance" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Destroy" visibility="public" procflags="destructor virtual">
+      </methodref>
+      <methodref name="CPP_ABI_1" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="CPP_ABI_2" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="CPP_ABI_3" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="GetDisposed" visibility="protected" procflags="inline">
+      </methodref>
+      <methodref name="CheckDisposed" visibility="protected" procflags="inline">
+      </methodref>
+      <propertyref name="Disposed" visibility="protected">
+      </propertyref>
+    </ancestor>
+    <members>
+      <field name="vBaseServer" type="string" visibility="private" size="8" offset="8" />
+      <field name="vDataUrl" type="string" visibility="private" size="8" offset="16" />
+      <field name="vServerEvent" type="string" visibility="private" size="8" offset="24" />
+      <field name="vEventName" type="string" visibility="private" size="8" offset="32" />
+      <procedure name="SetEventName" visibility="private">
+        <parameters>
+          <parameter name="Value" type="string" />
+        </parameters>
+      </procedure>
+      <procedure name="SetServerEvent" visibility="private">
+        <parameters>
+          <parameter name="Value" type="string" />
+        </parameters>
+      </procedure>
+      <procedure name="SetBaseServer" visibility="private">
+        <parameters>
+          <parameter name="Value" type="string" />
+        </parameters>
+      </procedure>
+      <procedure name="SetDataUrl" visibility="private">
+        <parameters>
+          <parameter name="Value" type="string" />
+        </parameters>
+      </procedure>
+      <constructor name="Create" visibility="public">
+        <parameters>
+        </parameters>
+      </constructor>
+      <property name="BaseServer" visibility="public" read="vBaseServer" write="SetBaseServer" type="string" default="0" />
+      <property name="DataUrl" visibility="public" read="vDataUrl" write="SetDataUrl" type="string" default="0" />
+      <property name="ServerEvent" visibility="public" read="vServerEvent" write="SetServerEvent" type="string" default="0" />
+      <property name="EventName" visibility="public" read="vEventName" write="SetEventName" type="string" default="0" />
+    </members>
+  </class>
+  <class name="TCripto">
+    <ancestor name="TPersistent" namespace="System.Classes">
+      <methodref name="AssignError" visibility="private">
+      </methodref>
+      <methodref name="AssignTo" visibility="protected" procflags="virtual">
+      </methodref>
+      <methodref name="DefineProperties" visibility="protected" procflags="virtual">
+      </methodref>
+      <methodref name="GetOwner" visibility="protected" procflags="dynamic">
+      </methodref>
+      <methodref name="Destroy" visibility="public" procflags="destructor override">
+      </methodref>
+      <methodref name="Assign" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="GetNamePath" visibility="public" procflags="dynamic">
+      </methodref>
+      <ancestor name="TObject" namespace="System">
+        <methodref name="Create" visibility="public" procflags="constructor">
+        </methodref>
+        <methodref name="Free" visibility="public">
+        </methodref>
+        <methodref name="DisposeOf" visibility="public" procflags="inline">
+        </methodref>
+        <methodref name="InitInstance" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="CleanupInstance" visibility="public">
+        </methodref>
+        <methodref name="ClassType" visibility="public" procflags="inline">
+        </methodref>
+        <methodref name="ClassName" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="ClassNameIs" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="ClassParent" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="ClassInfo" visibility="public" procflags="class inline">
+        </methodref>
+        <methodref name="InstanceSize" visibility="public" procflags="class inline">
+        </methodref>
+        <methodref name="InheritsFrom" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="MethodAddress" visibility="public" procflags="class overload">
+        </methodref>
+        <methodref name="MethodAddress" visibility="public" procflags="class overload">
+        </methodref>
+        <methodref name="MethodName" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="QualifiedClassName" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="FieldAddress" visibility="public" procflags="overload">
+        </methodref>
+        <methodref name="FieldAddress" visibility="public" procflags="overload">
+        </methodref>
+        <methodref name="GetInterface" visibility="public">
+        </methodref>
+        <methodref name="GetInterfaceEntry" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="GetInterfaceTable" visibility="public" procflags="class inline">
+        </methodref>
+        <methodref name="UnitName" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="UnitScope" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="Equals" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="GetHashCode" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="ToString" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="SafeCallException" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="AfterConstruction" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="BeforeDestruction" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="Dispatch" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="DefaultHandler" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="NewInstance" visibility="public" procflags="class virtual">
+        </methodref>
+        <methodref name="FreeInstance" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="Destroy" visibility="public" procflags="destructor virtual">
+        </methodref>
+        <methodref name="CPP_ABI_1" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="CPP_ABI_2" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="CPP_ABI_3" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="GetDisposed" visibility="protected" procflags="inline">
+        </methodref>
+        <methodref name="CheckDisposed" visibility="protected" procflags="inline">
+        </methodref>
+        <propertyref name="Disposed" visibility="protected">
+        </propertyref>
+      </ancestor>
+    </ancestor>
+    <members>
+      <field name="vKeyString" type="string" visibility="private" size="8" offset="8" />
+      <field name="vUseCripto" type="Boolean" visibility="private" size="1" offset="16" />
+      <constructor name="Create" visibility="public">
+        <parameters>
+        </parameters>
+      </constructor>
+      <destructor name="Destroy" visibility="public">
+        <parameters>
+        </parameters>
+      </destructor>
+      <procedure name="Assign" visibility="public" procflags="override">
+        <parameters>
+          <parameter name="Source" type="TPersistent" />
+        </parameters>
+      </procedure>
+      <function name="Encrypt" visibility="public">
+        <parameters>
+          <parameter name="Value" type="string" />
+          <retval type="string" />
+        </parameters>
+      </function>
+      <function name="Decrypt" visibility="public">
+        <parameters>
+          <parameter name="Value" type="string" />
+          <retval type="string" />
+        </parameters>
+      </function>
+      <property name="Use" visibility="published" read="vUseCripto" write="vUseCripto" type="Boolean" />
+      <property name="Key" visibility="published" read="vKeyString" write="vKeyString" type="string" default="0" />
+    </members>
+  </class>
+  <const name="crAll" type="TDWRoute">
+    <value>
+      crAll
+    </value>
+  </const>
+  <const name="crGet" type="TDWRoute">
+    <value>
+      crGet
+    </value>
+  </const>
+  <const name="crPost" type="TDWRoute">
+    <value>
+      crPost
+    </value>
+  </const>
+  <const name="crPut" type="TDWRoute">
+    <value>
+      crPut
+    </value>
+  </const>
+  <const name="crPatch" type="TDWRoute">
+    <value>
+      crPatch
+    </value>
+  </const>
+  <const name="crDelete" type="TDWRoute">
+    <value>
+      crDelete
+    </value>
+  </const>
+  <const name="rtGet" type="TRequestType">
+    <value>
+      rtGet
+    </value>
+  </const>
+  <const name="rtPost" type="TRequestType">
+    <value>
+      rtPost
+    </value>
+  </const>
+  <const name="rtPut" type="TRequestType">
+    <value>
+      rtPut
+    </value>
+  </const>
+  <const name="rtPatch" type="TRequestType">
+    <value>
+      rtPatch
+    </value>
+  </const>
+  <const name="rtDelete" type="TRequestType">
+    <value>
+      rtDelete
+    </value>
+  </const>
+  <const name="rtOnlyFields" type="TResquestMode">
+    <value>
+      rtOnlyFields
+    </value>
+  </const>
+  <const name="rtOnlyData" type="TResquestMode">
+    <value>
+      rtOnlyData
+    </value>
+  </const>
+  <const name="rtJSONAll" type="TResquestMode">
+    <value>
+      rtJSONAll
+    </value>
+  </const>
+  <const name="jmDataware" type="TJsonMode">
+    <value>
+      jmDataware
+    </value>
+  </const>
+  <const name="jmPureJSON" type="TJsonMode">
+    <value>
+      jmPureJSON
+    </value>
+  </const>
+  <const name="jmUndefined" type="TJsonMode">
+    <value>
+      jmUndefined
+    </value>
+  </const>
+  <const name="mmInactive" type="TMassiveMode">
+    <value>
+      mmInactive
+    </value>
+  </const>
+  <const name="mmBrowse" type="TMassiveMode">
+    <value>
+      mmBrowse
+    </value>
+  </const>
+  <const name="mmInsert" type="TMassiveMode">
+    <value>
+      mmInsert
+    </value>
+  </const>
+  <const name="mmUpdate" type="TMassiveMode">
+    <value>
+      mmUpdate
+    </value>
+  </const>
+  <const name="mmDelete" type="TMassiveMode">
+    <value>
+      mmDelete
+    </value>
+  </const>
+  <const name="msqlQuery" type="TMassiveSQLMode">
+    <value>
+      msqlQuery
+    </value>
+  </const>
+  <const name="msqlExecute" type="TMassiveSQLMode">
+    <value>
+      msqlExecute
+    </value>
+  </const>
+  <const name="toDataset" type="TTypeObject">
+    <value>
+      toDataset
+    </value>
+  </const>
+  <const name="toParam" type="TTypeObject">
+    <value>
+      toParam
+    </value>
+  </const>
+  <const name="toMassive" type="TTypeObject">
+    <value>
+      toMassive
+    </value>
+  </const>
+  <const name="toVariable" type="TTypeObject">
+    <value>
+      toVariable
+    </value>
+  </const>
+  <const name="toObject" type="TTypeObject">
+    <value>
+      toObject
+    </value>
+  </const>
+  <const name="ovUnknown" type="TObjectValue">
+    <value>
+      ovUnknown
+    </value>
+  </const>
+  <const name="ovString" type="TObjectValue">
+    <value>
+      ovString
+    </value>
+  </const>
+  <const name="ovSmallint" type="TObjectValue">
+    <value>
+      ovSmallint
+    </value>
+  </const>
+  <const name="ovInteger" type="TObjectValue">
+    <value>
+      ovInteger
+    </value>
+  </const>
+  <const name="ovWord" type="TObjectValue">
+    <value>
+      ovWord
+    </value>
+  </const>
+  <const name="ovBoolean" type="TObjectValue">
+    <value>
+      ovBoolean
+    </value>
+  </const>
+  <const name="ovFloat" type="TObjectValue">
+    <value>
+      ovFloat
+    </value>
+  </const>
+  <const name="ovCurrency" type="TObjectValue">
+    <value>
+      ovCurrency
+    </value>
+  </const>
+  <const name="ovBCD" type="TObjectValue">
+    <value>
+      ovBCD
+    </value>
+  </const>
+  <const name="ovDate" type="TObjectValue">
+    <value>
+      ovDate
+    </value>
+  </const>
+  <const name="ovTime" type="TObjectValue">
+    <value>
+      ovTime
+    </value>
+  </const>
+  <const name="ovDateTime" type="TObjectValue">
+    <value>
+      ovDateTime
+    </value>
+  </const>
+  <const name="ovBytes" type="TObjectValue">
+    <value>
+      ovBytes
+    </value>
+  </const>
+  <const name="ovVarBytes" type="TObjectValue">
+    <value>
+      ovVarBytes
+    </value>
+  </const>
+  <const name="ovAutoInc" type="TObjectValue">
+    <value>
+      ovAutoInc
+    </value>
+  </const>
+  <const name="ovBlob" type="TObjectValue">
+    <value>
+      ovBlob
+    </value>
+  </const>
+  <const name="ovMemo" type="TObjectValue">
+    <value>
+      ovMemo
+    </value>
+  </const>
+  <const name="ovGraphic" type="TObjectValue">
+    <value>
+      ovGraphic
+    </value>
+  </const>
+  <const name="ovFmtMemo" type="TObjectValue">
+    <value>
+      ovFmtMemo
+    </value>
+  </const>
+  <const name="ovParadoxOle" type="TObjectValue">
+    <value>
+      ovParadoxOle
+    </value>
+  </const>
+  <const name="ovDBaseOle" type="TObjectValue">
+    <value>
+      ovDBaseOle
+    </value>
+  </const>
+  <const name="ovTypedBinary" type="TObjectValue">
+    <value>
+      ovTypedBinary
+    </value>
+  </const>
+  <const name="ovCursor" type="TObjectValue">
+    <value>
+      ovCursor
+    </value>
+  </const>
+  <const name="ovFixedChar" type="TObjectValue">
+    <value>
+      ovFixedChar
+    </value>
+  </const>
+  <const name="ovWideString" type="TObjectValue">
+    <value>
+      ovWideString
+    </value>
+  </const>
+  <const name="ovLargeint" type="TObjectValue">
+    <value>
+      ovLargeint
+    </value>
+  </const>
+  <const name="ovADT" type="TObjectValue">
+    <value>
+      ovADT
+    </value>
+  </const>
+  <const name="ovArray" type="TObjectValue">
+    <value>
+      ovArray
+    </value>
+  </const>
+  <const name="ovReference" type="TObjectValue">
+    <value>
+      ovReference
+    </value>
+  </const>
+  <const name="ovDataSet" type="TObjectValue">
+    <value>
+      ovDataSet
+    </value>
+  </const>
+  <const name="ovOraBlob" type="TObjectValue">
+    <value>
+      ovOraBlob
+    </value>
+  </const>
+  <const name="ovOraClob" type="TObjectValue">
+    <value>
+      ovOraClob
+    </value>
+  </const>
+  <const name="ovVariant" type="TObjectValue">
+    <value>
+      ovVariant
+    </value>
+  </const>
+  <const name="ovInterface" type="TObjectValue">
+    <value>
+      ovInterface
+    </value>
+  </const>
+  <const name="ovIDispatch" type="TObjectValue">
+    <value>
+      ovIDispatch
+    </value>
+  </const>
+  <const name="ovGuid" type="TObjectValue">
+    <value>
+      ovGuid
+    </value>
+  </const>
+  <const name="ovTimeStamp" type="TObjectValue">
+    <value>
+      ovTimeStamp
+    </value>
+  </const>
+  <const name="ovFMTBcd" type="TObjectValue">
+    <value>
+      ovFMTBcd
+    </value>
+  </const>
+  <const name="ovFixedWideChar" type="TObjectValue">
+    <value>
+      ovFixedWideChar
+    </value>
+  </const>
+  <const name="ovWideMemo" type="TObjectValue">
+    <value>
+      ovWideMemo
+    </value>
+  </const>
+  <const name="ovOraTimeStamp" type="TObjectValue">
+    <value>
+      ovOraTimeStamp
+    </value>
+  </const>
+  <const name="ovOraInterval" type="TObjectValue">
+    <value>
+      ovOraInterval
+    </value>
+  </const>
+  <const name="ovLongWord" type="TObjectValue">
+    <value>
+      ovLongWord
+    </value>
+  </const>
+  <const name="ovShortint" type="TObjectValue">
+    <value>
+      ovShortint
+    </value>
+  </const>
+  <const name="ovByte" type="TObjectValue">
+    <value>
+      ovByte
+    </value>
+  </const>
+  <const name="ovExtended" type="TObjectValue">
+    <value>
+      ovExtended
+    </value>
+  </const>
+  <const name="ovConnection" type="TObjectValue">
+    <value>
+      ovConnection
+    </value>
+  </const>
+  <const name="ovParams" type="TObjectValue">
+    <value>
+      ovParams
+    </value>
+  </const>
+  <const name="ovStream" type="TObjectValue">
+    <value>
+      ovStream
+    </value>
+  </const>
+  <const name="ovTimeStampOffset" type="TObjectValue">
+    <value>
+      ovTimeStampOffset
+    </value>
+  </const>
+  <const name="ovObject" type="TObjectValue">
+    <value>
+      ovObject
+    </value>
+  </const>
+  <const name="ovSingle" type="TObjectValue">
+    <value>
+      ovSingle
+    </value>
+  </const>
+  <const name="dtReflection" type="TDatasetType">
+    <value>
+      dtReflection
+    </value>
+  </const>
+  <const name="dtFull" type="TDatasetType">
+    <value>
+      dtFull
+    </value>
+  </const>
+  <const name="dtDiff" type="TDatasetType">
+    <value>
+      dtDiff
+    </value>
+  </const>
+  <enum name="TDWRoute">
+    <element value="0" name="crAll" />
+    <element value="1" name="crGet" />
+    <element value="2" name="crPost" />
+    <element value="3" name="crPut" />
+    <element value="4" name="crPatch" />
+    <element value="5" name="crDelete" />
+  </enum>
+  <set name="TDWRoutes" type="TDWRoute">
+    <element name="crAll" />
+    <element name="crGet" />
+    <element name="crPost" />
+    <element name="crPut" />
+    <element name="crPatch" />
+    <element name="crDelete" />
+  </set>
+  <enum name="TRequestType">
+    <element value="0" name="rtGet" />
+    <element value="1" name="rtPost" />
+    <element value="2" name="rtPut" />
+    <element value="3" name="rtPatch" />
+    <element value="4" name="rtDelete" />
+  </enum>
+  <enum name="TResquestMode">
+    <element value="0" name="rtOnlyFields" />
+    <element value="1" name="rtOnlyData" />
+    <element value="2" name="rtJSONAll" />
+  </enum>
+  <enum name="TJsonMode">
+    <element value="0" name="jmDataware" />
+    <element value="1" name="jmPureJSON" />
+    <element value="2" name="jmUndefined" />
+  </enum>
+  <enum name="TMassiveMode">
+    <element value="0" name="mmInactive" />
+    <element value="1" name="mmBrowse" />
+    <element value="2" name="mmInsert" />
+    <element value="3" name="mmUpdate" />
+    <element value="4" name="mmDelete" />
+  </enum>
+  <enum name="TMassiveSQLMode">
+    <element value="0" name="msqlQuery" />
+    <element value="1" name="msqlExecute" />
+  </enum>
+  <enum name="TTypeObject">
+    <element value="0" name="toDataset" />
+    <element value="1" name="toParam" />
+    <element value="2" name="toMassive" />
+    <element value="3" name="toVariable" />
+    <element value="4" name="toObject" />
+  </enum>
+  <enum name="TObjectValue">
+    <element value="0" name="ovUnknown" />
+    <element value="1" name="ovString" />
+    <element value="2" name="ovSmallint" />
+    <element value="3" name="ovInteger" />
+    <element value="4" name="ovWord" />
+    <element value="5" name="ovBoolean" />
+    <element value="6" name="ovFloat" />
+    <element value="7" name="ovCurrency" />
+    <element value="8" name="ovBCD" />
+    <element value="9" name="ovDate" />
+    <element value="10" name="ovTime" />
+    <element value="11" name="ovDateTime" />
+    <element value="12" name="ovBytes" />
+    <element value="13" name="ovVarBytes" />
+    <element value="14" name="ovAutoInc" />
+    <element value="15" name="ovBlob" />
+    <element value="16" name="ovMemo" />
+    <element value="17" name="ovGraphic" />
+    <element value="18" name="ovFmtMemo" />
+    <element value="19" name="ovParadoxOle" />
+    <element value="20" name="ovDBaseOle" />
+    <element value="21" name="ovTypedBinary" />
+    <element value="22" name="ovCursor" />
+    <element value="23" name="ovFixedChar" />
+    <element value="24" name="ovWideString" />
+    <element value="25" name="ovLargeint" />
+    <element value="26" name="ovADT" />
+    <element value="27" name="ovArray" />
+    <element value="28" name="ovReference" />
+    <element value="29" name="ovDataSet" />
+    <element value="30" name="ovOraBlob" />
+    <element value="31" name="ovOraClob" />
+    <element value="32" name="ovVariant" />
+    <element value="33" name="ovInterface" />
+    <element value="34" name="ovIDispatch" />
+    <element value="35" name="ovGuid" />
+    <element value="36" name="ovTimeStamp" />
+    <element value="37" name="ovFMTBcd" />
+    <element value="38" name="ovFixedWideChar" />
+    <element value="39" name="ovWideMemo" />
+    <element value="40" name="ovOraTimeStamp" />
+    <element value="41" name="ovOraInterval" />
+    <element value="42" name="ovLongWord" />
+    <element value="43" name="ovShortint" />
+    <element value="44" name="ovByte" />
+    <element value="45" name="ovExtended" />
+    <element value="46" name="ovConnection" />
+    <element value="47" name="ovParams" />
+    <element value="48" name="ovStream" />
+    <element value="49" name="ovTimeStampOffset" />
+    <element value="50" name="ovObject" />
+    <element value="51" name="ovSingle" />
+  </enum>
+  <enum name="TDatasetType">
+    <element value="0" name="dtReflection" />
+    <element value="1" name="dtFull" />
+    <element value="2" name="dtDiff" />
+  </enum>
+  <variable name="DecimalLocal" type="Char" />
+  <function name="EncodeURIComponent" visibility="public">
+    <parameters>
+      <parameter name="ASrc" type="string" paramflags="const" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="EncryptSHA256" visibility="public">
+    <parameters>
+      <parameter name="Key" type="string" />
+      <parameter name="Text" type="string" />
+      <parameter name="Encrypt" type="Boolean" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="RequestTypeToString" visibility="public">
+    <parameters>
+      <parameter name="RequestType" type="TRequestType" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="StrDWLength" visibility="public">
+    <parameters>
+      <parameter name="Value" type="string" />
+      <retval type="Integer" />
+    </parameters>
+  </function>
+  <procedure name="DeleteStr" visibility="public">
+    <parameters>
+      <parameter name="Value" type="string" paramflags="var" />
+      <parameter name="InitPos" type="Integer" />
+      <parameter name="FinalPos" type="Integer" />
+    </parameters>
+  </procedure>
+  <function name="RequestTypeToRoute" visibility="public">
+    <parameters>
+      <parameter name="RequestType" type="TRequestType" />
+      <retval type="TDWRoute" />
+    </parameters>
+  </function>
+  <function name="DWFileExists" visibility="public">
+    <parameters>
+      <parameter name="sFile" type="string" />
+      <parameter name="BaseFilePath" type="string" />
+      <retval type="Boolean" />
+    </parameters>
+  </function>
+  <function name="GetMIMEType" visibility="public">
+    <parameters>
+      <parameter name="sFile" type="TFileName" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="Scripttags" visibility="public">
+    <parameters>
+      <parameter name="Value" type="string" />
+      <retval type="Boolean" />
+    </parameters>
+  </function>
+  <function name="DateTimeToUnix" visibility="public">
+    <parameters>
+      <parameter name="ConvDate" type="TDateTime" />
+      <retval type="Int64" />
+    </parameters>
+  </function>
+  <function name="UnixToDateTime" visibility="public">
+    <parameters>
+      <parameter name="USec" type="Int64" />
+      <retval type="TDateTime" />
+    </parameters>
+  </function>
+  <function name="DatasetRequestToJSON" visibility="public">
+    <parameters>
+      <parameter name="Value" type="TRESTDWClientSQLBase" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="MassiveModeToString" visibility="public">
+    <parameters>
+      <parameter name="MassiveMode" type="TMassiveMode" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="StringToMassiveMode" visibility="public">
+    <parameters>
+      <parameter name="Value" type="string" />
+      <retval type="TMassiveMode" />
+    </parameters>
+  </function>
+  <function name="DatasetStateToMassiveType" visibility="public">
+    <parameters>
+      <parameter name="DatasetState" type="TDataSetState" />
+      <retval type="TMassiveMode" />
+    </parameters>
+  </function>
+  <function name="BytesArrToString" visibility="public">
+    <parameters>
+      <parameter name="aValue" type="TIdBytes" />
+      <parameter name="IdEncode" type="IIdTextEncoding">
+        <value>
+          nil
+        </value>
+      </parameter>
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="ZCompressStreamD" visibility="public">
+    <parameters>
+      <parameter name="S" type="TStringStream" />
+      <parameter name="Value" type="TMemoryStream" paramflags="var" />
+      <retval type="Boolean" />
+    </parameters>
+  </function>
+  <function name="ZCompressStreamNew" visibility="public">
+    <parameters>
+      <parameter name="s" type="string" paramflags="const" />
+      <retval type="TMemoryStream" />
+    </parameters>
+  </function>
+  <function name="ZCompressStr" visibility="public">
+    <parameters>
+      <parameter name="s" type="string" paramflags="const" />
+      <parameter name="Value" type="string" paramflags="var" />
+      <retval type="Boolean" />
+    </parameters>
+  </function>
+  <function name="ZDecompressStreamD" visibility="public">
+    <parameters>
+      <parameter name="S" type="TStringStream" paramflags="const" />
+      <parameter name="Value" type="TStringStream" paramflags="var" />
+      <retval type="Boolean" />
+    </parameters>
+  </function>
+  <function name="ZDecompressStreamNew" visibility="public">
+    <parameters>
+      <parameter name="S" type="TStream" paramflags="const" />
+      <retval type="TStringStream" />
+    </parameters>
+  </function>
+  <function name="ZDecompressStr" visibility="public">
+    <parameters>
+      <parameter name="S" type="string" paramflags="const" />
+      <parameter name="Value" type="string" paramflags="var" />
+      <retval type="Boolean" />
+    </parameters>
+  </function>
+  <function name="StreamToBytes" visibility="public">
+    <parameters>
+      <parameter name="Stream" type="TMemoryStream" />
+      <retval type="TIdBytes" />
+    </parameters>
+  </function>
+  <procedure name="HexToPChar" visibility="public">
+    <parameters>
+      <parameter name="HexString" type="string" />
+      <parameter name="Data" type="PWideChar" paramflags="var" />
+    </parameters>
+  </procedure>
+  <procedure name="HexToStream" visibility="public">
+    <parameters>
+      <parameter name="Str" type="string" />
+      <parameter name="Stream" type="TStream" />
+    </parameters>
+  </procedure>
+  <function name="PCharToHex" visibility="public">
+    <parameters>
+      <parameter name="Data" type="PWideChar" />
+      <parameter name="Size" type="Integer" />
+      <parameter name="QQuoted" type="Boolean">
+        <value>
+          True
+        </value>
+      </parameter>
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="StreamToHex" visibility="public">
+    <parameters>
+      <parameter name="Stream" type="TStream" />
+      <parameter name="QQuoted" type="Boolean">
+        <value>
+          True
+        </value>
+      </parameter>
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="FileToStr" visibility="public">
+    <parameters>
+      <parameter name="FileName" type="string" paramflags="const" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <procedure name="StrToFile" visibility="public">
+    <parameters>
+      <parameter name="FileName" type="string" paramflags="const" />
+      <parameter name="SourceString" type="string" paramflags="const" />
+    </parameters>
+  </procedure>
+  <procedure name="CopyStream" visibility="public">
+    <parameters>
+      <parameter name="Source" type="TStream" paramflags="const" />
+      <parameter name="Dest" type="TStream" />
+    </parameters>
+  </procedure>
+  <function name="GenerateStringFromStream" visibility="public" procflags="overload">
+    <parameters>
+      <parameter name="Stream" type="TStream" />
+      <parameter name="AEncoding" type="TEncoding" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="StringToBoolean" visibility="public">
+    <parameters>
+      <parameter name="aValue" type="string" />
+      <retval type="Boolean" />
+    </parameters>
+  </function>
+  <function name="BooleanToString" visibility="public">
+    <parameters>
+      <parameter name="aValue" type="Boolean" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="MassiveSQLMode" visibility="public" procflags="overload">
+    <parameters>
+      <parameter name="aValue" type="TMassiveSQLMode" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="MassiveSQLMode" visibility="public" procflags="overload">
+    <parameters>
+      <parameter name="aValue" type="string" />
+      <retval type="TMassiveSQLMode" />
+    </parameters>
+  </function>
+  <function name="StringFloat" visibility="public">
+    <parameters>
+      <parameter name="aValue" type="string" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="GetStringFromBoolean" visibility="public">
+    <parameters>
+      <parameter name="Value" type="Boolean" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="GetObjectName" visibility="public" procflags="overload">
+    <parameters>
+      <parameter name="TypeObject" type="TTypeObject" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="GetJSONModeName" visibility="public" procflags="overload">
+    <parameters>
+      <parameter name="TypeObject" type="TJsonMode" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="FieldTypeToObjectValue" visibility="public">
+    <parameters>
+      <parameter name="FieldType" type="TFieldType" />
+      <retval type="TObjectValue" />
+    </parameters>
+  </function>
+  <function name="ObjectValueToFieldType" visibility="public">
+    <parameters>
+      <parameter name="TypeObject" type="TObjectValue" />
+      <retval type="TFieldType" />
+    </parameters>
+  </function>
+  <function name="GetObjectName" visibility="public" procflags="overload">
+    <parameters>
+      <parameter name="TypeObject" type="string" />
+      <retval type="TTypeObject" />
+    </parameters>
+  </function>
+  <function name="GetJSONModeName" visibility="public" procflags="overload">
+    <parameters>
+      <parameter name="TypeObject" type="string" />
+      <retval type="TJsonMode" />
+    </parameters>
+  </function>
+  <function name="GetDirectionName" visibility="public" procflags="overload">
+    <parameters>
+      <parameter name="ObjectDirection" type="TObjectDirection" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="GetBooleanFromString" visibility="public">
+    <parameters>
+      <parameter name="Value" type="string" />
+      <retval type="Boolean" />
+    </parameters>
+  </function>
+  <function name="GetDirectionName" visibility="public" procflags="overload">
+    <parameters>
+      <parameter name="ObjectDirection" type="string" />
+      <retval type="TObjectDirection" />
+    </parameters>
+  </function>
+  <function name="GetValueType" visibility="public" procflags="overload">
+    <parameters>
+      <parameter name="ObjectValue" type="TObjectValue" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="GetValueType" visibility="public" procflags="overload">
+    <parameters>
+      <parameter name="ObjectValue" type="string" />
+      <retval type="TObjectValue" />
+    </parameters>
+  </function>
+  <function name="GetValueTypeTranslator" visibility="public">
+    <parameters>
+      <parameter name="ObjectValue" type="string" />
+      <retval type="TObjectValue" />
+    </parameters>
+  </function>
+  <function name="GetFieldTypeB" visibility="public">
+    <parameters>
+      <parameter name="FieldType" type="TFieldType" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="GetFieldType" visibility="public" procflags="overload">
+    <parameters>
+      <parameter name="FieldType" type="TFieldType" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="GetFieldType" visibility="public" procflags="overload">
+    <parameters>
+      <parameter name="FieldType" type="string" />
+      <retval type="TFieldType" />
+    </parameters>
+  </function>
+  <function name="GetEncoding" visibility="public" procflags="overload">
+    <parameters>
+      <parameter name="Avalue" type="TEncodeSelect" />
+      <retval type="TEncoding" />
+    </parameters>
+  </function>
+  <function name="GetEncodingID" visibility="public" procflags="overload">
+    <parameters>
+      <parameter name="Avalue" type="TEncodeSelect" />
+      <retval type="IIdTextEncoding" />
+    </parameters>
+  </function>
+  <function name="BuildStringFloat" visibility="public">
+    <parameters>
+      <parameter name="Value" type="string" />
+      <parameter name="JsonModeD" type="TJsonMode">
+        <value>
+          jmDataware
+        </value>
+      </parameter>
+      <parameter name="FloatDecimalFormat" type="string">
+        <value>
+          
+        </value>
+      </parameter>
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="BuildFloatString" visibility="public">
+    <parameters>
+      <parameter name="Value" type="string" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="RandomString" visibility="public">
+    <parameters>
+      <parameter name="strLen" type="Integer" />
+      <retval type="string" />
+    </parameters>
+  </function>
+</namespace>

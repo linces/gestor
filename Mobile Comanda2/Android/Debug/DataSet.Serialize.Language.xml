@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="DataSet.Serialize.Language" platform="Android">
+  <const name="ptBR" type="TLanguageType" file="DataSet.Serialize.Language.pas" line="9">
+    <value>
+      ptBR
+    </value>
+  </const>
+  <const name="enUS" type="TLanguageType" file="DataSet.Serialize.Language.pas" line="9">
+    <value>
+      enUS
+    </value>
+  </const>
+  <enum name="TLanguageType" file="DataSet.Serialize.Language.pas" line="9">
+    <devnotes>
+       <summary>
+         Languages handled by helper Validate (JSON).
+       </summary>
+    </devnotes>
+    <element value="0" name="ptBR" file="DataSet.Serialize.Language.pas" line="9" />
+    <element value="1" name="enUS" file="DataSet.Serialize.Language.pas" line="9" />
+  </enum>
+</namespace>

@@ -1,0 +1,148 @@
+unit uConfiguracoes;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics, JPeg, Printers,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.StdCtrls, Vcl.Buttons,
+  Vcl.Grids, Vcl.DBGrids, Vcl.ComCtrls, Vcl.ExtCtrls, Vcl.DBCtrls, DBGridEh,
+  DBCtrlsEh, DBLookupEh, Vcl.Mask, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf,
+  FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet,
+  FireDAC.Comp.Client, Vcl.Imaging.pngimage, ACBrBase, ACBrEnterTab,
+  DBGridEhGrouping, ToolCtrlsEh, DBGridEhToolCtrls, DynVarsEh, EhLibVCL,
+  GridsEh, DBAxisGridsEh, Vcl.ExtDlgs, frxClass, frxDBSet, frxExportBaseDialog,
+  frxExportPDF, ACBrECF;
+
+type
+  TfrmConfiguracoes = class(TForm)
+    ACBrEnterTab1: TACBrEnterTab;
+    PageControl1: TPageControl;
+    TabSheet2: TTabSheet;
+    Panel7: TPanel;
+    Label8: TLabel;
+    btnCancelar: TLabel;
+    Splitter1: TSplitter;
+    Splitter2: TSplitter;
+    Splitter3: TSplitter;
+    Splitter9: TSplitter;
+    btnSalvar: TLabel;
+    OpenPicture: TOpenPictureDialog;
+    frxPDFExport1: TfrxPDFExport;
+    frxDBEmpresa: TfrxDBDataset;
+    frxReport: TfrxReport;
+    dsEmpresa: TDataSource;
+    dsTerminal: TDataSource;
+    Panel1: TPanel;
+    Image1: TImage;
+    PageControl3: TPageControl;
+    TabSheet11: TTabSheet;
+    Label13: TLabel;
+    Label15: TLabel;
+    Label1: TLabel;
+    Label135: TLabel;
+    Label136: TLabel;
+    DBRadioGroup2: TDBRadioGroup;
+    cbModeloImpressora: TDBComboBox;
+    cbVelocidade: TDBComboBox;
+    cbPortaImpressora: TDBComboBox;
+    cbPaginaCodigo: TDBComboBox;
+    DBGrid1: TDBGrid;
+    ACBrECF1: TACBrECF;
+    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure qryProdutosAfterPost(DataSet: TDataSet);
+    procedure btnCancelarClick(Sender: TObject);
+    procedure btnSalvarClick(Sender: TObject);
+    procedure btnSairClick(Sender: TObject);
+    procedure Image1Click(Sender: TObject);
+  private
+    procedure Gravar;
+    procedure Cancelar;
+    procedure ListaImpressora;
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmConfiguracoes: TfrmConfiguracoes;
+
+implementation
+
+{$R *.dfm}
+
+uses uDados;
+
+procedure TfrmConfiguracoes.FormKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+  if Key = vk_f5 then
+    Gravar;
+  if Key = vk_f6 then
+    Cancelar;
+  exit;
+end;
+
+procedure TfrmConfiguracoes.ListaImpressora;
+var
+  i: Integer;
+begin
+
+  cbPortaImpressora.Items.Clear;
+  ACBrECF1.Device.AcharPortasSeriais(cbPortaImpressora.Items);
+  for i := 0 to Printer.Printers.Count - 1 do
+    cbPortaImpressora.Items.Add('RAW:' + Printer.Printers[i]);
+  cbPortaImpressora.Items.Add('/Dev/ttyS0');
+  cbPortaImpressora.Items.Add('/Dev/ttyS1');
+  cbPortaImpressora.Items.Add('/Dev/USB0');
+  cbPortaImpressora.Items.Add('/Dev/USB1');
+end;
+
+
+procedure TfrmConfiguracoes.Gravar;
+begin
+  try
+    dados.qryTerminal.Post;
+    dados.Conexao.CommitRetaining;
+    PageControl1.ActivePageIndex := 0;
+  except
+    on e: Exception do
+      raise Exception.Create(e.message);
+  end;
+end;
+
+procedure TfrmConfiguracoes.Image1Click(Sender: TObject);
+begin
+  close;
+end;
+
+procedure TfrmConfiguracoes.Cancelar;
+begin
+  if dados.qryTerminal.State in dsEditModes then
+    dados.qryTerminal.Cancel;
+  PageControl1.ActivePageIndex := 0;
+  close;
+end;
+
+procedure TfrmConfiguracoes.btnCancelarClick(Sender: TObject);
+begin
+  Cancelar;
+end;
+
+procedure TfrmConfiguracoes.btnSairClick(Sender: TObject);
+begin
+  close;
+end;
+
+procedure TfrmConfiguracoes.btnSalvarClick(Sender: TObject);
+begin
+  Gravar;
+end;
+
+procedure TfrmConfiguracoes.qryProdutosAfterPost(DataSet: TDataSet);
+begin
+  dados.Conexao.CommitRetaining;
+end;
+
+end.

@@ -1,0 +1,7 @@
+Manufacturer:Huawei Technologies Co., Ltd;
+ProductClass:HG8245W5-6T;
+SerialNumber:48575443BDE1EFA2;
+IP:189.15.184.34;
+HWVer:1A3D.A;
+SWVer:V5R019C30S030;
+

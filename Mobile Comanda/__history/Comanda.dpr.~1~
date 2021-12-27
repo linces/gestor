@@ -1,0 +1,31 @@
+program Mobile;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  Login in 'Login.pas' {FrmLogin},
+  Menu in 'Menu.pas' {FrmMenu},
+  Modulo in 'Modulo.pas' {dm: TDataModule},
+  Pedidos in 'Pedidos.pas' {FrmPedidos},
+  NovoPedido in 'NovoPedido.pas' {FrmNovoPed},
+  Movimentacoes in 'Movimentacoes.pas' {FrmMov},
+  Reservas in 'Reservas.pas' {FrmReservas},
+  Produtos in 'Produtos.pas' {FrmProdutos},
+  VDetalheProdutos in 'VDetalheProdutos.pas' {DetalheProduto};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TFrmLogin, FrmLogin);
+  Application.CreateForm(TFrmMenu, FrmMenu);
+  Application.CreateForm(Tdm, dm);
+  Application.CreateForm(TFrmPedidos, FrmPedidos);
+  Application.CreateForm(TFrmNovoPed, FrmNovoPed);
+  Application.CreateForm(TFrmMov, FrmMov);
+  Application.CreateForm(TFrmReservas, FrmReservas);
+  Application.CreateForm(TFrmProdutos, FrmProdutos);
+  Application.CreateForm(TDetalheProduto, DetalheProduto);
+  Application.Run;
+
+end.

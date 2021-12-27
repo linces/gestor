@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file original="F:\00 Projetos\02 Delphi\endsisframework\Repositorio\Componentes\10.4\GeradorChaves\TLockApplication\CadastroUnt.dfm" source-language="pt-BR" target-language="es-ES" datatype="delphiform" tool="ETM v10.0" ts="F:\00 Projetos\02 Delphi\endsisframework\Repositorio\Componentes\10.4\GeradorChaves\TLockApplication\CadastroUnt.dfm">
+    <header>
+      <prop-group name="ITEHeaderProp">
+        <prop prop-type="Version">9.0</prop>
+        <prop prop-type="SelfDateTime">44112.4768518519</prop>
+        <prop prop-type="OrigDateTime">44091.8347916667</prop>
+        <prop prop-type="XlatDateTime">44091.8347916667</prop>
+        <prop prop-type="Translated">0</prop>
+        <prop prop-type="UnTranslated">165</prop>
+      </prop-group>
+    </header>
+    <body>
+      <trans-unit id="O:cadastro.Left" resname="O:cadastro.Left">
+        <source>352</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573611</prop><prop prop-type="Status">0</prop><prop prop-type="Order">0</prop><prop prop-type="Type">Tcadastro</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.Top" resname="O:cadastro.Top">
+        <source>215</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573611</prop><prop prop-type="Status">0</prop><prop prop-type="Order">1</prop><prop prop-type="Type">Tcadastro</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.BorderIcons" resname="O:cadastro.BorderIcons">
+        <source>[biSystemMenu]</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573611</prop><prop prop-type="Status">0</prop><prop prop-type="Order">2</prop><prop prop-type="Type">Tcadastro</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.BorderStyle" resname="O:cadastro.BorderStyle">
+        <source>bsSingle</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573611</prop><prop prop-type="Status">0</prop><prop prop-type="Order">3</prop><prop prop-type="Type">Tcadastro</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.Caption" resname="O:cadastro.Caption">
+        <source>'Informações adicionais'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573611</prop><prop prop-type="Status">0</prop><prop prop-type="Order">4</prop><prop prop-type="Type">Tcadastro</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.ClientHeight" resname="O:cadastro.ClientHeight">
+        <source>169</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573611</prop><prop prop-type="Status">0</prop><prop prop-type="Order">5</prop><prop prop-type="Type">Tcadastro</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.ClientWidth" resname="O:cadastro.ClientWidth">
+        <source>411</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573611</prop><prop prop-type="Status">0</prop><prop prop-type="Order">6</prop><prop prop-type="Type">Tcadastro</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.Color" resname="O:cadastro.Color">
+        <source>clBtnFace</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573611</prop><prop prop-type="Status">0</prop><prop prop-type="Order">7</prop><prop prop-type="Type">Tcadastro</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.Font.Charset" resname="O:cadastro.Font.Charset">
+        <source>DEFAULT_CHARSET</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573611</prop><prop prop-type="Status">0</prop><prop prop-type="Order">8</prop><prop prop-type="Type">Tcadastro</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.Font.Color" resname="O:cadastro.Font.Color">
+        <source>clWindowText</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573611</prop><prop prop-type="Status">0</prop><prop prop-type="Order">9</prop><prop prop-type="Type">Tcadastro</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.Font.Height" resname="O:cadastro.Font.Height">
+        <source>-11</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573611</prop><prop prop-type="Status">0</prop><prop prop-type="Order">10</prop><prop prop-type="Type">Tcadastro</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.Font.Name" resname="O:cadastro.Font.Name">
+        <source>'Tahoma'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573611</prop><prop prop-type="Status">0</prop><prop prop-type="Order">11</prop><prop prop-type="Type">Tcadastro</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.Font.Style" resname="O:cadastro.Font.Style">
+        <source>[]</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573611</prop><prop prop-type="Status">0</prop><prop prop-type="Order">12</prop><prop prop-type="Type">Tcadastro</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.OldCreateOrder" resname="O:cadastro.OldCreateOrder">
+        <source>False</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573611</prop><prop prop-type="Status">0</prop><prop prop-type="Order">13</prop><prop prop-type="Type">Tcadastro</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.Position" resname="O:cadastro.Position">
+        <source>poScreenCenter</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573611</prop><prop prop-type="Status">0</prop><prop prop-type="Order">14</prop><prop prop-type="Type">Tcadastro</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.OnClose" resname="O:cadastro.OnClose">
+        <source>FormClose</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">15</prop><prop prop-type="Type">Tcadastro</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.PixelsPerInch" resname="O:cadastro.PixelsPerInch">
+        <source>96</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">16</prop><prop prop-type="Type">Tcadastro</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.TextHeight" resname="O:cadastro.TextHeight">
+        <source>13</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">17</prop><prop prop-type="Type">Tcadastro</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label1.Left" resname="O:cadastro.O:Label1.Left">
+        <source>8</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">18</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label1.Top" resname="O:cadastro.O:Label1.Top">
+        <source>10</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">19</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label1.Width" resname="O:cadastro.O:Label1.Width">
+        <source>96</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">20</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label1.Height" resname="O:cadastro.O:Label1.Height">
+        <source>13</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">21</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label1.Caption" resname="O:cadastro.O:Label1.Caption">
+        <source>'NOME COMPLETO:'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">22</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label1.Font.Charset" resname="O:cadastro.O:Label1.Font.Charset">
+        <source>DEFAULT_CHARSET</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">23</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label1.Font.Color" resname="O:cadastro.O:Label1.Font.Color">
+        <source>clWindowText</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">24</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label1.Font.Height" resname="O:cadastro.O:Label1.Font.Height">
+        <source>-11</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">25</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label1.Font.Name" resname="O:cadastro.O:Label1.Font.Name">
+        <source>'Tahoma'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">26</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label1.Font.Style" resname="O:cadastro.O:Label1.Font.Style">
+        <source>[fsBold]</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">27</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label1.ParentFont" resname="O:cadastro.O:Label1.ParentFont">
+        <source>False</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">28</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label2.Left" resname="O:cadastro.O:Label2.Left">
+        <source>256</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">29</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label2.Top" resname="O:cadastro.O:Label2.Top">
+        <source>10</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">30</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label2.Width" resname="O:cadastro.O:Label2.Width">
+        <source>55</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">31</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label2.Height" resname="O:cadastro.O:Label2.Height">
+        <source>13</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">32</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label2.Caption" resname="O:cadastro.O:Label2.Caption">
+        <source>'CPF/CNPJ :'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">33</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label2.Font.Charset" resname="O:cadastro.O:Label2.Font.Charset">
+        <source>DEFAULT_CHARSET</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">34</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label2.Font.Color" resname="O:cadastro.O:Label2.Font.Color">
+        <source>clWindowText</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">35</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label2.Font.Height" resname="O:cadastro.O:Label2.Font.Height">
+        <source>-11</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">36</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label2.Font.Name" resname="O:cadastro.O:Label2.Font.Name">
+        <source>'Tahoma'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">37</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label2.Font.Style" resname="O:cadastro.O:Label2.Font.Style">
+        <source>[]</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">38</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label2.ParentFont" resname="O:cadastro.O:Label2.ParentFont">
+        <source>False</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">39</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label3.Left" resname="O:cadastro.O:Label3.Left">
+        <source>245</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">40</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label3.Top" resname="O:cadastro.O:Label3.Top">
+        <source>97</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">41</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label3.Width" resname="O:cadastro.O:Label3.Width">
+        <source>48</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">42</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label3.Height" resname="O:cadastro.O:Label3.Height">
+        <source>13</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">43</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label3.Caption" resname="O:cadastro.O:Label3.Caption">
+        <source>'CELULAR:'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">44</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label3.Font.Charset" resname="O:cadastro.O:Label3.Font.Charset">
+        <source>DEFAULT_CHARSET</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">45</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label3.Font.Color" resname="O:cadastro.O:Label3.Font.Color">
+        <source>clWindowText</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">46</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label3.Font.Height" resname="O:cadastro.O:Label3.Font.Height">
+        <source>-11</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">47</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label3.Font.Name" resname="O:cadastro.O:Label3.Font.Name">
+        <source>'Tahoma'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">48</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label3.Font.Style" resname="O:cadastro.O:Label3.Font.Style">
+        <source>[]</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">49</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label3.ParentFont" resname="O:cadastro.O:Label3.ParentFont">
+        <source>False</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">50</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label4.Left" resname="O:cadastro.O:Label4.Left">
+        <source>96</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">51</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label4.Top" resname="O:cadastro.O:Label4.Top">
+        <source>54</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">52</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label4.Width" resname="O:cadastro.O:Label4.Width">
+        <source>58</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">53</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label4.Height" resname="O:cadastro.O:Label4.Height">
+        <source>13</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">54</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label4.Caption" resname="O:cadastro.O:Label4.Caption">
+        <source>'ENDEREÇO:'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">55</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label4.Font.Charset" resname="O:cadastro.O:Label4.Font.Charset">
+        <source>DEFAULT_CHARSET</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">56</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label4.Font.Color" resname="O:cadastro.O:Label4.Font.Color">
+        <source>clWindowText</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">57</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label4.Font.Height" resname="O:cadastro.O:Label4.Font.Height">
+        <source>-11</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">58</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label4.Font.Name" resname="O:cadastro.O:Label4.Font.Name">
+        <source>'Tahoma'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">59</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label4.Font.Style" resname="O:cadastro.O:Label4.Font.Style">
+        <source>[]</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">60</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label4.ParentFont" resname="O:cadastro.O:Label4.ParentFont">
+        <source>False</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">61</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label5.Left" resname="O:cadastro.O:Label5.Left">
+        <source>8</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">62</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label5.Top" resname="O:cadastro.O:Label5.Top">
+        <source>95</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573727</prop><prop prop-type="Status">0</prop><prop prop-type="Order">63</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label5.Width" resname="O:cadastro.O:Label5.Width">
+        <source>42</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">64</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label5.Height" resname="O:cadastro.O:Label5.Height">
+        <source>13</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">65</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label5.Caption" resname="O:cadastro.O:Label5.Caption">
+        <source>'CIDADE:'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">66</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label5.Font.Charset" resname="O:cadastro.O:Label5.Font.Charset">
+        <source>DEFAULT_CHARSET</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">67</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label5.Font.Color" resname="O:cadastro.O:Label5.Font.Color">
+        <source>clWindowText</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">68</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label5.Font.Height" resname="O:cadastro.O:Label5.Font.Height">
+        <source>-11</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">69</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label5.Font.Name" resname="O:cadastro.O:Label5.Font.Name">
+        <source>'Tahoma'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">70</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label5.Font.Style" resname="O:cadastro.O:Label5.Font.Style">
+        <source>[]</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">71</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label5.ParentFont" resname="O:cadastro.O:Label5.ParentFont">
+        <source>False</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">72</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label6.Left" resname="O:cadastro.O:Label6.Left">
+        <source>182</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">73</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label6.Top" resname="O:cadastro.O:Label6.Top">
+        <source>97</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">74</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label6.Width" resname="O:cadastro.O:Label6.Width">
+        <source>44</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">75</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label6.Height" resname="O:cadastro.O:Label6.Height">
+        <source>13</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">76</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label6.Caption" resname="O:cadastro.O:Label6.Caption">
+        <source>'ESTADO:'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">77</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label6.Font.Charset" resname="O:cadastro.O:Label6.Font.Charset">
+        <source>DEFAULT_CHARSET</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">78</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label6.Font.Color" resname="O:cadastro.O:Label6.Font.Color">
+        <source>clWindowText</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">79</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label6.Font.Height" resname="O:cadastro.O:Label6.Font.Height">
+        <source>-11</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">80</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label6.Font.Name" resname="O:cadastro.O:Label6.Font.Name">
+        <source>'Tahoma'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">81</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label6.Font.Style" resname="O:cadastro.O:Label6.Font.Style">
+        <source>[]</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">82</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label6.ParentFont" resname="O:cadastro.O:Label6.ParentFont">
+        <source>False</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">83</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:SpeedButton2.Left" resname="O:cadastro.O:SpeedButton2.Left">
+        <source>366</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">84</prop><prop prop-type="Type">TSpeedButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:SpeedButton2.Top" resname="O:cadastro.O:SpeedButton2.Top">
+        <source>99</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">85</prop><prop prop-type="Type">TSpeedButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:SpeedButton2.Width" resname="O:cadastro.O:SpeedButton2.Width">
+        <source>35</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">86</prop><prop prop-type="Type">TSpeedButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:SpeedButton2.Height" resname="O:cadastro.O:SpeedButton2.Height">
+        <source>38</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">87</prop><prop prop-type="Type">TSpeedButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:SpeedButton2.Hint" resname="O:cadastro.O:SpeedButton2.Hint">
+        <source>'Salvar dados'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">88</prop><prop prop-type="Type">TSpeedButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:SpeedButton2.Flat" resname="O:cadastro.O:SpeedButton2.Flat">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">89</prop><prop prop-type="Type">TSpeedButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:SpeedButton2.Glyph.Data" resname="O:cadastro.O:SpeedButton2.Glyph.Data">
+        <source>76060000424D760600000000000036040000280000001800000018000000010008000000000040020000220B0000220B00000001000000010000004A00000052000000520800005A0800085A080000630800006B0800086B080000730800007B0800087B0800086B10000084100008841000008C1000088C10000094100008941000089C100000B51000086B1800087B1800088C1800108C180008AD180000B5180008B5180008BD18001084210008B5210010B5210008BD210010B5290010BD2900108C310018A5310018AD310010B5310010BD310018BD310010C63100189C390021AD390021B5390018BD390021A5420031B5420018BD420031BD420018C6420031C6420021A54A0029A54A0029AD4A0029B54A0039B54A0021BD4A0039C64A0031AD520021BD520029BD520029C6520039C6520042C6520021CE520039B55A0021BD5A0029BD5A0039BD5A0021C65A0029C65A0042C65A0039BD630021C6630029C6630031C6630031C66B0039C66B0031CE6B0042CE6B0052CE6B0039C6730042C6730031CE730042CE73004ACE730063CE730042CE7B004ACE7B005ACE7B0063CE7B0052CE84005ACE840063CE840052D684005AD684007BD684005AD68C006BD68C006BD694008CDE940094DE940073D69C007BD69C0073DE9C0094DE9C0073DEA50084DEA5009CE7A50084DEAD008CDEAD00A5E7AD00ADE7AD008CE7B5009CE7B500ADE7B5009CE7BD00A5E7BD00BDEFBD00ADEFC600B5EFC600ADEFCE00B5EFCE00BDEFCE00C6EFD600C6EFDE00CEEFDE00CEF7DE00D6F7DE00DEF7DE00DEF7E700E7F7E700E7F7EF00E7FFEF00EFFFEF00EFFFF700F7FFF700FF00FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF008989898989898989000002040402000089898989898989898989898989890000040D111212120F050200898989898989898989898905030F181B1A1A1A1A1B1A1107028989898989898989890B0B181A1A1A1A1A1A1A1A1A1A1A0D02898989898989891415211E1A1A1A13131A1A1A1A1A1A1B0D02898989898904152F27201E1A181A1A1A1A1A1A1A1A1A1B0D0289898989042F382C2720181A1A608686701E1A1A1A1A1A058989890B223D382F251D1E1A1A648A8A8A731E1A1A1A1B110289890B3C463B2F201D1A1A1A1E6F8A8A8A6F1E1A1A1A1A0489071C4C4A432F1E1A1A1A1A1A1A698A8A8A6F1E1A1A1B0A020729514B434F47393E3F39393930768A8A8A6C1A1A1B0F020A33574C4D848888888888888888868A8A8A8A641A1B11020D3A61514D8A8A8A8A8A8A8A8A8A8A8A8A8A8A861A1A12050D3A685B4D7C8484848484848380838A8A8A88561D1B11020F356D664D5152525252524D3B4F7E8A8A875A2F201B0F0289236D725B4A4D4D4D4D4D4C5C828A8A84592F2C1E1B088989235D7B6E524A4C4D4D4D66878A8A84502C2C20201D0489898936777C674D4A4C4D4D788A8A8255382F2C25261689898989375D7C7C66524A4C4D63847E52423B382F2F270489898989892A6B7E7E6E5C4C4C524D4B4B4A463C383815898989898989892A6D7E827A6E635B58585B5B524D461C8989898989898989892E62777E7E7C7775726E665B481C89898989898989898989892E3663727777756E6658341589898989898989898989898989892E36444448412D1C8989898989898989</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">90</prop><prop prop-type="Type">TSpeedButton</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">{</prop><prop prop-type="Close">}</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:SpeedButton2.ParentShowHint" resname="O:cadastro.O:SpeedButton2.ParentShowHint">
+        <source>False</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">91</prop><prop prop-type="Type">TSpeedButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:SpeedButton2.ShowHint" resname="O:cadastro.O:SpeedButton2.ShowHint">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">92</prop><prop prop-type="Type">TSpeedButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:SpeedButton2.OnClick" resname="O:cadastro.O:SpeedButton2.OnClick">
+        <source>SpeedButton2Click</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">93</prop><prop prop-type="Type">TSpeedButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label7.Left" resname="O:cadastro.O:Label7.Left">
+        <source>8</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">94</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label7.Top" resname="O:cadastro.O:Label7.Top">
+        <source>54</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">95</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label7.Width" resname="O:cadastro.O:Label7.Width">
+        <source>23</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">96</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label7.Height" resname="O:cadastro.O:Label7.Height">
+        <source>13</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">97</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label7.Caption" resname="O:cadastro.O:Label7.Caption">
+        <source>'CEP:'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">98</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label7.Font.Charset" resname="O:cadastro.O:Label7.Font.Charset">
+        <source>DEFAULT_CHARSET</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">99</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label7.Font.Color" resname="O:cadastro.O:Label7.Font.Color">
+        <source>clWindowText</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">100</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label7.Font.Height" resname="O:cadastro.O:Label7.Font.Height">
+        <source>-11</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">101</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label7.Font.Name" resname="O:cadastro.O:Label7.Font.Name">
+        <source>'Tahoma'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">102</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label7.Font.Style" resname="O:cadastro.O:Label7.Font.Style">
+        <source>[]</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">103</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label7.ParentFont" resname="O:cadastro.O:Label7.ParentFont">
+        <source>False</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">104</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label8.Left" resname="O:cadastro.O:Label8.Left">
+        <source>8</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">105</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label8.Top" resname="O:cadastro.O:Label8.Top">
+        <source>148</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">106</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label8.Width" resname="O:cadastro.O:Label8.Width">
+        <source>242</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">107</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label8.Height" resname="O:cadastro.O:Label8.Height">
+        <source>14</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">108</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label8.Caption" resname="O:cadastro.O:Label8.Caption">
+        <source>'OBS: Todos os campos são obrigatórios'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">109</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label8.Font.Charset" resname="O:cadastro.O:Label8.Font.Charset">
+        <source>DEFAULT_CHARSET</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573843</prop><prop prop-type="Status">0</prop><prop prop-type="Order">110</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label8.Font.Color" resname="O:cadastro.O:Label8.Font.Color">
+        <source>clWindowText</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">111</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label8.Font.Height" resname="O:cadastro.O:Label8.Font.Height">
+        <source>-12</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">112</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label8.Font.Name" resname="O:cadastro.O:Label8.Font.Name">
+        <source>'Tahoma'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">113</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label8.Font.Style" resname="O:cadastro.O:Label8.Font.Style">
+        <source>[fsBold]</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">114</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Label8.ParentFont" resname="O:cadastro.O:Label8.ParentFont">
+        <source>False</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">115</prop><prop prop-type="Type">TLabel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Nome.Left" resname="O:cadastro.O:Nome.Left">
+        <source>8</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">116</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Nome.Top" resname="O:cadastro.O:Nome.Top">
+        <source>27</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">117</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Nome.Width" resname="O:cadastro.O:Nome.Width">
+        <source>233</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">118</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Nome.Height" resname="O:cadastro.O:Nome.Height">
+        <source>21</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">119</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Nome.TabOrder" resname="O:cadastro.O:Nome.TabOrder">
+        <source>0</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">120</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:Nome.StyleName" resname="O:cadastro.O:Nome.StyleName">
+        <source>'3'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">121</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:CPF.Left" resname="O:cadastro.O:CPF.Left">
+        <source>256</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">122</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:CPF.Top" resname="O:cadastro.O:CPF.Top">
+        <source>27</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">123</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:CPF.Width" resname="O:cadastro.O:CPF.Width">
+        <source>145</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">124</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:CPF.Height" resname="O:cadastro.O:CPF.Height">
+        <source>21</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">125</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:CPF.TabOrder" resname="O:cadastro.O:CPF.TabOrder">
+        <source>1</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">126</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:CPF.StyleName" resname="O:cadastro.O:CPF.StyleName">
+        <source>'3'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">127</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:telefone.Left" resname="O:cadastro.O:telefone.Left">
+        <source>245</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">128</prop><prop prop-type="Type">TMaskEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:telefone.Top" resname="O:cadastro.O:telefone.Top">
+        <source>111</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">129</prop><prop prop-type="Type">TMaskEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:telefone.Width" resname="O:cadastro.O:telefone.Width">
+        <source>109</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">130</prop><prop prop-type="Type">TMaskEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:telefone.Height" resname="O:cadastro.O:telefone.Height">
+        <source>21</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">131</prop><prop prop-type="Type">TMaskEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:telefone.EditMask" resname="O:cadastro.O:telefone.EditMask">
+        <source>'!\(99\)00000-0000;0;_'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">132</prop><prop prop-type="Type">TMaskEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:telefone.MaxLength" resname="O:cadastro.O:telefone.MaxLength">
+        <source>14</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">133</prop><prop prop-type="Type">TMaskEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:telefone.TabOrder" resname="O:cadastro.O:telefone.TabOrder">
+        <source>6</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">134</prop><prop prop-type="Type">TMaskEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:telefone.Text" resname="O:cadastro.O:telefone.Text">
+        <source>''</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">135</prop><prop prop-type="Type">TMaskEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:telefone.StyleName" resname="O:cadastro.O:telefone.StyleName">
+        <source>'3'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">136</prop><prop prop-type="Type">TMaskEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:endereco.Left" resname="O:cadastro.O:endereco.Left">
+        <source>96</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">137</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:endereco.Top" resname="O:cadastro.O:endereco.Top">
+        <source>69</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">138</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:endereco.Width" resname="O:cadastro.O:endereco.Width">
+        <source>307</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">139</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:endereco.Height" resname="O:cadastro.O:endereco.Height">
+        <source>21</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">140</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:endereco.TabOrder" resname="O:cadastro.O:endereco.TabOrder">
+        <source>3</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">141</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:endereco.StyleName" resname="O:cadastro.O:endereco.StyleName">
+        <source>'3'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">142</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:cidade.Left" resname="O:cadastro.O:cidade.Left">
+        <source>8</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">143</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:cidade.Top" resname="O:cadastro.O:cidade.Top">
+        <source>111</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">144</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:cidade.Width" resname="O:cadastro.O:cidade.Width">
+        <source>168</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">145</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:cidade.Height" resname="O:cadastro.O:cidade.Height">
+        <source>21</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">146</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:cidade.TabOrder" resname="O:cadastro.O:cidade.TabOrder">
+        <source>4</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">147</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:cidade.StyleName" resname="O:cadastro.O:cidade.StyleName">
+        <source>'3'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">148</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:estado.Left" resname="O:cadastro.O:estado.Left">
+        <source>182</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">149</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:estado.Top" resname="O:cadastro.O:estado.Top">
+        <source>111</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">150</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:estado.Width" resname="O:cadastro.O:estado.Width">
+        <source>45</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">151</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:estado.Height" resname="O:cadastro.O:estado.Height">
+        <source>21</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">152</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:estado.MaxLength" resname="O:cadastro.O:estado.MaxLength">
+        <source>2</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">153</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:estado.TabOrder" resname="O:cadastro.O:estado.TabOrder">
+        <source>5</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">154</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:estado.StyleName" resname="O:cadastro.O:estado.StyleName">
+        <source>'3'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">155</prop><prop prop-type="Type">TEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:cep.Left" resname="O:cadastro.O:cep.Left">
+        <source>8</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">156</prop><prop prop-type="Type">TMaskEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:cep.Top" resname="O:cadastro.O:cep.Top">
+        <source>68</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">157</prop><prop prop-type="Type">TMaskEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:cep.Width" resname="O:cadastro.O:cep.Width">
+        <source>68</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">158</prop><prop prop-type="Type">TMaskEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:cep.Height" resname="O:cadastro.O:cep.Height">
+        <source>21</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">159</prop><prop prop-type="Type">TMaskEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:cep.EditMask" resname="O:cadastro.O:cep.EditMask">
+        <source>'00000\-999;1;_'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768573958</prop><prop prop-type="Status">0</prop><prop prop-type="Order">160</prop><prop prop-type="Type">TMaskEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:cep.MaxLength" resname="O:cadastro.O:cep.MaxLength">
+        <source>9</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768574074</prop><prop prop-type="Status">0</prop><prop prop-type="Order">161</prop><prop prop-type="Type">TMaskEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:cep.TabOrder" resname="O:cadastro.O:cep.TabOrder">
+        <source>2</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768574074</prop><prop prop-type="Status">0</prop><prop prop-type="Order">162</prop><prop prop-type="Type">TMaskEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:cep.Text" resname="O:cadastro.O:cep.Text">
+        <source>'     -   '</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768574074</prop><prop prop-type="Status">0</prop><prop prop-type="Order">163</prop><prop prop-type="Type">TMaskEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:cadastro.O:cep.StyleName" resname="O:cadastro.O:cep.StyleName">
+        <source>'3'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768574074</prop><prop prop-type="Status">0</prop><prop prop-type="Order">164</prop><prop prop-type="Type">TMaskEdit</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

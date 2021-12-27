@@ -1,0 +1,34 @@
+unit unservico;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Classes, Vcl.Graphics, Vcl.Controls, Vcl.SvcMgr, Vcl.Dialogs;
+
+type
+  Tserverservice = class(TService)
+  private
+    { Private declarations }
+  public
+    function GetServiceController: TServiceController; override;
+    { Public declarations }
+  end;
+
+var
+  serverservice: Tserverservice;
+
+implementation
+
+{$R *.dfm}
+
+procedure ServiceController(CtrlCode: DWord); stdcall;
+begin
+  serverservice.Controller(CtrlCode);
+end;
+
+function Tserverservice.GetServiceController: TServiceController;
+begin
+  Result := ServiceController;
+end;
+
+end.

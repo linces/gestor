@@ -1,0 +1,1584 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="uDWJSONObject" platform="Android">
+  <const name="TSpecialChars" type="array[0..7] of Char" visibility="public" />
+  <class name="TJSONBufferObject">
+    <ancestor name="TObject" namespace="System">
+      <methodref name="Create" visibility="public" procflags="constructor">
+      </methodref>
+      <methodref name="Free" visibility="public">
+      </methodref>
+      <methodref name="DisposeOf" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="InitInstance" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="CleanupInstance" visibility="public">
+      </methodref>
+      <methodref name="ClassType" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="ClassName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassNameIs" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassParent" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassInfo" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="InstanceSize" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="InheritsFrom" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="QualifiedClassName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="GetInterface" visibility="public">
+      </methodref>
+      <methodref name="GetInterfaceEntry" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="GetInterfaceTable" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="UnitName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="UnitScope" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="Equals" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="GetHashCode" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="ToString" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="SafeCallException" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="AfterConstruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="BeforeDestruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Dispatch" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="DefaultHandler" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="NewInstance" visibility="public" procflags="class virtual">
+      </methodref>
+      <methodref name="FreeInstance" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Destroy" visibility="public" procflags="destructor virtual">
+      </methodref>
+      <methodref name="CPP_ABI_1" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="CPP_ABI_2" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="CPP_ABI_3" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="GetDisposed" visibility="protected" procflags="inline">
+      </methodref>
+      <methodref name="CheckDisposed" visibility="protected" procflags="inline">
+      </methodref>
+      <propertyref name="Disposed" visibility="protected">
+      </propertyref>
+    </ancestor>
+  </class>
+  <const name="TDWJSONObjectType" type="TDWJSONType">
+    <value>
+      TDWJSONObjectType
+    </value>
+  </const>
+  <const name="TDWJSONArrayType" type="TDWJSONType">
+    <value>
+      TDWJSONArrayType
+    </value>
+  </const>
+  <const name="tdwpxt_All" type="TDWParamExpType">
+    <value>
+      tdwpxt_All
+    </value>
+  </const>
+  <const name="tdwpxt_IN" type="TDWParamExpType">
+    <value>
+      tdwpxt_IN
+    </value>
+  </const>
+  <const name="tdwpxt_OUT" type="TDWParamExpType">
+    <value>
+      tdwpxt_OUT
+    </value>
+  </const>
+  <const name="tdwpxt_INOUT" type="TDWParamExpType">
+    <value>
+      tdwpxt_INOUT
+    </value>
+  </const>
+  <enum name="TDWJSONType">
+    <element value="0" name="TDWJSONObjectType" />
+    <element value="1" name="TDWJSONArrayType" />
+  </enum>
+  <set name="TDWJSONTypes" type="TDWJSONType">
+    <element name="TDWJSONObjectType" />
+    <element name="TDWJSONArrayType" />
+  </set>
+  <enum name="TDWParamExpType">
+    <element value="0" name="tdwpxt_All" />
+    <element value="1" name="tdwpxt_IN" />
+    <element value="2" name="tdwpxt_OUT" />
+    <element value="3" name="tdwpxt_INOUT" />
+  </enum>
+  <class name="TJSONValue">
+    <ancestor name="TObject" namespace="System">
+      <methodref name="Create" visibility="public" procflags="constructor">
+      </methodref>
+      <methodref name="Free" visibility="public">
+      </methodref>
+      <methodref name="DisposeOf" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="InitInstance" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="CleanupInstance" visibility="public">
+      </methodref>
+      <methodref name="ClassType" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="ClassName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassNameIs" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassParent" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassInfo" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="InstanceSize" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="InheritsFrom" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="QualifiedClassName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="GetInterface" visibility="public">
+      </methodref>
+      <methodref name="GetInterfaceEntry" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="GetInterfaceTable" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="UnitName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="UnitScope" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="Equals" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="GetHashCode" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="ToString" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="SafeCallException" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="AfterConstruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="BeforeDestruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Dispatch" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="DefaultHandler" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="NewInstance" visibility="public" procflags="class virtual">
+      </methodref>
+      <methodref name="FreeInstance" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Destroy" visibility="public" procflags="destructor virtual">
+      </methodref>
+      <methodref name="CPP_ABI_1" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="CPP_ABI_2" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="CPP_ABI_3" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="GetDisposed" visibility="protected" procflags="inline">
+      </methodref>
+      <methodref name="CheckDisposed" visibility="protected" procflags="inline">
+      </methodref>
+      <propertyref name="Disposed" visibility="protected">
+      </propertyref>
+    </ancestor>
+    <members>
+      <field name="vDataType" type="Boolean" visibility="private" size="1" offset="8" />
+      <field name="vJsonMode" type="TJsonMode" visibility="private" size="1" offset="9" />
+      <field name="vNullValue" type="Boolean" visibility="private" size="1" offset="10" />
+      <field name="vBinary" type="Boolean" visibility="private" size="1" offset="11" />
+      <field name="vUtf8SpecialChars" type="Boolean" visibility="private" size="1" offset="12" />
+      <field name="vEncoded" type="Boolean" visibility="private" size="1" offset="13" />
+      <field name="vFloatDecimalFormat" type="string" visibility="private" size="8" offset="16" />
+      <field name="vtagName" type="string" visibility="private" size="8" offset="24" />
+      <field name="vTypeObject" type="TTypeObject" visibility="private" size="1" offset="32" />
+      <field name="vObjectDirection" type="TObjectDirection" visibility="private" size="1" offset="33" />
+      <field name="vObjectValue" type="TObjectValue" visibility="private" size="1" offset="34" />
+      <field name="aValue" type="TIdBytes" visibility="private" size="8" offset="40" />
+      <field name="vEncoding" type="TEncodeSelect" visibility="private" size="1" offset="48" />
+      <field name="vOnWriterProcess" type="TOnWriterProcess" visibility="private" size="16" offset="56" />
+      <function name="GetValue" visibility="private">
+        <parameters>
+          <parameter name="CanConvert" type="Boolean">
+            <value>
+              True
+            </value>
+          </parameter>
+          <retval type="Variant" />
+        </parameters>
+      </function>
+      <procedure name="WriteValue" visibility="private">
+        <parameters>
+          <parameter name="bValue" type="Variant" />
+        </parameters>
+      </procedure>
+      <function name="FormatValue" visibility="private">
+        <parameters>
+          <parameter name="bValue" type="string" />
+          <retval type="string" />
+        </parameters>
+      </function>
+      <function name="GetValueJSON" visibility="private">
+        <parameters>
+          <parameter name="bValue" type="string" />
+          <retval type="string" />
+        </parameters>
+      </function>
+      <function name="DatasetValues" visibility="private">
+        <parameters>
+          <parameter name="bValue" type="TDataSet" />
+          <parameter name="DateTimeFormat" type="string">
+            <value>
+              
+            </value>
+          </parameter>
+          <parameter name="JsonModeD" type="TJsonMode">
+            <value>
+              jmDataware
+            </value>
+          </parameter>
+          <parameter name="FloatDecimalFormat" type="string">
+            <value>
+              
+            </value>
+          </parameter>
+          <parameter name="HeaderLowercase" type="Boolean">
+            <value>
+              False
+            </value>
+          </parameter>
+          <parameter name="VirtualValue" type="string">
+            <value>
+              
+            </value>
+          </parameter>
+          <parameter name="DWJSONType" type="TDWJSONType">
+            <value>
+              TDWJSONArrayType
+            </value>
+          </parameter>
+          <parameter name="bDetail" type="TDataSet">
+            <value>
+              nil
+            </value>
+          </parameter>
+          <retval type="string" />
+        </parameters>
+      </function>
+      <function name="EncodedString" visibility="private">
+        <parameters>
+          <retval type="string" />
+        </parameters>
+      </function>
+      <procedure name="SetEncoding" visibility="private">
+        <parameters>
+          <parameter name="bValue" type="TEncodeSelect" />
+        </parameters>
+      </procedure>
+      <function name="AsString" visibility="public">
+        <parameters>
+          <retval type="string" />
+        </parameters>
+      </function>
+      <procedure name="Clear" visibility="public">
+      </procedure>
+      <procedure name="ToStream" visibility="public">
+        <parameters>
+          <parameter name="bValue" type="TMemoryStream" paramflags="var" />
+        </parameters>
+      </procedure>
+      <procedure name="LoadFromDataset" visibility="public" procflags="overload">
+        <parameters>
+          <parameter name="TableName" type="string" />
+          <parameter name="bValue" type="TDataSet" />
+          <parameter name="EncodedValue" type="Boolean">
+            <value>
+              True
+            </value>
+          </parameter>
+          <parameter name="JsonModeD" type="TJsonMode">
+            <value>
+              jmDataware
+            </value>
+          </parameter>
+          <parameter name="DateTimeFormat" type="string">
+            <value>
+              
+            </value>
+          </parameter>
+          <parameter name="DelimiterFormat" type="string">
+            <value>
+              
+            </value>
+          </parameter>
+          <parameter name="DataType" type="Boolean">
+            <value>
+              False
+            </value>
+          </parameter>
+          <parameter name="HeaderLowercase" type="Boolean">
+            <value>
+              False
+            </value>
+          </parameter>
+        </parameters>
+      </procedure>
+      <procedure name="LoadFromDataset" visibility="public" procflags="overload">
+        <parameters>
+          <parameter name="TableName" type="string" />
+          <parameter name="bValue" type="TDataSet" />
+          <parameter name="bDetail" type="TDataSet" />
+          <parameter name="DetailType" type="TDWJSONType">
+            <value>
+              TDWJSONArrayType
+            </value>
+          </parameter>
+          <parameter name="DetailElementName" type="string">
+            <value>
+              detail
+            </value>
+          </parameter>
+          <parameter name="EncodedValue" type="Boolean">
+            <value>
+              True
+            </value>
+          </parameter>
+          <parameter name="JsonModeD" type="TJsonMode">
+            <value>
+              jmDataware
+            </value>
+          </parameter>
+          <parameter name="DateTimeFormat" type="string">
+            <value>
+              
+            </value>
+          </parameter>
+          <parameter name="DelimiterFormat" type="string">
+            <value>
+              
+            </value>
+          </parameter>
+          <parameter name="DataType" type="Boolean">
+            <value>
+              False
+            </value>
+          </parameter>
+          <parameter name="HeaderLowercase" type="Boolean">
+            <value>
+              False
+            </value>
+          </parameter>
+        </parameters>
+      </procedure>
+      <procedure name="WriteToFieldDefs" visibility="public">
+        <parameters>
+          <parameter name="JSONValue" type="string" />
+          <parameter name="ResponseTranslator" type="TDWResponseTranslator" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="WriteToDataset2" visibility="public">
+        <parameters>
+          <parameter name="JSONValue" type="string" />
+          <parameter name="DestDS" type="TDataSet" />
+        </parameters>
+      </procedure>
+      <procedure name="WriteToDataset" visibility="public" procflags="overload">
+        <parameters>
+          <parameter name="JSONValue" type="string" />
+          <parameter name="DestDS" type="TDataSet" paramflags="const" />
+          <parameter name="ResponseTranslator" type="TDWResponseTranslator" />
+          <parameter name="ResquestMode" type="TResquestMode" />
+        </parameters>
+      </procedure>
+      <procedure name="WriteToDataset" visibility="public" procflags="overload">
+        <parameters>
+          <parameter name="DatasetType" type="TDatasetType" />
+          <parameter name="JSONValue" type="string" />
+          <parameter name="DestDS" type="TDataSet" paramflags="const" />
+          <parameter name="JsonCount" type="Integer" paramflags="var" />
+          <parameter name="Datapacks" type="Integer">
+            <value>
+              $FFFFFFFF
+            </value>
+          </parameter>
+          <parameter name="ActualRec" type="Integer">
+            <value>
+              $0
+            </value>
+          </parameter>
+          <parameter name="ClearDataset" type="Boolean">
+            <value>
+              False
+            </value>
+          </parameter>
+        </parameters>
+      </procedure>
+      <procedure name="WriteToDataset" visibility="public" procflags="overload">
+        <parameters>
+          <parameter name="DatasetType" type="TDatasetType" />
+          <parameter name="JSONValue" type="string" />
+          <parameter name="DestDS" type="TDataSet" paramflags="const" />
+          <parameter name="ClearDataset" type="Boolean">
+            <value>
+              False
+            </value>
+          </parameter>
+        </parameters>
+      </procedure>
+      <procedure name="LoadFromJSON" visibility="public" procflags="overload">
+        <parameters>
+          <parameter name="bValue" type="string" />
+        </parameters>
+      </procedure>
+      <procedure name="LoadFromJSON" visibility="public" procflags="overload">
+        <parameters>
+          <parameter name="bValue" type="string" />
+          <parameter name="JsonModeD" type="TJsonMode" />
+        </parameters>
+      </procedure>
+      <procedure name="LoadFromStream" visibility="public">
+        <parameters>
+          <parameter name="Stream" type="TMemoryStream" />
+          <parameter name="Encode" type="Boolean">
+            <value>
+              True
+            </value>
+          </parameter>
+        </parameters>
+      </procedure>
+      <procedure name="SaveToStream" visibility="public">
+        <parameters>
+          <parameter name="Stream" type="TMemoryStream" paramflags="const" />
+          <parameter name="Binary" type="Boolean">
+            <value>
+              False
+            </value>
+          </parameter>
+        </parameters>
+      </procedure>
+      <procedure name="SaveToFile" visibility="public">
+        <parameters>
+          <parameter name="FileName" type="string" />
+        </parameters>
+      </procedure>
+      <procedure name="StringToBytes" visibility="public">
+        <parameters>
+          <parameter name="Value" type="string" />
+          <parameter name="Encode" type="Boolean">
+            <value>
+              False
+            </value>
+          </parameter>
+        </parameters>
+      </procedure>
+      <function name="ToJSON" visibility="public">
+        <parameters>
+          <retval type="string" />
+        </parameters>
+      </function>
+      <procedure name="SetValue" visibility="public">
+        <parameters>
+          <parameter name="Value" type="Variant" />
+          <parameter name="Encode" type="Boolean">
+            <value>
+              True
+            </value>
+          </parameter>
+        </parameters>
+      </procedure>
+      <function name="Value" visibility="public">
+        <parameters>
+          <retval type="Variant" />
+        </parameters>
+      </function>
+      <constructor name="Create" visibility="public">
+        <parameters>
+        </parameters>
+      </constructor>
+      <destructor name="Destroy" visibility="public">
+        <parameters>
+        </parameters>
+      </destructor>
+      <function name="IsNull" visibility="public">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <property name="TypeObject" visibility="public" read="vTypeObject" write="vTypeObject" type="TTypeObject" />
+      <property name="ObjectDirection" visibility="public" read="vObjectDirection" write="vObjectDirection" type="TObjectDirection" />
+      <property name="ObjectValue" visibility="public" read="vObjectValue" write="vObjectValue" type="TObjectValue" />
+      <property name="Binary" visibility="public" read="vBinary" write="vBinary" type="Boolean" />
+      <property name="Utf8SpecialChars" visibility="public" read="vUtf8SpecialChars" write="vUtf8SpecialChars" type="Boolean" />
+      <property name="Encoding" visibility="public" read="vEncoding" write="SetEncoding" type="TEncodeSelect" />
+      <property name="Tagname" visibility="public" read="vtagName" write="vtagName" type="string" default="0" />
+      <property name="Encoded" visibility="public" read="vEncoded" write="vEncoded" type="Boolean" />
+      <property name="JsonMode" visibility="public" read="vJsonMode" write="vJsonMode" type="TJsonMode" />
+      <property name="FloatDecimalFormat" visibility="public" read="vFloatDecimalFormat" write="vFloatDecimalFormat" type="string" default="0" />
+      <event name="OnWriterProcess" visibility="public" read="vOnWriterProcess" write="vOnWriterProcess" type="TOnWriterProcess" />
+    </members>
+  </class>
+  <pointer name="PJSONParam" type="TJSONParam" indircnt="1" />
+  <class name="TJSONParam">
+    <ancestor name="TObject" namespace="System">
+      <methodref name="Create" visibility="public" procflags="constructor">
+      </methodref>
+      <methodref name="Free" visibility="public">
+      </methodref>
+      <methodref name="DisposeOf" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="InitInstance" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="CleanupInstance" visibility="public">
+      </methodref>
+      <methodref name="ClassType" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="ClassName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassNameIs" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassParent" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassInfo" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="InstanceSize" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="InheritsFrom" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="QualifiedClassName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="GetInterface" visibility="public">
+      </methodref>
+      <methodref name="GetInterfaceEntry" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="GetInterfaceTable" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="UnitName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="UnitScope" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="Equals" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="GetHashCode" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="ToString" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="SafeCallException" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="AfterConstruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="BeforeDestruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Dispatch" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="DefaultHandler" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="NewInstance" visibility="public" procflags="class virtual">
+      </methodref>
+      <methodref name="FreeInstance" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Destroy" visibility="public" procflags="destructor virtual">
+      </methodref>
+      <methodref name="CPP_ABI_1" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="CPP_ABI_2" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="CPP_ABI_3" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="GetDisposed" visibility="protected" procflags="inline">
+      </methodref>
+      <methodref name="CheckDisposed" visibility="protected" procflags="inline">
+      </methodref>
+      <propertyref name="Disposed" visibility="protected">
+      </propertyref>
+    </ancestor>
+    <members>
+      <field name="vJSONValue" type="TJSONValue" visibility="private" size="8" offset="8" />
+      <field name="vJsonMode" type="TJsonMode" visibility="private" size="1" offset="16" />
+      <field name="vEncoding" type="TEncodeSelect" visibility="private" size="1" offset="17" />
+      <field name="vTypeObject" type="TTypeObject" visibility="private" size="1" offset="18" />
+      <field name="vObjectDirection" type="TObjectDirection" visibility="private" size="1" offset="19" />
+      <field name="vObjectValue" type="TObjectValue" visibility="private" size="1" offset="20" />
+      <field name="vCripto" type="TCripto" visibility="private" size="8" offset="24" />
+      <field name="vAlias" type="string" visibility="private" size="8" offset="32" />
+      <field name="vFloatDecimalFormat" type="string" visibility="private" size="8" offset="40" />
+      <field name="vParamName" type="string" visibility="private" size="8" offset="48" />
+      <field name="vParamFileName" type="string" visibility="private" size="8" offset="56" />
+      <field name="vParamContentType" type="string" visibility="private" size="8" offset="64" />
+      <field name="vNullValue" type="Boolean" visibility="private" size="1" offset="72" />
+      <field name="vBinary" type="Boolean" visibility="private" size="1" offset="73" />
+      <field name="vEncoded" type="Boolean" visibility="private" size="1" offset="74" />
+      <procedure name="WriteValue" visibility="private">
+        <parameters>
+          <parameter name="bValue" type="Variant" />
+        </parameters>
+      </procedure>
+      <procedure name="SetParamName" visibility="private">
+        <parameters>
+          <parameter name="bValue" type="string" />
+        </parameters>
+      </procedure>
+      <procedure name="SetParamFileName" visibility="private">
+        <parameters>
+          <parameter name="bValue" type="string" />
+        </parameters>
+      </procedure>
+      <function name="GetAsString" visibility="private">
+        <parameters>
+          <retval type="string" />
+        </parameters>
+      </function>
+      <procedure name="SetAsString" visibility="private">
+        <parameters>
+          <parameter name="Value" type="string" />
+        </parameters>
+      </procedure>
+      <function name="GetAsBCD" visibility="private">
+        <parameters>
+          <retval type="Currency" />
+        </parameters>
+      </function>
+      <procedure name="SetAsBCD" visibility="private">
+        <parameters>
+          <parameter name="Value" type="Currency" />
+        </parameters>
+      </procedure>
+      <function name="GetAsFMTBCD" visibility="private">
+        <parameters>
+          <retval type="Currency" />
+        </parameters>
+      </function>
+      <procedure name="SetAsFMTBCD" visibility="private">
+        <parameters>
+          <parameter name="Value" type="Currency" />
+        </parameters>
+      </procedure>
+      <function name="GetAsCurrency" visibility="private">
+        <parameters>
+          <retval type="Currency" />
+        </parameters>
+      </function>
+      <procedure name="SetAsCurrency" visibility="private">
+        <parameters>
+          <parameter name="Value" type="Currency" />
+        </parameters>
+      </procedure>
+      <function name="GetAsBoolean" visibility="private">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <procedure name="SetAsBoolean" visibility="private">
+        <parameters>
+          <parameter name="Value" type="Boolean" />
+        </parameters>
+      </procedure>
+      <function name="GetAsDateTime" visibility="private">
+        <parameters>
+          <retval type="TDateTime" />
+        </parameters>
+      </function>
+      <procedure name="SetAsDateTime" visibility="private">
+        <parameters>
+          <parameter name="Value" type="TDateTime" />
+        </parameters>
+      </procedure>
+      <procedure name="SetAsDate" visibility="private">
+        <parameters>
+          <parameter name="Value" type="TDateTime" />
+        </parameters>
+      </procedure>
+      <procedure name="SetAsTime" visibility="private">
+        <parameters>
+          <parameter name="Value" type="TDateTime" />
+        </parameters>
+      </procedure>
+      <function name="GetAsSingle" visibility="private">
+        <parameters>
+          <retval type="Single" />
+        </parameters>
+      </function>
+      <procedure name="SetAsSingle" visibility="private">
+        <parameters>
+          <parameter name="Value" type="Single" />
+        </parameters>
+      </procedure>
+      <function name="GetAsFloat" visibility="private">
+        <parameters>
+          <retval type="Double" />
+        </parameters>
+      </function>
+      <procedure name="SetAsFloat" visibility="private">
+        <parameters>
+          <parameter name="Value" type="Double" />
+        </parameters>
+      </procedure>
+      <function name="GetAsInteger" visibility="private">
+        <parameters>
+          <retval type="Integer" />
+        </parameters>
+      </function>
+      <procedure name="SetAsInteger" visibility="private">
+        <parameters>
+          <parameter name="Value" type="Integer" />
+        </parameters>
+      </procedure>
+      <function name="GetAsWord" visibility="private">
+        <parameters>
+          <retval type="Word" />
+        </parameters>
+      </function>
+      <procedure name="SetAsWord" visibility="private">
+        <parameters>
+          <parameter name="Value" type="Word" />
+        </parameters>
+      </procedure>
+      <procedure name="SetAsSmallInt" visibility="private">
+        <parameters>
+          <parameter name="Value" type="Integer" />
+        </parameters>
+      </procedure>
+      <procedure name="SetAsShortInt" visibility="private">
+        <parameters>
+          <parameter name="Value" type="Integer" />
+        </parameters>
+      </procedure>
+      <function name="GetAsLongWord" visibility="private">
+        <parameters>
+          <retval type="LongWord" />
+        </parameters>
+      </function>
+      <procedure name="SetAsLongWord" visibility="private">
+        <parameters>
+          <parameter name="Value" type="LongWord" />
+        </parameters>
+      </procedure>
+      <function name="GetAsLargeInt" visibility="private">
+        <parameters>
+          <retval type="Int64" />
+        </parameters>
+      </function>
+      <procedure name="SetAsLargeInt" visibility="private">
+        <parameters>
+          <parameter name="Value" type="Int64" />
+        </parameters>
+      </procedure>
+      <procedure name="SetObjectValue" visibility="private">
+        <parameters>
+          <parameter name="Value" type="TObjectValue" />
+        </parameters>
+      </procedure>
+      <procedure name="SetObjectDirection" visibility="private">
+        <parameters>
+          <parameter name="Value" type="TObjectDirection" />
+        </parameters>
+      </procedure>
+      <function name="GetByteString" visibility="private">
+        <parameters>
+          <retval type="string" />
+        </parameters>
+      </function>
+      <procedure name="SetAsObject" visibility="private">
+        <parameters>
+          <parameter name="Value" type="string" />
+        </parameters>
+      </procedure>
+      <procedure name="SetEncoded" visibility="private">
+        <parameters>
+          <parameter name="Value" type="Boolean" />
+        </parameters>
+      </procedure>
+      <procedure name="SetParamContentType" visibility="private">
+        <parameters>
+          <parameter name="bValue" type="string" paramflags="const" />
+        </parameters>
+      </procedure>
+      <function name="TestNilParam" visibility="private">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <procedure name="Clear" visibility="public">
+      </procedure>
+      <constructor name="Create" visibility="public">
+        <parameters>
+          <parameter name="Encoding" type="TEncodeSelect" />
+        </parameters>
+      </constructor>
+      <destructor name="Destroy" visibility="public">
+        <parameters>
+        </parameters>
+      </destructor>
+      <function name="IsEmpty" visibility="public">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="IsNull" visibility="public">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <procedure name="FromJSON" visibility="public">
+        <parameters>
+          <parameter name="json" type="string" />
+        </parameters>
+      </procedure>
+      <function name="ToJSON" visibility="public">
+        <parameters>
+          <retval type="string" />
+        </parameters>
+      </function>
+      <procedure name="SaveToFile" visibility="public">
+        <parameters>
+          <parameter name="FileName" type="string" />
+        </parameters>
+      </procedure>
+      <procedure name="CopyFrom" visibility="public">
+        <parameters>
+          <parameter name="JSONParam" type="TJSONParam" />
+        </parameters>
+      </procedure>
+      <procedure name="SetVariantValue" visibility="public">
+        <parameters>
+          <parameter name="Value" type="Variant" />
+        </parameters>
+      </procedure>
+      <procedure name="SetDataValue" visibility="public">
+        <parameters>
+          <parameter name="Value" type="Variant" />
+          <parameter name="DataType" type="TObjectValue" />
+        </parameters>
+      </procedure>
+      <function name="GetVariantValue" visibility="public">
+        <parameters>
+          <retval type="Variant" />
+        </parameters>
+      </function>
+      <function name="GetNullValue" visibility="public">
+        <parameters>
+          <parameter name="Value" type="TObjectValue" />
+          <retval type="Variant" />
+        </parameters>
+      </function>
+      <function name="GetValue" visibility="public">
+        <parameters>
+          <parameter name="Value" type="TObjectValue" />
+          <retval type="Variant" />
+        </parameters>
+      </function>
+      <procedure name="SetValue" visibility="public">
+        <parameters>
+          <parameter name="aValue" type="string" />
+          <parameter name="Encode" type="Boolean">
+            <value>
+              True
+            </value>
+          </parameter>
+        </parameters>
+      </procedure>
+      <procedure name="LoadFromStream" visibility="public" procflags="overload">
+        <parameters>
+          <parameter name="Stream" type="TMemoryStream" />
+          <parameter name="Encode" type="Boolean">
+            <value>
+              True
+            </value>
+          </parameter>
+        </parameters>
+      </procedure>
+      <procedure name="LoadFromStream" visibility="public" procflags="overload">
+        <parameters>
+          <parameter name="Stream" type="TStringStream" />
+          <parameter name="Encode" type="Boolean">
+            <value>
+              True
+            </value>
+          </parameter>
+        </parameters>
+      </procedure>
+      <procedure name="StringToBytes" visibility="public">
+        <parameters>
+          <parameter name="Value" type="string" />
+          <parameter name="Encode" type="Boolean">
+            <value>
+              False
+            </value>
+          </parameter>
+        </parameters>
+      </procedure>
+      <procedure name="SaveToStream" visibility="public" procflags="overload">
+        <parameters>
+          <parameter name="Stream" type="TMemoryStream" paramflags="var" />
+        </parameters>
+      </procedure>
+      <procedure name="SaveToStream" visibility="public" procflags="overload">
+        <parameters>
+          <parameter name="Stream" type="TStringStream" paramflags="var" />
+        </parameters>
+      </procedure>
+      <procedure name="LoadFromParam" visibility="public">
+        <parameters>
+          <parameter name="Param" type="TParam" />
+        </parameters>
+      </procedure>
+      <property name="CriptOptions" visibility="public" read="vCripto" write="vCripto" type="TCripto" />
+      <property name="ObjectDirection" visibility="public" read="vObjectDirection" write="SetObjectDirection" type="TObjectDirection" />
+      <property name="ObjectValue" visibility="public" read="vObjectValue" write="SetObjectValue" type="TObjectValue" />
+      <property name="Alias" visibility="public" read="vAlias" write="vAlias" type="string" default="0" />
+      <property name="ParamName" visibility="public" read="vParamName" write="SetParamName" type="string" default="0" />
+      <property name="ParamFileName" visibility="public" read="vParamFileName" write="SetParamFileName" type="string" default="0" />
+      <property name="ParamContentType" visibility="public" read="vParamContentType" write="SetParamContentType" type="string" default="0" />
+      <property name="Encoded" visibility="public" read="vEncoded" write="SetEncoded" type="Boolean" />
+      <property name="Binary" visibility="public" read="vBinary" type="Boolean" />
+      <property name="JsonMode" visibility="public" read="vJsonMode" write="vJsonMode" type="TJsonMode" />
+      <property name="FloatDecimalFormat" visibility="public" read="vFloatDecimalFormat" write="vFloatDecimalFormat" type="string" default="0" />
+      <property name="Value" visibility="public" read="GetVariantValue" write="SetVariantValue" type="Variant" default="0" />
+      <property name="AsBCD" visibility="public" read="GetAsBCD" write="SetAsBCD" type="Currency" default="0" />
+      <property name="AsFMTBCD" visibility="public" read="GetAsFMTBCD" write="SetAsFMTBCD" type="Currency" default="0" />
+      <property name="AsBoolean" visibility="public" read="GetAsBoolean" write="SetAsBoolean" type="Boolean" />
+      <property name="AsCurrency" visibility="public" read="GetAsCurrency" write="SetAsCurrency" type="Currency" default="0" />
+      <property name="AsExtended" visibility="public" read="GetAsCurrency" write="SetAsCurrency" type="Currency" default="0" />
+      <property name="AsDate" visibility="public" read="GetAsDateTime" write="SetAsDate" type="TDateTime" default="0" />
+      <property name="AsTime" visibility="public" read="GetAsDateTime" write="SetAsTime" type="TDateTime" default="0" />
+      <property name="AsDateTime" visibility="public" read="GetAsDateTime" write="SetAsDateTime" type="TDateTime" default="0" />
+      <property name="AsSingle" visibility="public" read="GetAsSingle" write="SetAsSingle" type="Single" default="0" />
+      <property name="AsFloat" visibility="public" read="GetAsFloat" write="SetAsFloat" type="Double" default="0" />
+      <property name="AsInteger" visibility="public" read="GetAsInteger" write="SetAsInteger" type="Integer" />
+      <property name="AsSmallInt" visibility="public" read="GetAsInteger" write="SetAsSmallInt" type="Integer" />
+      <property name="AsShortInt" visibility="public" read="GetAsInteger" write="SetAsShortInt" type="Integer" />
+      <property name="AsWord" visibility="public" read="GetAsWord" write="SetAsWord" type="Word" />
+      <property name="AsLongWord" visibility="public" read="GetAsLongWord" write="SetAsLongWord" type="LongWord" />
+      <property name="AsLargeInt" visibility="public" read="GetAsLargeInt" write="SetAsLargeInt" type="Int64" />
+      <property name="AsString" visibility="public" read="GetAsString" write="SetAsString" type="string" default="0" />
+      <property name="AsObject" visibility="public" read="GetAsString" write="SetAsObject" type="string" default="0" />
+      <property name="AsByteString" visibility="public" read="GetByteString" type="string" default="0" />
+      <property name="AsMemo" visibility="public" read="GetAsString" write="SetAsString" type="string" default="0" />
+    </members>
+  </class>
+  <pointer name="PStringStream" type="TStringStream" indircnt="1" />
+  <class name="TStringStreamList">
+    <ancestor name="TList" namespace="System.Classes">
+      <methodref name="Get" visibility="protected">
+      </methodref>
+      <methodref name="Grow" visibility="protected" procflags="virtual">
+      </methodref>
+      <methodref name="Put" visibility="protected">
+      </methodref>
+      <methodref name="Notify" visibility="protected" procflags="virtual">
+      </methodref>
+      <methodref name="SetCapacity" visibility="protected">
+      </methodref>
+      <methodref name="SetCount" visibility="protected">
+      </methodref>
+      <methodref name="Destroy" visibility="public" procflags="destructor override">
+      </methodref>
+      <methodref name="Add" visibility="public">
+      </methodref>
+      <methodref name="Clear" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Delete" visibility="public">
+      </methodref>
+      <methodref name="Error" visibility="public" procflags="class overload virtual">
+      </methodref>
+      <methodref name="Error" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="Exchange" visibility="public">
+      </methodref>
+      <methodref name="Expand" visibility="public">
+      </methodref>
+      <methodref name="Extract" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="ExtractItem" visibility="public">
+      </methodref>
+      <methodref name="First" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="GetEnumerator" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="IndexOf" visibility="public">
+      </methodref>
+      <methodref name="IndexOfItem" visibility="public">
+      </methodref>
+      <methodref name="Insert" visibility="public">
+      </methodref>
+      <methodref name="Last" visibility="public">
+      </methodref>
+      <methodref name="Move" visibility="public">
+      </methodref>
+      <methodref name="Remove" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="RemoveItem" visibility="public">
+      </methodref>
+      <methodref name="Pack" visibility="public">
+      </methodref>
+      <methodref name="Sort" visibility="public">
+      </methodref>
+      <methodref name="SortList" visibility="public">
+      </methodref>
+      <methodref name="Assign" visibility="public">
+      </methodref>
+      <propertyref name="Capacity" visibility="public">
+      </propertyref>
+      <propertyref name="Count" visibility="public">
+      </propertyref>
+      <propertyref name="Items" visibility="public">
+      </propertyref>
+      <propertyref name="List" visibility="public">
+      </propertyref>
+      <ancestor name="TObject" namespace="System">
+        <methodref name="Create" visibility="public" procflags="constructor">
+        </methodref>
+        <methodref name="Free" visibility="public">
+        </methodref>
+        <methodref name="DisposeOf" visibility="public" procflags="inline">
+        </methodref>
+        <methodref name="InitInstance" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="CleanupInstance" visibility="public">
+        </methodref>
+        <methodref name="ClassType" visibility="public" procflags="inline">
+        </methodref>
+        <methodref name="ClassName" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="ClassNameIs" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="ClassParent" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="ClassInfo" visibility="public" procflags="class inline">
+        </methodref>
+        <methodref name="InstanceSize" visibility="public" procflags="class inline">
+        </methodref>
+        <methodref name="InheritsFrom" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="MethodAddress" visibility="public" procflags="class overload">
+        </methodref>
+        <methodref name="MethodAddress" visibility="public" procflags="class overload">
+        </methodref>
+        <methodref name="MethodName" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="QualifiedClassName" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="FieldAddress" visibility="public" procflags="overload">
+        </methodref>
+        <methodref name="FieldAddress" visibility="public" procflags="overload">
+        </methodref>
+        <methodref name="GetInterface" visibility="public">
+        </methodref>
+        <methodref name="GetInterfaceEntry" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="GetInterfaceTable" visibility="public" procflags="class inline">
+        </methodref>
+        <methodref name="UnitName" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="UnitScope" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="Equals" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="GetHashCode" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="ToString" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="SafeCallException" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="AfterConstruction" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="BeforeDestruction" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="Dispatch" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="DefaultHandler" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="NewInstance" visibility="public" procflags="class virtual">
+        </methodref>
+        <methodref name="FreeInstance" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="Destroy" visibility="public" procflags="destructor virtual">
+        </methodref>
+        <methodref name="CPP_ABI_1" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="CPP_ABI_2" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="CPP_ABI_3" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="GetDisposed" visibility="protected" procflags="inline">
+        </methodref>
+        <methodref name="CheckDisposed" visibility="protected" procflags="inline">
+        </methodref>
+        <propertyref name="Disposed" visibility="protected">
+        </propertyref>
+      </ancestor>
+    </ancestor>
+    <members>
+      <function name="GetRec" visibility="private" procflags="overload">
+        <parameters>
+          <parameter name="Index" type="Integer" />
+          <retval type="TStringStream" />
+        </parameters>
+      </function>
+      <procedure name="PutRec" visibility="private" procflags="overload">
+        <parameters>
+          <parameter name="Index" type="Integer" />
+          <parameter name="Item" type="TStringStream" />
+        </parameters>
+      </procedure>
+      <procedure name="ClearList" visibility="private">
+      </procedure>
+      <constructor name="Create" visibility="public">
+        <parameters>
+        </parameters>
+      </constructor>
+      <destructor name="Destroy" visibility="public">
+        <parameters>
+        </parameters>
+      </destructor>
+      <procedure name="Delete" visibility="public" procflags="overload">
+        <parameters>
+          <parameter name="Index" type="Integer" />
+        </parameters>
+      </procedure>
+      <function name="Add" visibility="public" procflags="overload">
+        <parameters>
+          <parameter name="Item" type="TStringStream" />
+          <retval type="Integer" />
+        </parameters>
+      </function>
+      <property name="Items[Index]" visibility="public" read="GetRec" write="PutRec" type="TStringStream" />
+    </members>
+  </class>
+  <class name="TDWParams">
+    <ancestor name="TList" namespace="System.Classes">
+      <methodref name="Get" visibility="protected">
+      </methodref>
+      <methodref name="Grow" visibility="protected" procflags="virtual">
+      </methodref>
+      <methodref name="Put" visibility="protected">
+      </methodref>
+      <methodref name="Notify" visibility="protected" procflags="virtual">
+      </methodref>
+      <methodref name="SetCapacity" visibility="protected">
+      </methodref>
+      <methodref name="SetCount" visibility="protected">
+      </methodref>
+      <methodref name="Destroy" visibility="public" procflags="destructor override">
+      </methodref>
+      <methodref name="Add" visibility="public">
+      </methodref>
+      <methodref name="Clear" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Delete" visibility="public">
+      </methodref>
+      <methodref name="Error" visibility="public" procflags="class overload virtual">
+      </methodref>
+      <methodref name="Error" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="Exchange" visibility="public">
+      </methodref>
+      <methodref name="Expand" visibility="public">
+      </methodref>
+      <methodref name="Extract" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="ExtractItem" visibility="public">
+      </methodref>
+      <methodref name="First" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="GetEnumerator" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="IndexOf" visibility="public">
+      </methodref>
+      <methodref name="IndexOfItem" visibility="public">
+      </methodref>
+      <methodref name="Insert" visibility="public">
+      </methodref>
+      <methodref name="Last" visibility="public">
+      </methodref>
+      <methodref name="Move" visibility="public">
+      </methodref>
+      <methodref name="Remove" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="RemoveItem" visibility="public">
+      </methodref>
+      <methodref name="Pack" visibility="public">
+      </methodref>
+      <methodref name="Sort" visibility="public">
+      </methodref>
+      <methodref name="SortList" visibility="public">
+      </methodref>
+      <methodref name="Assign" visibility="public">
+      </methodref>
+      <propertyref name="Capacity" visibility="public">
+      </propertyref>
+      <propertyref name="Count" visibility="public">
+      </propertyref>
+      <propertyref name="Items" visibility="public">
+      </propertyref>
+      <propertyref name="List" visibility="public">
+      </propertyref>
+      <ancestor name="TObject" namespace="System">
+        <methodref name="Create" visibility="public" procflags="constructor">
+        </methodref>
+        <methodref name="Free" visibility="public">
+        </methodref>
+        <methodref name="DisposeOf" visibility="public" procflags="inline">
+        </methodref>
+        <methodref name="InitInstance" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="CleanupInstance" visibility="public">
+        </methodref>
+        <methodref name="ClassType" visibility="public" procflags="inline">
+        </methodref>
+        <methodref name="ClassName" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="ClassNameIs" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="ClassParent" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="ClassInfo" visibility="public" procflags="class inline">
+        </methodref>
+        <methodref name="InstanceSize" visibility="public" procflags="class inline">
+        </methodref>
+        <methodref name="InheritsFrom" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="MethodAddress" visibility="public" procflags="class overload">
+        </methodref>
+        <methodref name="MethodAddress" visibility="public" procflags="class overload">
+        </methodref>
+        <methodref name="MethodName" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="QualifiedClassName" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="FieldAddress" visibility="public" procflags="overload">
+        </methodref>
+        <methodref name="FieldAddress" visibility="public" procflags="overload">
+        </methodref>
+        <methodref name="GetInterface" visibility="public">
+        </methodref>
+        <methodref name="GetInterfaceEntry" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="GetInterfaceTable" visibility="public" procflags="class inline">
+        </methodref>
+        <methodref name="UnitName" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="UnitScope" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="Equals" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="GetHashCode" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="ToString" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="SafeCallException" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="AfterConstruction" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="BeforeDestruction" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="Dispatch" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="DefaultHandler" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="NewInstance" visibility="public" procflags="class virtual">
+        </methodref>
+        <methodref name="FreeInstance" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="Destroy" visibility="public" procflags="destructor virtual">
+        </methodref>
+        <methodref name="CPP_ABI_1" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="CPP_ABI_2" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="CPP_ABI_3" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="GetDisposed" visibility="protected" procflags="inline">
+        </methodref>
+        <methodref name="CheckDisposed" visibility="protected" procflags="inline">
+        </methodref>
+        <propertyref name="Disposed" visibility="protected">
+        </propertyref>
+      </ancestor>
+    </ancestor>
+    <members>
+      <field name="vJsonMode" type="TJsonMode" visibility="private" size="1" offset="24" />
+      <field name="vEncoding" type="TEncodeSelect" visibility="private" size="1" offset="25" />
+      <field name="vCripto" type="TCripto" visibility="private" size="8" offset="32" />
+      <function name="GetRec" visibility="private" procflags="overload">
+        <parameters>
+          <parameter name="Index" type="Integer" />
+          <retval type="TJSONParam" />
+        </parameters>
+      </function>
+      <procedure name="PutRec" visibility="private" procflags="overload">
+        <parameters>
+          <parameter name="Index" type="Integer" />
+          <parameter name="Item" type="TJSONParam" />
+        </parameters>
+      </procedure>
+      <function name="GetRecName" visibility="private" procflags="overload">
+        <parameters>
+          <parameter name="Index" type="string" />
+          <retval type="TJSONParam" />
+        </parameters>
+      </function>
+      <procedure name="PutRecName" visibility="private" procflags="overload">
+        <parameters>
+          <parameter name="Index" type="string" />
+          <parameter name="Item" type="TJSONParam" />
+        </parameters>
+      </procedure>
+      <procedure name="ClearList" visibility="private">
+      </procedure>
+      <constructor name="Create" visibility="public">
+        <parameters>
+        </parameters>
+      </constructor>
+      <procedure name="CreateParam" visibility="public">
+        <parameters>
+          <parameter name="ParamName" type="string" />
+          <parameter name="Value" type="string">
+            <value>
+              
+            </value>
+          </parameter>
+        </parameters>
+      </procedure>
+      <destructor name="Destroy" visibility="public">
+        <parameters>
+        </parameters>
+      </destructor>
+      <function name="ParamsReturn" visibility="public">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="CountOutParams" visibility="public">
+        <parameters>
+          <retval type="Integer" />
+        </parameters>
+      </function>
+      <function name="ToJSON" visibility="public">
+        <parameters>
+          <retval type="string" />
+        </parameters>
+      </function>
+      <procedure name="SaveToFile" visibility="public">
+        <parameters>
+          <parameter name="FileName" type="string" />
+        </parameters>
+      </procedure>
+      <procedure name="FromJSON" visibility="public">
+        <parameters>
+          <parameter name="json" type="string" />
+          <parameter name="BinaryRequest" type="Boolean">
+            <value>
+              False
+            </value>
+          </parameter>
+        </parameters>
+      </procedure>
+      <procedure name="CopyFrom" visibility="public">
+        <parameters>
+          <parameter name="DWParams" type="TDWParams" />
+        </parameters>
+      </procedure>
+      <procedure name="Delete" visibility="public" procflags="overload">
+        <parameters>
+          <parameter name="Index" type="Integer" />
+        </parameters>
+      </procedure>
+      <procedure name="Delete" visibility="public" procflags="overload">
+        <parameters>
+          <parameter name="Param" type="TJSONParam" />
+        </parameters>
+      </procedure>
+      <function name="Add" visibility="public" procflags="overload">
+        <parameters>
+          <parameter name="Item" type="TJSONParam" />
+          <retval type="Integer" />
+        </parameters>
+      </function>
+      <procedure name="SaveToStream" visibility="public">
+        <parameters>
+          <parameter name="Stream" type="TStream" />
+          <parameter name="Output" type="TDWParamExpType">
+            <value>
+              tdwpxt_All
+            </value>
+          </parameter>
+        </parameters>
+      </procedure>
+      <procedure name="LoadFromStream" visibility="public">
+        <parameters>
+          <parameter name="Stream" type="TStream" />
+          <parameter name="Input" type="TDWParamExpType">
+            <value>
+              tdwpxt_All
+            </value>
+          </parameter>
+        </parameters>
+      </procedure>
+      <procedure name="SetCriptOptions" visibility="public">
+        <parameters>
+          <parameter name="Use" type="Boolean" />
+          <parameter name="Key" type="string" />
+        </parameters>
+      </procedure>
+      <property name="Items[Index]" visibility="public" read="GetRec" write="PutRec" type="TJSONParam" />
+      <property name="ItemsString[Index]" visibility="public" read="GetRecName" write="PutRecName" type="TJSONParam" />
+      <property name="JsonMode" visibility="public" read="vJsonMode" write="vJsonMode" type="TJsonMode" />
+      <property name="Encoding" visibility="public" read="vEncoding" write="vEncoding" type="TEncodeSelect" />
+      <property name="CriptOptions" visibility="public" read="vCripto" write="vCripto" type="TCripto" />
+    </members>
+  </class>
+  <class name="TDWDatalist">
+    <ancestor name="TObject" namespace="System">
+      <methodref name="Create" visibility="public" procflags="constructor">
+      </methodref>
+      <methodref name="Free" visibility="public">
+      </methodref>
+      <methodref name="DisposeOf" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="InitInstance" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="CleanupInstance" visibility="public">
+      </methodref>
+      <methodref name="ClassType" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="ClassName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassNameIs" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassParent" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassInfo" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="InstanceSize" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="InheritsFrom" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="QualifiedClassName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="GetInterface" visibility="public">
+      </methodref>
+      <methodref name="GetInterfaceEntry" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="GetInterfaceTable" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="UnitName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="UnitScope" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="Equals" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="GetHashCode" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="ToString" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="SafeCallException" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="AfterConstruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="BeforeDestruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Dispatch" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="DefaultHandler" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="NewInstance" visibility="public" procflags="class virtual">
+      </methodref>
+      <methodref name="FreeInstance" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Destroy" visibility="public" procflags="destructor virtual">
+      </methodref>
+      <methodref name="CPP_ABI_1" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="CPP_ABI_2" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="CPP_ABI_3" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="GetDisposed" visibility="protected" procflags="inline">
+      </methodref>
+      <methodref name="CheckDisposed" visibility="protected" procflags="inline">
+      </methodref>
+      <propertyref name="Disposed" visibility="protected">
+      </propertyref>
+    </ancestor>
+  </class>
+  <function name="unescape_chars" visibility="public">
+    <parameters>
+      <parameter name="s" type="string" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="escape_chars" visibility="public">
+    <parameters>
+      <parameter name="s" type="string" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="StringToJsonString" visibility="public">
+    <parameters>
+      <parameter name="OriginalString" type="string" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="StringToGUID" visibility="public">
+    <parameters>
+      <parameter name="GUID" type="string" />
+      <retval type="TGUID" />
+    </parameters>
+  </function>
+  <function name="CopyValue" visibility="public">
+    <parameters>
+      <parameter name="bValue" type="string" paramflags="var" />
+      <retval type="string" />
+    </parameters>
+  </function>
+</namespace>

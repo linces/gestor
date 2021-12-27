@@ -1,0 +1,48 @@
+package MLFLIB;
+
+{$R *.res}
+{$R 'TLockApplication\LockApplication.dcr'}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'Ferrementas MLFLIB LockApplication sem SSL'}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  IndyCore,
+  IndyProtocols;
+
+contains
+  CadastroUnt in 'TLockApplication\CadastroUnt.pas' {cadastro},
+  LockApplication in 'TLockApplication\LockApplication.pas',
+  LockApplicationControle in 'TLockApplication\LockApplicationControle.pas',
+  LockApplicationEmail in 'TLockApplication\LockApplicationEmail.pas',
+  LockApplicationEmailStatus in 'TLockApplication\LockApplicationEmailStatus.pas' {StatusEmail},
+  LockApplicationFunc in 'TLockApplication\LockApplicationFunc.pas',
+  LockApplicationInterface in 'TLockApplication\LockApplicationInterface.pas' {Bloqueio},
+  LockApplicationVars in 'TLockApplication\LockApplicationVars.pas';
+
+end.

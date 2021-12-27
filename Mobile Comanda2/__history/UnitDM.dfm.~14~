@@ -1,0 +1,212 @@
+object dm: Tdm
+  OldCreateOrder = False
+  OnCreate = DataModuleCreate
+  Height = 547
+  Width = 483
+  object qry_config: TFDQuery
+    CachedUpdates = True
+    Connection = connconf
+    SQL.Strings = (
+      'select * from TAB_USUARIO')
+    Left = 24
+    Top = 72
+    object qry_configUSUARIO: TStringField
+      FieldName = 'USUARIO'
+      Origin = 'USUARIO'
+      Size = 50
+    end
+    object qry_configSERVIDOR: TStringField
+      FieldName = 'SERVIDOR'
+      Origin = 'SERVIDOR'
+      Size = 1000
+    end
+    object qry_configcaminho: TStringField
+      FieldName = 'caminho'
+      Origin = 'caminho'
+      Size = 150
+    end
+  end
+  object RequestLogin: TRESTRequest
+    AutoCreateParams = False
+    Client = RESTClient
+    Params = <
+      item
+        Name = 'usuario'
+        Value = 'HEBER'
+      end>
+    Resource = 'ValidarLogin'
+    SynchronizedEvents = False
+    Left = 32
+    Top = 144
+  end
+  object RequestListarComanda: TRESTRequest
+    Client = RESTClient
+    Method = rmPOST
+    Params = <
+      item
+        Name = 'usuario'
+        Value = 'HEBER'
+      end>
+    Resource = 'ListarComanda'
+    SynchronizedEvents = False
+    Left = 152
+    Top = 144
+  end
+  object RequestListarProduto: TRESTRequest
+    Client = RESTClient
+    Method = rmPOST
+    Params = <
+      item
+        Name = 'usuario'
+        Value = 'HEBER'
+      end>
+    Resource = 'ListarProduto'
+    SynchronizedEvents = False
+    Left = 32
+    Top = 208
+  end
+  object RequestListarCategoria: TRESTRequest
+    Client = RESTClient
+    Method = rmPOST
+    Params = <
+      item
+        Name = 'usuario'
+        Value = 'HEBER'
+      end>
+    Resource = 'ListarCategoria'
+    SynchronizedEvents = False
+    Left = 157
+    Top = 200
+  end
+  object RequestAdicionarProdutoComanda: TRESTRequest
+    Client = RESTClient
+    Method = rmPOST
+    Params = <
+      item
+        Name = 'usuario'
+        Value = 'HEBER'
+      end>
+    Resource = 'AdicionarProdutoComanda'
+    SynchronizedEvents = False
+    Left = 37
+    Top = 272
+  end
+  object RequestListarProdutoComanda: TRESTRequest
+    Client = RESTClient
+    Method = rmPOST
+    Params = <
+      item
+        Name = 'usuario'
+        Value = 'HEBER'
+      end>
+    Resource = 'ListarProdutoComanda'
+    SynchronizedEvents = False
+    Left = 160
+    Top = 256
+  end
+  object RequestExcluirProdutoComanda: TRESTRequest
+    Client = RESTClient
+    Method = rmPOST
+    Params = <
+      item
+        Name = 'usuario'
+        Value = 'HEBER'
+      end>
+    Resource = 'ExcluirProdutoComanda'
+    SynchronizedEvents = False
+    Left = 37
+    Top = 344
+  end
+  object RequestEncerrarComanda: TRESTRequest
+    Client = RESTClient
+    Method = rmPOST
+    Params = <
+      item
+        Name = 'usuario'
+        Value = 'HEBER'
+      end>
+    Resource = 'EncerrarComanda'
+    SynchronizedEvents = False
+    Left = 157
+    Top = 328
+  end
+  object RequestOpcional: TRESTRequest
+    Client = RESTClient
+    Method = rmPOST
+    Params = <
+      item
+        Name = 'usuario'
+        Value = 'HEBER'
+      end>
+    Resource = 'ListarOpcional'
+    SynchronizedEvents = False
+    Left = 32
+    Top = 408
+  end
+  object connconf: TFDConnection
+    Params.Strings = (
+      'DriverID=SQLite'
+      'Database=D:\00Dev\Delphi\System ERP\Comandas\banco.db')
+    LoginPrompt = False
+    Left = 16
+    Top = 8
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 104
+    Top = 8
+  end
+  object FDPhysIBDriverLink1: TFDPhysIBDriverLink
+    Left = 216
+    Top = 8
+  end
+  object tblusuarios: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    Left = 360
+    Top = 16
+  end
+  object tblmesas: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    Left = 360
+    Top = 72
+  end
+  object tblprodutos: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    Left = 360
+    Top = 136
+  end
+  object RESTClient: TRESTClient
+    Params = <>
+    Left = 120
+    Top = 408
+  end
+  object tblgrupos: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    Left = 360
+    Top = 200
+  end
+end

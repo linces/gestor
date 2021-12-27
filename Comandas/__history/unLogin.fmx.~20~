@@ -1,0 +1,315 @@
+object frmLogin: TfrmLogin
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 567
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnShow = FormShow
+  DesignerMasterStyle = 3
+  object Rectangle1: TRectangle
+    Align = Top
+    Fill.Color = claWhite
+    Sides = [Bottom]
+    Size.Width = 640.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = xFFE2E2E2
+    object lbl_titulo: TLabel
+      Align = Center
+      StyledSettings = [Family]
+      Size.Width = 120.000000000000000000
+      Size.Height = 27.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 18.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+      TextSettings.FontColor = xFFB0BAC9
+      TextSettings.HorzAlign = Center
+      Text = 'Acesso'
+      TabOrder = 0
+    end
+  end
+  object TabControl: TTabControl
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 517.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = None
+    Sizes = (
+      640s
+      517s
+      640s
+      517s)
+    object TabLogin: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabLogin'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object Layout1: TLayout
+        Align = Center
+        Margins.Bottom = 100.000000000000000000
+        Size.Width = 271.000000000000000000
+        Size.Height = 266.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label2: TLabel
+          Align = Top
+          StyledSettings = [Family]
+          Size.Width = 271.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00060000000000000004000000}
+          TextSettings.FontColor = xFFB0BAC9
+          Text = 'Usu'#225'rio'
+          TabOrder = 2
+        end
+        object edt_usuario: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 3
+          TextSettings.FontColor = xFFB0BAC9
+          Position.Y = 30.000000000000000000
+          Hint = 
+            'O sistema diferencia letras maiusculas de minusculas. Cuidado co' +
+            'm o CapsLock'
+          Size.Width = 271.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Size, Style]
+          ParentShowHint = False
+          ShowHint = True
+        end
+        object rect_login: TRectangle
+          Align = Top
+          Cursor = crHandPoint
+          Fill.Color = xFF4A70F7
+          Margins.Top = 20.000000000000000000
+          Position.Y = 144.000000000000000000
+          Size.Width = 271.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 4.000000000000000000
+          YRadius = 4.000000000000000000
+          OnClick = rect_loginClick
+          object Label3: TLabel
+            Align = Center
+            StyledSettings = [Family]
+            Locked = True
+            Size.Width = 271.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            Text = 'Acessar'
+            TabOrder = 0
+          end
+        end
+        object lbl_config: TLabel
+          Align = Bottom
+          Cursor = crHandPoint
+          StyledSettings = [Family]
+          HitTest = True
+          Position.Y = 236.000000000000000000
+          Size.Width = 271.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.FontColor = xFFB0BAC9
+          TextSettings.HorzAlign = Center
+          Text = 'Configura'#231#245'es'
+          TabOrder = 5
+          OnClick = lbl_configClick
+        end
+        object Label6: TLabel
+          Align = Top
+          StyledSettings = [Family]
+          Position.Y = 62.000000000000000000
+          Size.Width = 271.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00060000000000000004000000}
+          TextSettings.FontColor = xFFB0BAC9
+          Text = 'Senha'
+          TabOrder = 0
+        end
+        object Edit1: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 1
+          TextSettings.FontColor = xFFB0BAC9
+          Position.Y = 92.000000000000000000
+          Hint = 
+            'O sistema diferencia letras maiusculas de minusculas. Cuidado co' +
+            'm o CapsLock'
+          Size.Width = 271.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Size, Style]
+          ParentShowHint = False
+          ShowHint = True
+        end
+      end
+    end
+    object TabConfig: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabConfig'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object Layout2: TLayout
+        Align = Center
+        Margins.Bottom = 100.000000000000000000
+        Size.Width = 271.000000000000000000
+        Size.Height = 217.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label4: TLabel
+          Align = Top
+          StyledSettings = [Family]
+          Size.Width = 271.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00060000000000000004000000}
+          TextSettings.FontColor = xFFB0BAC9
+          Text = 'Servidor'
+          TabOrder = 1
+        end
+        object edt_servidor: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 3
+          TextSettings.FontColor = xFFB0BAC9
+          Position.Y = 30.000000000000000000
+          Size.Width = 271.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Size, Style]
+        end
+        object rect_save_config: TRectangle
+          Align = Top
+          Cursor = crHandPoint
+          Fill.Color = xFF4A70F7
+          Margins.Top = 20.000000000000000000
+          Position.Y = 144.000000000000000000
+          Size.Width = 271.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 4.000000000000000000
+          YRadius = 4.000000000000000000
+          OnClick = rect_save_configClick
+          object Label5: TLabel
+            Align = Center
+            StyledSettings = [Family]
+            Locked = True
+            Size.Width = 271.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            Text = 'Salvar'
+            TabOrder = 0
+          end
+        end
+        object edt_caminho: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 2
+          TextSettings.FontColor = xFFB0BAC9
+          Position.Y = 92.000000000000000000
+          Size.Width = 271.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Size, Style]
+        end
+        object Label1: TLabel
+          Align = Top
+          StyledSettings = [Family]
+          Position.Y = 62.000000000000000000
+          Size.Width = 271.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00060000000000000004000000}
+          TextSettings.FontColor = xFFB0BAC9
+          Text = 'Caminho BD'
+          TabOrder = 0
+        end
+      end
+    end
+  end
+  object connconf: TFDConnection
+    Params.Strings = (
+      'Database=banco.db'
+      'DriverID=SQLite')
+    FormatOptions.AssignedValues = [fvADOCompatibility]
+    FormatOptions.ADOCompatibility = True
+    ResourceOptions.AssignedValues = [rvServerOutput, rvPersistent, rvAutoReconnect]
+    ResourceOptions.Persistent = True
+    ResourceOptions.ServerOutput = True
+    ResourceOptions.AutoReconnect = True
+    LoginPrompt = False
+    Left = 344
+    Top = 32
+  end
+  object qry_config: TFDQuery
+    CachedUpdates = True
+    Connection = connconf
+    SQL.Strings = (
+      'select * from tab_usuario')
+    Left = 184
+    Top = 32
+    object qry_configUSUARIO: TStringField
+      FieldName = 'USUARIO'
+      Origin = 'USUARIO'
+      Size = 50
+    end
+    object qry_configSERVIDOR: TStringField
+      FieldName = 'SERVIDOR'
+      Origin = 'SERVIDOR'
+      Size = 1000
+    end
+    object qry_configcaminho: TStringField
+      FieldName = 'caminho'
+      Origin = 'caminho'
+      Size = 150
+    end
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 576
+    Top = 210
+  end
+  object FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink
+    Left = 488
+    Top = 378
+  end
+end

@@ -1,0 +1,151 @@
+{
+    "type": "table",
+    "database": null,
+    "name": "licencas",
+    "withoutRowId": true,
+    "ddl": "CREATE TABLE licencas (id INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE, idsistema INTEGER NOT NULL, idinstalação VARCHAR (64), datainstalacao DATETIME NOT NULL, ultimasincronizacao DATETIME, estadolicenca BOOLEAN NOT NULL DEFAULT (0), versao INTEGER NOT NULL DEFAULT (1), gerarchavepor CHAR NOT NULL DEFAULT (0), diasavencer INTEGER, dataavencer DATE, chave VARCHAR (64), dataultimachave DATE, onoff BOOLEAN, nome VARCHAR (128), email VARCHAR (128), cpfcnpj VARCHAR (15), cep VARCHAR (10), endereco VARCHAR (128), cidade VARCHAR (128), estado VARCHAR (2), celular VARCHAR (15), ultimoip VARCHAR (14));",
+    "columns": [
+        {
+            "name": "id",
+            "type": "INTEGER",
+            "constraints": [
+                {
+                    "type": "PRIMARY KEY",
+                    "definition": "PRIMARY KEY AUTOINCREMENT "
+                },
+                {
+                    "type": "UNIQUE",
+                    "definition": "UNIQUE"
+                }
+            ]
+        },
+        {
+            "name": "idsistema",
+            "type": "INTEGER",
+            "constraints": [
+                {
+                    "type": "NOT NULL",
+                    "definition": "NOT NULL"
+                }
+            ]
+        },
+        {
+            "name": "idinstalação",
+            "type": "VARCHAR"
+        },
+        {
+            "name": "datainstalacao",
+            "type": "DATETIME",
+            "constraints": [
+                {
+                    "type": "NOT NULL",
+                    "definition": "NOT NULL"
+                }
+            ]
+        },
+        {
+            "name": "ultimasincronizacao",
+            "type": "DATETIME"
+        },
+        {
+            "name": "estadolicenca",
+            "type": "BOOLEAN",
+            "constraints": [
+                {
+                    "type": "NOT NULL",
+                    "definition": "NOT NULL "
+                },
+                {
+                    "type": "DEFAULT",
+                    "definition": "DEFAULT (0)"
+                }
+            ]
+        },
+        {
+            "name": "versao",
+            "type": "INTEGER",
+            "constraints": [
+                {
+                    "type": "NOT NULL",
+                    "definition": "NOT NULL "
+                },
+                {
+                    "type": "DEFAULT",
+                    "definition": "DEFAULT (1)"
+                }
+            ]
+        },
+        {
+            "name": "gerarchavepor",
+            "type": "CHAR",
+            "constraints": [
+                {
+                    "type": "NOT NULL",
+                    "definition": "NOT NULL "
+                },
+                {
+                    "type": "DEFAULT",
+                    "definition": "DEFAULT (0)"
+                }
+            ]
+        },
+        {
+            "name": "diasavencer",
+            "type": "INTEGER"
+        },
+        {
+            "name": "dataavencer",
+            "type": "DATE"
+        },
+        {
+            "name": "chave",
+            "type": "VARCHAR"
+        },
+        {
+            "name": "dataultimachave",
+            "type": "DATE"
+        },
+        {
+            "name": "onoff",
+            "type": "BOOLEAN"
+        },
+        {
+            "name": "nome",
+            "type": "VARCHAR"
+        },
+        {
+            "name": "email",
+            "type": "VARCHAR"
+        },
+        {
+            "name": "cpfcnpj",
+            "type": "VARCHAR"
+        },
+        {
+            "name": "cep",
+            "type": "VARCHAR"
+        },
+        {
+            "name": "endereco",
+            "type": "VARCHAR"
+        },
+        {
+            "name": "cidade",
+            "type": "VARCHAR"
+        },
+        {
+            "name": "estado",
+            "type": "VARCHAR"
+        },
+        {
+            "name": "celular",
+            "type": "VARCHAR"
+        },
+        {
+            "name": "ultimoip",
+            "type": "VARCHAR"
+        }
+    ],
+    "rows": [
+    ]
+}

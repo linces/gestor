@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="RESTRequest4D.Response.Intf" platform="Android">
+  <interface name="IResponse" GUID="{A3BB1797-E99E-4C72-8C4A-925825A50C27}" ancestor="IInterface" file="RESTRequest4D.Response.Intf.pas" line="8">
+    <function name="Content" visibility="public" procflags="abstract virtual" file="RESTRequest4D.Response.Intf.pas" line="10">
+      <parameters>
+        <retval type="string" />
+      </parameters>
+    </function>
+    <function name="ContentLength" visibility="public" procflags="abstract virtual" file="RESTRequest4D.Response.Intf.pas" line="11">
+      <parameters>
+        <retval type="Cardinal" />
+      </parameters>
+    </function>
+    <function name="ContentType" visibility="public" procflags="abstract virtual" file="RESTRequest4D.Response.Intf.pas" line="12">
+      <parameters>
+        <retval type="string" />
+      </parameters>
+    </function>
+    <function name="ContentEncoding" visibility="public" procflags="abstract virtual" file="RESTRequest4D.Response.Intf.pas" line="13">
+      <parameters>
+        <retval type="string" />
+      </parameters>
+    </function>
+    <function name="StatusCode" visibility="public" procflags="abstract virtual" file="RESTRequest4D.Response.Intf.pas" line="14">
+      <parameters>
+        <retval type="Integer" />
+      </parameters>
+    </function>
+    <function name="RawBytes" visibility="public" procflags="abstract virtual" file="RESTRequest4D.Response.Intf.pas" line="15">
+      <parameters>
+        <retval type="TBytes" />
+      </parameters>
+    </function>
+    <function name="JSONValue" visibility="public" procflags="abstract virtual" file="RESTRequest4D.Response.Intf.pas" line="16">
+      <parameters>
+        <retval type="TJSONValue" />
+      </parameters>
+    </function>
+    <function name="Headers" visibility="public" procflags="abstract virtual" file="RESTRequest4D.Response.Intf.pas" line="17">
+      <parameters>
+        <retval type="TStrings" />
+      </parameters>
+    </function>
+  </interface>
+</namespace>

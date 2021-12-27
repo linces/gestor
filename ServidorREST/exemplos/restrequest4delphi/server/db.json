@@ -1,0 +1,70 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Vinicius",
+      "lastName": "Sanchez",
+      "email": "vinicius@fiorilli.com.br"
+    },
+    {
+      "id": 2,
+      "name": "Julio",
+      "lastName": "Senha",
+      "email": "julio@fiorilli.com.br"
+    },
+    {
+      "id": 3,
+      "name": "Mateus",
+      "lastName": "Rocha",
+      "email": "mateus@fiorilli.com.br"
+    },
+    {
+      "id": 4,
+      "name": "Fagner",
+      "lastName": "Jesus",
+      "email": "fagner@fiorilli.com.br"
+    },
+    {
+      "id": 5,
+      "name": "Cristiano",
+      "lastName": "Amendola",
+      "email": "cristiano@fiorilli.com.br"
+    },
+    {
+      "id": 6,
+      "name": "Andre",
+      "lastName": "Dias",
+      "email": "andre@fiorilli.com.br"
+    },
+    {
+      "id": 7,
+      "name": "Jose",
+      "lastName": "Carlos",
+      "email": "jose@fiorilli.com.br"
+    },
+    {
+      "id": 8,
+      "name": "Juba",
+      "lastName": "Soler",
+      "email": "juba@fiorilli.com.br"
+    },
+    {
+      "id": 9,
+      "name": "Beto",
+      "lastName": "Fiorilli",
+      "email": "Beto@fiorilli.com.br"
+    },
+    {
+      "id": 10,
+      "name": "Matheus",
+      "lastName": "Martins",
+      "email": "matheus@fiorilli.com.br"
+    },
+    {
+      "id": 11,
+      "name": "Richard",
+      "lastName": "Flores",
+      "email": "richard@fiorilli.com.br"
+    }
+  ]
+}

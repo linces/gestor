@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="DataSet.Serialize.UpdatedStatus" platform="Android">
+  <helper name="TUpdateStatusHelper" for="TUpdateStatus" file="DataSet.Serialize.UpdatedStatus.pas" line="17">
+    <members>
+      <function name="ToString" visibility="public" procflags="helper" file="DataSet.Serialize.UpdatedStatus.pas" line="18">
+        <parameters>
+          <retval type="string" />
+        </parameters>
+      </function>
+    </members>
+  </helper>
+</namespace>

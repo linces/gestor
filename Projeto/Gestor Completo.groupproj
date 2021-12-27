@@ -1,0 +1,144 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{5D0A9AE7-E85A-41C8-9754-B0257FF17075}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Gestor.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PDV.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Restaurante\Restaurante\PDVRestauranteIndepente.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Restaurante\Cheff\Comandas.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\ServidorREST\ServidorRest.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Restaurante\Impressao\ServidorImpr.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Replicador\trunk\Sample\Replicador.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Whats\Whats.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\GeradorChaves\LicenseMSoftArena.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\GeradorChaves\TLockApplication\Gerador Chave\Gerenciador.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Gestor">
+        <MSBuild Projects="Gestor.dproj"/>
+    </Target>
+    <Target Name="Gestor:Clean">
+        <MSBuild Projects="Gestor.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Gestor:Make">
+        <MSBuild Projects="Gestor.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PDV">
+        <MSBuild Projects="PDV.dproj"/>
+    </Target>
+    <Target Name="PDV:Clean">
+        <MSBuild Projects="PDV.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PDV:Make">
+        <MSBuild Projects="PDV.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PDVRestauranteIndepente">
+        <MSBuild Projects="..\Restaurante\Restaurante\PDVRestauranteIndepente.dproj"/>
+    </Target>
+    <Target Name="PDVRestauranteIndepente:Clean">
+        <MSBuild Projects="..\Restaurante\Restaurante\PDVRestauranteIndepente.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PDVRestauranteIndepente:Make">
+        <MSBuild Projects="..\Restaurante\Restaurante\PDVRestauranteIndepente.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Comandas">
+        <MSBuild Projects="..\Restaurante\Cheff\Comandas.dproj"/>
+    </Target>
+    <Target Name="Comandas:Clean">
+        <MSBuild Projects="..\Restaurante\Cheff\Comandas.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Comandas:Make">
+        <MSBuild Projects="..\Restaurante\Cheff\Comandas.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ServidorRest">
+        <MSBuild Projects="..\ServidorREST\ServidorRest.dproj"/>
+    </Target>
+    <Target Name="ServidorRest:Clean">
+        <MSBuild Projects="..\ServidorREST\ServidorRest.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ServidorRest:Make">
+        <MSBuild Projects="..\ServidorREST\ServidorRest.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ServidorImpr">
+        <MSBuild Projects="..\Restaurante\Impressao\ServidorImpr.dproj"/>
+    </Target>
+    <Target Name="ServidorImpr:Clean">
+        <MSBuild Projects="..\Restaurante\Impressao\ServidorImpr.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ServidorImpr:Make">
+        <MSBuild Projects="..\Restaurante\Impressao\ServidorImpr.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Replicador">
+        <MSBuild Projects="..\Replicador\trunk\Sample\Replicador.dproj"/>
+    </Target>
+    <Target Name="Replicador:Clean">
+        <MSBuild Projects="..\Replicador\trunk\Sample\Replicador.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Replicador:Make">
+        <MSBuild Projects="..\Replicador\trunk\Sample\Replicador.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Whats">
+        <MSBuild Projects="..\Whats\Whats.dproj"/>
+    </Target>
+    <Target Name="Whats:Clean">
+        <MSBuild Projects="..\Whats\Whats.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Whats:Make">
+        <MSBuild Projects="..\Whats\Whats.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="LicenseMSoftArena">
+        <MSBuild Projects="..\GeradorChaves\LicenseMSoftArena.dproj"/>
+    </Target>
+    <Target Name="LicenseMSoftArena:Clean">
+        <MSBuild Projects="..\GeradorChaves\LicenseMSoftArena.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="LicenseMSoftArena:Make">
+        <MSBuild Projects="..\GeradorChaves\LicenseMSoftArena.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Gerenciador">
+        <MSBuild Projects="..\GeradorChaves\TLockApplication\Gerador Chave\Gerenciador.dproj"/>
+    </Target>
+    <Target Name="Gerenciador:Clean">
+        <MSBuild Projects="..\GeradorChaves\TLockApplication\Gerador Chave\Gerenciador.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Gerenciador:Make">
+        <MSBuild Projects="..\GeradorChaves\TLockApplication\Gerador Chave\Gerenciador.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Gestor;PDV;PDVRestauranteIndepente;Comandas;ServidorRest;ServidorImpr;Replicador;Whats;LicenseMSoftArena;Gerenciador"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Gestor:Clean;PDV:Clean;PDVRestauranteIndepente:Clean;Comandas:Clean;ServidorRest:Clean;ServidorImpr:Clean;Replicador:Clean;Whats:Clean;LicenseMSoftArena:Clean;Gerenciador:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Gestor:Make;PDV:Make;PDVRestauranteIndepente:Make;Comandas:Make;ServidorRest:Make;ServidorImpr:Make;Replicador:Make;Whats:Make;LicenseMSoftArena:Make;Gerenciador:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

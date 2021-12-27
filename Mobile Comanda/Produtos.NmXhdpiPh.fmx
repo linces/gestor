@@ -1,0 +1,50 @@
+inherited FrmProdutos_NmXhdpiPh: TFrmProdutos_NmXhdpiPh
+  ClientHeight = 615
+  ClientWidth = 400
+  DesignerMasterStyle = 0
+  inherited LBackground: TLayout
+    Size.Width = 400.000000000000000000
+    Size.Height = 615.000000000000000000
+    inherited ImgBack: TImage
+      MultiResBitmap.Height = 800
+      MultiResBitmap.Width = 450
+      Size.Width = 400.000000000000000000
+      Size.Height = 615.000000000000000000
+    end
+    inherited LConteudo: TLayout
+      Size.Width = 400.000000000000000000
+      Size.Height = 615.000000000000000000
+      inherited LTopo: TLayout
+        Size.Width = 400.000000000000000000
+        inherited imgBackTopo: TImage
+          MultiResBitmap.Height = 168
+          MultiResBitmap.Width = 450
+          Size.Width = 400.000000000000000000
+          inherited Button1: TButton
+            OnClick = nil
+          end
+          inherited Button2: TButton
+            Position.X = 352.000000000000000000
+          end
+          inherited edtBuscar: TEdit
+            Size.Width = 304.000000000000000000
+            Size.Height = 32.000000000000000000
+          end
+        end
+      end
+      inherited LAreaGrid: TLayout
+        Size.Width = 400.000000000000000000
+        Size.Height = 567.000000000000000000
+        inherited lista: TListView
+          Size.Width = 400.000000000000000000
+          Size.Height = 567.000000000000000000
+          ItemAppearanceObjects.ItemObjects.Accessory.AccessoryType = Detail
+          inherited Image1: TImage
+            MultiResBitmap.Height = 640
+            MultiResBitmap.Width = 640
+          end
+        end
+      end
+    end
+  end
+end

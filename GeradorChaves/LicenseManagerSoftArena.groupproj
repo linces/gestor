@@ -1,0 +1,84 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{D54896C8-87C2-47C4-9BAE-6CE6E2764625}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="LicenseMSoftArena.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TLockApplication\Gerador Chave\Gerenciador.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Testes\Teste.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TLockApplication\srvTLockApp\srvTLockApp.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TLockApplication\srvTLockAppRemoto\srvTLockAppRm.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="LicenseMSoftArena">
+        <MSBuild Projects="LicenseMSoftArena.dproj"/>
+    </Target>
+    <Target Name="LicenseMSoftArena:Clean">
+        <MSBuild Projects="LicenseMSoftArena.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="LicenseMSoftArena:Make">
+        <MSBuild Projects="LicenseMSoftArena.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Gerenciador">
+        <MSBuild Projects="TLockApplication\Gerador Chave\Gerenciador.dproj"/>
+    </Target>
+    <Target Name="Gerenciador:Clean">
+        <MSBuild Projects="TLockApplication\Gerador Chave\Gerenciador.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Gerenciador:Make">
+        <MSBuild Projects="TLockApplication\Gerador Chave\Gerenciador.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Teste">
+        <MSBuild Projects="Testes\Teste.dproj"/>
+    </Target>
+    <Target Name="Teste:Clean">
+        <MSBuild Projects="Testes\Teste.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Teste:Make">
+        <MSBuild Projects="Testes\Teste.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="srvTLockApp">
+        <MSBuild Projects="TLockApplication\srvTLockApp\srvTLockApp.dproj"/>
+    </Target>
+    <Target Name="srvTLockApp:Clean">
+        <MSBuild Projects="TLockApplication\srvTLockApp\srvTLockApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="srvTLockApp:Make">
+        <MSBuild Projects="TLockApplication\srvTLockApp\srvTLockApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="srvTLockAppRm">
+        <MSBuild Projects="TLockApplication\srvTLockAppRemoto\srvTLockAppRm.dproj"/>
+    </Target>
+    <Target Name="srvTLockAppRm:Clean">
+        <MSBuild Projects="TLockApplication\srvTLockAppRemoto\srvTLockAppRm.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="srvTLockAppRm:Make">
+        <MSBuild Projects="TLockApplication\srvTLockAppRemoto\srvTLockAppRm.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="LicenseMSoftArena;Gerenciador;Teste;srvTLockApp;srvTLockAppRm"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="LicenseMSoftArena:Clean;Gerenciador:Clean;Teste:Clean;srvTLockApp:Clean;srvTLockAppRm:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="LicenseMSoftArena:Make;Gerenciador:Make;Teste:Make;srvTLockApp:Make;srvTLockAppRm:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

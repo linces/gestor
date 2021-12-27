@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="DataSet.Serialize.Config" platform="Android">
+  <class name="TDataSetSerializeConfigExport" file="DataSet.Serialize.Config.pas" line="10">
+    <ancestor name="TObject" namespace="System">
+      <methodref name="Create" visibility="public" procflags="constructor">
+      </methodref>
+      <methodref name="Free" visibility="public">
+      </methodref>
+      <methodref name="DisposeOf" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="InitInstance" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="CleanupInstance" visibility="public">
+      </methodref>
+      <methodref name="ClassType" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="ClassName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassNameIs" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassParent" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassInfo" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="InstanceSize" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="InheritsFrom" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="QualifiedClassName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="GetInterface" visibility="public">
+      </methodref>
+      <methodref name="GetInterfaceEntry" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="GetInterfaceTable" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="UnitName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="UnitScope" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="Equals" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="GetHashCode" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="ToString" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="SafeCallException" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="AfterConstruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="BeforeDestruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Dispatch" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="DefaultHandler" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="NewInstance" visibility="public" procflags="class virtual">
+      </methodref>
+      <methodref name="FreeInstance" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Destroy" visibility="public" procflags="destructor virtual">
+      </methodref>
+      <methodref name="CPP_ABI_1" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="CPP_ABI_2" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="CPP_ABI_3" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="GetDisposed" visibility="protected" procflags="inline">
+      </methodref>
+      <methodref name="CheckDisposed" visibility="protected" procflags="inline">
+      </methodref>
+      <propertyref name="Disposed" visibility="protected">
+      </propertyref>
+    </ancestor>
+    <members>
+      <field name="FExportNullValues" type="Boolean" visibility="private" size="1" offset="4" file="DataSet.Serialize.Config.pas" line="12" />
+      <field name="FExportNullAsEmptyString" type="Boolean" visibility="private" size="1" offset="5" file="DataSet.Serialize.Config.pas" line="13" />
+      <field name="FExportOnlyFieldsVisible" type="Boolean" visibility="private" size="1" offset="6" file="DataSet.Serialize.Config.pas" line="14" />
+      <field name="FExportEmptyDataSet" type="Boolean" visibility="private" size="1" offset="7" file="DataSet.Serialize.Config.pas" line="15" />
+      <field name="FFormatCurrency" type="string" visibility="private" size="4" offset="8" file="DataSet.Serialize.Config.pas" line="16" />
+      <field name="FFormatDate" type="string" visibility="private" size="4" offset="12" file="DataSet.Serialize.Config.pas" line="17" />
+      <field name="FExportChildDataSetAsJsonObject" type="Boolean" visibility="private" size="1" offset="16" file="DataSet.Serialize.Config.pas" line="18" />
+      <constructor name="Create" visibility="public" file="DataSet.Serialize.Config.pas" line="20">
+        <parameters>
+        </parameters>
+      </constructor>
+      <property name="FormatDate" visibility="public" read="FFormatDate" write="FFormatDate" type="string" default="0" file="DataSet.Serialize.Config.pas" line="21" />
+      <property name="FormatCurrency" visibility="public" read="FFormatCurrency" write="FFormatCurrency" type="string" default="0" file="DataSet.Serialize.Config.pas" line="22" />
+      <property name="ExportOnlyFieldsVisible" visibility="public" read="FExportOnlyFieldsVisible" write="FExportOnlyFieldsVisible" type="Boolean" file="DataSet.Serialize.Config.pas" line="23" />
+      <property name="ExportNullValues" visibility="public" read="FExportNullValues" write="FExportNullValues" type="Boolean" file="DataSet.Serialize.Config.pas" line="24" />
+      <property name="ExportNullAsEmptyString" visibility="public" read="FExportNullAsEmptyString" write="FExportNullAsEmptyString" type="Boolean" file="DataSet.Serialize.Config.pas" line="25" />
+      <property name="ExportEmptyDataSet" visibility="public" read="FExportEmptyDataSet" write="FExportEmptyDataSet" type="Boolean" file="DataSet.Serialize.Config.pas" line="26" />
+      <property name="ExportChildDataSetAsJsonObject" visibility="public" read="FExportChildDataSetAsJsonObject" write="FExportChildDataSetAsJsonObject" type="Boolean" file="DataSet.Serialize.Config.pas" line="27" />
+    </members>
+  </class>
+  <class name="TDataSetSerializeConfigImport" file="DataSet.Serialize.Config.pas" line="30">
+    <ancestor name="TObject" namespace="System">
+      <methodref name="Create" visibility="public" procflags="constructor">
+      </methodref>
+      <methodref name="Free" visibility="public">
+      </methodref>
+      <methodref name="DisposeOf" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="InitInstance" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="CleanupInstance" visibility="public">
+      </methodref>
+      <methodref name="ClassType" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="ClassName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassNameIs" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassParent" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassInfo" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="InstanceSize" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="InheritsFrom" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="QualifiedClassName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="GetInterface" visibility="public">
+      </methodref>
+      <methodref name="GetInterfaceEntry" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="GetInterfaceTable" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="UnitName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="UnitScope" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="Equals" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="GetHashCode" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="ToString" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="SafeCallException" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="AfterConstruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="BeforeDestruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Dispatch" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="DefaultHandler" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="NewInstance" visibility="public" procflags="class virtual">
+      </methodref>
+      <methodref name="FreeInstance" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Destroy" visibility="public" procflags="destructor virtual">
+      </methodref>
+      <methodref name="CPP_ABI_1" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="CPP_ABI_2" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="CPP_ABI_3" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="GetDisposed" visibility="protected" procflags="inline">
+      </methodref>
+      <methodref name="CheckDisposed" visibility="protected" procflags="inline">
+      </methodref>
+      <propertyref name="Disposed" visibility="protected">
+      </propertyref>
+    </ancestor>
+    <members>
+      <field name="FImportOnlyFieldsVisible" type="Boolean" visibility="private" size="1" offset="4" file="DataSet.Serialize.Config.pas" line="32" />
+      <constructor name="Create" visibility="public" file="DataSet.Serialize.Config.pas" line="34">
+        <parameters>
+        </parameters>
+      </constructor>
+      <property name="ImportOnlyFieldsVisible" visibility="public" read="FImportOnlyFieldsVisible" write="FImportOnlyFieldsVisible" type="Boolean" file="DataSet.Serialize.Config.pas" line="35" />
+    </members>
+  </class>
+  <class name="TDataSetSerializeConfig" file="DataSet.Serialize.Config.pas" line="38">
+    <ancestor name="TObject" namespace="System">
+      <methodref name="Create" visibility="public" procflags="constructor">
+      </methodref>
+      <methodref name="Free" visibility="public">
+      </methodref>
+      <methodref name="DisposeOf" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="InitInstance" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="CleanupInstance" visibility="public">
+      </methodref>
+      <methodref name="ClassType" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="ClassName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassNameIs" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassParent" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassInfo" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="InstanceSize" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="InheritsFrom" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="QualifiedClassName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="GetInterface" visibility="public">
+      </methodref>
+      <methodref name="GetInterfaceEntry" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="GetInterfaceTable" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="UnitName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="UnitScope" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="Equals" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="GetHashCode" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="ToString" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="SafeCallException" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="AfterConstruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="BeforeDestruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Dispatch" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="DefaultHandler" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="NewInstance" visibility="public" procflags="class virtual">
+      </methodref>
+      <methodref name="FreeInstance" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Destroy" visibility="public" procflags="destructor virtual">
+      </methodref>
+      <methodref name="CPP_ABI_1" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="CPP_ABI_2" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="CPP_ABI_3" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="GetDisposed" visibility="protected" procflags="inline">
+      </methodref>
+      <methodref name="CheckDisposed" visibility="protected" procflags="inline">
+      </methodref>
+      <propertyref name="Disposed" visibility="protected">
+      </propertyref>
+    </ancestor>
+    <members>
+      <field name="FLowerCamelCase" type="Boolean" visibility="private" size="1" offset="4" file="DataSet.Serialize.Config.pas" line="40" />
+      <field name="FDataSetPrefix" type="TArray&lt;System.string&gt;" visibility="private" size="4" offset="8" file="DataSet.Serialize.Config.pas" line="41" />
+      <field name="FDateInputIsUTC" type="Boolean" visibility="private" size="1" offset="12" file="DataSet.Serialize.Config.pas" line="42" />
+      <field name="FExport" type="TDataSetSerializeConfigExport" visibility="private" size="4" offset="16" file="DataSet.Serialize.Config.pas" line="43" />
+      <field name="FImport" type="TDataSetSerializeConfigImport" visibility="private" size="4" offset="20" file="DataSet.Serialize.Config.pas" line="44" />
+      <field name="FInstance" type="TDataSetSerializeConfig" visibility="private" varflags="class" file="DataSet.Serialize.Config.pas" line="45" />
+      <function name="GetDefaultInstance" visibility="protected" procflags="class" file="DataSet.Serialize.Config.pas" line="47">
+        <parameters>
+          <retval type="TDataSetSerializeConfig" />
+        </parameters>
+      </function>
+      <constructor name="Create" visibility="public" file="DataSet.Serialize.Config.pas" line="49">
+        <parameters>
+        </parameters>
+      </constructor>
+      <destructor name="Destroy" visibility="public" file="DataSet.Serialize.Config.pas" line="50">
+        <parameters>
+        </parameters>
+      </destructor>
+      <property name="DataSetPrefix" visibility="public" read="FDataSetPrefix" write="FDataSetPrefix" type="TArray&lt;System.string&gt;" file="DataSet.Serialize.Config.pas" line="51" />
+      <property name="LowerCamelCase" visibility="public" read="FLowerCamelCase" write="FLowerCamelCase" type="Boolean" file="DataSet.Serialize.Config.pas" line="52" />
+      <property name="DateInputIsUTC" visibility="public" read="FDateInputIsUTC" write="FDateInputIsUTC" type="Boolean" file="DataSet.Serialize.Config.pas" line="53" />
+      <property name="Export" visibility="public" read="FExport" write="FExport" type="TDataSetSerializeConfigExport" file="DataSet.Serialize.Config.pas" line="54" />
+      <property name="Import" visibility="public" read="FImport" write="FImport" type="TDataSetSerializeConfigImport" file="DataSet.Serialize.Config.pas" line="55" />
+      <function name="GetInstance" visibility="public" procflags="class" file="DataSet.Serialize.Config.pas" line="56">
+        <parameters>
+          <retval type="TDataSetSerializeConfig" />
+        </parameters>
+      </function>
+      <procedure name="UnInitialize@" visibility="class private" procflags="class destructor noself" file="DataSet.Serialize.Config.pas" line="57">
+      </procedure>
+      <procedure name="Create@" visibility="class private" procflags="class constructor noself" generated="true">
+      </procedure>
+    </members>
+  </class>
+</namespace>

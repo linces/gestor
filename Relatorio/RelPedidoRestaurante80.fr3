@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="6.6.17" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Padrão" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42203,4601600231" ReportOptions.Description.Text="" ReportOptions.LastChange="44070,71246125" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frxDBEmpresa" DataSetName="frxDBEmpresa"/>
+    <item DataSet="frxDBItens" DataSetName="frxDBItens"/>
+    <item DataSet="frxDBPedido" DataSetName="frxDBPedido"/>
+  </Datasets>
+  <Variables>
+    <item Name=" New Category1"/>
+    <item Name="Endereco"/>
+  </Variables>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="COlonna MT" Font.Style="0" PaperWidth="74" PaperHeight="160" PaperSize="256" LeftMargin="5" RightMargin="5" TopMargin="2,5" BottomMargin="5" ColumnWidth="0" ColumnPositions.Text="" Frame.Typ="0" MirrorMode="0" HGuides.Text="" VGuides.Text="75,5906" OnBeforePrint="Page1OnBeforePrint">
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Height="34,01577" Left="0" ParentFont="False" Top="124,72449" Width="241,88992" ColumnWidth="0" ColumnGap="0" DataSet="frxDBPedido" DataSetName="frxDBPedido" RowCount="0">
+      <TfrxMemoView Name="Memo84" Align="baClient" AllowVectorExport="True" Left="0" Top="0" Width="241,88992" Height="34,01577" DataSetName="frxDBOS_Master" Frame.Typ="15" Text=""/>
+      <TfrxMemoView Name="Memo5" AllowVectorExport="True" Left="4,45671" Top="1,88976378" Width="83,14966" Height="15,11812" Font.Charset="0" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="Mesa:"/>
+      <TfrxMemoView Name="Memo26" AllowVectorExport="True" Left="-15" Top="16,38582677" Width="102,04731" Height="15,11812" Font.Charset="0" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" Frame.Typ="0" HAlign="haRight" ParentFont="False" Text="Data:"/>
+      <TfrxMemoView Name="frxDBOSCODIGO" IndexTag="1" AllowVectorExport="True" Left="91,93700787" Top="1,88976378" Width="143,62214" Height="15,11812" DataField="FK_MESA" DataSet="frxDBPedido" DataSetName="frxDBPedido" Font.Charset="0" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="1" Frame.Typ="0" Fill.BackColor="16777215" ParentFont="False" Text="[frxDBPedido.&#34;FK_MESA&#34;]"/>
+      <TfrxMemoView Name="frxDBOSNOME" IndexTag="1" AllowVectorExport="True" Left="91,93700787" Top="17,38582677" Width="143,62214" Height="15,11812" DataField="DATA_EMISSAO" DataSet="frxDBPedido" DataSetName="frxDBPedido" Font.Charset="0" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="1" Frame.Typ="0" Fill.BackColor="16777215" ParentFont="False" Text="[frxDBPedido.&#34;DATA_EMISSAO&#34;]"/>
+    </TfrxMasterData>
+    <TfrxDetailData Name="DetailData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="34,77166331" Left="0" Top="222,99227" Width="241,88992" OnAfterPrint="DetailData1OnAfterPrint" ColumnWidth="0" ColumnGap="0" DataSet="frxDBItens" DataSetName="frxDBItens" RowCount="0">
+      <TfrxMemoView Name="Memo33" Align="baClient" AllowVectorExport="True" Left="0" Top="0" Width="241,88992" Height="34,77166331" DataSetName="frxDetalhe" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="courier New" Font.Style="0" Frame.Typ="15" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo13" AllowVectorExport="True" Left="0,88976378" Top="0,75590551" Width="236,59830559" Height="17,00787402" DataSet="frxDBItens" DataSetName="frxDBItens" Font.Charset="0" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[frxDBItens.&#34;DESCRICAO_OBS&#34;]"/>
+      <TfrxMemoView Name="Memo4" AllowVectorExport="True" Left="1" Top="16,87402551" Width="235,07060496" Height="17,00787402" DataSet="frxDBItens" DataSetName="frxDBItens" DisplayFormat.FormatStr="%2.2f" DisplayFormat.Kind="fkNumeric" Font.Charset="0" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="Quantidade:[frxDBItens.&#34;QTD&#34;]"/>
+    </TfrxDetailData>
+    <TfrxHeader Name="Header1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Height="18,89765" Left="0" ParentFont="False" Top="181,41744" Width="241,88992">
+      <TfrxMemoView Name="Memo83" Align="baClient" AllowVectorExport="True" Left="0" Top="0" Width="241,88992" Height="18,89765" Frame.Typ="15" Text=""/>
+      <TfrxMemoView Name="Memo12" AllowVectorExport="True" Left="0" Top="0" Width="241,88975402" Height="18,8976378" Font.Charset="0" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="1" Frame.Typ="0" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="************ Itens ************"/>
+    </TfrxHeader>
+    <TfrxHeader Name="Header4" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Font.Charset="1" Font.Color="0" Font.Height="-7" Font.Name="COlonna MT" Font.Style="0" Height="81,37013" Left="0" ParentFont="False" Top="18,89765" Width="241,88992">
+      <TfrxMemoView Name="Memo88" Align="baClient" AllowVectorExport="True" Left="0" Top="0" Width="241,88992" Height="81,37013" Font.Charset="1" Font.Color="0" Font.Height="-15" Font.Name="Courier New" Font.Style="1" Frame.Typ="15" HAlign="haRight" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo1" AllowVectorExport="True" Left="4,66308" Top="2,77953" Width="226,77165354" Height="15,11812" DataSetName="frxDBEmp" Font.Charset="0" Font.Color="0" Font.Height="-11" Font.Name="Courier New" Font.Style="1" Frame.Typ="0" HAlign="haCenter" ParentFont="False" Text="[frxDBEmpresa.&#34;FANTASIA&#34;]"/>
+      <TfrxMemoView Name="frxDBEmpresaRAZAO" AllowVectorExport="True" Left="3,95906" Top="15,72282" Width="226,77165354" Height="15,42047" DataField="RAZAO" DataSet="frxDBEmpresa" DataSetName="frxDBEmpresa" Font.Charset="0" Font.Color="0" Font.Height="-11" Font.Name="Courier New" Font.Style="0" Frame.Typ="0" HAlign="haCenter" ParentFont="False" Text="[frxDBEmpresa.&#34;RAZAO&#34;]"/>
+      <TfrxMemoView Name="Memo30" AllowVectorExport="True" Left="3,55906" Top="33,28658" Width="226,77165354" Height="15,42047" AutoWidth="True" DataSet="frxDBEmpresa" DataSetName="frxDBEmpresa" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Courier New" Font.Style="0" Frame.Typ="0" HAlign="haCenter" ParentFont="False" Text="FONE:[frxDBEmpresa.&#34;FONE&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo6" AllowVectorExport="True" Left="2,77953" Top="54,69295" Width="230,55116402" Height="18,8976378" Font.Charset="0" Font.Color="0" Font.Height="-11" Font.Name="Tahoma" Font.Style="1" Frame.Typ="0" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="****** Pedidos Restaurante *****"/>
+    </TfrxHeader>
+  </TfrxReportPage>
+</TfrxReport>

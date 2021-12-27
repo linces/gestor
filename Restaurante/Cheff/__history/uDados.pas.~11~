@@ -1,0 +1,260 @@
+unit uDados;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, Data.DBXCommon, inifiles,
+  IPPeerClient, Data.DB, Data.SqlExpr, Datasnap.DBClient,
+  FireDAC.Stan.Intf, FireDAC.Stan.Option, System.IoUtils,
+  FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def,
+  FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Phys.SQLite,
+  FireDAC.Phys.SQLiteDef, FireDAC.Stan.ExprFuncs, FireDAC.FMXUI.Wait,
+  FireDAC.Comp.UI, FireDAC.Comp.Client, FireDAC.Stan.Param, FireDAC.DatS,
+  FireDAC.DApt.Intf, FireDAC.DApt, FireDAC.Comp.DataSet, Data.DBXDataSnap,
+  Datasnap.DSConnect, uDWAbout, uRESTDWPoolerDB, uDWConstsData,
+  FireDAC.Phys.SQLiteWrapper.Stat, System.Diagnostics, Fmx.Forms, Fmx.Dialogs;
+
+type
+  TDados = class(TDataModule)
+    conexao: TFDConnection;
+    Transacao: TFDTransaction;
+    FDQLite: TFDPhysSQLiteDriverLink;
+    WaitCursor: TFDGUIxWaitCursor;
+    qryConfigura: TFDQuery;
+    qryConfiguracodigo: TFDAutoIncField;
+    qryConfiguraip: TStringField;
+    qryConfigurausuario: TStringField;
+    qryConfigurasenha: TStringField;
+    qryConfigurausabluetooth: TStringField;
+    qryImpressoras: TFDQuery;
+    qryImpressorasid: TFDAutoIncField;
+    qryImpressorasdescricao: TStringField;
+    qryImpressorastipo: TStringField;
+    qryImpressorasativo: TStringField;
+    qryImpressorasvias: TStringField;
+    RDWDataBase: TRESTDWDataBase;
+    qryMesas: TRESTDWClientSQL;
+    qryMesasCODIGO: TIntegerField;
+    qryMesasNOME: TStringField;
+    qryMesasQTD: TIntegerField;
+    qryMesasFK_MOVIMENTO: TIntegerField;
+    qryMesasDATA: TSQLTimeStampField;
+    qryMesasSITUACAO: TStringField;
+    qryMesasVIRTUAL_SITUACAO: TStringField;
+    qryMesasICONE: TIntegerField;
+    qryComanda_pessoa: TRESTDWClientSQL;
+    qryComanda_pessoaCODIGO: TIntegerField;
+    qryComanda_pessoaFK_COMANDA: TIntegerField;
+    qryComanda_pessoaNOME: TStringField;
+    qryComanda_pessoaSITUACAO: TStringField;
+    qryComanda_pessoaTOTAL: TFMTBCDField;
+    qryComanda_pessoaTOTAL_RATEIO: TFMTBCDField;
+    qryComanda_pessoaIMPRIMIU: TStringField;
+    qryComanda_pessoaPDV: TStringField;
+    qryComanda_Itens: TRESTDWClientSQL;
+    qryProdutos: TRESTDWClientSQL;
+    qryProdutosCODIGO: TIntegerField;
+    qryProdutosREFERENCIA: TStringField;
+    qryProdutosDESCRICAO: TStringField;
+    qryProdutosUNIDADE: TStringField;
+    qryProdutosPR_VENDA: TFMTBCDField;
+    qryExecute: TRESTDWClientSQL;
+    qryComanda_Rateio: TRESTDWClientSQL;
+    qryComanda_RateioCODIGO: TIntegerField;
+    qryComanda_RateioFK_COMANDA_PESSOA: TIntegerField;
+    qryComanda_RateioFK_COMANDA: TIntegerField;
+    qryComanda_RateioFK_PRODUTO: TIntegerField;
+    qryComanda_RateioPERCENTUAL: TFMTBCDField;
+    qryComanda_RateioQTD: TFMTBCDField;
+    qryComanda_RateioTOTAL: TFMTBCDField;
+    qryComanda_RateioPRECO: TFMTBCDField;
+    qrycomanda_master: TRESTDWClientSQL;
+    qrycomanda_masterCODIGO: TIntegerField;
+    qrycomanda_masterFK_MESA: TIntegerField;
+    qrycomanda_masterTOTAL: TFMTBCDField;
+    qrycomanda_masterSITUACAO: TStringField;
+    qrycomanda_masterDATA_HORA: TSQLTimeStampField;
+    UpdItens: TRESTDWClientSQL;
+    qryComanda_ItensCODIGO: TIntegerField;
+    qryComanda_ItensFK_COMANDA_PESSOA: TIntegerField;
+    qryComanda_ItensFK_PRODUTO: TIntegerField;
+    qryComanda_ItensQTD: TFMTBCDField;
+    qryComanda_ItensPRECO: TFMTBCDField;
+    qryComanda_ItensTOTAL: TFMTBCDField;
+    qryComanda_ItensPERCENTUAL: TFMTBCDField;
+    qryComanda_ItensSITUACAO: TStringField;
+    qryComanda_ItensDATA_HORA: TSQLTimeStampField;
+    qryComanda_ItensVIRTUAL_PRODUTO: TStringField;
+    qryComanda_ItensVIRTUAL_QTD: TStringField;
+    qryEmpresa: TRESTDWClientSQL;
+    qryEmpresaCODIGO: TIntegerField;
+    qryEmpresaFANTASIA: TStringField;
+    qryEmpresaRAZAO: TStringField;
+    qryEmpresaTIPO: TStringField;
+    qryEmpresaCNPJ: TStringField;
+    qryEmpresaIE: TStringField;
+    qryEmpresaIM: TStringField;
+    qryEmpresaENDERECO: TStringField;
+    qryEmpresaNUMERO: TStringField;
+    qryEmpresaCOMPLEMENTO: TStringField;
+    qryEmpresaBAIRRO: TStringField;
+    qryEmpresaCIDADE: TStringField;
+    qryEmpresaUF: TStringField;
+    qryEmpresaCEP: TStringField;
+    qryEmpresaFONE: TStringField;
+    qryImpPedido: TRESTDWClientSQL;
+    qryImpPedidoMESA: TStringField;
+    qryImpPedidoCOMANDA: TStringField;
+    qryImpPedidoDATA_HORA: TSQLTimeStampField;
+    qryImpPedidoVIRTUAL_PRODUTO: TStringField;
+    qryImpPedidoQTD: TFMTBCDField;
+    qryImpPedidoFK_COMANDA_PESSOA: TIntegerField;
+    qryImpPedidoCODIGO: TIntegerField;
+    qryProdutosCOMPLEMENTO: TStringField;
+    qryConsulta: TRESTDWClientSQL;
+    updComandaMaster: TRESTDWClientSQL;
+    qryComanda_pessoaTPAGOME: TAggregateField;
+    qryComanda_pessoaTSALDOME: TAggregateField;
+    qryComanda_pessoaSALDOCO: TExtendedField;
+    qryComanda_pessoaPERCENTUAL: TFMTBCDField;
+    updComandaRateio: TRESTDWClientSQL;
+    procedure DataModuleCreate(Sender: TObject);
+    procedure qryMesasCalcFields(DataSet: TDataSet);
+    procedure qryComanda_pessoaCalcFields(DataSet: TDataSet);
+  private
+
+    { Private declarations }
+  public
+    { Public declarations }
+    sTela: string;
+    eCod: Integer;
+    function MaiorComanda: Integer;
+    function MaiorItem: Integer;
+    function MaiorPessoa: Integer;
+    function MaiorRateio: Integer;
+  end;
+
+var
+  Dados: TDados;
+
+implementation
+
+{%CLASSGROUP 'FMX.Controls.TControl'}
+{$R *.dfm}
+
+procedure TDados.DataModuleCreate(Sender: TObject);
+begin
+  with conexao do
+  begin
+{$IFDEF IOS}
+    Params.Values['DriverID'] := 'SQLite';
+    try
+      Params.Values['Database'] := TPath.Combine(TPath.GetDocumentsPath,
+        'dados.db');
+      Connected := true;
+    except
+      on e: Exception do
+        raise Exception.Create('Erro de conexão com o banco de dados ' +
+          e.Message);
+    end;
+{$ENDIF}
+{$IFDEF ANDROID}
+    Params.Values['DriverID'] := 'SQLite';
+    try
+    ShowMessage(TPath.Combine(TPath.GetDocumentsPath,
+        'dados.db'));
+      Params.Values['Database'] := TPath.Combine(TPath.GetDocumentsPath,
+        'dados.db');
+      Connected := true;
+    except
+      on e: Exception do
+        raise Exception.Create('Erro de conexão com o banco de dados ' +
+          e.Message);
+    end;
+{$ENDIF}
+{$IFDEF MSWINDOWS}
+    Params.Values['DriverID'] := 'SQLite';
+    try
+      Params.Values['Database'] := System.SysUtils.GetCurrentDir+'\dados.db';
+      Connected := true;
+    except
+      on e: Exception do
+        raise Exception.Create('Erro de conexão com o banco de dados ' +
+          e.Message);
+    end;
+{$ENDIF}
+  end;
+
+end;
+
+function TDados.MaiorItem: Integer;
+begin
+  Result := 0;
+  qryExecute.Close;
+  qryExecute.SQL.Clear;
+  qryExecute.SQL.Text :=
+    'sELECT coalesce(MAX(codigo),0) as maior from comanda_itens';
+  qryExecute.Open;
+  Result := qryExecute.Fields[0].AsInteger + 1;
+
+end;
+
+procedure TDados.qryComanda_pessoaCalcFields(DataSet: TDataSet);
+begin
+  qryComanda_pessoaSALDOCO.AsFloat := qryComanda_pessoaTOTAL.AsFloat -
+    qryComanda_pessoaTOTAL_RATEIO.AsFloat;
+end;
+
+procedure TDados.qryMesasCalcFields(DataSet: TDataSet);
+begin
+  if qryMesasSITUACAO.Value = 'L' then
+  begin
+    qryMesasVIRTUAL_SITUACAO.Value := 'LIVRE';
+    qryMesasICONE.Value := 0;
+  end;
+
+  if qryMesasSITUACAO.Value = 'O' then
+  begin
+    qryMesasVIRTUAL_SITUACAO.Value := 'OCUPADA';
+    qryMesasICONE.Value := 1;
+  end;
+
+end;
+
+function TDados.MaiorComanda: Integer;
+begin
+  Result := 0;
+  qryExecute.Close;
+  qryExecute.SQL.Clear;
+  qryExecute.SQL.Text :=
+    'SELECT coalesce(MAX(codigo),0) as maior from comanda_master';
+  qryExecute.Open;
+  Result := qryExecute.Fields[0].AsInteger + 1;
+
+end;
+
+function TDados.MaiorRateio: Integer;
+begin
+  Result := 0;
+  qryExecute.Close;
+  qryExecute.SQL.Clear;
+  qryExecute.SQL.Text :=
+    'SELECT coalesce(MAX(codigo),0) as maior from comanda_rateio';
+  qryExecute.Open;
+  Result := qryExecute.Fields[0].AsInteger + 1;
+
+end;
+
+function TDados.MaiorPessoa: Integer;
+begin
+  Result := 0;
+  qryExecute.Close;
+  qryExecute.SQL.Clear;
+  qryExecute.SQL.Text :=
+    'SELECT coalesce(MAX(codigo),0) as maior from comanda_pessoa';
+  qryExecute.Open;
+  Result := qryExecute.Fields[0].AsInteger + 1;
+
+end;
+
+end.

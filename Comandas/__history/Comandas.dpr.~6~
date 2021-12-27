@@ -1,0 +1,19 @@
+program Comandas;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  unLogin in 'unLogin.pas' {frmLogin},
+  undm in 'undm.pas' {dm: TDataModule},
+  unfrmprincipal in 'unfrmprincipal.pas' {frmPrincipal},
+  UNDM2 in 'UNDM2.pas' {DataModule1: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(Tdm, dm);
+  Application.CreateForm(TfrmLogin, frmLogin);
+  Application.CreateForm(TDataModule1, DataModule1);
+  Application.Run;
+end.

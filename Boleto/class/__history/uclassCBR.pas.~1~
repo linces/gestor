@@ -1,0 +1,189 @@
+unit uclassCBR;
+
+interface
+
+uses FireDAC.Comp.Client, Forms, SysUtils, DB;
+
+type
+  TNFE = class(TObject)
+  private
+  public
+    function GetNEW_ID_NFE: Integer;
+    function GetNEW_ID_NUMERO: Integer;
+    function GetNEW_ID_NFE_EVENTO(vID_NFE: Integer): Integer;
+    function GetNEW_ID_NFE_EVENTO_SEQUENCIA(vID_NFE: Integer;vTipo: String): Integer;
+
+    function GetNEW_ID_NFE_ITEM: Integer;
+    function GetNEW_ID_NFE_ITEM_ITEM(vID_NFE: Integer): Integer;
+
+    function GetNEW_ID_NFE_COBRANCA: Integer;
+end;
+
+var
+  oNFe: TNFE;
+
+implementation
+
+uses
+  udtmDefault, uclassEMPRESA, udtmCBR;
+
+function TNFE.GetNEW_ID_NUMERO: Integer;
+var
+  vSQL: String;
+begin
+  try
+    vSQL := Format(
+      'SELECT MAX(ID_NUMERO) FROM NFE WHERE ID_EMPRESA = %d AND ID_SERIE = %d;',
+      [oEmpresa.ID, oEmpresa.NFE_ID_SERIE]
+    );
+
+    dtmDefault.qryTmp.Close;
+    dtmDefault.qryTmp.Open(vSQL);
+    dtmDefault.qryTmp.FetchAll;
+
+    if dtmDefault.qryTmp.IsEmpty then
+      Result := 1
+    else
+      Result := dtmDefault.qryTmp.Fields[0].AsInteger + 1;
+
+  finally
+    dtmDefault.qryTmp.Close;
+  end;
+end;
+
+function TNFE.GetNEW_ID_NFE: Integer;
+var
+  vSQL: String;
+begin
+  try
+    vSQL := 'SELECT MAX(ID_NFE) FROM NFE';
+
+    dtmDefault.qryTmp.Close;
+    dtmDefault.qryTmp.Open(vSQL);
+    dtmDefault.qryTmp.FetchAll;
+
+    if dtmDefault.qryTmp.IsEmpty then
+      Result := 1
+    else
+      Result := dtmDefault.qryTmp.Fields[0].AsInteger + 1;
+
+  finally
+    dtmDefault.qryTmp.Close;
+  end;
+end;
+
+function TNFE.GetNEW_ID_NFE_EVENTO(vID_NFE: Integer): Integer;
+var
+  vSQL: String;
+begin
+  try
+    vSQL := 'SELECT MAX(ID_EVENTO) FROM NFE_EVENTO';
+
+    dtmDefault.qryTmp.Close;
+    dtmDefault.qryTmp.Open(vSQL);
+    dtmDefault.qryTmp.FetchAll;
+
+    if dtmDefault.qryTmp.IsEmpty then
+      Result := 1
+    else
+      Result := dtmDefault.qryTmp.Fields[0].AsInteger + 1;
+
+  finally
+    dtmDefault.qryTmp.Close;
+  end;
+end;
+
+function TNFE.GetNEW_ID_NFE_EVENTO_SEQUENCIA(vID_NFE: Integer;vTipo: String): Integer;
+var
+  vSQL: String;
+begin
+  try
+    vSQL := Format('SELECT MAX(SEQUENCIA) FROM NFE_EVENTO WHERE ID_NFE = %d AND TIPO = %s',
+            [vID_NFE,vTipo.Trim.QuotedString]);
+
+    dtmDefault.qryTmp.Close;
+    dtmDefault.qryTmp.Open(vSQL);
+    dtmDefault.qryTmp.FetchAll;
+
+    if dtmDefault.qryTmp.IsEmpty then
+      Result := 1
+    else
+      Result := dtmDefault.qryTmp.Fields[0].AsInteger + 1;
+
+  finally
+    dtmDefault.qryTmp.Close;
+  end;
+end;
+
+function TNFE.GetNEW_ID_NFE_ITEM: Integer;
+var
+  vSQL: String;
+begin
+  try
+    vSQL := 'SELECT MAX(ID_NFE_ITEM) FROM NFE_ITEM';
+
+    dtmDefault.qryTmp.Close;
+    dtmDefault.qryTmp.Open(vSQL);
+    dtmDefault.qryTmp.FetchAll;
+
+    if dtmDefault.qryTmp.IsEmpty then
+      Result := 1
+    else
+      Result := dtmDefault.qryTmp.Fields[0].AsInteger + 1;
+
+  finally
+    dtmDefault.qryTmp.Close;
+  end;
+end;
+
+function TNFE.GetNEW_ID_NFE_ITEM_ITEM(vID_NFE: Integer): Integer;
+var
+  vSQL: String;
+begin
+  try
+    vSQL := Format('SELECT MAX(ID_ITEM) FROM NFE_ITEM WHERE ID_NFE = %d',[vID_NFE]);
+
+    dtmDefault.qryTmp.Close;
+    dtmDefault.qryTmp.Open(vSQL);
+    dtmDefault.qryTmp.FetchAll;
+
+    if dtmDefault.qryTmp.IsEmpty then
+      Result := 1
+    else
+      Result := dtmDefault.qryTmp.Fields[0].AsInteger + 1;
+
+  finally
+    dtmDefault.qryTmp.Close;
+  end;
+end;
+
+function TNFE.GetNEW_ID_NFE_COBRANCA: Integer;
+var
+  vSQL: String;
+begin
+  try
+    vSQL := 'SELECT MAX(ID_NFE_COBRANCA) FROM NFE_COBRANCA';
+
+    dtmDefault.qryTmp.Close;
+    dtmDefault.qryTmp.Open(vSQL);
+    dtmDefault.qryTmp.FetchAll;
+
+    if dtmDefault.qryTmp.IsEmpty then
+      Result := 1
+    else
+      Result := dtmDefault.qryTmp.Fields[0].AsInteger + 1;
+
+  finally
+    dtmDefault.qryTmp.Close;
+  end;
+end;
+
+initialization
+  oNFe := TNFe.Create;
+
+finalization
+  FreeAndNil(oNFe);
+
+end.
+
+

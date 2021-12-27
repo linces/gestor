@@ -1,0 +1,509 @@
+unit Unit4;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs,
+  Vcl.StdCtrls, Vcl.Menus, Vcl.ComCtrls,
+  Data.DB, Vcl.DBCtrls, Vcl.Mask, Vcl.ExtCtrls,
+  Vcl.Grids, Vcl.DBGrids, IniFiles, Jpeg, Vcl.AppEvnts,
+  Vcl.PlatformDefaultStyleActnCtrls, System.Actions,
+  Vcl.ActnList, Vcl.ActnMan, Vcl.Imaging.pngimage, VclTee.TeeGDIPlus,
+  VclTee.TeEngine, VclTee.TeeProcs, VclTee.Chart,
+  VclTee.Series,
+  FDZabuuReplicator, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf,
+  FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Phys.FB, FireDAC.Phys.FBDef,
+  FireDAC.VCLUI.Wait, FireDAC.Stan.Param, FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.DApt, FireDAC.Comp.DataSet,
+  FireDAC.Comp.Client,FireDAC.Phys.IBBase;
+
+type
+  TForm4 = class(TForm)
+    FDZabuuReplicator1: TFDZabuuReplicator;
+
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
+    tsConfig: TTabSheet;
+    Memo1: TMemo;
+    Button1: TButton;
+    Button2: TButton;
+    DataSource1: TDataSource;
+    DBGrid1: TDBGrid;
+    GroupBox1: TGroupBox;
+    DBNavigator1: TDBNavigator;
+    Label1: TLabel;
+    DBEdit1: TDBEdit;
+    Label2: TLabel;
+    DBEdit2: TDBEdit;
+    Label3: TLabel;
+    DBEdit3: TDBEdit;
+    Label4: TLabel;
+    DBEdit4: TDBEdit;
+    Label5: TLabel;
+    DBEdit5: TDBEdit;
+    Label6: TLabel;
+    DBEdit6: TDBEdit;
+    Label7: TLabel;
+    DBEdit7: TDBEdit;
+    DBCheckBox1: TDBCheckBox;
+    DBCheckBox2: TDBCheckBox;
+    Label8: TLabel;
+    DBEdit8: TDBEdit;
+    Label9: TLabel;
+    DBEdit9: TDBEdit;
+    Label10: TLabel;
+    DBEdit10: TDBEdit;
+    Timer1: TTimer;
+    TrackBar1: TTrackBar;
+    Label11: TLabel;
+    lblTempo: TLabel;
+    Image1: TImage;
+    btAcao: TButton;
+    PopupMenu1: TPopupMenu;
+    CriarEstruturadoReplicador1: TMenuItem;
+    CriarEstruturadeReplicaoNs1: TMenuItem;
+    RemoverEstrutura2: TMenuItem;
+    CriarMultiFilial2: TMenuItem;
+    TrayIcon1: TTrayIcon;
+    ApplicationEvents1: TApplicationEvents;
+    ActionManager1: TActionManager;
+    Action1: TAction;
+    PopupMenu2: TPopupMenu;
+    Abrir1: TMenuItem;
+    N1: TMenuItem;
+    Sair1: TMenuItem;
+    Backup1: TMenuItem;
+    Full1: TMenuItem;
+    able1: TMenuItem;
+    LimparLog1: TMenuItem;
+    Chart1: TChart;
+    Series1: TBarSeries;
+    LimparCacheReplicador1: TMenuItem;
+    tsScripts: TTabSheet;
+    DSScripts: TDataSource;
+    DBGrid2: TDBGrid;
+    Label12: TLabel;
+    Label13: TLabel;
+    DBMemo1: TDBMemo;
+    DBLookupComboBox1: TDBLookupComboBox;
+    DBCheckBox3: TDBCheckBox;
+    DBNavigator2: TDBNavigator;
+    Label15: TLabel;
+    DBEdit12: TDBEdit;
+    Label14: TLabel;
+    DBEdit11: TDBEdit;
+    Label16: TLabel;
+    DBEdit13: TDBEdit;
+    BancosTable: TFDTable;
+    SCRIPTS: TFDTable;
+    ReplicadorConnection : TFDConnection;
+    BancosTableID: TIntegerField;
+    BancosTableDESCRICAO: TStringField;
+    BancosTableHOST: TStringField;
+    BancosTablePATH: TStringField;
+    BancosTableUSUARIO: TStringField;
+    BancosTableSENHA: TStringField;
+    BancosTableROLE: TStringField;
+    BancosTablePORT: TIntegerField;
+    BancosTableENVIAR: TIntegerField;
+    BancosTableRECEBER: TIntegerField;
+    BancosTablePRIORIDADE: TSmallintField;
+    BancosTableTABELASENVIA: TStringField;
+    BancosTableTABELASRECEBE: TStringField;
+    SCRIPTSGUUID: TStringField;
+    SCRIPTSDESCRICAO: TStringField;
+    SCRIPTSIDRECEIVER: TIntegerField;
+    SCRIPTSSCRIPT: TMemoField;
+    SCRIPTSSTATUS: TIntegerField;
+    SCRIPTSDATA: TDateField;
+    SCRIPTSHORA: TTimeField;
+    FDConnection1: TFDConnection;
+    procedure CriarEstruturaReplicador2Click(Sender: TObject);
+    procedure FDZabuuReplicator1Log(Value: string);
+    procedure Button1Click(Sender: TObject);
+    procedure CriarEstruturadeReplicao1Click(Sender: TObject);
+    procedure RemoverEstrutura1Click(Sender: TObject);
+    procedure CriarMultiFilial1Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure TrackBar1Change(Sender: TObject);
+    procedure Timer1Timer(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure btAcaoClick(Sender: TObject);
+    procedure CriarEstruturadoReplicador1Click(Sender: TObject);
+    procedure CriarEstruturadeReplicaoNs1Click(Sender: TObject);
+    procedure RemoverEstrutura2Click(Sender: TObject);
+    procedure CriarMultiFilial2Click(Sender: TObject);
+    procedure ApplicationEvents1Minimize(Sender: TObject);
+    procedure Action1Execute(Sender: TObject);
+    procedure Abrir1Click(Sender: TObject);
+    procedure Sair1Click(Sender: TObject);
+    procedure tsConfigShow(Sender: TObject);
+    procedure Full1Click(Sender: TObject);
+    procedure able1Click(Sender: TObject);
+    procedure LimparLog1Click(Sender: TObject);
+    procedure LimparCacheReplicador1Click(Sender: TObject);
+    procedure DBGrid2DrawColumnCell(Sender: TObject; const Rect: TRect; DataCol: Integer; Column: TColumn;
+      State: TGridDrawState);
+    procedure tsScriptsShow(Sender: TObject);
+  private
+    procedure fnc_registraConfiguracoes;
+    procedure fnc_lerConfiguracoes;
+    procedure fnc_minimizarApp;
+    procedure SetChart(Title: String; Value: Currency; Clear: Boolean = false);
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form4: TForm4;
+
+implementation
+
+{$R *.dfm}
+
+procedure GetBuildInfo(var V1, V2, V3, V4: Word);
+var
+  VerInfoSize, VerValueSize, Dummy: DWORD;
+  VerInfo: Pointer;
+  VerValue: PVSFixedFileInfo;
+begin
+  VerInfoSize := GetFileVersionInfoSize(Pchar(ParamStr(0)), Dummy);
+  GetMem(VerInfo, VerInfoSize);
+  GetFileVersionInfo(Pchar(ParamStr(0)), 0, VerInfoSize, VerInfo);
+  VerQueryValue(VerInfo, '''', Pointer(VerValue), VerValueSize);
+  with VerValue^ do
+  begin
+    V1 := dwFileVersionMS shr 16;
+    V2 := dwFileVersionMS and $FFFF;
+    V3 := dwFileVersionLS shr 16;
+    V4 := dwFileVersionLS and $FFFF;
+  end;
+  Freemem(VerInfo, VerInfoSize);
+end;
+
+function GetVersionInfo: string;
+var
+  V1, V2, V3, V4 : Word;
+begin
+  GetBuildInfo(V1, V2, V3, V4);
+  Result := IntToStr(V1) + '.' + IntToStr(V2) + IntToStr(V3) + '.' + IntToStr(V4);
+end;
+
+procedure TForm4.able1Click(Sender: TObject);
+var
+  IdBancoOrigem, Table: string;
+  Id: Integer;
+begin
+  Timer1.Enabled := false;
+
+  IdBancoOrigem := InputBox('Banco de Origem',
+    'Informe o Id do Banco que será o provedor dos dados:', '');
+  if not TryStrToInt(IdBancoOrigem, Id) then
+    raise Exception.Create('O Id Informado é Inválido');
+
+  Table := InputBox('Tabela', 'Informe a Tabela a ser Replicada', '');
+  if Table = '' then
+    raise Exception.Create('É preciso informar uma tabela válida');
+
+  TThread.CreateAnonymousThread(
+    procedure
+    begin
+      FDZabuuReplicator1.BackupTable(Table, Id);
+    end).Start;
+  Application.ProcessMessages;
+end;
+
+procedure TForm4.Abrir1Click(Sender: TObject);
+begin
+  TrayIcon1.Visible := false;
+  Show;
+  WindowState := wsNormal;
+  Application.BringToFront;
+end;
+
+procedure TForm4.Action1Execute(Sender: TObject);
+begin
+  btAcao.Visible := not btAcao.Visible;
+  tsConfig.TabVisible := not tsConfig.TabVisible;
+  tsScripts.TabVisible := not tsScripts.TabVisible;
+
+  //ReplicadorConnection.Connected := true;
+  // BancosTable.Active := true;
+end;
+
+procedure TForm4.ApplicationEvents1Minimize(Sender: TObject);
+begin
+  fnc_minimizarApp;
+end;
+
+procedure TForm4.Button1Click(Sender: TObject);
+begin
+  Memo1.Lines.Add(FormatDateTime('hh:nn:ss', now) +  ' - VERIFICANDO CONEXÕES...');
+  Timer1.Enabled := true;
+  try
+    if not BancosTable.Active then
+      BancosTable.Active := true;
+
+    TThread.CreateAnonymousThread(
+      procedure
+      begin
+        FDZabuuReplicator1.Replicate;
+      end).Start;
+
+  except
+    Memo1.Lines.Add(FormatDateTime('hh:nn:ss', now) +  ' ----- ATENÇÃO ----- Banco do Replicador está OffLine');
+  end;
+
+end;
+
+procedure TForm4.Button2Click(Sender: TObject);
+begin
+  Timer1.Enabled := false;
+end;
+
+procedure TForm4.btAcaoClick(Sender: TObject);
+begin
+  PopupMenu1.Popup(Mouse.CursorPos.X, Mouse.CursorPos.Y);
+end;
+
+procedure TForm4.CriarEstruturadeReplicao1Click(Sender: TObject);
+begin
+  FDZabuuReplicator1.ApplyMetadata;
+end;
+
+procedure TForm4.CriarEstruturadeReplicaoNs1Click(Sender: TObject);
+begin
+  FDZabuuReplicator1.ApplyMetadata;
+end;
+
+procedure TForm4.CriarEstruturadoReplicador1Click(Sender: TObject);
+begin
+  FDZabuuReplicator1.ApplyMetadataBankReplicator;
+end;
+
+procedure TForm4.CriarEstruturaReplicador2Click(Sender: TObject);
+begin
+  FDZabuuReplicator1.ApplyMetadataBankReplicator;
+end;
+
+procedure TForm4.CriarMultiFilial1Click(Sender: TObject);
+begin
+  FDZabuuReplicator1.ApplyMetadataMultiBranch;
+end;
+
+procedure TForm4.CriarMultiFilial2Click(Sender: TObject);
+begin
+  FDZabuuReplicator1.ApplyMetadataMultiBranch;
+end;
+
+procedure TForm4.DBGrid2DrawColumnCell(Sender: TObject; const Rect: TRect; DataCol: Integer; Column: TColumn;
+  State: TGridDrawState);
+var R : TRect;
+begin
+  R:=Rect;
+  Dec(R.Bottom,2);
+  if Column.Field=SCRIPTS.FieldByName('SCRIPT') then
+   begin
+    if not (gdSelected in State) then
+     DBGrid2.Canvas.FillRect(Rect);
+    DBGrid2.Canvas.TextRect(R,R.Left,R.Top,
+    SCRIPTS.FieldByName('SCRIPT').AsString);
+   end;
+end;
+
+procedure TForm4.FDZabuuReplicator1Log(Value: string);
+begin
+  Memo1.Lines.Add(FormatDateTime('hh:nn:ss', now) + ' - ' + Value);
+end;
+
+procedure TForm4.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  fnc_registraConfiguracoes;
+end;
+
+procedure TForm4.FormCreate(Sender: TObject);
+begin
+  try
+    Form4.Caption := Form4.Caption + ' ' + GetVersionInfo;
+    fnc_lerConfiguracoes;
+    ReplicadorConnection.Params.Database := FDZabuuReplicator1.Path;
+    //Conexao.Params.Add('Protocol=TCPIP');
+    ReplicadorConnection.Params.Add('Server=' + FDZabuuReplicator1.Host);
+    ReplicadorConnection.Params.Add('Port=' + FDZabuuReplicator1.Port);
+    ReplicadorConnection.Params.UserName := FDZabuuReplicator1.User;
+    ReplicadorConnection.Params.Password := FDZabuuReplicator1.Password;
+    FDZabuuReplicator1.Chart(SetChart);
+    lblTempo.Caption := IntToStr(TrackBar1.Position) + ' minutos';
+    Action1Execute(Sender);
+    fnc_minimizarApp;
+  except
+     Memo1.Lines.Add(FormatDateTime('hh:nn:ss', now) +  ' ----- ATENÇÃO ----- Banco do Replicador está OffLine');
+  end;
+
+
+end;
+
+procedure TForm4.Full1Click(Sender: TObject);
+var
+  IdBancoOrigem: string;
+  Id: Integer;
+begin
+  Timer1.Enabled := false;
+  IdBancoOrigem := InputBox('Banco de Origem',
+    'Informe o Id do Banco que será o provedor dos dados:', '');
+  if not TryStrToInt(IdBancoOrigem, Id) then
+    raise Exception.Create('O Id Informado é Inválido');
+  TThread.CreateAnonymousThread(
+    procedure
+    begin
+      FDZabuuReplicator1.BackupFull(Id);
+    end).Start;
+  Application.ProcessMessages;
+end;
+
+procedure TForm4.LimparCacheReplicador1Click(Sender: TObject);
+begin
+  FDZabuuReplicator1.ClearReplicateBank;
+end;
+
+procedure TForm4.LimparLog1Click(Sender: TObject);
+begin
+  Memo1.Lines.Clear;
+end;
+
+procedure TForm4.RemoverEstrutura1Click(Sender: TObject);
+begin
+  FDZabuuReplicator1.removeReplicationStructure;
+end;
+
+procedure TForm4.RemoverEstrutura2Click(Sender: TObject);
+begin
+  FDZabuuReplicator1.removeReplicationStructure;
+end;
+
+procedure TForm4.Sair1Click(Sender: TObject);
+begin
+  if MessageDlg
+    ('Deseja realmente finalizar a aplicação de Replicação? Esta ação deixara os banco de dados desatualizados!',
+    mtconfirmation, [mbyes, mbno], 0) = mryes then
+    Close;
+end;
+
+procedure TForm4.SetChart(Title: String; Value: Currency;
+Clear: Boolean = false);
+begin
+  if Clear then
+    Chart1.Series[0].Clear
+  else
+    Chart1.Series[0].AddY(Value, Title);
+end;
+
+procedure TForm4.Timer1Timer(Sender: TObject);
+begin
+  try
+    Memo1.Lines.Add(FormatDateTime('hh:nn:ss', now) +  ' - VERIFICANDO CONEXÕES...');
+    if not BancosTable.Active then
+      BancosTable.Active := true;
+    FDZabuuReplicator1.Replicate;
+    Application.ProcessMessages;
+  except
+    Memo1.Lines.Add(FormatDateTime('hh:nn:ss', now) +  ' ----- ATENÇÃO ----- Banco do Replicador está OffLine');
+  end;
+
+end;
+
+procedure TForm4.TrackBar1Change(Sender: TObject);
+begin
+  Timer1.Interval := (TrackBar1.Position * 60000);
+  lblTempo.Caption := IntToStr(TrackBar1.Position) + ' minutos';
+end;
+
+procedure TForm4.tsConfigShow(Sender: TObject);
+begin
+  if not BancosTable.Active then
+    BancosTable.Active := true;
+
+  if not SCRIPTS.Active then
+    SCRIPTS.Active := True;
+end;
+
+procedure TForm4.tsScriptsShow(Sender: TObject);
+begin
+  if not BancosTable.Active then
+    BancosTable.Active := true;
+
+  if not SCRIPTS.Active then
+    SCRIPTS.Active := True;
+end;
+
+procedure TForm4.fnc_lerConfiguracoes;
+var
+  Ini: TIniFile;
+begin
+  Ini := TIniFile.Create(ExtractFilePath(Application.ExeName) +
+    '\Replicador.Ini');
+  try
+    TrackBar1.Position := Ini.ReadInteger('CONFIGURACAO', 'INTERVAL', 1);
+    FDZabuuReplicator1.Factor := Ini.ReadInteger('CONFIGURACAO', 'FATOR', 100);
+    FDZabuuReplicator1.Limit := Ini.ReadInteger('CONFIGURACAO', 'LIMIT', 50);
+    FDZabuuReplicator1.ApplicationName := Ini.ReadString('CONFIGURACAO', 'APPLICATIONNAME', 'Replicador.exe');
+    FDZabuuReplicator1.Host := Ini.ReadString('CONFIGURACAO', 'HOST', 'localhost');
+    FDZabuuReplicator1.Password := Ini.ReadString('CONFIGURACAO', 'PASSWORD', 'masterkey');
+    FDZabuuReplicator1.Path := Ini.ReadString('CONFIGURACAO', 'PATH', ExtractFileDir(Application.ExeName) + '\REPLICADOR.FDB');
+    FDZabuuReplicator1.Port := Ini.ReadString('CONFIGURACAO', 'PORT', '3050');
+    FDZabuuReplicator1.RoleName := Ini.ReadString('CONFIGURACAO', 'ROLENAME', '');
+    FDZabuuReplicator1.User := Ini.ReadString('CONFIGURACAO', 'USER', 'SYSDBA');
+    FDZabuuReplicator1.TypeDB := Ini.ReadString('CONFIGURACAO', 'PROTOCOL', 'firebirdd-2.5');
+    FDZabuuReplicator1.Sequencer := (Ini.ReadString('CONFIGURACAO', 'SEQUENCER', 'False') = 'True');
+    FDZabuuReplicator1.InjectBankID := (Ini.ReadString('CONFIGURACAO', 'INJECTBANKID', 'False') = 'True');
+    FDZabuuReplicator1.DBVersion := Ini.ReadString('CONFIGURACAO', 'DBVERSION', '2.5');
+    FDZabuuReplicator1.VendorLib := Ini.ReadString('CONFIGURACAO','VENDORLIB','');
+    Timer1.Enabled := (Ini.ReadString('CONFIGURACAO', 'AUTOSTART', 'True') = 'True');
+
+    if FileExists(Ini.ReadString('CONFIGURACAO', 'LOGO', '')) then
+      Image1.Picture.LoadFromFile(Ini.ReadString('CONFIGURACAO', 'LOGO', ''));
+  finally
+    Ini.Free;
+  end;
+
+end;
+
+procedure TForm4.fnc_minimizarApp;
+begin
+  Self.Hide;
+  Self.WindowState := wsMinimized;
+  TrayIcon1.Visible := true;
+end;
+
+procedure TForm4.fnc_registraConfiguracoes;
+var
+  Ini: TIniFile;
+begin
+  Ini := TIniFile.Create(ExtractFilePath(Application.ExeName) +
+    '\Replicador.Ini');
+  try
+    Ini.WriteInteger('CONFIGURACAO', 'INTERVAL', TrackBar1.Position);
+    Ini.WriteInteger('CONFIGURACAO', 'FATOR', FDZabuuReplicator1.Factor);
+    Ini.WriteInteger('CONFIGURACAO', 'LIMIT', FDZabuuReplicator1.Limit);
+    Ini.WriteString('CONFIGURACAO', 'APPLICATIONNAME',
+      FDZabuuReplicator1.ApplicationName);
+    Ini.WriteString('CONFIGURACAO', 'HOST', FDZabuuReplicator1.Host);
+    Ini.WriteString('CONFIGURACAO', 'PASSWORD', FDZabuuReplicator1.Password);
+    Ini.WriteString('CONFIGURACAO', 'PATH', FDZabuuReplicator1.Path);
+    Ini.WriteString('CONFIGURACAO', 'PORT', FDZabuuReplicator1.Port);
+    Ini.WriteString('CONFIGURACAO', 'ROLENAME', FDZabuuReplicator1.RoleName);
+    Ini.WriteString('CONFIGURACAO', 'USER', FDZabuuReplicator1.User);
+    Ini.WriteString('CONFIGURACAO', 'PROTOCOL', FDZabuuReplicator1.TypeDB);
+    Ini.WriteString('CONFIGURACAO', 'DBVERSION', FDZabuuReplicator1.DBVersion);
+    Ini.WriteString('CONFIGURACAO', 'SEQUENCER', BoolToStr(FDZabuuReplicator1.Sequencer, True));
+    Ini.WriteString('CONFIGURACAO', 'INJECTBANKID', BoolToStr(FDZabuuReplicator1.InjectBankID, True));
+    Ini.WriteString('CONFIGURACAO', 'VENDORLIB', FDZabuuReplicator1.VendorLib);
+  finally
+    Ini.Free;
+  end;
+end;
+
+end.

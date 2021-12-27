@@ -1,0 +1,198 @@
+unit unLogin;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, UniProvider,
+  InterBaseUniProvider, FMX.Edit, FMX.Layouts, FMX.TabControl,
+  FMX.Controls.Presentation, FMX.StdCtrls, FMX.Objects, FireDAC.Stan.Intf,
+  FireDAC.Stan.Option, FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf,
+  FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys,
+  FireDAC.Phys.SQLite, FireDAC.Phys.SQLiteDef, FireDAC.Stan.ExprFuncs,
+  FireDAC.Phys.SQLiteWrapper.Stat, FireDAC.FMXUI.Wait, FireDAC.Stan.Param,
+  FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.DApt, Data.DB, FireDAC.Comp.DataSet,
+  FireDAC.Comp.Client, FireDAC.Comp.UI, DALoader, UniLoader, SQLiteUniProvider,
+  DBAccess, Uni;
+
+type
+  TfrmLogin = class(TForm)
+    Rectangle1: TRectangle;
+    lbl_titulo: TLabel;
+    TabControl: TTabControl;
+    TabLogin: TTabItem;
+    Layout1: TLayout;
+    Label2: TLabel;
+    edt_usuario: TEdit;
+    rect_login: TRectangle;
+    Label3: TLabel;
+    lbl_config: TLabel;
+    Label6: TLabel;
+    Edit1: TEdit;
+    TabConfig: TTabItem;
+    Layout2: TLayout;
+    Label4: TLabel;
+    edt_servidor: TEdit;
+    rect_save_config: TRectangle;
+    Label5: TLabel;
+    edt_caminho: TEdit;
+    Label1: TLabel;
+    UniLoader1: TUniLoader;
+    UniConnection1: TUniConnection;
+    SQLiteUniProvider1: TSQLiteUniProvider;
+    procedure lbl_configClick(Sender: TObject);
+    procedure rect_save_configClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure rect_loginClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmLogin: TfrmLogin;
+
+implementation
+
+{$R *.fmx}
+
+uses  unfrmprincipal, undm;
+
+procedure TfrmLogin.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+      Action := TCloseAction.caFree;
+  FrmLogin := nil;
+end;
+
+procedure TfrmLogin.FormCreate(Sender: TObject);
+begin
+          //ShowMessage('Informe o usuário');
+end;
+
+procedure TfrmLogin.FormShow(Sender: TObject);
+begin
+  edt_usuario.SetFocus;
+
+ { connconf.Connected := true;
+ qry_config.Active := false;
+  qry_config.SQL.Clear;
+  qry_config.SQL.Add('SELECT * FROM TAB_USUARIO');
+  qry_config.Active := true;
+
+  if qry_config.FieldByName('SERVIDOR').AsString <> '' then
+  begin
+    TabControl.ActiveTab := TabLogin;
+    edt_servidor.Text := qry_config.FieldByName('SERVIDOR').AsString;
+    edt_caminho.Text := qry_config.FieldByName('CAMINHO').AsString;
+  end
+  else
+  begin
+    lbl_titulo.Text := 'Configurações';
+    TabControl.ActiveTab := TabConfig;
+  end;                                }
+end;
+
+procedure TfrmLogin.lbl_configClick(Sender: TObject);
+begin
+  TabControl.GotoVisibleTab(1, TTabTransition.Slide);
+  lbl_titulo.Text := 'Configurações';
+end;
+
+procedure TfrmLogin.rect_loginClick(Sender: TObject);
+var
+  erro: string;
+begin
+
+  // Configurar endereco IP do server...
+  //dm.RESTClient.BaseURL := edt_servidor.Text;
+  // ------------------------------------
+
+  if not(Length(edt_usuario.Text) > 0) then
+  begin
+    ShowMessage('Informe o usuário');
+    exit;
+  end;
+
+  dm.qryLogin.Close;
+
+  // try
+  with dm do
+  begin
+    qryLogin.Active := false;
+    qryLogin.SQL.Clear;
+    qryLogin.SQL.Add('SELECT * FROM USUARIOS WHERE LOGIN=:USUARIO');
+    qryLogin.ParamByName('USUARIO').Value := edt_usuario.Text;
+    qryLogin.Active := true;
+    qryLogin.Open;
+
+    if qryLogin.RecordCount > 0 then
+    begin
+      if NOT Assigned(FrmPrincipal) then
+      begin
+        Application.CreateForm(TFrmPrincipal, FrmPrincipal);
+
+        FrmPrincipal.Show;
+        Application.MainForm := FrmPrincipal;
+        FrmLogin.Close
+      end;
+    end
+    else
+      ShowMessage('Erro ao validar login. Usuário não encontrado!');
+  end;
+
+  // except
+  // ShowMessage('Erro ao validar login');
+  // end;
+
+
+end;
+
+procedure TfrmLogin.rect_save_configClick(Sender: TObject);
+begin
+if edt_servidor.Text = '' then
+  begin
+    ShowMessage('Informe o servidor');
+    exit;
+  end;
+
+ { with qry_config do
+  begin
+    Active := false;
+    SQL.Clear;
+    SQL.Add('DELETE FROM TAB_USUARIO');
+    ExecSQL;
+
+    Active := false;
+    SQL.Clear;
+    SQL.Add('INSERT INTO TAB_USUARIO(SERVIDOR,CAMINHO)');
+    SQL.Add('VALUES(:SERVIDOR,:CAMINHO)');
+    ParamByName('SERVIDOR').Value := edt_servidor.Text;
+    ParamByName('CAMINHO').Value := edt_caminho.Text;
+    ExecSQL;
+  end;
+
+  try
+   dm.conn.ProviderName := 'InterBase';
+   dm.conn.Server := edt_servidor.text;
+   dm.conn.Username := 'sysdba';
+   dm.conn.Password := 'masterkey';
+   dm.conn.Database := edt_caminho.text;
+   dm.conn.SpecificOptions.Values['ClientLibrary'] := 'fbclient.dll';
+   dm.conn.LoginPrompt := False;
+   dm.conn.Connected := true;
+
+//   192.168.100.3:D:\00Dev\Delphi\System ERP\Dados\DADOS.FDB
+
+   except
+        ShowMessage('Erro ao acessar o banco. Contacte o suporte!');
+   end;
+                              }
+
+  TabControl.GotoVisibleTab(0, TTabTransition.Slide);
+  lbl_titulo.Text := 'Acesso';
+end;
+
+end.

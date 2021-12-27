@@ -1,0 +1,2788 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="uDWConstsData" platform="Android">
+  <type name="DWInteger" type="integer" loBound="-2147483648" hiBound="2147483647" file="System.pas" line="12" />
+  <type name="DWInt64" type="Int64" file="System.pas" line="12" />
+  <type name="DWFloat" type="Double" file="System.pas" line="12" />
+  <type name="DWFieldTypeSize" type="integer" loBound="-2147483648" hiBound="2147483647" file="System.pas" line="12" />
+  <type name="DWString" type="AnsiString" file="System.pas" line="1198" />
+  <type name="DWWideString" type="AnsiString" file="System.pas" line="1198" />
+  <struct name="TDWParamsHeader" size="20" packed="true">
+    <field name="VersionNumber" type="Integer" visibility="public" size="4" offset="0" />
+    <field name="RecordCount" type="Integer" visibility="public" size="4" offset="4" />
+    <field name="ParamsCount" type="Integer" visibility="public" size="4" offset="8" />
+    <field name="DataSize" type="Int64" visibility="public" size="8" offset="12" />
+  </struct>
+  <const name="DWAbout" type="TDWAboutInfo">
+    <value>
+      DWAbout
+    </value>
+  </const>
+  <enum name="TDWAboutInfo">
+    <element value="0" name="DWAbout" />
+  </enum>
+  <class name="TMassiveDataset">
+    <ancestor name="TObject" namespace="System">
+      <methodref name="Create" visibility="public" procflags="constructor">
+      </methodref>
+      <methodref name="Free" visibility="public">
+      </methodref>
+      <methodref name="DisposeOf" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="InitInstance" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="CleanupInstance" visibility="public">
+      </methodref>
+      <methodref name="ClassType" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="ClassName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassNameIs" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassParent" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassInfo" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="InstanceSize" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="InheritsFrom" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="QualifiedClassName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="GetInterface" visibility="public">
+      </methodref>
+      <methodref name="GetInterfaceEntry" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="GetInterfaceTable" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="UnitName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="UnitScope" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="Equals" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="GetHashCode" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="ToString" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="SafeCallException" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="AfterConstruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="BeforeDestruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Dispatch" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="DefaultHandler" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="NewInstance" visibility="public" procflags="class virtual">
+      </methodref>
+      <methodref name="FreeInstance" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Destroy" visibility="public" procflags="destructor virtual">
+      </methodref>
+      <methodref name="CPP_ABI_1" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="CPP_ABI_2" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="CPP_ABI_3" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="GetDisposed" visibility="protected" procflags="inline">
+      </methodref>
+      <methodref name="CheckDisposed" visibility="protected" procflags="inline">
+      </methodref>
+      <propertyref name="Disposed" visibility="protected">
+      </propertyref>
+    </ancestor>
+  </class>
+  <struct name="TResultErro" size="16">
+    <field name="Status" type="string" visibility="public" size="8" offset="0" />
+    <field name="MessageText" type="string" visibility="public" size="8" offset="8" />
+  </struct>
+  <array name="TArguments">
+    <element type="string" />
+  </array>
+  <const name="stMetaData" type="TStreamType">
+    <value>
+      stMetaData
+    </value>
+  </const>
+  <const name="stAll" type="TStreamType">
+    <value>
+      stAll
+    </value>
+  </const>
+  <enum name="TStreamType">
+    <element value="0" name="stMetaData" />
+    <element value="1" name="stAll" />
+  </enum>
+  <class name="TPrivateClass">
+    <ancestor name="TObject" namespace="System">
+      <methodref name="Create" visibility="public" procflags="constructor">
+      </methodref>
+      <methodref name="Free" visibility="public">
+      </methodref>
+      <methodref name="DisposeOf" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="InitInstance" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="CleanupInstance" visibility="public">
+      </methodref>
+      <methodref name="ClassType" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="ClassName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassNameIs" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassParent" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassInfo" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="InstanceSize" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="InheritsFrom" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="QualifiedClassName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="GetInterface" visibility="public">
+      </methodref>
+      <methodref name="GetInterfaceEntry" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="GetInterfaceTable" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="UnitName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="UnitScope" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="Equals" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="GetHashCode" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="ToString" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="SafeCallException" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="AfterConstruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="BeforeDestruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Dispatch" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="DefaultHandler" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="NewInstance" visibility="public" procflags="class virtual">
+      </methodref>
+      <methodref name="FreeInstance" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Destroy" visibility="public" procflags="destructor virtual">
+      </methodref>
+      <methodref name="CPP_ABI_1" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="CPP_ABI_2" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="CPP_ABI_3" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="GetDisposed" visibility="protected" procflags="inline">
+      </methodref>
+      <methodref name="CheckDisposed" visibility="protected" procflags="inline">
+      </methodref>
+      <propertyref name="Disposed" visibility="protected">
+      </propertyref>
+    </ancestor>
+  </class>
+  <class name="TRESTDWClientSQLBase">
+    <ancestor name="TFDMemTable" namespace="FireDAC.Comp.Client">
+      <propertyref name="ActiveStoredUsage" visibility="published">
+      </propertyref>
+      <propertyref name="Active" visibility="published">
+      </propertyref>
+      <propertyref name="AutoCalcFields" visibility="published">
+      </propertyref>
+      <propertyref name="BeforeOpen" visibility="published">
+      </propertyref>
+      <propertyref name="AfterOpen" visibility="published">
+      </propertyref>
+      <propertyref name="BeforeClose" visibility="published">
+      </propertyref>
+      <propertyref name="AfterClose" visibility="published">
+      </propertyref>
+      <propertyref name="BeforeInsert" visibility="published">
+      </propertyref>
+      <propertyref name="AfterInsert" visibility="published">
+      </propertyref>
+      <propertyref name="BeforeEdit" visibility="published">
+      </propertyref>
+      <propertyref name="AfterEdit" visibility="published">
+      </propertyref>
+      <propertyref name="BeforePost" visibility="published">
+      </propertyref>
+      <propertyref name="AfterPost" visibility="published">
+      </propertyref>
+      <propertyref name="BeforeCancel" visibility="published">
+      </propertyref>
+      <propertyref name="AfterCancel" visibility="published">
+      </propertyref>
+      <propertyref name="BeforeDelete" visibility="published">
+      </propertyref>
+      <propertyref name="AfterDelete" visibility="published">
+      </propertyref>
+      <propertyref name="BeforeScroll" visibility="published">
+      </propertyref>
+      <propertyref name="AfterScroll" visibility="published">
+      </propertyref>
+      <propertyref name="BeforeRefresh" visibility="published">
+      </propertyref>
+      <propertyref name="AfterRefresh" visibility="published">
+      </propertyref>
+      <propertyref name="OnCalcFields" visibility="published">
+      </propertyref>
+      <propertyref name="OnDeleteError" visibility="published">
+      </propertyref>
+      <propertyref name="OnEditError" visibility="published">
+      </propertyref>
+      <propertyref name="OnNewRecord" visibility="published">
+      </propertyref>
+      <propertyref name="OnPostError" visibility="published">
+      </propertyref>
+      <propertyref name="FieldOptions" visibility="published">
+      </propertyref>
+      <propertyref name="Filtered" visibility="published">
+      </propertyref>
+      <propertyref name="FilterOptions" visibility="published">
+      </propertyref>
+      <propertyref name="Filter" visibility="published">
+      </propertyref>
+      <propertyref name="OnFilterRecord" visibility="published">
+      </propertyref>
+      <propertyref name="ObjectView" visibility="published">
+      </propertyref>
+      <propertyref name="Constraints" visibility="published">
+      </propertyref>
+      <propertyref name="DataSetField" visibility="published">
+      </propertyref>
+      <propertyref name="FieldDefs" visibility="published">
+      </propertyref>
+      <propertyref name="CachedUpdates" visibility="published">
+      </propertyref>
+      <propertyref name="FilterChanges" visibility="published">
+      </propertyref>
+      <propertyref name="IndexDefs" visibility="published">
+      </propertyref>
+      <propertyref name="Indexes" visibility="published">
+      </propertyref>
+      <propertyref name="IndexesActive" visibility="published">
+      </propertyref>
+      <propertyref name="IndexName" visibility="published">
+      </propertyref>
+      <propertyref name="IndexFieldNames" visibility="published">
+      </propertyref>
+      <propertyref name="Aggregates" visibility="published">
+      </propertyref>
+      <propertyref name="AggregatesActive" visibility="published">
+      </propertyref>
+      <propertyref name="ConstraintsEnabled" visibility="published">
+      </propertyref>
+      <propertyref name="MasterSource" visibility="published">
+      </propertyref>
+      <propertyref name="MasterFields" visibility="published">
+      </propertyref>
+      <propertyref name="DetailFields" visibility="published">
+      </propertyref>
+      <propertyref name="OnUpdateRecord" visibility="published">
+      </propertyref>
+      <propertyref name="OnUpdateError" visibility="published">
+      </propertyref>
+      <propertyref name="OnReconcileError" visibility="published">
+      </propertyref>
+      <propertyref name="BeforeApplyUpdates" visibility="published">
+      </propertyref>
+      <propertyref name="AfterApplyUpdates" visibility="published">
+      </propertyref>
+      <propertyref name="BeforeGetRecords" visibility="published">
+      </propertyref>
+      <propertyref name="AfterGetRecords" visibility="published">
+      </propertyref>
+      <propertyref name="AfterGetRecord" visibility="published">
+      </propertyref>
+      <propertyref name="BeforeRowRequest" visibility="published">
+      </propertyref>
+      <propertyref name="AfterRowRequest" visibility="published">
+      </propertyref>
+      <propertyref name="BeforeExecute" visibility="published">
+      </propertyref>
+      <propertyref name="AfterExecute" visibility="published">
+      </propertyref>
+      <propertyref name="FetchOptions" visibility="published">
+      </propertyref>
+      <propertyref name="FormatOptions" visibility="published">
+      </propertyref>
+      <propertyref name="ResourceOptions" visibility="published">
+      </propertyref>
+      <propertyref name="UpdateOptions" visibility="published">
+      </propertyref>
+      <propertyref name="LocalSQL" visibility="published">
+      </propertyref>
+      <propertyref name="ChangeAlerter" visibility="published">
+      </propertyref>
+      <propertyref name="ChangeAlertName" visibility="published">
+      </propertyref>
+      <propertyref name="Adapter" visibility="published">
+      </propertyref>
+      <propertyref name="StoreDefs" visibility="published">
+      </propertyref>
+      <ancestor name="TFDCustomMemTable" namespace="FireDAC.Comp.Client">
+        <methodref name="ReadAutoCommitUpdates" visibility="private">
+        </methodref>
+        <methodref name="GetDisableStringTrim" visibility="private">
+        </methodref>
+        <methodref name="GetFetchOnDemand" visibility="private">
+        </methodref>
+        <methodref name="GetIsClone" visibility="private">
+        </methodref>
+        <methodref name="GetLogChanges" visibility="private">
+        </methodref>
+        <methodref name="GetProviderEOF" visibility="private">
+        </methodref>
+        <methodref name="GetReadOnly" visibility="private">
+        </methodref>
+        <methodref name="GetStatusFilter" visibility="private">
+        </methodref>
+        <methodref name="GetXMLData" visibility="private">
+        </methodref>
+        <methodref name="SetDisableStringTrim" visibility="private">
+        </methodref>
+        <methodref name="SetFetchOnDemand" visibility="private">
+        </methodref>
+        <methodref name="SetLogChanges" visibility="private">
+        </methodref>
+        <methodref name="SetProviderEOF" visibility="private">
+        </methodref>
+        <methodref name="SetReadOnly" visibility="private">
+        </methodref>
+        <methodref name="SetStatusFilter" visibility="private">
+        </methodref>
+        <methodref name="SetXMLData" visibility="private">
+        </methodref>
+        <methodref name="GetCommandText" visibility="private">
+        </methodref>
+        <methodref name="SetCommandText" visibility="private">
+        </methodref>
+        <methodref name="GetFileName" visibility="private">
+        </methodref>
+        <methodref name="GetPacketRecords" visibility="private">
+        </methodref>
+        <methodref name="SetFileName" visibility="private">
+        </methodref>
+        <methodref name="SetPacketRecords" visibility="private">
+        </methodref>
+        <methodref name="GetOptionalParamTab" visibility="private">
+        </methodref>
+        <methodref name="DefineProperties" visibility="protected" procflags="override">
+        </methodref>
+        <methodref name="DefChanged" visibility="protected" procflags="override">
+        </methodref>
+        <methodref name="GetExists" visibility="protected" procflags="override">
+        </methodref>
+        <methodref name="SaveToDFM" visibility="protected" procflags="override">
+        </methodref>
+        <propertyref name="StoreDefs" visibility="protected">
+        </propertyref>
+        <methodref name="GetOptionsIntf" visibility="protected" procflags="override">
+        </methodref>
+        <methodref name="GetParentOptions" visibility="protected">
+        </methodref>
+        <methodref name="Create" visibility="public" procflags="constructor override">
+        </methodref>
+        <methodref name="Destroy" visibility="public" procflags="destructor override">
+        </methodref>
+        <propertyref name="Adapter" visibility="public">
+        </propertyref>
+        <methodref name="AppendData" visibility="public">
+        </methodref>
+        <methodref name="ConstraintsDisabled" visibility="public" procflags="inline">
+        </methodref>
+        <methodref name="MergeChangeLog" visibility="public" procflags="inline">
+        </methodref>
+        <methodref name="GetOptionalParam" visibility="public">
+        </methodref>
+        <methodref name="SetOptionalParam" visibility="public" procflags="virtual">
+        </methodref>
+        <propertyref name="IsClone" visibility="public">
+        </propertyref>
+        <propertyref name="CommandText" visibility="public">
+        </propertyref>
+        <propertyref name="DisableStringTrim" visibility="public">
+        </propertyref>
+        <propertyref name="FetchOnDemand" visibility="public">
+        </propertyref>
+        <propertyref name="FileName" visibility="public">
+        </propertyref>
+        <propertyref name="LogChanges" visibility="public">
+        </propertyref>
+        <propertyref name="PacketRecords" visibility="public">
+        </propertyref>
+        <propertyref name="ProviderEOF" visibility="public">
+        </propertyref>
+        <propertyref name="ReadOnly" visibility="public">
+        </propertyref>
+        <propertyref name="StatusFilter" visibility="public">
+        </propertyref>
+        <propertyref name="XMLData" visibility="public">
+        </propertyref>
+        <ancestor name="TFDAdaptedDataSet" namespace="FireDAC.Comp.Client">
+          <interfaces>
+            <implements name="IFDPhysChangeHandler" />
+          </interfaces>
+          <methodref name="SetUpdateObject" visibility="private">
+          </methodref>
+          <methodref name="InternalServerEdit" visibility="private">
+          </methodref>
+          <methodref name="GetConnection" visibility="private">
+          </methodref>
+          <methodref name="GetPointedConnection" visibility="private">
+          </methodref>
+          <methodref name="InternalUpdateErrorHandler" visibility="private">
+          </methodref>
+          <methodref name="InternalReconcileErrorHandler" visibility="private">
+          </methodref>
+          <methodref name="GetCommand" visibility="private">
+          </methodref>
+          <methodref name="InternalUpdateRecordHandler" visibility="private">
+          </methodref>
+          <methodref name="SetDatSManager" visibility="private">
+          </methodref>
+          <methodref name="SetLocalSQL" visibility="private">
+          </methodref>
+          <methodref name="SetChangeAlerter" visibility="private">
+          </methodref>
+          <methodref name="InternalPSExecuteStatement" visibility="private">
+          </methodref>
+          <methodref name="SetChangeAlertName" visibility="private">
+          </methodref>
+          <methodref name="SetAdapter" visibility="protected">
+          </methodref>
+          <methodref name="Notification" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="InternalClose" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="CheckOnline" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="ReleaseBase" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="DoDefineDatSManager" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="DoOpenSource" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="DoIsSourceOpen" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="DoIsSourceAsync" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="DoIsSourceOnline" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="DoPrepareSource" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="DoUnprepareSource" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="DoApplyUpdates" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="DoFetch" visibility="protected" procflags="overload override">
+          </methodref>
+          <methodref name="DoFetch" visibility="protected" procflags="overload override">
+          </methodref>
+          <methodref name="DoMasterClearDetails" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="DoMasterDefined" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="DoMasterParamSetValues" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="DoMasterParamDependent" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="DoCloseSource" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="DoResetDatSManager" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="DoResetAtLoading" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="DoGetDatSManager" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="DoGetTableName" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="DoProcessUpdateRequest" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="DoExecuteSource" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="DoCloneCursor" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="GetParams" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="DoStoredActivation" visibility="protected" procflags="override">
+          </methodref>
+          <propertyref name="UpdateObject" visibility="protected">
+          </propertyref>
+          <methodref name="GetOptionsIntf" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="SetOptionsIntf" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="GetConn" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="GetFeatures" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="PSInTransaction" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="PSStartTransaction" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="PSEndTransaction" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="PSIsSQLBased" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="PSIsSQLSupported" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="PSGetQuoteChar" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="PSGetParams" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="PSSetParams" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="PSGetCommandText" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="PSGetCommandType" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="PSSetCommandText" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="PSExecuteStatement" visibility="protected" procflags="overload override">
+          </methodref>
+          <methodref name="PSExecuteStatement" visibility="protected" procflags="overload override">
+          </methodref>
+          <methodref name="PSExecuteStatement" visibility="protected" procflags="overload override">
+          </methodref>
+          <methodref name="PSGetAttributes" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="GetTrackCommand" visibility="protected">
+          </methodref>
+          <methodref name="GetTrackEventName" visibility="protected">
+          </methodref>
+          <methodref name="GetMergeTable" visibility="protected">
+          </methodref>
+          <methodref name="GetMergeManager" visibility="protected">
+          </methodref>
+          <methodref name="GetContentModified" visibility="protected">
+          </methodref>
+          <methodref name="SetContentModified" visibility="protected">
+          </methodref>
+          <methodref name="RefreshContent" visibility="protected">
+          </methodref>
+          <methodref name="ResyncContent" visibility="protected">
+          </methodref>
+          <methodref name="GetCommandStates" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="ExecuteCommand" visibility="protected" procflags="override">
+          </methodref>
+          <methodref name="Create" visibility="public" procflags="constructor override">
+          </methodref>
+          <methodref name="Destroy" visibility="public" procflags="destructor override">
+          </methodref>
+          <methodref name="AttachTable" visibility="public" procflags="override">
+          </methodref>
+          <methodref name="NextRecordSet" visibility="public">
+          </methodref>
+          <methodref name="GetResults" visibility="public">
+          </methodref>
+          <methodref name="CloseStreams" visibility="public">
+          </methodref>
+          <methodref name="AbortJob" visibility="public">
+          </methodref>
+          <methodref name="Disconnect" visibility="public" procflags="override">
+          </methodref>
+          <methodref name="ServerAppend" visibility="public">
+          </methodref>
+          <methodref name="ServerEdit" visibility="public">
+          </methodref>
+          <methodref name="ServerDelete" visibility="public">
+          </methodref>
+          <methodref name="ServerPerform" visibility="public">
+          </methodref>
+          <methodref name="ServerCancel" visibility="public">
+          </methodref>
+          <methodref name="ServerDeleteAll" visibility="public" procflags="virtual">
+          </methodref>
+          <methodref name="ServerSetKey" visibility="public">
+          </methodref>
+          <methodref name="ServerGotoKey" visibility="public">
+          </methodref>
+          <propertyref name="Adapter" visibility="public">
+          </propertyref>
+          <propertyref name="DatSManager" visibility="public">
+          </propertyref>
+          <propertyref name="Command" visibility="public">
+          </propertyref>
+          <propertyref name="PointedConnection" visibility="public">
+          </propertyref>
+          <propertyref name="ServerEditRequest" visibility="public">
+          </propertyref>
+          <propertyref name="LocalSQL" visibility="public">
+          </propertyref>
+          <propertyref name="ChangeAlerter" visibility="public">
+          </propertyref>
+          <propertyref name="ChangeAlertName" visibility="public">
+          </propertyref>
+          <eventref name="OnExecuteError" visibility="public">
+          </eventref>
+          <eventref name="OnError" visibility="public">
+          </eventref>
+          <propertyref name="FetchOptions" visibility="public">
+          </propertyref>
+          <propertyref name="FormatOptions" visibility="public">
+          </propertyref>
+          <propertyref name="ResourceOptions" visibility="public">
+          </propertyref>
+          <propertyref name="UpdateOptions" visibility="public">
+          </propertyref>
+          <ancestor name="TFDDataSet" namespace="FireDAC.Comp.DataSet">
+            <interfaces>
+              <implements name="IDataSetCommandSupport" />
+              <implements name="IFDDatSTableDataCallback" />
+              <implements name="IFDPhysLocalSQLAdapter" />
+              <implements name="IFDStanOptions" />
+              <implements name="IFDDataSetReference" />
+            </interfaces>
+            <methodref name="AddFieldDesc" visibility="private">
+            </methodref>
+            <methodref name="AddTableDesc" visibility="private">
+            </methodref>
+            <methodref name="SetIndexName" visibility="private">
+            </methodref>
+            <methodref name="GetIndexFieldNames" visibility="private">
+            </methodref>
+            <methodref name="SetIndexFieldNames" visibility="private">
+            </methodref>
+            <methodref name="RelinkViews" visibility="private">
+            </methodref>
+            <methodref name="GetIndexField" visibility="private">
+            </methodref>
+            <methodref name="GetIndexFieldCount" visibility="private">
+            </methodref>
+            <methodref name="AllocKeyBuffers" visibility="private">
+            </methodref>
+            <methodref name="CheckSetKeyMode" visibility="private">
+            </methodref>
+            <methodref name="CheckIndexed" visibility="private">
+            </methodref>
+            <methodref name="FreeKeyBuffers" visibility="private">
+            </methodref>
+            <methodref name="GetKeyExclusive" visibility="private">
+            </methodref>
+            <methodref name="GetKeyFieldCount" visibility="private">
+            </methodref>
+            <methodref name="InitKeyBuffer" visibility="private">
+            </methodref>
+            <methodref name="ClearKeyBuffer" visibility="private">
+            </methodref>
+            <methodref name="SetKeyRow" visibility="private">
+            </methodref>
+            <methodref name="PostKeyBuffer" visibility="private">
+            </methodref>
+            <methodref name="ResetCursorRange" visibility="private">
+            </methodref>
+            <methodref name="SetKeyExclusive" visibility="private">
+            </methodref>
+            <methodref name="SetKeyFieldCount" visibility="private">
+            </methodref>
+            <methodref name="SetKeyFields" visibility="private">
+            </methodref>
+            <methodref name="AssignKeyBuffer" visibility="private">
+            </methodref>
+            <methodref name="CompareKeyBuffer" visibility="private">
+            </methodref>
+            <methodref name="ResetViews" visibility="private">
+            </methodref>
+            <methodref name="SetSortView" visibility="private">
+            </methodref>
+            <methodref name="SwitchToIndex" visibility="private">
+            </methodref>
+            <methodref name="SetFilterChanges" visibility="private">
+            </methodref>
+            <methodref name="SafeFilteringUpdated" visibility="private">
+            </methodref>
+            <methodref name="GetFieldColumn" visibility="private" procflags="overload">
+            </methodref>
+            <methodref name="SetFetchOptions" visibility="private">
+            </methodref>
+            <methodref name="SetFormatOptions" visibility="private">
+            </methodref>
+            <methodref name="SetUpdateOptions" visibility="private">
+            </methodref>
+            <methodref name="SetResourceOptions" visibility="private">
+            </methodref>
+            <methodref name="GetFetchOptions" visibility="private">
+            </methodref>
+            <methodref name="GetFormatOptions" visibility="private">
+            </methodref>
+            <methodref name="GetUpdateOptions" visibility="private">
+            </methodref>
+            <methodref name="GetResourceOptions" visibility="private">
+            </methodref>
+            <methodref name="GetData" visibility="private">
+            </methodref>
+            <methodref name="GetDelta" visibility="private">
+            </methodref>
+            <methodref name="SetData" visibility="private">
+            </methodref>
+            <methodref name="SetTableConstraints" visibility="private">
+            </methodref>
+            <methodref name="ResetTableConstraints" visibility="private">
+            </methodref>
+            <methodref name="SetInternalCalcs" visibility="private">
+            </methodref>
+            <methodref name="SetUpdateFieldAttributes" visibility="private">
+            </methodref>
+            <methodref name="GetConstraintsEnabled" visibility="private">
+            </methodref>
+            <methodref name="SetConstraintsEnabled" visibility="private">
+            </methodref>
+            <methodref name="IsCS" visibility="private">
+            </methodref>
+            <methodref name="GetCachedUpdates" visibility="private">
+            </methodref>
+            <methodref name="SetCachedUpdates" visibility="private">
+            </methodref>
+            <methodref name="GetSavePoint" visibility="private">
+            </methodref>
+            <methodref name="SetSavePoint" visibility="private">
+            </methodref>
+            <methodref name="GetUpdates" visibility="private">
+            </methodref>
+            <methodref name="GetUpdatesPending" visibility="private">
+            </methodref>
+            <methodref name="GetChangeCount" visibility="private">
+            </methodref>
+            <methodref name="InternalFetchRows" visibility="private">
+            </methodref>
+            <methodref name="InternalFetchNested" visibility="private">
+            </methodref>
+            <methodref name="RefreshRecordBase" visibility="private">
+            </methodref>
+            <methodref name="GetMasterFields" visibility="private">
+            </methodref>
+            <methodref name="SetMasterFields" visibility="private">
+            </methodref>
+            <methodref name="SetMasterSource" visibility="private">
+            </methodref>
+            <methodref name="GetActualDetailFields" visibility="private">
+            </methodref>
+            <methodref name="CheckParentRow" visibility="private">
+            </methodref>
+            <methodref name="ResetIndexes" visibility="private">
+            </methodref>
+            <methodref name="SetAggregatesActive" visibility="private">
+            </methodref>
+            <methodref name="SetIndexesActive" visibility="private">
+            </methodref>
+            <methodref name="GetGroupingLevel" visibility="private">
+            </methodref>
+            <methodref name="SetAggregates" visibility="private">
+            </methodref>
+            <methodref name="SetIndexes" visibility="private">
+            </methodref>
+            <methodref name="GetActiveRecBufRecordIndex" visibility="private">
+            </methodref>
+            <methodref name="SetViewAggregates" visibility="private">
+            </methodref>
+            <methodref name="ResetViewAggregates" visibility="private">
+            </methodref>
+            <methodref name="IsAS" visibility="private">
+            </methodref>
+            <methodref name="IsIS" visibility="private">
+            </methodref>
+            <methodref name="GetFilteredData" visibility="private">
+            </methodref>
+            <methodref name="RenewColumnMap" visibility="private">
+            </methodref>
+            <methodref name="RenewFieldDesc" visibility="private">
+            </methodref>
+            <methodref name="RenewTableDesc" visibility="private">
+            </methodref>
+            <methodref name="CreateChildMech" visibility="private">
+            </methodref>
+            <methodref name="CreateFilterMech" visibility="private">
+            </methodref>
+            <methodref name="CreateRangeMech" visibility="private">
+            </methodref>
+            <methodref name="CreateStateMech" visibility="private">
+            </methodref>
+            <methodref name="IsIDS" visibility="private">
+            </methodref>
+            <methodref name="SetIndexDefs" visibility="private">
+            </methodref>
+            <methodref name="UpdateRecordIndex" visibility="private">
+            </methodref>
+            <methodref name="ClearRecordIndex" visibility="private">
+            </methodref>
+            <methodref name="SetParams" visibility="private">
+            </methodref>
+            <methodref name="GetParamsCount" visibility="private">
+            </methodref>
+            <methodref name="InternalLoadFromStorage" visibility="private">
+            </methodref>
+            <methodref name="InternalSaveToStorage" visibility="private">
+            </methodref>
+            <methodref name="ResetAtLoading" visibility="private">
+            </methodref>
+            <methodref name="InternalFieldByName" visibility="private">
+            </methodref>
+            <methodref name="SetBookmarkSize" visibility="private">
+            </methodref>
+            <methodref name="GetRowFromBookmark" visibility="private">
+            </methodref>
+            <methodref name="ReadContent" visibility="private">
+            </methodref>
+            <methodref name="WriteContent" visibility="private">
+            </methodref>
+            <methodref name="ReadDataSource" visibility="private">
+            </methodref>
+            <methodref name="ReadReadOnly" visibility="private">
+            </methodref>
+            <methodref name="StoredActivate" visibility="private">
+            </methodref>
+            <methodref name="CopyRecordBase" visibility="private">
+            </methodref>
+            <methodref name="IsRowValid" visibility="private">
+            </methodref>
+            <methodref name="GetRowError" visibility="private">
+            </methodref>
+            <methodref name="InternalClearNested" visibility="private">
+            </methodref>
+            <methodref name="BuildMasterRelation" visibility="private">
+            </methodref>
+            <methodref name="ResetMasterRelation" visibility="private">
+            </methodref>
+            <methodref name="DoAfterGetRecords2" visibility="private">
+            </methodref>
+            <methodref name="GetRecInfo" visibility="private" procflags="overload">
+            </methodref>
+            <methodref name="InternalDefineDatSManager" visibility="private">
+            </methodref>
+            <methodref name="InitChildTable" visibility="private">
+            </methodref>
+            <methodref name="InitChildTables" visibility="private">
+            </methodref>
+            <methodref name="PSExecute" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="PSGetDefaultOrder" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="PSGetKeyFields" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="PSGetTableName" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="PSGetIndexDefs" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="PSGetUpdateException" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="PSReset" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="PSUpdateRecord" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="InternalDefaultKeyFieldCount" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="InternalGotoKey" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="GetKeyRow" visibility="protected">
+            </methodref>
+            <methodref name="GetDataView" visibility="protected">
+            </methodref>
+            <methodref name="GetOptionsIntf" visibility="protected" procflags="abstract virtual">
+            </methodref>
+            <methodref name="SetOptionsIntf" visibility="protected" procflags="abstract virtual">
+            </methodref>
+            <methodref name="GetDataSet" visibility="protected">
+            </methodref>
+            <methodref name="SetDataSet" visibility="protected">
+            </methodref>
+            <methodref name="GetConn" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="IsPKViolation" visibility="protected">
+            </methodref>
+            <methodref name="GetFeatures" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="TableDataChanged" visibility="protected">
+            </methodref>
+            <methodref name="GetCommandStates" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="ExecuteCommand" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="AllocRecBuf" visibility="protected">
+            </methodref>
+            <methodref name="FreeRecBuf" visibility="protected">
+            </methodref>
+            <methodref name="AllocRecordBuffer" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="FreeRecordBuffer" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="CheckDeleting" visibility="protected">
+            </methodref>
+            <methodref name="CheckEditing" visibility="protected">
+            </methodref>
+            <methodref name="CheckInserting" visibility="protected">
+            </methodref>
+            <methodref name="CreateFilterView" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="ClearCalcFields" visibility="protected" procflags="overload override">
+            </methodref>
+            <methodref name="ClearCalcFields" visibility="protected" procflags="overload override">
+            </methodref>
+            <methodref name="CloseBlob" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="DataEvent" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="Loaded" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="Updated" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="DefineProperties" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="DoAfterRefresh" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="DoBeforeInsert" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="DoBeforeEdit" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="DoBeforeDelete" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="DoBeforeScroll" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="GetActiveRecBuf" visibility="protected">
+            </methodref>
+            <methodref name="GetBookmarkData" visibility="protected" procflags="overload override">
+            </methodref>
+            <methodref name="GetBookmarkFlag" visibility="protected" procflags="overload override">
+            </methodref>
+            <methodref name="GetCanModify" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="GetCanRefresh" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="GetDataSource" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="GetModifiedBlobCached" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="GetRowIndex" visibility="protected">
+            </methodref>
+            <methodref name="GetRecNo" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="GetRecord" visibility="protected" procflags="overload override">
+            </methodref>
+            <methodref name="GetRecord" visibility="protected" procflags="overload override">
+            </methodref>
+            <methodref name="GetRecordCount" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="GetRecordSize" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="GetKeyBuffer" visibility="protected">
+            </methodref>
+            <methodref name="SetCursorRange" visibility="protected">
+            </methodref>
+            <methodref name="SetKeyBuffer" visibility="protected">
+            </methodref>
+            <methodref name="InitRecord" visibility="protected" procflags="overload override">
+            </methodref>
+            <methodref name="InitBufferPointers" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="InternalHandleException" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="ClearColumnMap" visibility="protected">
+            </methodref>
+            <methodref name="InternalInitFieldDefs" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="InternalOpen" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="DoAfterOpen" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="InternalClose" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="InternalAddRecord" visibility="protected" procflags="overload override">
+            </methodref>
+            <methodref name="InternalCancel" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="InternalDelete" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="InternalEdit" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="InternalFirst" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="InternalGotoBookmark" visibility="protected" procflags="overload override">
+            </methodref>
+            <methodref name="InternalGotoBookmark" visibility="protected" procflags="overload override">
+            </methodref>
+            <methodref name="InternalInitRecord" visibility="protected" procflags="overload override">
+            </methodref>
+            <methodref name="InternalInitRecord" visibility="protected" procflags="overload override">
+            </methodref>
+            <methodref name="DoOnNewRecord" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="InternalInsert" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="InternalLast" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="InternalPost" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="InternalRefresh" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="ResyncViews" visibility="protected">
+            </methodref>
+            <methodref name="InternalSetToRecord" visibility="protected" procflags="overload override">
+            </methodref>
+            <methodref name="IsCursorOpen" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="OpenCursor" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="CloseCursor" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="OpenIndexes" visibility="protected">
+            </methodref>
+            <methodref name="RefreshInternalCalcFields" visibility="protected" procflags="overload override">
+            </methodref>
+            <methodref name="RefreshInternalCalcFields" visibility="protected" procflags="overload override" symflags="deprecated">
+            </methodref>
+            <methodref name="RowState2UpdateStatus" visibility="protected">
+            </methodref>
+            <methodref name="SetActive" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="SetBookmarkData" visibility="protected" procflags="overload override">
+            </methodref>
+            <methodref name="SetBookmarkFlag" visibility="protected" procflags="overload override">
+            </methodref>
+            <methodref name="SetBookmarkFlag" visibility="protected" procflags="overload override">
+            </methodref>
+            <methodref name="SetFieldData" visibility="protected" procflags="overload override">
+            </methodref>
+            <methodref name="InternalSetRecNo" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="SetRecNo" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="SetFilterOptions" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="SetFilterText" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="SetFiltered" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="SetOnFilterRecord" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="InitLocateRow" visibility="protected">
+            </methodref>
+            <methodref name="FindRecord" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="LocateRecord" visibility="protected" procflags="overload">
+            </methodref>
+            <methodref name="LocateRecord" visibility="protected" procflags="overload">
+            </methodref>
+            <methodref name="UpdateIndexDefs" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="GetIsIndexField" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="ResetAggField" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="GetAggregateValue" visibility="protected" procflags="override">
+            </methodref>
+            <methodref name="GetFieldClass" visibility="protected" procflags="overload override">
+            </methodref>
+            <methodref name="CalcBookmarkSize" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="CheckBidirectional" visibility="protected">
+            </methodref>
+            <methodref name="CheckTable" visibility="protected">
+            </methodref>
+            <methodref name="CheckFetchedAll" visibility="protected">
+            </methodref>
+            <methodref name="CheckAsyncOpenComplete" visibility="protected">
+            </methodref>
+            <methodref name="CheckAsyncOpenFailed" visibility="protected">
+            </methodref>
+            <methodref name="CheckAsyncExecFinished" visibility="protected">
+            </methodref>
+            <methodref name="DoAfterOpenOrExecute" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="ReleaseBase" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="CheckOnline" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="MasterRangeChanged" visibility="protected">
+            </methodref>
+            <methodref name="CheckMasterRange" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="CheckDetailRecords" visibility="protected">
+            </methodref>
+            <methodref name="MasterDisabled" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="MasterChanged" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="MasterDefined" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="BeginForceRow" visibility="protected">
+            </methodref>
+            <methodref name="CheckCachedUpdatesMode" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoApplyUpdates" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoCachedUpdatesChanged" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoFetch" visibility="protected" procflags="overload virtual">
+            </methodref>
+            <methodref name="DoFetch" visibility="protected" procflags="overload virtual">
+            </methodref>
+            <methodref name="DoPurge" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoMasterClearDetails" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoCreateFields" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoFilteringUpdated" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoFilterRow" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoGetTableName" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoMasterDefined" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoMasterReset" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoMasterParamChanged" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoMasterParamSetValues" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoMasterParamDependent" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoAdjustSortFields" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoSortOrderChanging" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoSortOrderChanged" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoDefineDatSManager" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoResetDatSManager" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoResetAtLoading" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoPrepareSource" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoUnprepareSource" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoOpenSource" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoIsSourceOpen" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoIsSourceAsync" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoIsSourceOnline" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoCloseSource" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoGetDatSManager" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoProcessUpdateRequest" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoExecuteSource" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoUpdateErrorHandler" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoUpdateRecordHandler" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoReconcileErrorHandler" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoCloneCursor" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="InitColumnsFromFieldDefs" visibility="protected">
+            </methodref>
+            <methodref name="InitTable" visibility="protected">
+            </methodref>
+            <methodref name="DoAfterApplyUpdate" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="ApplyUpdatesComplete" visibility="protected">
+            </methodref>
+            <methodref name="DoReconcile" visibility="protected">
+            </methodref>
+            <methodref name="DoBeforeApplyUpdate" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoBeforeGetRecords" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoAfterGetRecords" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoBeforeRowRequest" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoAfterRowRequest" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoBeforeExecute" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="DoAfterExecute" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="EndForceRow" visibility="protected">
+            </methodref>
+            <methodref name="GetRowVersion" visibility="protected">
+            </methodref>
+            <methodref name="GetExists" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="IsForceRowMode" visibility="protected" procflags="inline">
+            </methodref>
+            <methodref name="BuildViewForIndex" visibility="protected">
+            </methodref>
+            <methodref name="CheckFetchedAllBeforeSorting" visibility="protected">
+            </methodref>
+            <methodref name="GetParams" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="SetColumnAttributes" visibility="protected">
+            </methodref>
+            <methodref name="SaveToDFM" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="StartWait" visibility="protected">
+            </methodref>
+            <methodref name="StopWait" visibility="protected">
+            </methodref>
+            <methodref name="UpdateRecordCount" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="GetDisplayName" visibility="protected">
+            </methodref>
+            <methodref name="DoStoredActivation" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="InternalResetRange" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="BeginLocate" visibility="protected">
+            </methodref>
+            <methodref name="EndLocate" visibility="protected">
+            </methodref>
+            <methodref name="BeginLookup" visibility="protected">
+            </methodref>
+            <methodref name="EndLookup" visibility="protected">
+            </methodref>
+            <methodref name="LoadFromStorage" visibility="protected" procflags="virtual">
+            </methodref>
+            <methodref name="SaveToStorage" visibility="protected" procflags="virtual">
+            </methodref>
+            <propertyref name="Updates" visibility="protected">
+            </propertyref>
+            <propertyref name="Params" visibility="protected">
+            </propertyref>
+            <propertyref name="ParamCount" visibility="protected">
+            </propertyref>
+            <propertyref name="BookmarkSize" visibility="protected">
+            </propertyref>
+            <propertyref name="SortView" visibility="protected">
+            </propertyref>
+            <propertyref name="OptionsIntfImpl" visibility="protected">
+            </propertyref>
+            <propertyref name="FormatOptions" visibility="protected">
+            </propertyref>
+            <propertyref name="FetchOptions" visibility="protected">
+            </propertyref>
+            <propertyref name="UpdateOptions" visibility="protected">
+            </propertyref>
+            <propertyref name="ResourceOptions" visibility="protected">
+            </propertyref>
+            <methodref name="Create" visibility="public" procflags="constructor override">
+            </methodref>
+            <methodref name="Destroy" visibility="public" procflags="destructor override">
+            </methodref>
+            <methodref name="AddIndex" visibility="public">
+            </methodref>
+            <methodref name="ApplyMaster" visibility="public">
+            </methodref>
+            <methodref name="ApplyRange" visibility="public">
+            </methodref>
+            <methodref name="ApplyUpdates" visibility="public">
+            </methodref>
+            <methodref name="AttachTable" visibility="public" procflags="virtual">
+            </methodref>
+            <methodref name="BeginBatch" visibility="public">
+            </methodref>
+            <methodref name="EndBatch" visibility="public">
+            </methodref>
+            <methodref name="BookmarkValid" visibility="public" procflags="override">
+            </methodref>
+            <methodref name="BookmarkStrValid" visibility="public">
+            </methodref>
+            <methodref name="Cancel" visibility="public" procflags="override">
+            </methodref>
+            <methodref name="CancelRange" visibility="public">
+            </methodref>
+            <methodref name="CancelUpdates" visibility="public">
+            </methodref>
+            <methodref name="ClearBlobs" visibility="public">
+            </methodref>
+            <methodref name="ClearDetails" visibility="public">
+            </methodref>
+            <methodref name="CloneCursor" visibility="public" procflags="virtual">
+            </methodref>
+            <methodref name="GetClonedDataSet" visibility="public" procflags="override">
+            </methodref>
+            <methodref name="CommitUpdates" visibility="public">
+            </methodref>
+            <methodref name="CompareBookmarks" visibility="public" procflags="override">
+            </methodref>
+            <methodref name="CopyRecord" visibility="public">
+            </methodref>
+            <methodref name="CopyDataSet" visibility="public">
+            </methodref>
+            <methodref name="CreateDataSet" visibility="public" procflags="virtual">
+            </methodref>
+            <methodref name="CreateBlobStream" visibility="public" procflags="override">
+            </methodref>
+            <methodref name="CreateExpression" visibility="public">
+            </methodref>
+            <methodref name="CreateXMLStream" visibility="public">
+            </methodref>
+            <methodref name="DeleteIndex" visibility="public">
+            </methodref>
+            <methodref name="DeleteIndexes" visibility="public">
+            </methodref>
+            <methodref name="DisableConstraints" visibility="public">
+            </methodref>
+            <methodref name="Disconnect" visibility="public" procflags="virtual">
+            </methodref>
+            <methodref name="EditKey" visibility="public">
+            </methodref>
+            <methodref name="EditRangeEnd" visibility="public">
+            </methodref>
+            <methodref name="EditRangeStart" visibility="public">
+            </methodref>
+            <methodref name="EmptyDataSet" visibility="public">
+            </methodref>
+            <methodref name="EmptyView" visibility="public">
+            </methodref>
+            <methodref name="EnableConstraints" visibility="public">
+            </methodref>
+            <methodref name="Execute" visibility="public" procflags="virtual">
+            </methodref>
+            <methodref name="OpenOrExecute" visibility="public">
+            </methodref>
+            <methodref name="FetchAgain" visibility="public">
+            </methodref>
+            <methodref name="FetchAll" visibility="public">
+            </methodref>
+            <methodref name="FetchBlobs" visibility="public">
+            </methodref>
+            <methodref name="FetchDetails" visibility="public">
+            </methodref>
+            <methodref name="FetchNext" visibility="public">
+            </methodref>
+            <methodref name="FindKey" visibility="public">
+            </methodref>
+            <methodref name="FindNearest" visibility="public">
+            </methodref>
+            <methodref name="FindParam" visibility="public">
+            </methodref>
+            <methodref name="GetCurrentRecord" visibility="public" procflags="overload override">
+            </methodref>
+            <methodref name="GetDetailLinkFields" visibility="public" procflags="overload override">
+            </methodref>
+            <methodref name="GetColumnField" visibility="public">
+            </methodref>
+            <methodref name="GetFieldColumn" visibility="public" procflags="overload">
+            </methodref>
+            <methodref name="GetFieldData" visibility="public" procflags="overload override">
+            </methodref>
+            <methodref name="GetFieldData" visibility="public" procflags="overload override">
+            </methodref>
+            <methodref name="GetStateFieldValue" visibility="public" procflags="override">
+            </methodref>
+            <methodref name="GetGroupState" visibility="public">
+            </methodref>
+            <methodref name="GetIndexNames" visibility="public">
+            </methodref>
+            <methodref name="GetNextPacket" visibility="public">
+            </methodref>
+            <methodref name="GetRow" visibility="public">
+            </methodref>
+            <methodref name="GetLocateRow" visibility="public">
+            </methodref>
+            <methodref name="GetParentRow" visibility="public">
+            </methodref>
+            <methodref name="GotoCurrent" visibility="public">
+            </methodref>
+            <methodref name="GotoKey" visibility="public">
+            </methodref>
+            <methodref name="GotoNearest" visibility="public">
+            </methodref>
+            <methodref name="IsLinkedNested" visibility="public">
+            </methodref>
+            <methodref name="IsLinkedDetail" visibility="public">
+            </methodref>
+            <methodref name="IsLinked" visibility="public">
+            </methodref>
+            <methodref name="IsRanged" visibility="public">
+            </methodref>
+            <methodref name="IsSequenced" visibility="public" procflags="override">
+            </methodref>
+            <methodref name="IsIndexed" visibility="public">
+            </methodref>
+            <methodref name="Locate" visibility="public" procflags="override">
+            </methodref>
+            <methodref name="LocateEx" visibility="public" procflags="overload virtual">
+            </methodref>
+            <methodref name="LocateEx" visibility="public" procflags="overload virtual">
+            </methodref>
+            <methodref name="Lookup" visibility="public" procflags="override">
+            </methodref>
+            <methodref name="LookupEx" visibility="public" procflags="overload virtual">
+            </methodref>
+            <methodref name="LookupEx" visibility="public" procflags="overload virtual">
+            </methodref>
+            <methodref name="MergeDataSet" visibility="public">
+            </methodref>
+            <methodref name="Offline" visibility="public">
+            </methodref>
+            <methodref name="Online" visibility="public">
+            </methodref>
+            <methodref name="Release" visibility="public">
+            </methodref>
+            <methodref name="ParamByName" visibility="public">
+            </methodref>
+            <methodref name="ParseIndexFieldNames" visibility="public">
+            </methodref>
+            <methodref name="Post" visibility="public" procflags="override">
+            </methodref>
+            <methodref name="Reconcile" visibility="public">
+            </methodref>
+            <methodref name="RefreshRecord" visibility="public">
+            </methodref>
+            <methodref name="RefreshUnknownRecord" visibility="public">
+            </methodref>
+            <methodref name="RevertRecord" visibility="public">
+            </methodref>
+            <methodref name="SetFieldAttributes" visibility="public" procflags="overload">
+            </methodref>
+            <methodref name="SetFieldAttributes" visibility="public" procflags="overload">
+            </methodref>
+            <methodref name="SetFieldAttributes" visibility="public" procflags="overload">
+            </methodref>
+            <methodref name="SetFieldsKeyIncAttributes" visibility="public">
+            </methodref>
+            <methodref name="SetFieldAutoGenerateValue" visibility="public">
+            </methodref>
+            <methodref name="SetRangeEnd" visibility="public">
+            </methodref>
+            <methodref name="SetRangeStart" visibility="public">
+            </methodref>
+            <methodref name="SetRange" visibility="public">
+            </methodref>
+            <methodref name="SetKey" visibility="public">
+            </methodref>
+            <methodref name="UndoLastChange" visibility="public">
+            </methodref>
+            <methodref name="UpdateStatus" visibility="public" procflags="override">
+            </methodref>
+            <methodref name="UpdateConstraints" visibility="public">
+            </methodref>
+            <methodref name="UpdateAttributes" visibility="public">
+            </methodref>
+            <methodref name="LoadFromStream" visibility="public">
+            </methodref>
+            <methodref name="LoadFromFile" visibility="public">
+            </methodref>
+            <methodref name="SaveToStream" visibility="public">
+            </methodref>
+            <methodref name="SaveToFile" visibility="public">
+            </methodref>
+            <methodref name="LoadFromFileAtOpen" visibility="public">
+            </methodref>
+            <methodref name="SaveToFileAtClose" visibility="public">
+            </methodref>
+            <methodref name="AddListener" visibility="public">
+            </methodref>
+            <methodref name="RemoveListener" visibility="public">
+            </methodref>
+            <propertyref name="ActiveStoredUsage" visibility="public">
+            </propertyref>
+            <propertyref name="ActualDetailFields" visibility="public">
+            </propertyref>
+            <propertyref name="Aggregates" visibility="public">
+            </propertyref>
+            <propertyref name="AggregatesActive" visibility="public">
+            </propertyref>
+            <propertyref name="CachedUpdates" visibility="public">
+            </propertyref>
+            <propertyref name="ChangeCount" visibility="public">
+            </propertyref>
+            <propertyref name="ClientCursor" visibility="public">
+            </propertyref>
+            <propertyref name="CloneSource" visibility="public">
+            </propertyref>
+            <propertyref name="Constraints" visibility="public">
+            </propertyref>
+            <propertyref name="ConstraintsEnabled" visibility="public">
+            </propertyref>
+            <propertyref name="Data" visibility="public">
+            </propertyref>
+            <propertyref name="Delta" visibility="public">
+            </propertyref>
+            <propertyref name="Exists" visibility="public">
+            </propertyref>
+            <propertyref name="RowError" visibility="public">
+            </propertyref>
+            <propertyref name="FilteredData" visibility="public">
+            </propertyref>
+            <propertyref name="DatSManager" visibility="public">
+            </propertyref>
+            <propertyref name="GroupingLevel" visibility="public">
+            </propertyref>
+            <propertyref name="UpdatesPending" visibility="public">
+            </propertyref>
+            <propertyref name="IndexDefs" visibility="public">
+            </propertyref>
+            <propertyref name="Indexes" visibility="public">
+            </propertyref>
+            <propertyref name="IndexesActive" visibility="public">
+            </propertyref>
+            <propertyref name="IndexName" visibility="public">
+            </propertyref>
+            <propertyref name="LocalIndexName" visibility="public">
+            </propertyref>
+            <propertyref name="IndexFieldNames" visibility="public">
+            </propertyref>
+            <propertyref name="IndexFields" visibility="public">
+            </propertyref>
+            <propertyref name="IndexFieldCount" visibility="public">
+            </propertyref>
+            <propertyref name="KeyExclusive" visibility="public">
+            </propertyref>
+            <propertyref name="KeyFieldCount" visibility="public">
+            </propertyref>
+            <propertyref name="MasterLink" visibility="public">
+            </propertyref>
+            <propertyref name="MasterSource" visibility="public">
+            </propertyref>
+            <propertyref name="MasterFields" visibility="public">
+            </propertyref>
+            <propertyref name="DetailFields" visibility="public">
+            </propertyref>
+            <propertyref name="OptionsIntf" visibility="public">
+            </propertyref>
+            <propertyref name="ParentDataSet" visibility="public">
+            </propertyref>
+            <propertyref name="SavePoint" visibility="public">
+            </propertyref>
+            <propertyref name="SourceEOF" visibility="public">
+            </propertyref>
+            <propertyref name="SourceView" visibility="public">
+            </propertyref>
+            <propertyref name="FilterChanges" visibility="public">
+            </propertyref>
+            <propertyref name="Table" visibility="public">
+            </propertyref>
+            <propertyref name="BaseView" visibility="public">
+            </propertyref>
+            <propertyref name="Encoder" visibility="public">
+            </propertyref>
+            <eventref name="AfterApplyUpdates" visibility="public">
+            </eventref>
+            <eventref name="AfterExecute" visibility="public">
+            </eventref>
+            <eventref name="AfterGetRecords" visibility="public">
+            </eventref>
+            <eventref name="AfterGetRecord" visibility="public">
+            </eventref>
+            <eventref name="AfterRowRequest" visibility="public">
+            </eventref>
+            <eventref name="BeforeApplyUpdates" visibility="public">
+            </eventref>
+            <eventref name="BeforeExecute" visibility="public">
+            </eventref>
+            <eventref name="BeforeGetRecords" visibility="public">
+            </eventref>
+            <eventref name="BeforeRowRequest" visibility="public">
+            </eventref>
+            <eventref name="OnReconcileError" visibility="public">
+            </eventref>
+            <eventref name="OnUpdateRecord" visibility="public">
+            </eventref>
+            <eventref name="OnUpdateError" visibility="public">
+            </eventref>
+            <eventref name="OnMasterSetValues" visibility="public">
+            </eventref>
+            <ancestor name="TDataSet" namespace="Data.DB">
+              <interfaces>
+                <implements name="IProviderSupportNG" />
+                <implements name="IProviderSupport" />
+              </interfaces>
+              <methodref name="AddDataSource" visibility="private">
+              </methodref>
+              <methodref name="AddRecord" visibility="private">
+              </methodref>
+              <methodref name="BeginInsertAppend" visibility="private">
+              </methodref>
+              <methodref name="CheckCanModify" visibility="private">
+              </methodref>
+              <methodref name="CheckOperation" visibility="private">
+              </methodref>
+              <methodref name="CheckParentState" visibility="private">
+              </methodref>
+              <methodref name="CheckRequiredFields" visibility="private">
+              </methodref>
+              <methodref name="DoInternalOpen" visibility="private">
+              </methodref>
+              <methodref name="EndInsertAppend" visibility="private">
+              </methodref>
+              <methodref name="GetActive" visibility="private">
+              </methodref>
+              <methodref name="GetBuffer" visibility="private">
+              </methodref>
+              <methodref name="GetFieldCount" visibility="private" procflags="inline">
+              </methodref>
+              <methodref name="GetFieldValue" visibility="private">
+              </methodref>
+              <methodref name="GetFound" visibility="private">
+              </methodref>
+              <methodref name="GetNestedDataSets" visibility="private">
+              </methodref>
+              <methodref name="MoveBuffer" visibility="private">
+              </methodref>
+              <methodref name="RemoveDataSource" visibility="private">
+              </methodref>
+              <methodref name="SetBufferCount" visibility="private">
+              </methodref>
+              <methodref name="SetConstraints" visibility="private">
+              </methodref>
+              <methodref name="SetFieldDefs" visibility="private">
+              </methodref>
+              <methodref name="SetFieldValue" visibility="private">
+              </methodref>
+              <methodref name="SetSparseArrays" visibility="private">
+              </methodref>
+              <methodref name="SetFieldOptions" visibility="private">
+              </methodref>
+              <methodref name="PSExecuteStatement" visibility="protected" procflags="overload virtual">
+              </methodref>
+              <methodref name="PSExecuteStatement" visibility="protected" procflags="overload virtual">
+              </methodref>
+              <methodref name="PSExecuteStatement" visibility="protected" procflags="overload virtual" symflags="deprecated">
+              </methodref>
+              <methodref name="PSGetCommandText" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="PSGetKeyFields" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="PSGetQuoteChar" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="PSGetTableName" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="PSSetCommandText" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="PSEndTransaction" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="PSExecute" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="PSGetAttributes" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="PSGetCommandType" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="PSGetDefaultOrder" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="PSGetParams" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="PSGetIndexDefs" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="PSGetUpdateException" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="PSInTransaction" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="PSIsSQLBased" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="PSIsSQLSupported" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="PSReset" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="PSSetParams" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="PSStartTransaction" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="PSUpdateRecord" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="GetLookupListClass" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="ResetAggField" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="BindFields" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="BookmarkAvailable" visibility="protected">
+              </methodref>
+              <methodref name="CalculateFields" visibility="protected" procflags="overload virtual">
+              </methodref>
+              <methodref name="CalculateFields" visibility="protected" procflags="overload virtual" symflags="deprecated">
+              </methodref>
+              <methodref name="CheckActive" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="CheckBiDirectional" visibility="protected">
+              </methodref>
+              <methodref name="CheckFieldCompatibility" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="CheckInactive" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="ClearBuffers" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="ClearCalcFields" visibility="protected" procflags="overload virtual">
+              </methodref>
+              <methodref name="ClearCalcFields" visibility="protected" procflags="overload virtual" symflags="deprecated">
+              </methodref>
+              <methodref name="CloseBlob" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="CloseCursor" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="CreateFields" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="CreateNestedDataSet" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="DataConvert" visibility="protected" procflags="overload virtual">
+              </methodref>
+              <methodref name="DataConvert" visibility="protected" procflags="overload virtual" symflags="deprecated">
+              </methodref>
+              <methodref name="DataEvent" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="DefChanged" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="DestroyFields" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="DoAfterCancel" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="DoAfterClose" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="DoAfterDelete" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="DoAfterEdit" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="DoAfterInsert" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="DoAfterOpen" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="DoAfterPost" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="DoAfterRefresh" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="DoAfterScroll" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="DoBeforeCancel" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="DoBeforeClose" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="DoBeforeDelete" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="DoBeforeEdit" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="DoBeforeInsert" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="DoBeforeOpen" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="DoBeforePost" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="DoBeforeRefresh" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="DoBeforeScroll" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="DoOnCalcFields" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="DoOnNewRecord" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="FieldByNumber" visibility="protected" procflags="inline">
+              </methodref>
+              <methodref name="FindRecord" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="FreeFieldBuffers" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="GetAggregateValue" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="GetAggRecordCount" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="ActivateBuffers" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="GetCalcFields" visibility="protected" procflags="overload virtual">
+              </methodref>
+              <methodref name="GetBookmarkStr" visibility="protected" procflags="virtual" symflags="deprecated">
+              </methodref>
+              <methodref name="GetCalcFields" visibility="protected" procflags="overload virtual" symflags="deprecated">
+              </methodref>
+              <methodref name="GetCalcFieldTypes" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="GetCanModify" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="GetCanRefresh" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="GetChildren" visibility="protected" procflags="override">
+              </methodref>
+              <methodref name="GetDataSource" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="GetFieldClass" visibility="protected" procflags="overload virtual">
+              </methodref>
+              <methodref name="GetFieldClass" visibility="protected" procflags="overload virtual">
+              </methodref>
+              <methodref name="GetFieldFullName" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="GetStateFieldValue" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="GetIsIndexField" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="GetIndexDefs" visibility="protected">
+              </methodref>
+              <methodref name="GetModifiedBlobCached" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="GetNextRecords" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="GetNextRecord" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="GetPriorRecords" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="GetPriorRecord" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="GetRecordCount" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="GetRecNo" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="InitFieldDefs" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="InitFieldDefsFromFields" visibility="protected">
+              </methodref>
+              <methodref name="InitRecord" visibility="protected" procflags="overload virtual">
+              </methodref>
+              <methodref name="InitRecord" visibility="protected" procflags="overload virtual" symflags="deprecated">
+              </methodref>
+              <methodref name="InternalCancel" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="InternalEdit" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="InternalInsert" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="InternalRefresh" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="Loaded" visibility="protected" procflags="override">
+              </methodref>
+              <methodref name="OpenCursor" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="OpenCursorComplete" visibility="protected">
+              </methodref>
+              <methodref name="OpenParentDataSet" visibility="protected">
+              </methodref>
+              <methodref name="RefreshInternalCalcFields" visibility="protected" procflags="overload virtual">
+              </methodref>
+              <methodref name="RefreshInternalCalcFields" visibility="protected" procflags="overload virtual" symflags="deprecated">
+              </methodref>
+              <methodref name="RestoreState" visibility="protected">
+              </methodref>
+              <methodref name="BlockReadNext" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="SetActive" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="SetBookmarkStr" visibility="protected" procflags="virtual" symflags="deprecated">
+              </methodref>
+              <methodref name="SetBlockReadSize" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="SetBufListSize" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="SetChildOrder" visibility="protected" procflags="override">
+              </methodref>
+              <methodref name="SetCurrentRecord" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="SetDataSetField" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="SetDefaultFields" visibility="protected" symflags="deprecated">
+              </methodref>
+              <methodref name="SetFieldProps" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="SetFieldDefProps" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="SetFiltered" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="SetFilterOptions" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="SetFilterText" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="SetFound" visibility="protected" procflags="inline">
+              </methodref>
+              <methodref name="SetModified" visibility="protected" procflags="inline">
+              </methodref>
+              <methodref name="SetName" visibility="protected" procflags="override">
+              </methodref>
+              <methodref name="SetObjectView" visibility="protected">
+              </methodref>
+              <methodref name="SetOnFilterRecord" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="SetRecNo" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="SetState" visibility="protected">
+              </methodref>
+              <methodref name="SetStateFieldValue" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="SetValidatingField" visibility="protected">
+              </methodref>
+              <methodref name="SetTempState" visibility="protected">
+              </methodref>
+              <methodref name="SetUniDirectional" visibility="protected" procflags="inline">
+              </methodref>
+              <methodref name="TempBuffer" visibility="protected" procflags="inline">
+              </methodref>
+              <methodref name="UpdateBufferCount" visibility="protected">
+              </methodref>
+              <methodref name="UpdateIndexDefs" visibility="protected" procflags="virtual">
+              </methodref>
+              <propertyref name="ActiveRecord" visibility="protected">
+              </propertyref>
+              <propertyref name="CurrentRecord" visibility="protected">
+              </propertyref>
+              <propertyref name="BlobFieldCount" visibility="protected">
+              </propertyref>
+              <propertyref name="BookmarkSize" visibility="protected">
+              </propertyref>
+              <propertyref name="Buffers" visibility="protected">
+              </propertyref>
+              <propertyref name="BufferCount" visibility="protected">
+              </propertyref>
+              <propertyref name="CalcBuffer" visibility="protected">
+              </propertyref>
+              <propertyref name="CalcFieldsSize" visibility="protected">
+              </propertyref>
+              <propertyref name="Constraints" visibility="protected">
+              </propertyref>
+              <propertyref name="FieldNoOfs" visibility="protected">
+              </propertyref>
+              <propertyref name="FieldOptions" visibility="protected">
+              </propertyref>
+              <propertyref name="InternalCalcFields" visibility="protected">
+              </propertyref>
+              <propertyref name="NestedDataSets" visibility="protected">
+              </propertyref>
+              <propertyref name="NestedDataSetClass" visibility="protected">
+              </propertyref>
+              <propertyref name="IOBufferSize" visibility="protected">
+              </propertyref>
+              <methodref name="AllocRecordBuffer" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="FreeRecordBuffer" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="GetBookmarkData" visibility="protected" procflags="overload virtual">
+              </methodref>
+              <methodref name="GetBookmarkFlag" visibility="protected" procflags="overload virtual">
+              </methodref>
+              <methodref name="GetRecordSize" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="InternalAddRecord" visibility="protected" procflags="overload virtual">
+              </methodref>
+              <methodref name="GetBookmarkData" visibility="protected" procflags="overload virtual" symflags="deprecated">
+              </methodref>
+              <methodref name="GetBookmarkData" visibility="protected" procflags="overload virtual" symflags="deprecated">
+              </methodref>
+              <methodref name="GetBookmarkFlag" visibility="protected" procflags="overload virtual" symflags="deprecated">
+              </methodref>
+              <methodref name="InternalAddRecord" visibility="protected" procflags="overload virtual" symflags="deprecated">
+              </methodref>
+              <methodref name="InternalAddRecord" visibility="protected" procflags="overload virtual" symflags="deprecated">
+              </methodref>
+              <methodref name="InternalDelete" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="InternalFirst" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="InternalGotoBookmark" visibility="protected" procflags="overload virtual">
+              </methodref>
+              <methodref name="InternalInitRecord" visibility="protected" procflags="overload virtual">
+              </methodref>
+              <methodref name="InternalGotoBookmark" visibility="protected" procflags="overload virtual" symflags="deprecated">
+              </methodref>
+              <methodref name="InternalInitRecord" visibility="protected" procflags="overload virtual" symflags="deprecated">
+              </methodref>
+              <methodref name="InternalLast" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="InternalPost" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="InternalSetToRecord" visibility="protected" procflags="overload virtual">
+              </methodref>
+              <methodref name="InternalSetToRecord" visibility="protected" procflags="overload virtual" symflags="deprecated">
+              </methodref>
+              <methodref name="SetFieldData" visibility="protected" procflags="overload virtual">
+              </methodref>
+              <methodref name="SetFieldData" visibility="protected" procflags="overload virtual">
+              </methodref>
+              <methodref name="SetBookmarkFlag" visibility="protected" procflags="overload virtual">
+              </methodref>
+              <methodref name="SetBookmarkData" visibility="protected" procflags="overload virtual">
+              </methodref>
+              <methodref name="SetBookmarkFlag" visibility="protected" procflags="overload virtual" symflags="deprecated">
+              </methodref>
+              <methodref name="SetBookmarkData" visibility="protected" procflags="overload virtual" symflags="deprecated">
+              </methodref>
+              <methodref name="SetBookmarkData" visibility="protected" procflags="overload virtual" symflags="deprecated">
+              </methodref>
+              <methodref name="SetFieldData" visibility="protected" procflags="overload virtual" symflags="deprecated">
+              </methodref>
+              <methodref name="SetFieldData" visibility="protected" procflags="overload virtual" symflags="deprecated">
+              </methodref>
+              <methodref name="GetRecord" visibility="protected" procflags="overload virtual">
+              </methodref>
+              <methodref name="GetRecord" visibility="protected" procflags="abstract overload virtual">
+              </methodref>
+              <methodref name="InternalClose" visibility="protected" procflags="abstract virtual">
+              </methodref>
+              <methodref name="InternalHandleException" visibility="protected" procflags="abstract virtual">
+              </methodref>
+              <methodref name="InternalInitFieldDefs" visibility="protected" procflags="abstract virtual">
+              </methodref>
+              <methodref name="InternalOpen" visibility="protected" procflags="abstract virtual">
+              </methodref>
+              <methodref name="IsCursorOpen" visibility="protected" procflags="abstract virtual">
+              </methodref>
+              <methodref name="GetFieldDefsClass" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="GetFieldDefListClass" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="GetFieldsClass" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="GetFieldListClass" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="GetCheckConstraintsClass" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="GetAggFieldsClass" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="GetIndexDefsClass" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="GetParamsClass" visibility="protected" procflags="virtual">
+              </methodref>
+              <methodref name="Create" visibility="public" procflags="constructor override">
+              </methodref>
+              <methodref name="Destroy" visibility="public" procflags="destructor override">
+              </methodref>
+              <methodref name="ActiveBuffer" visibility="public" procflags="inline">
+              </methodref>
+              <methodref name="Append" visibility="public">
+              </methodref>
+              <methodref name="AppendRecord" visibility="public">
+              </methodref>
+              <methodref name="BookmarkValid" visibility="public" procflags="virtual">
+              </methodref>
+              <methodref name="Cancel" visibility="public" procflags="virtual">
+              </methodref>
+              <methodref name="CheckBrowseMode" visibility="public">
+              </methodref>
+              <methodref name="ClearFields" visibility="public">
+              </methodref>
+              <methodref name="Close" visibility="public">
+              </methodref>
+              <methodref name="ControlsDisabled" visibility="public" procflags="inline">
+              </methodref>
+              <methodref name="CompareBookmarks" visibility="public" procflags="virtual">
+              </methodref>
+              <methodref name="CreateBlobStream" visibility="public" procflags="virtual">
+              </methodref>
+              <methodref name="CursorPosChanged" visibility="public" procflags="inline">
+              </methodref>
+              <methodref name="Delete" visibility="public">
+              </methodref>
+              <methodref name="DisableControls" visibility="public">
+              </methodref>
+              <methodref name="Edit" visibility="public">
+              </methodref>
+              <methodref name="EnableControls" visibility="public">
+              </methodref>
+              <methodref name="FieldByName" visibility="public">
+              </methodref>
+              <methodref name="FindField" visibility="public">
+              </methodref>
+              <methodref name="FindFirst" visibility="public">
+              </methodref>
+              <methodref name="FindLast" visibility="public">
+              </methodref>
+              <methodref name="FindNext" visibility="public">
+              </methodref>
+              <methodref name="FindPrior" visibility="public">
+              </methodref>
+              <methodref name="First" visibility="public">
+              </methodref>
+              <methodref name="FreeBookmark" visibility="public" procflags="virtual">
+              </methodref>
+              <methodref name="GetBookmark" visibility="public" procflags="virtual">
+              </methodref>
+              <methodref name="GetClonedDataSet" visibility="public" procflags="virtual">
+              </methodref>
+              <methodref name="GetCurrentRecord" visibility="public" procflags="overload virtual">
+              </methodref>
+              <methodref name="GetCurrentRecord" visibility="public" procflags="overload virtual" symflags="deprecated">
+              </methodref>
+              <methodref name="GetDetailDataSets" visibility="public" procflags="overload virtual">
+              </methodref>
+              <methodref name="GetDetailLinkFields" visibility="public" procflags="overload virtual">
+              </methodref>
+              <methodref name="GetBlobFieldData" visibility="public" procflags="virtual">
+              </methodref>
+              <methodref name="GetFieldData" visibility="public" procflags="overload virtual">
+              </methodref>
+              <methodref name="GetFieldData" visibility="public" procflags="overload virtual">
+              </methodref>
+              <methodref name="GetFieldData" visibility="public" procflags="overload virtual">
+              </methodref>
+              <methodref name="GetFieldList" visibility="public" procflags="overload">
+              </methodref>
+              <methodref name="GetDetailDataSets" visibility="public" procflags="overload virtual" symflags="deprecated">
+              </methodref>
+              <methodref name="GetDetailLinkFields" visibility="public" procflags="overload virtual" symflags="deprecated">
+              </methodref>
+              <methodref name="GetFieldData" visibility="public" procflags="overload virtual" symflags="deprecated">
+              </methodref>
+              <methodref name="GetFieldData" visibility="public" procflags="overload virtual" symflags="deprecated">
+              </methodref>
+              <methodref name="GetFieldData" visibility="public" procflags="overload virtual" symflags="deprecated">
+              </methodref>
+              <methodref name="GetFieldList" visibility="public" procflags="overload" symflags="deprecated">
+              </methodref>
+              <methodref name="GetFieldNames" visibility="public" procflags="virtual">
+              </methodref>
+              <methodref name="GotoBookmark" visibility="public">
+              </methodref>
+              <methodref name="Insert" visibility="public">
+              </methodref>
+              <methodref name="InsertRecord" visibility="public">
+              </methodref>
+              <methodref name="IsEmpty" visibility="public" procflags="inline">
+              </methodref>
+              <methodref name="IsLinkedTo" visibility="public">
+              </methodref>
+              <methodref name="IsSequenced" visibility="public" procflags="virtual">
+              </methodref>
+              <methodref name="Last" visibility="public">
+              </methodref>
+              <methodref name="Locate" visibility="public" procflags="virtual">
+              </methodref>
+              <methodref name="Lookup" visibility="public" procflags="virtual">
+              </methodref>
+              <methodref name="MoveBy" visibility="public" procflags="virtual">
+              </methodref>
+              <methodref name="Next" visibility="public">
+              </methodref>
+              <methodref name="Open" visibility="public" procflags="overload">
+              </methodref>
+              <methodref name="Post" visibility="public" procflags="virtual">
+              </methodref>
+              <methodref name="Prior" visibility="public">
+              </methodref>
+              <methodref name="Refresh" visibility="public">
+              </methodref>
+              <methodref name="Resync" visibility="public" procflags="virtual">
+              </methodref>
+              <methodref name="SetFields" visibility="public">
+              </methodref>
+              <methodref name="CopyFields" visibility="public">
+              </methodref>
+              <methodref name="Translate" visibility="public" procflags="virtual">
+              </methodref>
+              <methodref name="UpdateCursorPos" visibility="public">
+              </methodref>
+              <methodref name="UpdateRecord" visibility="public">
+              </methodref>
+              <methodref name="UpdateStatus" visibility="public" procflags="virtual">
+              </methodref>
+              <propertyref name="AggFields" visibility="public">
+              </propertyref>
+              <propertyref name="Bof" visibility="public">
+              </propertyref>
+              <propertyref name="Bookmark" visibility="public">
+              </propertyref>
+              <propertyref name="CanModify" visibility="public">
+              </propertyref>
+              <propertyref name="CanRefresh" visibility="public">
+              </propertyref>
+              <propertyref name="DataSetField" visibility="public">
+              </propertyref>
+              <propertyref name="DataSource" visibility="public">
+              </propertyref>
+              <methodref name="DefaultFields" visibility="public" symflags="deprecated">
+              </methodref>
+              <propertyref name="Designer" visibility="public">
+              </propertyref>
+              <propertyref name="Eof" visibility="public">
+              </propertyref>
+              <propertyref name="BlockReadSize" visibility="public">
+              </propertyref>
+              <propertyref name="FieldCount" visibility="public">
+              </propertyref>
+              <propertyref name="FieldDefs" visibility="public">
+              </propertyref>
+              <propertyref name="FieldDefList" visibility="public">
+              </propertyref>
+              <propertyref name="Fields" visibility="public">
+              </propertyref>
+              <propertyref name="FieldList" visibility="public">
+              </propertyref>
+              <propertyref name="FieldValues" visibility="public">
+              </propertyref>
+              <propertyref name="Found" visibility="public">
+              </propertyref>
+              <propertyref name="IsUniDirectional" visibility="public">
+              </propertyref>
+              <propertyref name="Modified" visibility="public">
+              </propertyref>
+              <propertyref name="ObjectView" visibility="public">
+              </propertyref>
+              <propertyref name="RecordCount" visibility="public">
+              </propertyref>
+              <propertyref name="RecNo" visibility="public">
+              </propertyref>
+              <propertyref name="RecordSize" visibility="public">
+              </propertyref>
+              <propertyref name="SparseArrays" visibility="public">
+              </propertyref>
+              <propertyref name="State" visibility="public">
+              </propertyref>
+              <propertyref name="Filter" visibility="public">
+              </propertyref>
+              <propertyref name="Filtered" visibility="public">
+              </propertyref>
+              <propertyref name="FilterOptions" visibility="public">
+              </propertyref>
+              <propertyref name="Active" visibility="public">
+              </propertyref>
+              <propertyref name="AutoCalcFields" visibility="public">
+              </propertyref>
+              <eventref name="BeforeOpen" visibility="public">
+              </eventref>
+              <eventref name="AfterOpen" visibility="public">
+              </eventref>
+              <eventref name="BeforeClose" visibility="public">
+              </eventref>
+              <eventref name="AfterClose" visibility="public">
+              </eventref>
+              <eventref name="BeforeInsert" visibility="public">
+              </eventref>
+              <eventref name="AfterInsert" visibility="public">
+              </eventref>
+              <eventref name="BeforeEdit" visibility="public">
+              </eventref>
+              <eventref name="AfterEdit" visibility="public">
+              </eventref>
+              <eventref name="BeforePost" visibility="public">
+              </eventref>
+              <eventref name="AfterPost" visibility="public">
+              </eventref>
+              <eventref name="BeforeCancel" visibility="public">
+              </eventref>
+              <eventref name="AfterCancel" visibility="public">
+              </eventref>
+              <eventref name="BeforeDelete" visibility="public">
+              </eventref>
+              <eventref name="AfterDelete" visibility="public">
+              </eventref>
+              <eventref name="BeforeScroll" visibility="public">
+              </eventref>
+              <eventref name="AfterScroll" visibility="public">
+              </eventref>
+              <eventref name="BeforeRefresh" visibility="public">
+              </eventref>
+              <eventref name="AfterRefresh" visibility="public">
+              </eventref>
+              <eventref name="OnCalcFields" visibility="public">
+              </eventref>
+              <eventref name="OnDeleteError" visibility="public">
+              </eventref>
+              <eventref name="OnEditError" visibility="public">
+              </eventref>
+              <eventref name="OnFilterRecord" visibility="public">
+              </eventref>
+              <eventref name="OnNewRecord" visibility="public">
+              </eventref>
+              <eventref name="OnPostError" visibility="public">
+              </eventref>
+              <ancestor name="TComponent" namespace="System.Classes">
+                <interfaces>
+                  <implements name="IInterfaceComponentReference" />
+                  <implements name="IInterface" />
+                </interfaces>
+                <methodref name="GetComObject" visibility="private">
+                </methodref>
+                <methodref name="GetComponent" visibility="private">
+                </methodref>
+                <methodref name="GetComponentCount" visibility="private">
+                </methodref>
+                <methodref name="GetComponentIndex" visibility="private">
+                </methodref>
+                <methodref name="Insert" visibility="private">
+                </methodref>
+                <methodref name="ReadLeft" visibility="private">
+                </methodref>
+                <methodref name="ReadTop" visibility="private">
+                </methodref>
+                <methodref name="Remove" visibility="private">
+                </methodref>
+                <methodref name="RemoveNotification" visibility="private">
+                </methodref>
+                <methodref name="SetComponentIndex" visibility="private">
+                </methodref>
+                <methodref name="SetReference" visibility="private">
+                </methodref>
+                <methodref name="WriteLeft" visibility="private">
+                </methodref>
+                <methodref name="WriteTop" visibility="private">
+                </methodref>
+                <methodref name="IntfGetComponent" visibility="private">
+                </methodref>
+                <methodref name="DoGetDeltaStreams" visibility="private">
+                </methodref>
+                <methodref name="ReadDeltaStream" visibility="private">
+                </methodref>
+                <methodref name="ReadDeltaState" visibility="private">
+                </methodref>
+                <methodref name="FindSortedComponent" visibility="private">
+                </methodref>
+                <methodref name="AddSortedComponent" visibility="private">
+                </methodref>
+                <methodref name="RemoveSortedComponent" visibility="private" procflags="inline">
+                </methodref>
+                <methodref name="Create@" visibility="class private" procflags="class constructor noself">
+                </methodref>
+                <methodref name="AsyncSchedule" visibility="protected" procflags="virtual">
+                </methodref>
+                <methodref name="ChangeName" visibility="protected">
+                </methodref>
+                <methodref name="DefineProperties" visibility="protected" procflags="override">
+                </methodref>
+                <methodref name="GetChildren" visibility="protected" procflags="dynamic">
+                </methodref>
+                <methodref name="GetChildOwner" visibility="protected" procflags="dynamic">
+                </methodref>
+                <methodref name="GetChildParent" visibility="protected" procflags="dynamic">
+                </methodref>
+                <methodref name="GetOwner" visibility="protected" procflags="override">
+                </methodref>
+                <methodref name="Loaded" visibility="protected" procflags="virtual">
+                </methodref>
+                <methodref name="Notification" visibility="protected" procflags="virtual">
+                </methodref>
+                <methodref name="GetDeltaStreams" visibility="protected" procflags="dynamic">
+                </methodref>
+                <methodref name="PaletteCreated" visibility="protected" procflags="dynamic">
+                </methodref>
+                <methodref name="ReadState" visibility="protected" procflags="virtual">
+                </methodref>
+                <methodref name="CanObserve" visibility="protected" procflags="virtual">
+                </methodref>
+                <methodref name="ObserverAdded" visibility="protected" procflags="virtual">
+                </methodref>
+                <methodref name="GetObservers" visibility="protected" procflags="virtual">
+                </methodref>
+                <methodref name="SetAncestor" visibility="protected">
+                </methodref>
+                <methodref name="SetDesigning" visibility="protected">
+                </methodref>
+                <methodref name="SetInline" visibility="protected">
+                </methodref>
+                <methodref name="SetDesignInstance" visibility="protected">
+                </methodref>
+                <methodref name="SetName" visibility="protected" procflags="virtual">
+                </methodref>
+                <methodref name="SetChildOrder" visibility="protected" procflags="dynamic">
+                </methodref>
+                <methodref name="SetParentComponent" visibility="protected" procflags="dynamic">
+                </methodref>
+                <methodref name="Updating" visibility="protected" procflags="dynamic">
+                </methodref>
+                <methodref name="Updated" visibility="protected" procflags="dynamic">
+                </methodref>
+                <methodref name="UpdateRegistry" visibility="protected" procflags="class virtual">
+                </methodref>
+                <methodref name="ValidateRename" visibility="protected" procflags="virtual">
+                </methodref>
+                <methodref name="ValidateContainer" visibility="protected" procflags="dynamic">
+                </methodref>
+                <methodref name="ValidateInsert" visibility="protected" procflags="dynamic">
+                </methodref>
+                <methodref name="WriteState" visibility="protected" procflags="virtual">
+                </methodref>
+                <methodref name="RemoveFreeNotifications" visibility="protected">
+                </methodref>
+                <methodref name="QueryInterface" visibility="protected" procflags="virtual">
+                </methodref>
+                <methodref name="_AddRef" visibility="protected">
+                </methodref>
+                <methodref name="_Release" visibility="protected">
+                </methodref>
+                <methodref name="GetTypeInfoCount" visibility="protected">
+                </methodref>
+                <methodref name="GetTypeInfo" visibility="protected">
+                </methodref>
+                <methodref name="GetIDsOfNames" visibility="protected">
+                </methodref>
+                <methodref name="Invoke" visibility="protected">
+                </methodref>
+                <eventref name="OnGetDeltaStreams" visibility="protected">
+                </eventref>
+                <methodref name="Create" visibility="public" procflags="constructor virtual">
+                </methodref>
+                <methodref name="Destroy" visibility="public" procflags="destructor override">
+                </methodref>
+                <methodref name="BeforeDestruction" visibility="public" procflags="override">
+                </methodref>
+                <methodref name="BeginInvoke" visibility="public" procflags="overload">
+                </methodref>
+                <methodref name="BeginInvoke" visibility="public" procflags="overload">
+                </methodref>
+                <methodref name="BeginInvoke" visibility="public" procflags="overload">
+                </methodref>
+                <methodref name="BeginInvoke" visibility="public" procflags="overload">
+                </methodref>
+                <methodref name="BeginInvoke" visibility="public" procflags="overload">
+                </methodref>
+                <methodref name="BeginInvoke" visibility="public" procflags="overload">
+                </methodref>
+                <methodref name="BeginInvoke" visibility="public" procflags="overload">
+                </methodref>
+                <methodref name="BeginInvoke" visibility="public" procflags="overload">
+                </methodref>
+                <methodref name="EndInvoke" visibility="public" procflags="overload">
+                </methodref>
+                <methodref name="EndInvoke" visibility="public" procflags="overload">
+                </methodref>
+                <methodref name="EndFunctionInvoke" visibility="public">
+                </methodref>
+                <methodref name="DestroyComponents" visibility="public">
+                </methodref>
+                <methodref name="Destroying" visibility="public">
+                </methodref>
+                <methodref name="ExecuteAction" visibility="public" procflags="dynamic">
+                </methodref>
+                <methodref name="FindComponent" visibility="public">
+                </methodref>
+                <methodref name="FreeNotification" visibility="public">
+                </methodref>
+                <methodref name="RemoveFreeNotification" visibility="public">
+                </methodref>
+                <methodref name="FreeOnRelease" visibility="public">
+                </methodref>
+                <methodref name="GetEnumerator" visibility="public" procflags="inline">
+                </methodref>
+                <methodref name="GetParentComponent" visibility="public" procflags="dynamic">
+                </methodref>
+                <methodref name="GetNamePath" visibility="public" procflags="override">
+                </methodref>
+                <methodref name="HasParent" visibility="public" procflags="dynamic">
+                </methodref>
+                <methodref name="InsertComponent" visibility="public">
+                </methodref>
+                <methodref name="RemoveComponent" visibility="public">
+                </methodref>
+                <methodref name="SetSubComponent" visibility="public">
+                </methodref>
+                <methodref name="SafeCallException" visibility="public" procflags="override">
+                </methodref>
+                <methodref name="UpdateAction" visibility="public" procflags="virtual">
+                </methodref>
+                <methodref name="IsImplementorOf" visibility="public">
+                </methodref>
+                <methodref name="ReferenceInterface" visibility="public">
+                </methodref>
+                <propertyref name="ComObject" visibility="public">
+                </propertyref>
+                <propertyref name="Components" visibility="public">
+                </propertyref>
+                <propertyref name="ComponentCount" visibility="public">
+                </propertyref>
+                <propertyref name="ComponentIndex" visibility="public">
+                </propertyref>
+                <propertyref name="ComponentState" visibility="public">
+                </propertyref>
+                <propertyref name="ComponentStyle" visibility="public">
+                </propertyref>
+                <propertyref name="DesignInfo" visibility="public">
+                </propertyref>
+                <propertyref name="Owner" visibility="public">
+                </propertyref>
+                <propertyref name="VCLComObject" visibility="public">
+                </propertyref>
+                <propertyref name="Observers" visibility="public">
+                </propertyref>
+                <propertyref name="Name" visibility="published">
+                </propertyref>
+                <propertyref name="Tag" visibility="published">
+                </propertyref>
+                <ancestor name="TPersistent" namespace="System.Classes">
+                  <methodref name="AssignError" visibility="private">
+                  </methodref>
+                  <methodref name="AssignTo" visibility="protected" procflags="virtual">
+                  </methodref>
+                  <methodref name="DefineProperties" visibility="protected" procflags="virtual">
+                  </methodref>
+                  <methodref name="GetOwner" visibility="protected" procflags="dynamic">
+                  </methodref>
+                  <methodref name="Destroy" visibility="public" procflags="destructor override">
+                  </methodref>
+                  <methodref name="Assign" visibility="public" procflags="virtual">
+                  </methodref>
+                  <methodref name="GetNamePath" visibility="public" procflags="dynamic">
+                  </methodref>
+                  <ancestor name="TObject" namespace="System">
+                    <methodref name="Create" visibility="public" procflags="constructor">
+                    </methodref>
+                    <methodref name="Free" visibility="public">
+                    </methodref>
+                    <methodref name="DisposeOf" visibility="public" procflags="inline">
+                    </methodref>
+                    <methodref name="InitInstance" visibility="public" procflags="class">
+                    </methodref>
+                    <methodref name="CleanupInstance" visibility="public">
+                    </methodref>
+                    <methodref name="ClassType" visibility="public" procflags="inline">
+                    </methodref>
+                    <methodref name="ClassName" visibility="public" procflags="class">
+                    </methodref>
+                    <methodref name="ClassNameIs" visibility="public" procflags="class">
+                    </methodref>
+                    <methodref name="ClassParent" visibility="public" procflags="class">
+                    </methodref>
+                    <methodref name="ClassInfo" visibility="public" procflags="class inline">
+                    </methodref>
+                    <methodref name="InstanceSize" visibility="public" procflags="class inline">
+                    </methodref>
+                    <methodref name="InheritsFrom" visibility="public" procflags="class">
+                    </methodref>
+                    <methodref name="MethodAddress" visibility="public" procflags="class overload">
+                    </methodref>
+                    <methodref name="MethodAddress" visibility="public" procflags="class overload">
+                    </methodref>
+                    <methodref name="MethodName" visibility="public" procflags="class">
+                    </methodref>
+                    <methodref name="QualifiedClassName" visibility="public" procflags="class">
+                    </methodref>
+                    <methodref name="FieldAddress" visibility="public" procflags="overload">
+                    </methodref>
+                    <methodref name="FieldAddress" visibility="public" procflags="overload">
+                    </methodref>
+                    <methodref name="GetInterface" visibility="public">
+                    </methodref>
+                    <methodref name="GetInterfaceEntry" visibility="public" procflags="class">
+                    </methodref>
+                    <methodref name="GetInterfaceTable" visibility="public" procflags="class inline">
+                    </methodref>
+                    <methodref name="UnitName" visibility="public" procflags="class">
+                    </methodref>
+                    <methodref name="UnitScope" visibility="public" procflags="class">
+                    </methodref>
+                    <methodref name="Equals" visibility="public" procflags="virtual">
+                    </methodref>
+                    <methodref name="GetHashCode" visibility="public" procflags="virtual">
+                    </methodref>
+                    <methodref name="ToString" visibility="public" procflags="virtual">
+                    </methodref>
+                    <methodref name="SafeCallException" visibility="public" procflags="virtual">
+                    </methodref>
+                    <methodref name="AfterConstruction" visibility="public" procflags="virtual">
+                    </methodref>
+                    <methodref name="BeforeDestruction" visibility="public" procflags="virtual">
+                    </methodref>
+                    <methodref name="Dispatch" visibility="public" procflags="virtual">
+                    </methodref>
+                    <methodref name="DefaultHandler" visibility="public" procflags="virtual">
+                    </methodref>
+                    <methodref name="NewInstance" visibility="public" procflags="class virtual">
+                    </methodref>
+                    <methodref name="FreeInstance" visibility="public" procflags="virtual">
+                    </methodref>
+                    <methodref name="Destroy" visibility="public" procflags="destructor virtual">
+                    </methodref>
+                    <methodref name="CPP_ABI_1" visibility="public" procflags="virtual">
+                    </methodref>
+                    <methodref name="CPP_ABI_2" visibility="public" procflags="virtual">
+                    </methodref>
+                    <methodref name="CPP_ABI_3" visibility="public" procflags="virtual">
+                    </methodref>
+                    <methodref name="GetDisposed" visibility="protected" procflags="inline">
+                    </methodref>
+                    <methodref name="CheckDisposed" visibility="protected" procflags="inline">
+                    </methodref>
+                    <propertyref name="Disposed" visibility="protected">
+                    </propertyref>
+                  </ancestor>
+                </ancestor>
+              </ancestor>
+            </ancestor>
+          </ancestor>
+        </ancestor>
+      </ancestor>
+    </ancestor>
+    <members>
+      <field name="fsAbout" type="TDWAboutInfo" visibility="private" size="1" offset="1568" />
+      <field name="vComponentTag" type="string" visibility="private" size="8" offset="1576" />
+      <field name="vSequenceField" type="string" visibility="private" size="8" offset="1584" />
+      <field name="vSequenceName" type="string" visibility="private" size="8" offset="1592" />
+      <field name="vLoadFromStream" type="Boolean" visibility="private" size="1" offset="1600" />
+      <field name="vBinaryCompatibleMode" type="Boolean" visibility="private" size="1" offset="1601" />
+      <field name="vOnLoadStream" type="Boolean" visibility="private" size="1" offset="1602" />
+      <field name="vBinaryLoadRequest" type="Boolean" visibility="private" size="1" offset="1603" />
+      <field name="vOnWriterProcess" type="TOnWriterProcess" visibility="private" size="16" offset="1608" />
+      <function name="OnEditingState" visibility="private">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <procedure name="SaveRecordToStream" visibility="private" procflags="class">
+        <parameters>
+          <parameter name="Dataset" type="TDataSet" />
+          <parameter name="Stream" type="TStream" />
+        </parameters>
+      </procedure>
+      <procedure name="SaveToStreamFromDataset" visibility="private" procflags="class">
+        <parameters>
+          <parameter name="Dataset" type="TDataSet" />
+          <parameter name="StreamValue" type="TMemoryStream" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="LoadFromStreamToDataset" visibility="private">
+        <parameters>
+          <parameter name="StreamValue" type="TMemoryStream" paramflags="const" />
+          <parameter name="DataType" type="TStreamType">
+            <value>
+              stAll
+            </value>
+          </parameter>
+        </parameters>
+      </procedure>
+      <procedure name="BaseOpen" visibility="public">
+      </procedure>
+      <procedure name="BaseClose" visibility="public">
+      </procedure>
+      <procedure name="ForceInternalCalc" visibility="public">
+      </procedure>
+      <procedure name="SetComponentTAG" visibility="public">
+      </procedure>
+      <procedure name="SaveToStream" visibility="public" procflags="overload">
+        <parameters>
+          <parameter name="Value" type="TMemoryStream" paramflags="var" />
+        </parameters>
+      </procedure>
+      <procedure name="SaveToStream" visibility="public" procflags="class overload">
+        <parameters>
+          <parameter name="Dataset" type="TDataSet" />
+          <parameter name="Value" type="TMemoryStream" paramflags="var" />
+        </parameters>
+      </procedure>
+      <procedure name="LoadFromStream" visibility="public">
+        <parameters>
+          <parameter name="Value" type="TMemoryStream" />
+          <parameter name="DataType" type="TStreamType">
+            <value>
+              stAll
+            </value>
+          </parameter>
+        </parameters>
+      </procedure>
+      <procedure name="SetInDesignEvents" visibility="public" procflags="abstract virtual">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetInBlockEvents" visibility="public" procflags="abstract virtual">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetInitDataset" visibility="public" procflags="abstract virtual">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="PrepareDetailsNew" visibility="public" procflags="abstract virtual">
+      </procedure>
+      <procedure name="PrepareDetails" visibility="public" procflags="abstract virtual">
+        <parameters>
+          <parameter name="ActiveMode" type="Boolean" />
+        </parameters>
+      </procedure>
+      <constructor name="Create" visibility="public">
+        <parameters>
+          <parameter name="AOwner" type="TComponent" />
+        </parameters>
+      </constructor>
+      <property name="InLoadFromStream" visibility="public" read="vLoadFromStream" type="Boolean" />
+      <property name="BinaryLoadRequest" visibility="public" read="vBinaryLoadRequest" type="Boolean" />
+      <property name="OnLoadStream" visibility="public" read="vOnLoadStream" write="vOnLoadStream" type="Boolean" />
+      <property name="Componenttag" visibility="public" read="vComponentTag" type="string" default="0" />
+      <property name="BinaryCompatibleMode" visibility="published" read="vBinaryCompatibleMode" write="vBinaryCompatibleMode" type="Boolean" />
+      <property name="SequenceName" visibility="published" read="vSequenceName" write="vSequenceName" type="string" default="0" />
+      <property name="SequenceField" visibility="published" read="vSequenceField" write="vSequenceField" type="string" default="0" />
+      <event name="OnWriterProcess" visibility="published" read="vOnWriterProcess" write="vOnWriterProcess" type="TOnWriterProcess" />
+      <property name="AboutInfo" visibility="published" read="fsAbout" write="fsAbout" stored="False" type="TDWAboutInfo" />
+    </members>
+  </class>
+  <array name="TRESTDWDatasetArray">
+    <element type="TRESTDWClientSQLBase" />
+  </array>
+  <const name="seGET" type="TSendEvent">
+    <value>
+      seGET
+    </value>
+  </const>
+  <const name="sePOST" type="TSendEvent">
+    <value>
+      sePOST
+    </value>
+  </const>
+  <const name="sePUT" type="TSendEvent">
+    <value>
+      sePUT
+    </value>
+  </const>
+  <const name="seDELETE" type="TSendEvent">
+    <value>
+      seDELETE
+    </value>
+  </const>
+  <const name="sePatch" type="TSendEvent">
+    <value>
+      sePatch
+    </value>
+  </const>
+  <const name="trHttp" type="TTypeRequest">
+    <value>
+      trHttp
+    </value>
+  </const>
+  <const name="trHttps" type="TTypeRequest">
+    <value>
+      trHttps
+    </value>
+  </const>
+  <const name="odIN" type="TObjectDirection">
+    <value>
+      odIN
+    </value>
+  </const>
+  <const name="odOUT" type="TObjectDirection">
+    <value>
+      odOUT
+    </value>
+  </const>
+  <const name="odINOUT" type="TObjectDirection">
+    <value>
+      odINOUT
+    </value>
+  </const>
+  <enum name="TSendEvent">
+    <element value="0" name="seGET" />
+    <element value="1" name="sePOST" />
+    <element value="2" name="sePUT" />
+    <element value="3" name="seDELETE" />
+    <element value="4" name="sePatch" />
+  </enum>
+  <enum name="TTypeRequest">
+    <element value="0" name="trHttp" />
+    <element value="1" name="trHttps" />
+  </enum>
+  <enum name="TObjectDirection">
+    <element value="0" name="odIN" />
+    <element value="1" name="odOUT" />
+    <element value="2" name="odINOUT" />
+  </enum>
+</namespace>

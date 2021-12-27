@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2020/12/11 12:36:59.751,=C:\Users\Linces Marques\Documents\Embarcadero\Studio\Projects\Unit17.pas</Transaction>
+    <Transaction>2020/12/11 12:37:26.846,C:\Users\Linces Marques\Documents\Embarcadero\Studio\Projects\ServidorREST.dproj=C:\Users\Linces Marques\Documents\Embarcadero\Studio\Projects\Project15.dproj</Transaction>
+    <Transaction>2020/12/11 12:37:54.454,D:\00Dev\Delphi\System ERP\ServidorREST\unPrincipal.pas=C:\Users\Linces Marques\Documents\Embarcadero\Studio\Projects\Unit17.pas</Transaction>
+    <Transaction>2020/12/11 12:37:54.454,D:\00Dev\Delphi\System ERP\ServidorREST\unPrincipal.fmx=C:\Users\Linces Marques\Documents\Embarcadero\Studio\Projects\Unit17.fmx</Transaction>
+    <Transaction>2020/12/11 12:37:58.051,D:\00Dev\Delphi\System ERP\ServidorREST\ServidorREST.dproj=C:\Users\Linces Marques\Documents\Embarcadero\Studio\Projects\ServidorREST.dproj</Transaction>
+  </Transactions>
+  <ActiveMobileDevice>   <NoProfile Android64="RQ8MC07YE1L" Android="RQ8MC07YE1L"/>
+  </ActiveMobileDevice>
+</BorlandProject>

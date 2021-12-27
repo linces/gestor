@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality">W32ResourceDLL.Personality</Option>
+      <Option Name="ProjectType">ResourceDLL</Option>
+      <Option Name="Version">1.0</Option>
+      <Option Name="GUID">{F3C9F830-6146-4989-ADB5-E2D6A3A89485}</Option>
+    </Option>
+  </PersonalityInfo>
+  <W32ResourceDLL.Personality>
+    <Source>
+      <Source Name="MainSource">Teste.dpr</Source>
+    </Source>
+    <Options>
+      <Options Name="BaseLang">1046</Options>
+      <Options Name="TargetName">..\Teste.ESN</Options>
+      <Options Name="BRCC_IncludePath"></Options>
+      <Options Name="Company"></Options>
+      <Options Name="Configuration"></Options>
+      <Options Name="Copyright"></Options>
+      <Options Name="Description"></Options>
+      <Options Name="Trademark"></Options>
+      <Options Name="Product"></Options>
+      <Options Name="ProductVersion"></Options>
+      <Options Name="Title"></Options>
+      <Options Name="FileVersion"></Options>
+      <Options Name="Evidence"></Options>
+      <Options Name="KeyFile"></Options>
+      <Options Name="KeyName"></Options>
+    </Options>
+    <FileList>
+      <File FileName="Unit1.dfm" ContainerId="W32Form" ModuleName="Unit1.dfm"/>
+      <File FileName="Unit2.dfm" ContainerId="W32Form" ModuleName="Unit2.dfm"/>
+      <File FileName="Teste_DRC.rc" ContainerId="W32RC" ModuleName="Teste_DRC.rc"/>
+    </FileList>
+  </W32ResourceDLL.Personality>
+</BorlandProject>

@@ -1,0 +1,38 @@
+{
+	"hash": "d41d8cd98f00b204e9800998ecf8427e",
+	"updated": "2020-12-25T13:58:11.8868859-03:00",
+	"installedModules": {
+		"github.com/dliocode/horse-utils-clientip": {
+			"name": "horse-utils-clientip",
+			"version": "0.0.5",
+			"hash": "e70e774b0e0e7248d1e9028fc9c4542e",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"github.com/hashload/horse": {
+			"name": "horse",
+			"version": "2.0.8",
+			"hash": "f0d9be7d8b5059a6e99397562d39306c",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"github.com/viniciussanchez/dataset-serialize": {
+			"name": "dataset-serialize",
+			"version": "v2.2.5",
+			"hash": "b6284eaed5c8d27d7ed4548baa128bef",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"https://github.com/viniciussanchez/restrequest4delphi": {
+			"name": "restrequest4delphi",
+			"version": "v2.2.6",
+			"hash": "b2b28029d1ee379981222f32ff255734",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		}
+	}
+}

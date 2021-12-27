@@ -1,0 +1,17 @@
+program Replicador;
+
+uses
+  Vcl.Forms,
+  Unit4 in 'Unit4.pas' {Form3},
+  Vcl.Themes,
+  Vcl.Styles;
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  TStyleManager.TrySetStyle('Carbon');
+  Application.CreateForm(TForm4, Form4);
+  Application.Run;
+end.

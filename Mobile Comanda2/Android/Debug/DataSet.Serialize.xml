@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="DataSet.Serialize" platform="Android">
+  <helper name="TDataSetSerializeHelper" for="TDataSet" file="DataSet.Serialize.pas" line="18">
+    <members>
+      <function name="ToJSONObjectString" visibility="public" procflags="helper" file="DataSet.Serialize.pas" line="35">
+        <devnotes>
+           <summary>
+             Creates a JSON object with the data from the current record of DataSet.
+           </summary>
+           <param name="AOnlyUpdatedRecords">
+             Exports only inserted, modified and deleted data from childs dataset.
+           </param>
+           <param name="AChildRecords">
+             Exports only childs records from child datasets.
+           </param>
+           <returns>
+             Returns a JSON string containing the record data.
+           </returns>
+           <remarks>
+             Invisible fields will not be generated.
+           </remarks>
+        </devnotes>
+        <parameters>
+          <parameter name="AOnlyUpdatedRecords" type="Boolean" paramflags="const">
+            <value>
+              False
+            </value>
+          </parameter>
+          <parameter name="AChildRecords" type="Boolean" paramflags="const">
+            <value>
+              True
+            </value>
+          </parameter>
+          <retval type="string" />
+        </parameters>
+      </function>
+      <function name="ToJSONArrayString" visibility="public" procflags="helper" file="DataSet.Serialize.pas" line="51">
+        <devnotes>
+           <summary>
+             Creates an array of JSON objects with all DataSet records.
+           </summary>
+           <param name="AOnlyUpdatedRecords">
+             Exports only inserted, modified and deleted data from childs dataset.
+           </param>
+           <param name="AChildRecords">
+             Exports only childs records from child datasets.
+           </param>
+           <returns>
+             Returns a JSON string with all records from the DataSet.
+           </returns>
+           <remarks>
+             Invisible fields will not be generated.
+           </remarks>
+        </devnotes>
+        <parameters>
+          <parameter name="AOnlyUpdatedRecords" type="Boolean" paramflags="const">
+            <value>
+              False
+            </value>
+          </parameter>
+          <parameter name="AChildRecords" type="Boolean" paramflags="const">
+            <value>
+              True
+            </value>
+          </parameter>
+          <retval type="string" />
+        </parameters>
+      </function>
+      <function name="ToJSONObject" visibility="public" procflags="helper" file="DataSet.Serialize.pas" line="67">
+        <devnotes>
+           <summary>
+             Creates a JSON object with the data from the current record of DataSet.
+           </summary>
+           <param name="AOnlyUpdatedRecords">
+             Exports only inserted, modified and deleted data from childs dataset.
+           </param>
+           <param name="AChildRecords">
+             Exports only childs records from child datasets.
+           </param>
+           <returns>
+             Returns a JSON object containing the record data.
+           </returns>
+           <remarks>
+             Invisible fields will not be generated.
+           </remarks>
+        </devnotes>
+        <parameters>
+          <parameter name="AOnlyUpdatedRecords" type="Boolean" paramflags="const">
+            <value>
+              False
+            </value>
+          </parameter>
+          <parameter name="AChildRecords" type="Boolean" paramflags="const">
+            <value>
+              True
+            </value>
+          </parameter>
+          <retval type="TJSONObject" />
+        </parameters>
+      </function>
+      <function name="ToJSONArray" visibility="public" procflags="helper" file="DataSet.Serialize.pas" line="83">
+        <devnotes>
+           <summary>
+             Creates an array of JSON objects with all DataSet records.
+           </summary>
+           <param name="AOnlyUpdatedRecords">
+             Exports only inserted, modified and deleted data from childs dataset.
+           </param>
+           <param name="AChildRecords">
+             Exports only childs records from child datasets.
+           </param>
+           <returns>
+             Returns a JSONArray with all records from the DataSet.
+           </returns>
+           <remarks>
+             Invisible fields will not be generated.
+           </remarks>
+        </devnotes>
+        <parameters>
+          <parameter name="AOnlyUpdatedRecords" type="Boolean" paramflags="const">
+            <value>
+              False
+            </value>
+          </parameter>
+          <parameter name="AChildRecords" type="Boolean" paramflags="const">
+            <value>
+              True
+            </value>
+          </parameter>
+          <retval type="TJSONArray" />
+        </parameters>
+      </function>
+      <function name="SaveStructure" visibility="public" procflags="helper" file="DataSet.Serialize.pas" line="93">
+        <devnotes>
+           <summary>
+             Responsible for exporting the structure of a DataSet in JSON Array format.
+           </summary>
+           <returns>
+             Returns a JSON array with all fields of the DataSet.
+           </returns>
+           <remarks>
+             Invisible fields will not be generated.
+           </remarks>
+        </devnotes>
+        <parameters>
+          <retval type="TJSONArray" />
+        </parameters>
+      </function>
+      <procedure name="LoadStructure" visibility="public" procflags="overload helper" file="DataSet.Serialize.pas" line="103">
+        <devnotes>
+           <summary>
+             Loads fields from a DataSet based on a JSONArray.
+           </summary>
+           <param name="AJSONArray">
+             Refers to JSON with field specifications.
+           </param>
+           <param name="AOwns">
+             Destroy JSON in the end.
+           </param>
+        </devnotes>
+        <parameters>
+          <parameter name="AJSONArray" type="TJSONArray" paramflags="const" />
+          <parameter name="AOwns" type="Boolean" paramflags="const">
+            <value>
+              True
+            </value>
+          </parameter>
+        </parameters>
+      </procedure>
+      <procedure name="LoadStructure" visibility="public" procflags="overload helper" file="DataSet.Serialize.pas" line="110">
+        <devnotes>
+           <summary>
+             Loads fields from a DataSet based on a JSON (string format).
+           </summary>
+           <param name="AJSONString">
+             Refers to JSON with field specifications.
+           </param>
+        </devnotes>
+        <parameters>
+          <parameter name="AJSONString" type="string" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="LoadFromJSON" visibility="public" procflags="overload helper" file="DataSet.Serialize.pas" line="124">
+        <devnotes>
+           <summary>
+             Loads the DataSet with data from a JSON object.
+           </summary>
+           <param name="AJSONObject">
+             Refers to JSON that you want to load.
+           </param>
+           <param name="AOwns">
+             Destroy JSON in the end.
+           </param>
+           <remarks>
+             Only the keys that make up the DataSet field list will be loaded. The JSON keys must have the same name as the
+             DataSet fields. It's not case-sensitive.
+           </remarks>
+        </devnotes>
+        <parameters>
+          <parameter name="AJSONObject" type="TJSONObject" paramflags="const" />
+          <parameter name="AOwns" type="Boolean" paramflags="const">
+            <value>
+              True
+            </value>
+          </parameter>
+        </parameters>
+      </procedure>
+      <procedure name="LoadFromJSON" visibility="public" procflags="overload helper" file="DataSet.Serialize.pas" line="138">
+        <devnotes>
+           <summary>
+             Loads the DataSet with data from a JSON array.
+           </summary>
+           <param name="AJSONArray">
+             Refers to JSON that you want to load.
+           </param>
+           <param name="AOwns">
+             Destroy JSON in the end.
+           </param>
+           <remarks>
+             Only the keys that make up the DataSet field list will be loaded. The JSON keys must have the same name as the
+             DataSet fields. It's not case-sensitive.
+           </remarks>
+        </devnotes>
+        <parameters>
+          <parameter name="AJSONArray" type="TJSONArray" paramflags="const" />
+          <parameter name="AOwns" type="Boolean" paramflags="const">
+            <value>
+              True
+            </value>
+          </parameter>
+        </parameters>
+      </procedure>
+      <procedure name="LoadFromJSON" visibility="public" procflags="overload helper" file="DataSet.Serialize.pas" line="149">
+        <devnotes>
+           <summary>
+             Loads the DataSet with data from a JSON (string format).
+           </summary>
+           <param name="AJSONString">
+             Refers to JSON that you want to load.
+           </param>
+           <remarks>
+             Only the keys that make up the DataSet field list will be loaded. The JSON keys must have the same name as the
+             DataSet fields. It's not case-sensitive.
+           </remarks>
+        </devnotes>
+        <parameters>
+          <parameter name="AJSONString" type="string" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="MergeFromJSONObject" visibility="public" procflags="overload helper" file="DataSet.Serialize.pas" line="159">
+        <devnotes>
+           <summary>
+             Updates the DataSet data with JSON object data.
+           </summary>
+           <param name="AJSONObject">
+             Refers to JSON that you want to merge.
+           </param>
+           <param name="AOwns">
+             Destroy JSON in the end.
+           </param>
+        </devnotes>
+        <parameters>
+          <parameter name="AJSONObject" type="TJSONObject" paramflags="const" />
+          <parameter name="AOwns" type="Boolean" paramflags="const">
+            <value>
+              True
+            </value>
+          </parameter>
+        </parameters>
+      </procedure>
+      <procedure name="MergeFromJSONObject" visibility="public" procflags="overload helper" file="DataSet.Serialize.pas" line="166">
+        <devnotes>
+           <summary>
+             Updates the DataSet data with JSON object data (string format).
+           </summary>
+           <param name="AJSONString">
+             Refers to JSON that you want to merge.
+           </param>
+        </devnotes>
+        <parameters>
+          <parameter name="AJSONString" type="string" paramflags="const" />
+        </parameters>
+      </procedure>
+      <function name="ValidateJSON" visibility="public" procflags="overload helper" file="DataSet.Serialize.pas" line="186">
+        <devnotes>
+           <summary>
+             Responsible for validating whether JSON has all the necessary information for a particular DataSet.
+           </summary>
+           <param name="AJSONObject">
+             Refers to JSON that must be validated.
+           </param>
+           <param name="ALang">
+             Language used to mount messages.
+           </param>
+           <param name="AOwns">
+             Destroy JSON in the end.
+           </param>
+           <returns>
+             Returns a JSONArray with the fields that were not informed.
+           </returns>
+           <remarks>
+             Walk the DataSet fields by checking the required property.
+             Uses the DisplayLabel property to mount the message.
+           </remarks>
+        </devnotes>
+        <parameters>
+          <parameter name="AJSONObject" type="TJSONObject" paramflags="const" />
+          <parameter name="ALang" type="TLanguageType" paramflags="const">
+            <value>
+              enUS
+            </value>
+          </parameter>
+          <parameter name="AOwns" type="Boolean" paramflags="const">
+            <value>
+              True
+            </value>
+          </parameter>
+          <retval type="TJSONArray" />
+        </parameters>
+      </function>
+      <function name="ValidateJSON" visibility="public" procflags="overload helper" file="DataSet.Serialize.pas" line="203">
+        <devnotes>
+           <summary>
+             Responsible for validating whether JSON has all the necessary information for a particular DataSet.
+           </summary>
+           <param name="AJSONString">
+             Refers to JSON that must be validated.
+           </param>
+           <param name="ALang">
+             Language used to mount messages.
+           </param>
+           <returns>
+             Returns a JSONArray with the fields that were not informed.
+           </returns>
+           <remarks>
+             Walk the DataSet fields by checking the required property.
+             Uses the DisplayLabel property to mount the message.
+           </remarks>
+        </devnotes>
+        <parameters>
+          <parameter name="AJSONString" type="string" paramflags="const" />
+          <parameter name="ALang" type="TLanguageType" paramflags="const">
+            <value>
+              enUS
+            </value>
+          </parameter>
+          <retval type="TJSONArray" />
+        </parameters>
+      </function>
+    </members>
+  </helper>
+</namespace>

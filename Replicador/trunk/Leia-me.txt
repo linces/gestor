@@ -1,0 +1,155 @@
+Atualizações
+
+==============================================================================================
+Versão 3.07.07.307 15/03/2018
+===============================================================================================
+
+* Correção na leitura de tabelas dos arquivo TABLE_ORDER_INSERT e DELETE
+
+==============================================================================================
+Versão 3.07.07.268 a 3.07.07.296 28/02/2018
+===============================================================================================
+
+* Tratamento para Ciclo continuo em caso de queda do banco do replicador
+
+==============================================================================================
+Versão 3.07.07.258 - 26/02/2018
+===============================================================================================
+
+* Re-Inserido o Firedac com Engine de Conexão
+* Implementado BatchProcess com ArrayDML
+* Inserido Tratamento de Erro para Banco do Replicador OffLine
+
+==============================================================================================
+Versão 3.07.07.177 - 15/02/2018
+===============================================================================================
+
+* Refatorado Metodos de Interface de Conexao para Abstração da Classe Query
+* Implementado camada de abstração para Querys
+* Alterado a rotina de fechamento de conexão ThreadSafe
+* Alterado o Tratamento de Erro para erros de conexão
+
+==============================================================================================
+Versão 3.07.07.167
+===============================================================================================
+
+* Inserido o numero de ordem das tabelas na criação das trigger para evitar repetição de nomes
+  devido a limitação de 31 caracteres nos nomes das triggers
+
+==============================================================================================
+Versão 3.07.07.150
+===============================================================================================
+
+* Inserido o UpperCase na criação das estruturas no Banco visto que o SQL das tabelas é case sensitive
+
+==============================================================================================
+Versão 3.07.07.144
+===============================================================================================
+
+* Correção no AutoConnect do APP do Replicador
+* Alteração para isolamento de transações no Zeos com isc_tpb_concurrency e isc_tpb_wait
+* Remoção da chave de desabilitar o AutoCommit
+* Inclusão do parametro DBVersion no .Ini
+
+==============================================================================================
+Versão 3.07.07.125
+===============================================================================================
+
+* Tratamento para palavra reservada Update na lista de Fields da Tabela
+
+==============================================================================================
+Versão 3.07.06.96
+===============================================================================================
+
+* Incluido Recurso de Execução Programada de Scripts
+
+==============================================================================================
+Versão 3.07.05
+===============================================================================================
+
+* Remoção do FiredacETL nas rotinas de Replicação;
+* Inclusão do Componente de Conexão Zeos;
+* Correção na limpeza de registros de Cache do Servidor devido a perca de cursor do Firebird
+* Inclusão de suporte a gráficos TCharts e outros sinalizadores
+* Inclusão de Aviso de Registros em Cache no Navegador
+* Inclusão do Controle de TThread na Gravação dos Logs
+* Alteração no Controle ThreadSafe dos Lotes de Replicação
+
+==============================================================================================
+Versão 3.06.05
+===============================================================================================
+
+* Implementado controle ThreadSafe nos ciclos de replicação
+* Implementado o controle para não permitir a abertura de 2 replicadores simultaneos em uma mesma
+  estação.
+
+==============================================================================================
+Versão 3.06.04
+===============================================================================================
+
+* Corrigido o tamanho do campo código da tabela de replicação.
+
+==============================================================================================
+Versão 3.06.03
+===============================================================================================
+
+* Removida a Trigger de delete da tabela de replicação e passado o comando para a aplicação
+  devido a erro em versões antigas do Firebird
+
+
+==============================================================================================
+Versão 3.06.02
+===============================================================================================
+
+* Limitação das Chaves Primarias da Tabela de Replicação em 255
+* Remoção do Registro de Tables Orders ao remover estrutura de replicação
+
+==============================================================================================
+Versão 3.06.01
+===============================================================================================
+
+* Criado Chave GUUID para Tabela replicação dos Nós
+
+==============================================================================================
+Versão 3.05.17
+===============================================================================================
+
+* Alterado registro de GUUID da tabela replicação do Replicador
+* Alterado sequencia de replicação para evitar FK.
+* Alterado sequencia de exclusão que estava ignorando tabelas com relacionamento compostos
+* Validado existencia da tabela durante ciclo de replicação para criação automatica
+* Alterado ordem de exclusão de registros para evitar FK
+* Criando os arquivos TABLE_INSERT_ORDER e TABLE_DELETE_ORDER para que seja possivel a 
+  configuracao da ordem de insercao e delete das tabelas para bancos com FK's complexos
+* Alterado triggers no banco do replicador para o coleta inteligente de registros que não
+  serao replicador.
+* Incluido verificação de registros para replicacao para evitar processamento desnecessario 
+  de SQL em tabelas que não tem registros para replicacao.
+* Criado Função para Backup Full
+* Criado Função para Backup por Tabela
+* Criado Metodo Sequencial de Replicacao
+
+
+==============================================================================================
+Versão 3.04
+===============================================================================================
+
+
+==============================================================================================
+Versão 3.03
+===============================================================================================
+
+* Corrigido acionamento da replicação nas tabelas configuradas em TabelasReceber
+* Melhorado o Tratamento na verificação de Bancos Off-Line
+* Implementação de Rotinas SQL para pré-verificação de registros existentes para tabelas configuradas
+
+
+===============================================================================================
+Versão 3.02
+===============================================================================================
+
+* O Componente agora respeita a ordem das tabelas configuradas para serem replicadas para assim não ocorrerem erros
+  de violaçãod e chave primária.
+
+* Corrigido o bug do IDRECEIVER na função ApplyMetadata
+

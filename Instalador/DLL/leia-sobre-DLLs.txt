@@ -1,0 +1,2 @@
+execute (em modo administrador) o "instala.bat" 
+Irá copiar as DLL capicom para a pasta System do Windows.

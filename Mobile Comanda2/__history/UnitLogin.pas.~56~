@@ -1,0 +1,355 @@
+unit UnitLogin;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes,
+  System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
+  FMX.Edit, FMX.Controls.Presentation, FMX.Objects, FMX.Layouts, FMX.TabControl,
+  Rest.Types, UniProvider, InterBaseUniProvider, RESTRequest4D.Request, FireDAC.Stan.Param, FMX.Effects, FMX.Ani,
+  FMX.VirtualKeyboard, FMX.Platform;
+
+type
+  TFrmLogin = class(TForm)
+    Rectangle1: TRectangle;
+    lbl_titulo: TLabel;
+    Layout1: TLayout;
+    Label2: TLabel;
+    edt_usuario: TEdit;
+    rect_login: TRectangle;
+    Label3: TLabel;
+    TabControl: TTabControl;
+    TabLogin: TTabItem;
+    TabConfig: TTabItem;
+    Layout2: TLayout;
+    Label4: TLabel;
+    edt_servidor: TEdit;
+    rect_save_config: TRectangle;
+    Label5: TLabel;
+    lbl_config: TLabel;
+    InterBaseUniProvider1: TInterBaseUniProvider;
+    Label6: TLabel;
+    edt_senha: TEdit;
+    Arc1: TArc;
+    Arc2: TArc;
+    Timer1: TTimer;
+    procedure rect_loginClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure lbl_configClick(Sender: TObject);
+    procedure rect_save_configClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure Timer1Timer(Sender: TObject);
+  private
+          class var Layout : TLayout;
+          class var Arco : TArc;
+          class var Fundo: TRectangle;
+          class var Mensagem : TLabel;
+          class var Animacao : TFloatAnimation;
+    procedure Logar;
+    procedure Descarregar;
+
+  public
+    procedure Carregar;
+  end;
+
+var
+  FrmLogin: TFrmLogin;
+
+implementation
+
+{$R *.fmx}
+
+uses UnitPrincipal, UnitDM;
+
+procedure TFrmLogin.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  Action := TCloseAction.caFree;
+  FrmLogin := nil;
+end;
+
+procedure TFrmLogin.FormShow(Sender: TObject);
+begin
+  edt_usuario.SetFocus;
+
+
+  if dm.qry_config.FieldByName('SERVIDOR').AsString <> '' then
+  begin
+    TabControl.ActiveTab := TabLogin;
+
+  end
+  else
+  begin
+    lbl_titulo.Text := 'Configurações';
+    TabControl.ActiveTab := TabConfig;
+  end;
+end;
+
+procedure TFrmLogin.lbl_configClick(Sender: TObject);
+begin
+  TabControl.GotoVisibleTab(1, TTabTransition.Slide);
+  lbl_titulo.Text := 'Configurações';
+  edt_servidor.Text := dm.qry_config.FieldByName('SERVIDOR').AsString;
+end;
+
+procedure TFrmLogin.rect_loginClick(Sender: TObject);
+begin
+ Carregar;
+ Timer1.Enabled := true;
+
+
+end;
+
+procedure TFrmLogin.Logar;
+var
+ erro : string;
+begin
+      if not(Length(edt_usuario.Text) > 0) then
+      begin
+        ShowMessage('Informe o usuário');
+        exit;
+      end;
+
+
+      with dm do
+      begin
+        if ValidaLogin(edt_usuario.Text, dm.crypt('C', edt_senha.Text), erro) then
+        begin
+                // Panel de fundo opaco...
+        Fundo := TRectangle.Create(FrmLogin);
+        Fundo.Opacity := 0;
+        Fundo.Parent := FrmLogin;
+        Fundo.Visible := true;
+        Fundo.Align := TAlignLayout.Contents;
+        Fundo.Fill.Color := TAlphaColorRec.Black;
+        Fundo.Fill.Kind := TBrushKind.Solid;
+        Fundo.Stroke.Kind := TBrushKind.None;
+        Fundo.Visible := true;
+
+
+        // Layout contendo o texto e o arco...
+        Layout := TLayout.Create(FrmLogin);
+        Layout.Opacity := 0;
+        Layout.Parent := FrmLogin;
+        Layout.Visible := true;
+        Layout.Align := TAlignLayout.Contents;
+        Layout.Width := 250;
+        Layout.Height := 78;
+        Layout.Visible := true;
+
+        // Arco da animacao...
+        Arco := TArc.Create(FrmLogin);
+        Arco.Visible := true;
+        Arco.Parent := Layout;
+        Arco.Align := TAlignLayout.Center;
+        Arco.Margins.Bottom := 55;
+        Arco.Width := 25;
+        Arco.Height := 25;
+        Arco.EndAngle := 280;
+        Arco.Stroke.Color := $FFFEFFFF;
+        Arco.Stroke.Thickness := 2;
+        Arco.Position.X := trunc((Layout.Width - Arco.Width) / 2);
+        Arco.Position.Y := 0;
+
+        // Animacao...
+        Animacao := TFloatAnimation.Create(FrmLogin);
+        Animacao.Parent := Arco;
+        Animacao.StartValue := 0;
+        Animacao.StopValue := 360;
+        Animacao.Duration := 0.8;
+        Animacao.Loop := true;
+        Animacao.PropertyName := 'RotationAngle';
+        Animacao.AnimationType := TAnimationType.InOut;
+        Animacao.Interpolation := TInterpolationType.Linear;
+        Animacao.Start;
+
+        // Label do texto...
+        Mensagem := TLabel.Create(FrmLogin);
+        Mensagem.Parent := Layout;
+        Mensagem.Align := TAlignLayout.Center;
+        Mensagem.Margins.Top := 60;
+        Mensagem.Font.Size := 13;
+        Mensagem.Height := 70;
+        Mensagem.Width := FrmLogin.Width - 100;
+        Mensagem.FontColor := $FFFEFFFF;
+        Mensagem.TextSettings.HorzAlign := TTextAlign.Center;
+        Mensagem.TextSettings.VertAlign := TTextAlign.Leading;
+        Mensagem.StyledSettings := [TStyledSetting.Family, TStyledSetting.Style];
+        Mensagem.Text := 'Aguardo.. Estamos checando seus dados!';
+        Mensagem.VertTextAlign := TTextAlign.Leading;
+        Mensagem.Trimming := TTextTrimming.None;
+        Mensagem.TabStop := false;
+        Mensagem.SetFocus;
+
+        // Exibe os controles...
+        Fundo.AnimateFloat('Opacity', 0.7);
+        Layout.AnimateFloat('Opacity', 1);
+        Layout.BringToFront;
+
+
+          if NOT Assigned(FrmPrincipal) then
+          begin
+            Application.CreateForm(TFrmPrincipal, FrmPrincipal);
+            FrmPrincipal.Show;
+            Application.MainForm := FrmPrincipal;
+            FrmLogin.Close
+            Descarregar;
+          end;
+        end
+        else
+          ShowMessage('Erro ao validar login. Usuário não encontrado!');
+          Descarregar;
+      end;
+
+
+end;
+
+
+procedure TFrmLogin.rect_save_configClick(Sender: TObject);
+begin
+  if edt_servidor.Text = '' then
+  begin
+    ShowMessage('Informe o servidor');
+    exit;
+  end;
+
+  with dm.qry_config do
+  begin
+    Active := false;
+    SQL.Clear;
+    SQL.Add('DELETE FROM TAB_USUARIO');
+    ExecSQL;
+
+    Active := false;
+    SQL.Clear;
+    SQL.Add('INSERT INTO TAB_USUARIO(SERVIDOR)');
+    SQL.Add('VALUES(:SERVIDOR)');
+    ParamByName('SERVIDOR').Value := edt_servidor.Text;
+    ExecSQL;
+    // Configurar endereco IP do server...
+    dm.RESTClient.BaseURL :=  edt_servidor.Text;
+  end;
+
+  TabControl.GotoVisibleTab(0, TTabTransition.Slide);
+  lbl_titulo.Text := 'Acesso';
+end;
+
+procedure TFrmLogin.Timer1Timer(Sender: TObject);
+begin
+     Timer1.Enabled := false;
+     Logar;
+end;
+
+procedure TFrmLogin.Carregar;
+var
+  FService: IFMXVirtualKeyboardService;
+begin
+        // Panel de fundo opaco...
+        Fundo := TRectangle.Create(FrmLogin);
+        Fundo.Opacity := 0;
+        Fundo.Parent := FrmLogin;
+        Fundo.Visible := true;
+        Fundo.Align := TAlignLayout.Contents;
+        Fundo.Fill.Color := TAlphaColorRec.Black;
+        Fundo.Fill.Kind := TBrushKind.Solid;
+        Fundo.Stroke.Kind := TBrushKind.None;
+        Fundo.Visible := true;
+
+
+        // Layout contendo o texto e o arco...
+        Layout := TLayout.Create(FrmLogin);
+        Layout.Opacity := 0;
+        Layout.Parent := FrmLogin;
+        Layout.Visible := true;
+        Layout.Align := TAlignLayout.Contents;
+        Layout.Width := 250;
+        Layout.Height := 78;
+        Layout.Visible := true;
+
+        // Arco da animacao...
+        Arco := TArc.Create(FrmLogin);
+        Arco.Visible := true;
+        Arco.Parent := Layout;
+        Arco.Align := TAlignLayout.Center;
+        Arco.Margins.Bottom := 55;
+        Arco.Width := 25;
+        Arco.Height := 25;
+        Arco.EndAngle := 280;
+        Arco.Stroke.Color := $FFFEFFFF;
+        Arco.Stroke.Thickness := 2;
+        Arco.Position.X := trunc((Layout.Width - Arco.Width) / 2);
+        Arco.Position.Y := 0;
+
+        // Animacao...
+        Animacao := TFloatAnimation.Create(FrmLogin);
+        Animacao.Parent := Arco;
+        Animacao.StartValue := 0;
+        Animacao.StopValue := 360;
+        Animacao.Duration := 0.8;
+        Animacao.Loop := true;
+        Animacao.PropertyName := 'RotationAngle';
+        Animacao.AnimationType := TAnimationType.InOut;
+        Animacao.Interpolation := TInterpolationType.Linear;
+        Animacao.Start;
+
+        // Label do texto...
+        Mensagem := TLabel.Create(FrmLogin);
+        Mensagem.Parent := Layout;
+        Mensagem.Align := TAlignLayout.Center;
+        Mensagem.Margins.Top := 60;
+        Mensagem.Font.Size := 13;
+        Mensagem.Height := 70;
+        Mensagem.Width := FrmLogin.Width - 100;
+        Mensagem.FontColor := $FFFEFFFF;
+        Mensagem.TextSettings.HorzAlign := TTextAlign.Center;
+        Mensagem.TextSettings.VertAlign := TTextAlign.Leading;
+        Mensagem.StyledSettings := [TStyledSetting.Family, TStyledSetting.Style];
+        Mensagem.Text := 'Aguardo.. Estamos checando seus dados!';
+        Mensagem.VertTextAlign := TTextAlign.Leading;
+        Mensagem.Trimming := TTextTrimming.None;
+        Mensagem.TabStop := false;
+        Mensagem.SetFocus;
+
+        // Exibe os controles...
+        Fundo.AnimateFloat('Opacity', 0.7);
+        Layout.AnimateFloat('Opacity', 1);
+        Layout.BringToFront;
+
+
+
+        // Esconde o teclado virtual...
+        TPlatformServices.Current.SupportsPlatformService(IFMXVirtualKeyboardService,
+                                                          IInterface(FService));
+        if (FService <> nil) then
+        begin
+            FService.HideVirtualKeyboard;
+        end;
+         FService := nil;
+
+         Logar;
+
+end;
+
+procedure TFrmLogin.Descarregar;
+begin
+
+
+
+                                Mensagem.DisposeOf;
+                                Animacao.DisposeOf;
+                                Arco.DisposeOf;
+                                Fundo.DisposeOf;
+                                Layout.DisposeOf;
+
+
+
+        Mensagem := nil;
+        Animacao := nil;
+        Arco := nil;
+        Layout := nil;
+        Fundo := nil;
+end;
+
+
+
+end.

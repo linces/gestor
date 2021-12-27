@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/11/07 10:46:17.000.164,=C:\Users\Admin\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/11/07 10:50:25.000.413,C:\Users\Admin\Documents\Embarcadero\Studio\Projects\Unit1.dfm=E:\Dev\Impressao\ServidorImpressao.dfm</Transaction>
+    <Transaction>2019/11/07 10:50:25.000.413,C:\Users\Admin\Documents\Embarcadero\Studio\Projects\Unit1.pas=E:\Dev\Impressao\ServidorImpressao.pas</Transaction>
+    <Transaction>2019/11/07 10:50:32.000.972,C:\Users\Admin\Documents\Embarcadero\Studio\Projects\Project1.dproj=E:\Dev\Impressao\ServerImp.dproj</Transaction>
+    <Transaction>2021/05/02 11:54:50.000.444,D:\00Dev\Delphi\System ERP\Restaurante\Impressao\ServerImp.dproj=D:\00Dev\Delphi\System ERP\Restaurante\Impressao\ServidorImpr.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

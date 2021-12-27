@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<PersonalityInfo>
+		<Option>
+			<Option Name="Personality">W32ResourceDLL.Personality</Option>
+			<Option Name="ProjectType">ResourceDLL</Option>
+			<Option Name="Version">1.0</Option>
+			<Option Name="GUID">{21312A90-8065-4C7D-A6C2-460B441FD026}</Option>
+		</Option>
+	</PersonalityInfo>
+	<W32ResourceDLL.Personality>
+		<Source>
+			<Source Name="MainSource">LicenseMSoftArena.dpr</Source>
+		</Source>
+		<Options>
+			<Options Name="BaseLang">1046</Options>
+			<Options Name="TargetName">C:\Users\Public\Documents\Embarcadero\Studio\21.0\Bpl\LicenseMSoftArena.ENU</Options>
+			<Options Name="BRCC_IncludePath"></Options>
+			<Options Name="Company"></Options>
+			<Options Name="Configuration"></Options>
+			<Options Name="Copyright"></Options>
+			<Options Name="Description"></Options>
+			<Options Name="Trademark"></Options>
+			<Options Name="Product"></Options>
+			<Options Name="ProductVersion"></Options>
+			<Options Name="Title"></Options>
+			<Options Name="FileVersion"></Options>
+			<Options Name="Evidence"></Options>
+			<Options Name="KeyFile"></Options>
+			<Options Name="KeyName"></Options>
+		</Options>
+		<FileList>
+			<File FileName="TLockApplication\CadastroUnt.dfm" ContainerId="W32Form" ModuleName="CadastroUnt.dfm"/>
+			<File FileName="TLockApplication\LockApplicationEmailStatus.dfm" ContainerId="W32Form" ModuleName="LockApplicationEmailStatus.dfm"/>
+			<File FileName="TLockApplication\LockApplicationInterface.dfm" ContainerId="W32Form" ModuleName="LockApplicationInterface.dfm"/>
+			<File FileName="TLockApplication\unSecDados.dfm" ContainerId="W32Form" ModuleName="unSecDados.dfm"/>
+			<File FileName="C\Users\Public\Documents\Embarcadero\Studio\21.0\Bpl\LicenseMSoftArena_DRC.rc" ContainerId="W32RC" ModuleName="LicenseMSoftArena_DRC.rc"/>
+		</FileList>
+	</W32ResourceDLL.Personality>
+</BorlandProject>

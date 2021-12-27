@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<TgConfig Version="3" SubLevelDisabled="False">
+  <Option Name="namespaceFolder.uDadosLaudo" Type="System.String" Value="uDadosLaudo" Category="General" IsBrowsable="False" />
+</TgConfig>

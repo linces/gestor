@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file original="F:\00 Projetos\02 Delphi\endsisframework\Repositorio\Componentes\10.4\GeradorChaves\TLockApplication\unSecDados.dfm" source-language="pt-BR" target-language="es-ES" datatype="delphiform" tool="ETM v10.0" ts="F:\00 Projetos\02 Delphi\endsisframework\Repositorio\Componentes\10.4\GeradorChaves\TLockApplication\unSecDados.dfm">
+    <header>
+      <prop-group name="ITEHeaderProp">
+        <prop prop-type="Version">9.0</prop>
+        <prop prop-type="SelfDateTime">44112.4768518519</prop>
+        <prop prop-type="OrigDateTime">44105.7689351852</prop>
+        <prop prop-type="XlatDateTime">44105.7689351852</prop>
+        <prop prop-type="Translated">0</prop>
+        <prop prop-type="UnTranslated">70</prop>
+      </prop-group>
+    </header>
+    <body>
+      <trans-unit id="O:dmSecDados.OldCreateOrder" resname="O:dmSecDados.OldCreateOrder">
+        <source>False</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">0</prop><prop prop-type="Type">TdmSecDados</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.OnCreate" resname="O:dmSecDados.OnCreate">
+        <source>DataModuleCreate</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">1</prop><prop prop-type="Type">TdmSecDados</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.Height" resname="O:dmSecDados.Height">
+        <source>136</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">2</prop><prop prop-type="Type">TdmSecDados</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.Width" resname="O:dmSecDados.Width">
+        <source>219</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">3</prop><prop prop-type="Type">TdmSecDados</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencas.ControlsCodePage" resname="O:dmSecDados.O:zlicencas.ControlsCodePage">
+        <source>cCP_UTF16</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">4</prop><prop prop-type="Type">TZConnection</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencas.Catalog" resname="O:dmSecDados.O:zlicencas.Catalog">
+        <source>''</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">5</prop><prop prop-type="Type">TZConnection</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencas.Properties.Strings[0]" resname="O:dmSecDados.O:zlicencas.Properties.Strings[0]">
+        <source>'controls_cp=CP_UTF16'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">6</prop><prop prop-type="Type">TZConnection</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencas.Connected" resname="O:dmSecDados.O:zlicencas.Connected">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">7</prop><prop prop-type="Type">TZConnection</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencas.HostName" resname="O:dmSecDados.O:zlicencas.HostName">
+        <source>'3.211.227.45'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">8</prop><prop prop-type="Type">TZConnection</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencas.Port" resname="O:dmSecDados.O:zlicencas.Port">
+        <source>0</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">9</prop><prop prop-type="Type">TZConnection</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencas.Database" resname="O:dmSecDados.O:zlicencas.Database">
+        <source>'licencas'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">10</prop><prop prop-type="Type">TZConnection</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencas.User" resname="O:dmSecDados.O:zlicencas.User">
+        <source>'linces'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">11</prop><prop prop-type="Type">TZConnection</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencas.Password" resname="O:dmSecDados.O:zlicencas.Password">
+        <source>'Secnil12345'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">12</prop><prop prop-type="Type">TZConnection</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencas.Protocol" resname="O:dmSecDados.O:zlicencas.Protocol">
+        <source>'mysql'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">13</prop><prop prop-type="Type">TZConnection</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencas.Left" resname="O:dmSecDados.O:zlicencas.Left">
+        <source>32</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">14</prop><prop prop-type="Type">TZConnection</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencas.Top" resname="O:dmSecDados.O:zlicencas.Top">
+        <source>24</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">15</prop><prop prop-type="Type">TZConnection</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.Connection" resname="O:dmSecDados.O:zlicencastable.Connection">
+        <source>zlicencas</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">16</prop><prop prop-type="Type">TZQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.DisableZFields" resname="O:dmSecDados.O:zlicencastable.DisableZFields">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">17</prop><prop prop-type="Type">TZQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.CachedUpdates" resname="O:dmSecDados.O:zlicencastable.CachedUpdates">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">18</prop><prop prop-type="Type">TZQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.SQL.Strings[0]" resname="O:dmSecDados.O:zlicencastable.SQL.Strings[0]">
+        <source>'SELECT * FROM licencas'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">19</prop><prop prop-type="Type">TZQuery</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.Params" resname="O:dmSecDados.O:zlicencastable.Params">
+        <source>&lt;&gt;</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">20</prop><prop prop-type="Type">TZQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.Left" resname="O:dmSecDados.O:zlicencastable.Left">
+        <source>104</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">21</prop><prop prop-type="Type">TZQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.Top" resname="O:dmSecDados.O:zlicencastable.Top">
+        <source>24</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">22</prop><prop prop-type="Type">TZQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastableid.FieldName" resname="O:dmSecDados.O:zlicencastable.O:zlicencastableid.FieldName">
+        <source>'id'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">23</prop><prop prop-type="Type">TIntegerField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastableid.Required" resname="O:dmSecDados.O:zlicencastable.O:zlicencastableid.Required">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">24</prop><prop prop-type="Type">TIntegerField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastableidsistema.FieldName" resname="O:dmSecDados.O:zlicencastable.O:zlicencastableidsistema.FieldName">
+        <source>'idsistema'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">25</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastableidsistema.Required" resname="O:dmSecDados.O:zlicencastable.O:zlicencastableidsistema.Required">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">26</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastableidsistema.Size" resname="O:dmSecDados.O:zlicencastable.O:zlicencastableidsistema.Size">
+        <source>64</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">27</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastableidinstalacao.FieldName" resname="O:dmSecDados.O:zlicencastable.O:zlicencastableidinstalacao.FieldName">
+        <source>'idinstalacao'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">28</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastableidinstalacao.Required" resname="O:dmSecDados.O:zlicencastable.O:zlicencastableidinstalacao.Required">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">29</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastableidinstalacao.Size" resname="O:dmSecDados.O:zlicencastable.O:zlicencastableidinstalacao.Size">
+        <source>64</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">30</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastabledatainstalacao.FieldName" resname="O:dmSecDados.O:zlicencastable.O:zlicencastabledatainstalacao.FieldName">
+        <source>'datainstalacao'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">31</prop><prop prop-type="Type">TDateTimeField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastabledatainstalacao.Required" resname="O:dmSecDados.O:zlicencastable.O:zlicencastabledatainstalacao.Required">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">32</prop><prop prop-type="Type">TDateTimeField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastableultimasincronizacao.FieldName" resname="O:dmSecDados.O:zlicencastable.O:zlicencastableultimasincronizacao.FieldName">
+        <source>'ultimasincronizacao'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">33</prop><prop prop-type="Type">TDateTimeField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastableultimasincronizacao.Required" resname="O:dmSecDados.O:zlicencastable.O:zlicencastableultimasincronizacao.Required">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">34</prop><prop prop-type="Type">TDateTimeField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastableestadolicenca.FieldName" resname="O:dmSecDados.O:zlicencastable.O:zlicencastableestadolicenca.FieldName">
+        <source>'estadolicenca'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">35</prop><prop prop-type="Type">TIntegerField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastableestadolicenca.Required" resname="O:dmSecDados.O:zlicencastable.O:zlicencastableestadolicenca.Required">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">36</prop><prop prop-type="Type">TIntegerField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastableversao.FieldName" resname="O:dmSecDados.O:zlicencastable.O:zlicencastableversao.FieldName">
+        <source>'versao'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">37</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastableversao.Required" resname="O:dmSecDados.O:zlicencastable.O:zlicencastableversao.Required">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">38</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastableversao.Size" resname="O:dmSecDados.O:zlicencastable.O:zlicencastableversao.Size">
+        <source>1</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">39</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastablegerarchavepor.FieldName" resname="O:dmSecDados.O:zlicencastable.O:zlicencastablegerarchavepor.FieldName">
+        <source>'gerarchavepor'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">40</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastablegerarchavepor.Size" resname="O:dmSecDados.O:zlicencastable.O:zlicencastablegerarchavepor.Size">
+        <source>1</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">41</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastablediasavencer.FieldName" resname="O:dmSecDados.O:zlicencastable.O:zlicencastablediasavencer.FieldName">
+        <source>'diasavencer'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">42</prop><prop prop-type="Type">TIntegerField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastabledataavencer.FieldName" resname="O:dmSecDados.O:zlicencastable.O:zlicencastabledataavencer.FieldName">
+        <source>'dataavencer'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">43</prop><prop prop-type="Type">TDateField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastablechave.FieldName" resname="O:dmSecDados.O:zlicencastable.O:zlicencastablechave.FieldName">
+        <source>'chave'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">44</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastablechave.Size" resname="O:dmSecDados.O:zlicencastable.O:zlicencastablechave.Size">
+        <source>64</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">45</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastabledataultimachave.FieldName" resname="O:dmSecDados.O:zlicencastable.O:zlicencastabledataultimachave.FieldName">
+        <source>'dataultimachave'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">46</prop><prop prop-type="Type">TDateField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastableonoff.FieldName" resname="O:dmSecDados.O:zlicencastable.O:zlicencastableonoff.FieldName">
+        <source>'onoff'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">47</prop><prop prop-type="Type">TShortintField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastablenome.FieldName" resname="O:dmSecDados.O:zlicencastable.O:zlicencastablenome.FieldName">
+        <source>'nome'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">48</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastablenome.Size" resname="O:dmSecDados.O:zlicencastable.O:zlicencastablenome.Size">
+        <source>128</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">49</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastableemail.FieldName" resname="O:dmSecDados.O:zlicencastable.O:zlicencastableemail.FieldName">
+        <source>'email'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606019</prop><prop prop-type="Status">0</prop><prop prop-type="Order">50</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastableemail.Size" resname="O:dmSecDados.O:zlicencastable.O:zlicencastableemail.Size">
+        <source>128</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606134</prop><prop prop-type="Status">0</prop><prop prop-type="Order">51</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastablecpfcnpj.FieldName" resname="O:dmSecDados.O:zlicencastable.O:zlicencastablecpfcnpj.FieldName">
+        <source>'cpfcnpj'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606134</prop><prop prop-type="Status">0</prop><prop prop-type="Order">52</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastablecpfcnpj.Size" resname="O:dmSecDados.O:zlicencastable.O:zlicencastablecpfcnpj.Size">
+        <source>15</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606134</prop><prop prop-type="Status">0</prop><prop prop-type="Order">53</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastablecep.FieldName" resname="O:dmSecDados.O:zlicencastable.O:zlicencastablecep.FieldName">
+        <source>'cep'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606134</prop><prop prop-type="Status">0</prop><prop prop-type="Order">54</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastablecep.Size" resname="O:dmSecDados.O:zlicencastable.O:zlicencastablecep.Size">
+        <source>10</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606134</prop><prop prop-type="Status">0</prop><prop prop-type="Order">55</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastableendereco.FieldName" resname="O:dmSecDados.O:zlicencastable.O:zlicencastableendereco.FieldName">
+        <source>'endereco'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606134</prop><prop prop-type="Status">0</prop><prop prop-type="Order">56</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastableendereco.Size" resname="O:dmSecDados.O:zlicencastable.O:zlicencastableendereco.Size">
+        <source>128</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606134</prop><prop prop-type="Status">0</prop><prop prop-type="Order">57</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastablecidade.FieldName" resname="O:dmSecDados.O:zlicencastable.O:zlicencastablecidade.FieldName">
+        <source>'cidade'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606134</prop><prop prop-type="Status">0</prop><prop prop-type="Order">58</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastablecidade.Size" resname="O:dmSecDados.O:zlicencastable.O:zlicencastablecidade.Size">
+        <source>128</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606134</prop><prop prop-type="Status">0</prop><prop prop-type="Order">59</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastableestado.FieldName" resname="O:dmSecDados.O:zlicencastable.O:zlicencastableestado.FieldName">
+        <source>'estado'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606134</prop><prop prop-type="Status">0</prop><prop prop-type="Order">60</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastableestado.Size" resname="O:dmSecDados.O:zlicencastable.O:zlicencastableestado.Size">
+        <source>2</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606134</prop><prop prop-type="Status">0</prop><prop prop-type="Order">61</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastablecelular.FieldName" resname="O:dmSecDados.O:zlicencastable.O:zlicencastablecelular.FieldName">
+        <source>'celular'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606134</prop><prop prop-type="Status">0</prop><prop prop-type="Order">62</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastablecelular.Size" resname="O:dmSecDados.O:zlicencastable.O:zlicencastablecelular.Size">
+        <source>15</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606134</prop><prop prop-type="Status">0</prop><prop prop-type="Order">63</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastableultimoip.FieldName" resname="O:dmSecDados.O:zlicencastable.O:zlicencastableultimoip.FieldName">
+        <source>'ultimoip'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606134</prop><prop prop-type="Status">0</prop><prop prop-type="Order">64</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastableultimoip.Size" resname="O:dmSecDados.O:zlicencastable.O:zlicencastableultimoip.Size">
+        <source>15</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606134</prop><prop prop-type="Status">0</prop><prop prop-type="Order">65</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastablecomando.FieldName" resname="O:dmSecDados.O:zlicencastable.O:zlicencastablecomando.FieldName">
+        <source>'comando'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606134</prop><prop prop-type="Status">0</prop><prop prop-type="Order">66</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastablecomando.Size" resname="O:dmSecDados.O:zlicencastable.O:zlicencastablecomando.Size">
+        <source>32</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606134</prop><prop prop-type="Status">0</prop><prop prop-type="Order">67</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastableexecutado.FieldName" resname="O:dmSecDados.O:zlicencastable.O:zlicencastableexecutado.FieldName">
+        <source>'executado'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606134</prop><prop prop-type="Status">0</prop><prop prop-type="Order">68</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:dmSecDados.O:zlicencastable.O:zlicencastableexecutado.Size" resname="O:dmSecDados.O:zlicencastable.O:zlicencastableexecutado.Size">
+        <source>1</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768606134</prop><prop prop-type="Status">0</prop><prop prop-type="Order">69</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

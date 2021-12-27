@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2020/12/11 13:18:36.429,=C:\Users\Linces Marques\Documents\Embarcadero\Studio\Projects\Unit17.pas</Transaction>
+    <Transaction>2020/12/11 13:19:27.191,C:\Users\Linces Marques\Documents\Embarcadero\Studio\Projects\ServidorRest.dproj=C:\Users\Linces Marques\Documents\Embarcadero\Studio\Projects\Project15.dproj</Transaction>
+    <Transaction>2020/12/11 13:19:42.008,D:\00Dev\Delphi\System ERP\ServidorREST\unPrincipal.pas=C:\Users\Linces Marques\Documents\Embarcadero\Studio\Projects\Unit17.pas</Transaction>
+    <Transaction>2020/12/11 13:19:42.008,D:\00Dev\Delphi\System ERP\ServidorREST\unPrincipal.dfm=C:\Users\Linces Marques\Documents\Embarcadero\Studio\Projects\Unit17.dfm</Transaction>
+    <Transaction>2020/12/11 13:19:44.998,D:\00Dev\Delphi\System ERP\ServidorREST\ServidorRest.dproj=C:\Users\Linces Marques\Documents\Embarcadero\Studio\Projects\ServidorRest.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

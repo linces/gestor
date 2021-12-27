@@ -1,0 +1,77 @@
+inherited frmComanda_LgXhdpiTb: TfrmComanda_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited TabControl1: TTabControl
+    Size.Width = 480.000000000000000000
+    Size.Height = 829.000000000000000000
+    Sizes = (
+      480s
+      780s
+      480s
+      780s)
+    inherited TabLista: TTabItem
+      Size.Width = 240.000000000000000000
+      ExplicitSize.cx = 160.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited Layout6: TLayout
+        Size.Width = 480.000000000000000000
+        Size.Height = 678.000000000000000000
+        inherited ListViewComanda: TListView
+          Size.Width = 450.000000000000000000
+          Size.Height = 578.000000000000000000
+        end
+        inherited Layout7: TLayout
+          Size.Width = 450.000000000000000000
+          inherited Rectangle8: TRectangle
+            Size.Width = 450.000000000000000000
+            inherited lblMesaCo: TLabel
+              Size.Width = 430.000000000000000000
+              TextSettings.Font.StyleExt = {00030000000000000004000000}
+            end
+            inherited lblDataHoraCo: TLabel
+              Size.Width = 430.000000000000000000
+              TextSettings.Font.StyleExt = {00030000000000000004000000}
+            end
+          end
+        end
+      end
+      inherited btnAddComanda: TButton
+        Position.Y = 731.000000000000000000
+        Size.Width = 460.000000000000000000
+      end
+      inherited ToolBar1: TToolBar
+        Size.Width = 480.000000000000000000
+        inherited Label1: TLabel
+          Size.Width = 422.000000000000000000
+        end
+      end
+    end
+    inherited TabDados: TTabItem
+      Size.Width = 240.000000000000000000
+      ExplicitSize.cx = 106.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited ListBox3: TListBox
+        Size.Width = 460.000000000000000000
+        Size.Height = 660.000000000000000000
+        Viewport.Width = 300.000000000000000000
+        Viewport.Height = 311.000000000000000000
+        inherited ListBoxItem4: TListBoxItem
+          inherited edtNome: TEdit
+            Size.Height = 40.000000000000000000
+          end
+        end
+      end
+      inherited ToolBar9: TToolBar
+        Size.Width = 480.000000000000000000
+        inherited Label4: TLabel
+          Size.Width = 422.000000000000000000
+        end
+      end
+      inherited Button3: TButton
+        Position.Y = 733.000000000000000000
+        Size.Width = 470.000000000000000000
+      end
+    end
+  end
+end

@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="RESTRequest4D.Request.Intf" platform="Android">
+  <interface name="IRequest" GUID="{2C882459-F4C3-4854-8F7A-F68E8F8DE98E}" ancestor="IInterface" file="RESTRequest4D.Request.Intf.pas" line="8">
+    <function name="AcceptEncoding" visibility="public" procflags="abstract overload virtual" file="RESTRequest4D.Request.Intf.pas" line="10">
+      <parameters>
+        <retval type="string" />
+      </parameters>
+    </function>
+    <function name="AcceptEncoding" visibility="public" procflags="abstract overload virtual" file="RESTRequest4D.Request.Intf.pas" line="11">
+      <parameters>
+        <parameter name="AAcceptEncoding" type="string" paramflags="const" />
+        <retval type="IRequest" />
+      </parameters>
+    </function>
+    <function name="AcceptCharset" visibility="public" procflags="abstract overload virtual" file="RESTRequest4D.Request.Intf.pas" line="12">
+      <parameters>
+        <retval type="string" />
+      </parameters>
+    </function>
+    <function name="AcceptCharset" visibility="public" procflags="abstract overload virtual" file="RESTRequest4D.Request.Intf.pas" line="13">
+      <parameters>
+        <parameter name="AAcceptCharset" type="string" paramflags="const" />
+        <retval type="IRequest" />
+      </parameters>
+    </function>
+    <function name="Accept" visibility="public" procflags="abstract overload virtual" file="RESTRequest4D.Request.Intf.pas" line="14">
+      <parameters>
+        <retval type="string" />
+      </parameters>
+    </function>
+    <function name="Accept" visibility="public" procflags="abstract overload virtual" file="RESTRequest4D.Request.Intf.pas" line="15">
+      <parameters>
+        <parameter name="AAccept" type="string" paramflags="const" />
+        <retval type="IRequest" />
+      </parameters>
+    </function>
+    <function name="Timeout" visibility="public" procflags="abstract overload virtual" file="RESTRequest4D.Request.Intf.pas" line="16">
+      <parameters>
+        <retval type="Integer" />
+      </parameters>
+    </function>
+    <function name="Timeout" visibility="public" procflags="abstract overload virtual" file="RESTRequest4D.Request.Intf.pas" line="17">
+      <parameters>
+        <parameter name="ATimeout" type="Integer" paramflags="const" />
+        <retval type="IRequest" />
+      </parameters>
+    </function>
+    <function name="DataSetAdapter" visibility="public" procflags="abstract overload virtual" file="RESTRequest4D.Request.Intf.pas" line="18">
+      <parameters>
+        <parameter name="ADataSet" type="TDataSet" paramflags="const" />
+        <retval type="IRequest" />
+      </parameters>
+    </function>
+    <function name="DataSetAdapter" visibility="public" procflags="abstract overload virtual" file="RESTRequest4D.Request.Intf.pas" line="19">
+      <parameters>
+        <retval type="TDataSet" />
+      </parameters>
+    </function>
+    <function name="BaseURL" visibility="public" procflags="abstract overload virtual" file="RESTRequest4D.Request.Intf.pas" line="20">
+      <parameters>
+        <parameter name="ABaseURL" type="string" paramflags="const" />
+        <retval type="IRequest" />
+      </parameters>
+    </function>
+    <function name="BaseURL" visibility="public" procflags="abstract overload virtual" file="RESTRequest4D.Request.Intf.pas" line="21">
+      <parameters>
+        <retval type="string" />
+      </parameters>
+    </function>
+    <function name="Resource" visibility="public" procflags="abstract overload virtual" file="RESTRequest4D.Request.Intf.pas" line="22">
+      <parameters>
+        <parameter name="AResource" type="string" paramflags="const" />
+        <retval type="IRequest" />
+      </parameters>
+    </function>
+    <function name="RaiseExceptionOn500" visibility="public" procflags="abstract overload virtual" file="RESTRequest4D.Request.Intf.pas" line="23">
+      <parameters>
+        <retval type="Boolean" />
+      </parameters>
+    </function>
+    <function name="RaiseExceptionOn500" visibility="public" procflags="abstract overload virtual" file="RESTRequest4D.Request.Intf.pas" line="24">
+      <parameters>
+        <parameter name="ARaiseException" type="Boolean" paramflags="const" />
+        <retval type="IRequest" />
+      </parameters>
+    </function>
+    <function name="Resource" visibility="public" procflags="abstract overload virtual" file="RESTRequest4D.Request.Intf.pas" line="25">
+      <parameters>
+        <retval type="string" />
+      </parameters>
+    </function>
+    <function name="ResourceSuffix" visibility="public" procflags="abstract overload virtual" file="RESTRequest4D.Request.Intf.pas" line="26">
+      <parameters>
+        <parameter name="AResourceSuffix" type="string" paramflags="const" />
+        <retval type="IRequest" />
+      </parameters>
+    </function>
+    <function name="ResourceSuffix" visibility="public" procflags="abstract overload virtual" file="RESTRequest4D.Request.Intf.pas" line="27">
+      <parameters>
+        <retval type="string" />
+      </parameters>
+    </function>
+    <function name="Cookies" visibility="public" procflags="abstract virtual" file="RESTRequest4D.Request.Intf.pas" line="28">
+      <parameters>
+        <parameter name="ACookies" type="TStrings" paramflags="const" />
+        <retval type="IRequest" />
+      </parameters>
+    </function>
+    <function name="Token" visibility="public" procflags="abstract virtual" file="RESTRequest4D.Request.Intf.pas" line="29">
+      <parameters>
+        <parameter name="AToken" type="string" paramflags="const" />
+        <retval type="IRequest" />
+      </parameters>
+    </function>
+    <function name="BasicAuthentication" visibility="public" procflags="abstract virtual" file="RESTRequest4D.Request.Intf.pas" line="30">
+      <parameters>
+        <parameter name="AUsername" type="string" paramflags="const" />
+        <parameter name="APassword" type="string" paramflags="const" />
+        <retval type="IRequest" />
+      </parameters>
+    </function>
+    <function name="Get" visibility="public" procflags="abstract virtual" file="RESTRequest4D.Request.Intf.pas" line="31">
+      <parameters>
+        <retval type="IResponse" />
+      </parameters>
+    </function>
+    <function name="Post" visibility="public" procflags="abstract virtual" file="RESTRequest4D.Request.Intf.pas" line="32">
+      <parameters>
+        <retval type="IResponse" />
+      </parameters>
+    </function>
+    <function name="Put" visibility="public" procflags="abstract virtual" file="RESTRequest4D.Request.Intf.pas" line="33">
+      <parameters>
+        <retval type="IResponse" />
+      </parameters>
+    </function>
+    <function name="Delete" visibility="public" procflags="abstract virtual" file="RESTRequest4D.Request.Intf.pas" line="34">
+      <parameters>
+        <retval type="IResponse" />
+      </parameters>
+    </function>
+    <function name="Patch" visibility="public" procflags="abstract virtual" file="RESTRequest4D.Request.Intf.pas" line="35">
+      <parameters>
+        <retval type="IResponse" />
+      </parameters>
+    </function>
+    <function name="FullRequestURL" visibility="public" procflags="abstract virtual" file="RESTRequest4D.Request.Intf.pas" line="36">
+      <parameters>
+        <parameter name="AIncludeParams" type="Boolean" paramflags="const">
+          <value>
+            True
+          </value>
+        </parameter>
+        <retval type="string" />
+      </parameters>
+    </function>
+    <function name="ClearBody" visibility="public" procflags="abstract virtual" file="RESTRequest4D.Request.Intf.pas" line="37">
+      <parameters>
+        <retval type="IRequest" />
+      </parameters>
+    </function>
+    <function name="AddBody" visibility="public" procflags="abstract overload virtual" file="RESTRequest4D.Request.Intf.pas" line="38">
+      <parameters>
+        <parameter name="AContent" type="string" paramflags="const" />
+        <parameter name="AContentType" type="TRESTContentType" paramflags="const">
+          <value>
+            ctAPPLICATION_JSON
+          </value>
+        </parameter>
+        <retval type="IRequest" />
+      </parameters>
+    </function>
+    <function name="AddBody" visibility="public" procflags="abstract overload virtual" file="RESTRequest4D.Request.Intf.pas" line="39">
+      <parameters>
+        <parameter name="AContent" type="TJSONObject" paramflags="const" />
+        <parameter name="AOwns" type="Boolean" paramflags="const">
+          <value>
+            True
+          </value>
+        </parameter>
+        <retval type="IRequest" />
+      </parameters>
+    </function>
+    <function name="AddBody" visibility="public" procflags="abstract overload virtual" file="RESTRequest4D.Request.Intf.pas" line="40">
+      <parameters>
+        <parameter name="AContent" type="TJSONArray" paramflags="const" />
+        <parameter name="AOwns" type="Boolean" paramflags="const">
+          <value>
+            True
+          </value>
+        </parameter>
+        <retval type="IRequest" />
+      </parameters>
+    </function>
+    <function name="AddBody" visibility="public" procflags="abstract overload virtual" file="RESTRequest4D.Request.Intf.pas" line="41">
+      <parameters>
+        <parameter name="AContent" type="TObject" paramflags="const" />
+        <parameter name="AOwns" type="Boolean" paramflags="const">
+          <value>
+            True
+          </value>
+        </parameter>
+        <retval type="IRequest" />
+      </parameters>
+    </function>
+    <function name="AddBody" visibility="public" procflags="abstract overload virtual" file="RESTRequest4D.Request.Intf.pas" line="42">
+      <parameters>
+        <parameter name="AContent" type="TStream" paramflags="const" />
+        <parameter name="AOwns" type="Boolean" paramflags="const">
+          <value>
+            True
+          </value>
+        </parameter>
+        <retval type="IRequest" />
+      </parameters>
+    </function>
+    <function name="ClearHeaders" visibility="public" procflags="abstract virtual" file="RESTRequest4D.Request.Intf.pas" line="43">
+      <parameters>
+        <retval type="IRequest" />
+      </parameters>
+    </function>
+    <function name="AddHeader" visibility="public" procflags="abstract virtual" file="RESTRequest4D.Request.Intf.pas" line="44">
+      <parameters>
+        <parameter name="AName" type="string" paramflags="const" />
+        <parameter name="AValue" type="string" paramflags="const" />
+        <parameter name="AOptions" type="TRESTRequestParameterOptions" paramflags="const">
+          <value>
+            []
+          </value>
+        </parameter>
+        <retval type="IRequest" />
+      </parameters>
+    </function>
+    <function name="ClearParams" visibility="public" procflags="abstract virtual" file="RESTRequest4D.Request.Intf.pas" line="45">
+      <parameters>
+        <retval type="IRequest" />
+      </parameters>
+    </function>
+    <function name="UserAgent" visibility="public" procflags="abstract virtual" file="RESTRequest4D.Request.Intf.pas" line="46">
+      <parameters>
+        <parameter name="AName" type="string" paramflags="const" />
+        <retval type="IRequest" />
+      </parameters>
+    </function>
+    <function name="AddParam" visibility="public" procflags="abstract virtual" file="RESTRequest4D.Request.Intf.pas" line="50">
+      <parameters>
+        <parameter name="AName" type="string" paramflags="const" />
+        <parameter name="AValue" type="string" paramflags="const" />
+        <parameter name="AKind" type="TRESTRequestParameterKind" paramflags="const">
+          <value>
+            pkQUERY
+          </value>
+        </parameter>
+        <retval type="IRequest" />
+      </parameters>
+    </function>
+    <function name="AddFile" visibility="public" procflags="abstract virtual" file="RESTRequest4D.Request.Intf.pas" line="51">
+      <parameters>
+        <parameter name="AName" type="string" paramflags="const" />
+        <parameter name="AValue" type="TStream" paramflags="const" />
+        <retval type="IRequest" />
+      </parameters>
+    </function>
+    <function name="AddText" visibility="public" procflags="abstract virtual" file="RESTRequest4D.Request.Intf.pas" line="53">
+      <parameters>
+        <parameter name="AName" type="string" paramflags="const" />
+        <parameter name="AValue" type="string" paramflags="const" />
+        <parameter name="AContentType" type="TRESTContentType" paramflags="const">
+          <value>
+            ctAPPLICATION_JSON
+          </value>
+        </parameter>
+        <retval type="IRequest" />
+      </parameters>
+    </function>
+  </interface>
+</namespace>

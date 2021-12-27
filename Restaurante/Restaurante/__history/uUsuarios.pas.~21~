@@ -1,0 +1,252 @@
+unit uUsuarios;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics, JPeg,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.StdCtrls, Vcl.Buttons,
+  Vcl.Grids, Vcl.DBGrids, Vcl.ComCtrls, Vcl.ExtCtrls, Vcl.DBCtrls, DBGridEh,
+  DBCtrlsEh, DBLookupEh, Vcl.Mask, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf,
+  FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet,
+  FireDAC.Comp.Client, Vcl.Imaging.pngimage, ACBrBase, ACBrEnterTab,
+  DBGridEhGrouping, ToolCtrlsEh, DBGridEhToolCtrls, DynVarsEh, EhLibVCL,
+  GridsEh, DBAxisGridsEh, Vcl.ExtDlgs, frxClass, frxDBSet, frxExportBaseDialog,
+  frxExportPDF;
+
+type
+  TfrmUsuarios = class(TForm)
+    qryUsuarios: TFDQuery;
+    dsUsuarios: TDataSource;
+    ACBrEnterTab1: TACBrEnterTab;
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
+    TabSheet2: TTabSheet;
+    DBGridEh1: TDBGridEh;
+    Panel1: TPanel;
+    Label11: TLabel;
+    Image1: TImage;
+    Panel7: TPanel;
+    Label8: TLabel;
+    btnCancelar: TLabel;
+    Splitter1: TSplitter;
+    Splitter2: TSplitter;
+    Splitter3: TSplitter;
+    Panel2: TPanel;
+    Label1: TLabel;
+    btnNovo: TLabel;
+    Splitter4: TSplitter;
+    Splitter5: TSplitter;
+    Splitter6: TSplitter;
+    btnSair: TLabel;
+    Splitter7: TSplitter;
+    btnAlterar: TLabel;
+    Splitter8: TSplitter;
+    Splitter9: TSplitter;
+    btnSalvar: TLabel;
+    Label26: TLabel;
+    edtCodigo: TDBEdit;
+    edtDescricao: TDBEdit;
+    Label12: TLabel;
+    Label42: TLabel;
+    edtComplementar: TDBEdit;
+    qryUsuariosCODIGO: TSmallintField;
+    qryUsuariosLOGIN: TStringField;
+    qryUsuariosSENHA: TStringField;
+    qryUsuariosHIERARQUIA: TSmallintField;
+    qryUsuariosECAIXA: TStringField;
+    qryUsuariosSUPERVISOR: TStringField;
+    qryUsuariosATIVO: TStringField;
+    qryUsuariosULTIMO_PEDIDO: TIntegerField;
+    qryUsuariosULTIMA_VENDA: TIntegerField;
+    qryUsuariosAPP_SENHA: TStringField;
+    qryUsuariosSENHA_APP: TStringField;
+    qryUsuariosFK_VENDEDOR: TIntegerField;
+    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure qryUsuariosAfterPost(DataSet: TDataSet);
+    procedure btnCancelarClick(Sender: TObject);
+    procedure qryUsuariosNewRecord(DataSet: TDataSet);
+    procedure btnNovoClick(Sender: TObject);
+    procedure btnAlterarClick(Sender: TObject);
+    procedure btnSalvarClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure edtLocChange(Sender: TObject);
+    procedure btnSairClick(Sender: TObject);
+    procedure Image1Click(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+  private
+    procedure GravarItem;
+    procedure CancelarItem;
+    procedure NovoItem;
+    procedure AlteraItem;
+    procedure LocalizaItem;
+    { Private declarations }
+  public
+    operacao, tela: string;
+    { Public declarations }
+  end;
+
+var
+  frmUsuarios: TfrmUsuarios;
+
+implementation
+
+{$R *.dfm}
+
+uses uDados;
+
+procedure TfrmUsuarios.edtLocChange(Sender: TObject);
+begin
+  LocalizaItem;
+end;
+
+procedure TfrmUsuarios.FormCreate(Sender: TObject);
+begin
+  TabSheet1.TabVisible := False;
+  TabSheet2.TabVisible := False;
+  PageControl1.ActivePageIndex := 0;
+end;
+
+procedure TfrmUsuarios.FormKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+  case PageControl1.ActivePageIndex of
+    0:
+      begin
+        if Key = vk_f3 then
+          NovoItem;
+        if Key = vk_f4 then
+          AlteraItem;
+        if Key = vk_f12 then
+          btnSairClick(self);
+        exit;
+
+      end;
+    1:
+      begin
+        if Key = vk_f5 then
+          GravarItem;
+        if Key = vk_f6 then
+          CancelarItem;
+        exit;
+      end;
+  end;
+end;
+
+procedure TfrmUsuarios.FormShow(Sender: TObject);
+begin
+  LocalizaItem;
+end;
+
+procedure TfrmUsuarios.LocalizaItem;
+begin
+  qryUsuarios.Close;
+  qryUsuarios.Open;
+end;
+
+procedure TfrmUsuarios.NovoItem;
+begin
+
+  operacao := 'Novo';
+
+  qryVendedor.First;
+  eSupervisor := dados.qryUsuarios.IsEmpty;
+  PageControl1.ActivePageIndex := 1;
+  dados.qryUsuarios.Insert;
+  dados.qryUsuariosCODIGO.Value := dados.Numerador('USUARIOS', 'CODIGO',
+    'N', '', '');
+  dados.qryUsuariosATIVO.Value := 'S';
+  dados.qryUsuariosSUPERVISOR.Value := 'N';
+  dados.qryUsuariosFK_VENDEDOR.Value := qryVendedorCODIGO.AsInteger;
+  DBCheckBox1.Enabled := true;
+  DBCheckBox2.Enabled := true;
+  if eSupervisor then
+  begin
+    dados.qryUsuariosSUPERVISOR.Value := 'S';
+    DBCheckBox2.Enabled := false;
+    DBCheckBox1.Enabled := false;
+  end;
+  DBEdit1.SetFocus;
+end;
+
+procedure TfrmUsuarios.AlteraItem;
+var
+  senha: string;
+begin
+  operacao := 'Alterar';
+  PageControl1.ActivePageIndex := 1;
+  qryUsuarios.Edit;
+  senha := dados.Crypt('D', qryUsuariosSENHA.Value);
+  qryUsuariosSENHA.Value := senha;
+  edtDescricao.SetFocus;
+end;
+
+procedure TfrmUsuarios.GravarItem;
+begin
+  try
+
+    if trim(qryUsuariosLOGIN.Value) = '' then
+      raise Exception.Create('Informe o Login!');
+
+    if not(qryUsuariosSENHA.AsFloat <= 0) then
+      raise Exception.Create('Informe a Senha!');
+
+    qryUsuarios.Post;
+    dados.Conexao.CommitRetaining;
+    PageControl1.ActivePageIndex := 0;
+  except
+    on e: Exception do
+      raise Exception.Create(e.message);
+  end;
+end;
+
+procedure TfrmUsuarios.Image1Click(Sender: TObject);
+begin
+  Close;
+end;
+
+procedure TfrmUsuarios.CancelarItem;
+begin
+  if qryUsuarios.State in dsEditModes then
+    qryUsuarios.Cancel;
+  PageControl1.ActivePageIndex := 0;
+end;
+
+procedure TfrmUsuarios.btnAlterarClick(Sender: TObject);
+begin
+  AlteraItem;
+end;
+
+procedure TfrmUsuarios.btnCancelarClick(Sender: TObject);
+begin
+  CancelarItem;
+end;
+
+procedure TfrmUsuarios.btnNovoClick(Sender: TObject);
+begin
+  NovoItem;
+end;
+
+procedure TfrmUsuarios.btnSairClick(Sender: TObject);
+begin
+  Close;
+end;
+
+procedure TfrmUsuarios.btnSalvarClick(Sender: TObject);
+begin
+  GravarItem;
+end;
+
+procedure TfrmUsuarios.qryUsuariosAfterPost(DataSet: TDataSet);
+begin
+  dados.Conexao.CommitRetaining;
+end;
+
+procedure TfrmUsuarios.qryUsuariosNewRecord(DataSet: TDataSet);
+begin
+  qryUsuariosCODIGO.Value := dados.Numerador('USUARIOS', 'CODIGO');
+  qryUsuariosATIVO.Value := 'S';
+end;
+
+end.

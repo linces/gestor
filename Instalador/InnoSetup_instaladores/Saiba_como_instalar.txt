@@ -1,0 +1,33 @@
+Dica, veja as imagens nessa pasta.
+
+
+[Nessa ordem]
+1. Instalar "innosetup-5.6.1.exe" (ao instalar, use a opção "executar como administrador")
+
+2. Instalar "istool-5.3.0.1.exe" (ao instalar, use a opção "executar como administrador")
+
+3. Execute o "ISTool"
+
+4. Clique no menu "Arquivo" - > "Preferências..." - >
+
+5. Clique no botão "Associar o ISTool com os scripts do Inno Setup"
+
+6. "Seção inicial" - Selecione "Arquios e diretórios".
+
+7. Clique em OK
+
+8. Sair.
+
+
+Pronto. Abra o "GerarInstalador.iss".
+A partir de agora, todas as vezes que clicar duas vezes em um arquivo com extesnão .iss. Abrirá automaticamente pela ISTool (é uma IDE do Inno Setup). Poderá alterar, editar, etc.
+
+
+[Como gerar instalador]
+1. No Delphi, compile os projetos em modo "release" (o executável fica muito menor). Ja salvará nas pastas corretas. 
+
+2. Apos compilar Retaguarda e Frente de Caixa. Abra o script do instador no ISTool. 
+
+3. pressione Ctrl + F9 para compilar (vai gerar executavel do instalador).
+
+

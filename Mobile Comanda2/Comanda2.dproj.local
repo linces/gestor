@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/09/15 14:31:27.000.266,=C:\Users\Heber\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/03/20 19:34:45.000.065,=C:\Users\Heber\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/06/23 00:14:20.000.496,=C:\Users\Heber\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/01/25 21:27:09.000.193,=C:\Users\Heber\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/01/29 19:10:21.000.582,=C:\Users\Heber\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/05/10 18:28:07.000.409,=C:\Users\Heber\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/08/16 13:51:06.000.870,=C:\Users\Heber\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/12/12 00:17:31.000.142,=C:\Users\Heber\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/05/21 13:54:42.000.810,=C:\Users\Heber\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/06/29 19:30:08.000.814,=C:\Users\Heber\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/07/20 13:59:26.000.824,=C:\Users\Heber\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/08/25 22:09:25.000.803,=C:\Users\Heber\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/08/25 22:16:04.000.368,C:\Users\Heber\Documents\Embarcadero\Studio\Projects\Unit1.fmx=D:\Comanda\Mobile\UnitLogin.fmx</Transaction>
+    <Transaction>2020/08/25 22:16:04.000.368,C:\Users\Heber\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Comanda\Mobile\UnitLogin.pas</Transaction>
+    <Transaction>2020/08/25 22:16:17.000.355,C:\Users\Heber\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Comanda\Mobile\Comanda.dproj</Transaction>
+    <Transaction>2020/08/25 22:42:08.000.791,=D:\Comanda\Mobile\Unit2.pas</Transaction>
+    <Transaction>2020/08/25 22:42:43.000.405,D:\Comanda\Mobile\Unit2.pas=D:\Comanda\Mobile\UnitPrincipal.pas</Transaction>
+    <Transaction>2020/08/25 22:42:43.000.405,D:\Comanda\Mobile\Unit2.fmx=D:\Comanda\Mobile\UnitPrincipal.fmx</Transaction>
+    <Transaction>2020/08/25 23:33:33.000.968,=D:\Comanda\Mobile\Unit1.pas</Transaction>
+    <Transaction>2020/08/25 23:33:48.000.449,D:\Comanda\Mobile\Unit1.pas=D:\Comanda\Mobile\UnitResumo.pas</Transaction>
+    <Transaction>2020/08/25 23:33:48.000.449,D:\Comanda\Mobile\Unit1.fmx=D:\Comanda\Mobile\UnitResumo.fmx</Transaction>
+    <Transaction>2020/08/25 23:34:22.000.790,=D:\Comanda\Mobile\Unit1.pas</Transaction>
+    <Transaction>2020/08/25 23:34:43.000.528,D:\Comanda\Mobile\Unit1.pas=D:\Comanda\Mobile\UnitAddItem.pas</Transaction>
+    <Transaction>2020/08/25 23:34:43.000.528,D:\Comanda\Mobile\Unit1.fmx=D:\Comanda\Mobile\UnitAddItem.fmx</Transaction>
+    <Transaction>2020/09/01 21:40:52.000.474,=D:\Comanda\Mobile\Unit1.pas</Transaction>
+    <Transaction>2020/09/01 21:41:26.000.136,D:\Comanda\Mobile\Unit1.pas=D:\Comanda\Mobile\UnitDM.pas</Transaction>
+    <Transaction>2020/09/01 21:41:26.000.136,D:\Comanda\Mobile\Unit1.dfm=D:\Comanda\Mobile\UnitDM.dfm</Transaction>
+    <Transaction>2020/12/02 10:18:48.000.417,D:\00Dev\Delphi\System ERP\Mobile Comanda\Mobile\Comanda2.dproj=D:\00Dev\Delphi\System ERP\Mobile Comanda\Mobile\Comanda.dproj</Transaction>
+    <Transaction>2020/12/07 16:17:36.000.270,=D:\00Dev\Delphi\System ERP\Comandas\banco.db</Transaction>
+    <Transaction>2020/12/17 17:16:28.000.746,=D:\00Dev\Delphi\System ERP\ServidorREST\classes-uteis\Loading.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile Android="" iOSSimulator="iPhone5" Android64=""/>
+		<PMACANDREA iOSSimulator="iPhone5"/>
+		<PMacBook iOSSimulator="iPhone5"/>
+		<PMacVirtual iOSSimulator="iPhone5"/>
+		<PMacMini iOSSimulator="iPhone"/>
+	</ActiveMobileDevice>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="android-support-v4.dex.jar"/>
+    <File Path="cloud-messaging.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-ads-base.17.2.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-ads-identifier.16.0.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-ads-lite.17.2.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-ads.17.2.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-analytics-impl.16.0.8.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-analytics.16.0.8.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-base.16.0.1.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-basement.16.2.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-gass.17.2.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-identity.16.0.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-maps.16.1.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-measurement-base.16.4.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-measurement-sdk-api.16.4.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-stats.16.0.1.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-tagmanager-v4-impl.16.0.8.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-tasks.16.0.1.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-wallet.16.0.1.dex.jar"/>
+    <File Path="com-google-firebase.firebase-analytics.16.4.0.dex.jar"/>
+    <File Path="com-google-firebase.firebase-common.16.1.0.dex.jar"/>
+    <File Path="com-google-firebase.firebase-iid-interop.16.0.1.dex.jar"/>
+    <File Path="com-google-firebase.firebase-iid.17.1.1.dex.jar"/>
+    <File Path="com-google-firebase.firebase-measurement-connector.17.0.1.dex.jar"/>
+    <File Path="com-google-firebase.firebase-messaging.17.5.0.dex.jar"/>
+    <File Path="fmx.dex.jar"/>
+    <File Path="google-play-billing.dex.jar"/>
+    <File Path="google-play-licensing.dex.jar"/>
+    <File Path="android-support-v4.dex.jar"/>
+    <File Path="cloud-messaging.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-ads-base.17.2.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-ads-identifier.16.0.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-ads-lite.17.2.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-ads.17.2.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-analytics-impl.16.0.8.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-analytics.16.0.8.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-base.16.0.1.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-basement.16.2.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-gass.17.2.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-identity.16.0.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-maps.16.1.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-measurement-base.16.4.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-measurement-sdk-api.16.4.0.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-stats.16.0.1.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-tagmanager-v4-impl.16.0.8.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-tasks.16.0.1.dex.jar"/>
+    <File Path="com-google-android-gms.play-services-wallet.16.0.1.dex.jar"/>
+    <File Path="com-google-firebase.firebase-analytics.16.4.0.dex.jar"/>
+    <File Path="com-google-firebase.firebase-common.16.1.0.dex.jar"/>
+    <File Path="com-google-firebase.firebase-iid-interop.16.0.1.dex.jar"/>
+    <File Path="com-google-firebase.firebase-iid.17.1.1.dex.jar"/>
+    <File Path="com-google-firebase.firebase-measurement-connector.17.0.1.dex.jar"/>
+    <File Path="com-google-firebase.firebase-messaging.17.5.0.dex.jar"/>
+    <File Path="fmx.dex.jar"/>
+    <File Path="google-play-billing.dex.jar"/>
+    <File Path="google-play-licensing.dex.jar"/>
+    <File Path="..\..\..\Delphi"/>
+    <File Path="..\..\Comandas"/>
+    <File Path="..\..\Comandas\banco.db"/>
+    <File Path="UnitAddItem.pas"/>
+    <File Path="UnitAddItem.fmx"/>
+    <File Path="UnitDM.pas"/>
+    <File Path="UnitDM.dfm"/>
+    <File Path="UnitLogin.pas"/>
+    <File Path="UnitLogin.fmx"/>
+    <File Path="UnitPrincipal.pas"/>
+    <File Path="UnitPrincipal.fmx"/>
+    <File Path="UnitResumo.pas"/>
+    <File Path="UnitResumo.fmx"/>
+  </ProjectSortOrder>
+</BorlandProject>

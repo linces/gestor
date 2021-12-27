@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/04/16 11:01:07.000.137,=C:\Users\hugov\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/04/16 11:02:04.000.625,C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Login.fmx=C:\Users\hugov\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2019/04/16 11:02:04.000.625,C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Login.pas=C:\Users\hugov\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/04/16 11:02:10.000.809,C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Restaurante.dproj=C:\Users\hugov\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2019/04/16 12:42:24.000.392,=C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Unit1.pas</Transaction>
+    <Transaction>2019/04/16 12:42:37.000.753,C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Menu.fmx=C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Unit1.fmx</Transaction>
+    <Transaction>2019/04/16 12:42:37.000.753,C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Menu.pas=C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Unit1.pas</Transaction>
+    <Transaction>2019/04/16 13:30:08.000.326,=C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Unit1.pas</Transaction>
+    <Transaction>2019/04/16 13:30:31.000.269,C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Modulo.dfm=C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Unit1.dfm</Transaction>
+    <Transaction>2019/04/16 13:30:31.000.269,C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Modulo.pas=C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Unit1.pas</Transaction>
+    <Transaction>2019/04/16 14:21:12.000.511,=C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Unit1.pas</Transaction>
+    <Transaction>2019/04/16 14:25:42.000.354,C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Pedidos.pas=C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Unit1.pas</Transaction>
+    <Transaction>2019/04/16 14:25:42.000.354,C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Pedidos.fmx=C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Unit1.fmx</Transaction>
+    <Transaction>2019/04/16 18:17:36.000.229,=C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Unit1.pas</Transaction>
+    <Transaction>2019/04/16 18:18:03.000.543,C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Unit1.fmx=C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\NovoPedido.fmx</Transaction>
+    <Transaction>2019/04/16 18:18:03.000.543,C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Unit1.pas=C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\NovoPedido.pas</Transaction>
+    <Transaction>2019/04/17 13:15:47.000.949,=C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Unit1.pas</Transaction>
+    <Transaction>2019/04/17 13:16:44.000.334,C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Unit1.fmx=C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Movimentacoes.fmx</Transaction>
+    <Transaction>2019/04/17 13:16:44.000.334,C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Unit1.pas=C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Movimentacoes.pas</Transaction>
+    <Transaction>2019/04/17 14:29:19.000.946,=C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Unit1.pas</Transaction>
+    <Transaction>2019/04/17 14:29:30.000.167,C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Unit1.fmx=C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Reservas.fmx</Transaction>
+    <Transaction>2019/04/17 14:29:30.000.167,C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Unit1.pas=C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Reservas.pas</Transaction>
+    <Transaction>2019/04/17 14:59:19.000.327,=C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Unit1.pas</Transaction>
+    <Transaction>2019/04/17 14:59:31.000.254,C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Unit1.fmx=C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Produtos.fmx</Transaction>
+    <Transaction>2019/04/17 14:59:31.000.254,C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Unit1.pas=C:\Users\hugov\Documents\Embarcadero\Studio\Projects\APP Restaurante\Produtos.pas</Transaction>
+    <Transaction>2019/11/18 17:14:12.000.857,=F:\00 Projetos\02 Delphi\Delivery\DeliveryMobile\Unit1.pas</Transaction>
+    <Transaction>2019/11/18 17:21:12.000.441,F:\00 Projetos\02 Delphi\Delivery\DeliveryMobile\Unit1.pas=F:\00 Projetos\02 Delphi\Delivery\DeliveryMobile\VDetalheProdutos.pas</Transaction>
+    <Transaction>2019/11/18 17:21:12.000.441,F:\00 Projetos\02 Delphi\Delivery\DeliveryMobile\Unit1.fmx=F:\00 Projetos\02 Delphi\Delivery\DeliveryMobile\VDetalheProdutos.fmx</Transaction>
+    <Transaction>2019/11/19 15:51:13.000.440,=F:\00 Projetos\02 Delphi\Delivery\DeliveryMobile\Unit1.pas</Transaction>
+    <Transaction>2019/12/30 04:24:24.000.146,F:\00 Projetos\02 Delphi\Delivery\DeliveryMobile\Mobile.dproj=F:\00 Projetos\02 Delphi\Delivery\DeliveryMobile\Restaurante.dproj</Transaction>
+    <Transaction>2020/12/02 10:19:18.000.829,D:\00Dev\Delphi\System ERP\Comanda\Comanda.dproj=D:\00Dev\Delphi\System ERP\Comanda\Mobile.dproj</Transaction>
+    <Transaction>2020/12/07 16:30:01.000.120,=D:\00Dev\Delphi\System ERP\Mobile Comanda\banco.db</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5" Android="" Android64=""/>
+	</ActiveMobileDevice>
+</BorlandProject>

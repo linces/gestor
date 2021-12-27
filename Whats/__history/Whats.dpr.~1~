@@ -1,0 +1,24 @@
+program Whats;
+
+uses
+  Vcl.Forms,
+  uTInject.ConfigCEF,
+  uWthas in 'uWthas.pas' {Form1} ,
+  uBotGestor in 'C:\Dev\Projetos\Prodo\View\uBotGestor.pas',
+  uBotConversa in 'C:\Dev\Projetos\Prodo\View\uBotConversa.pas';
+
+{$R *.res}
+
+begin
+
+  ReportMemoryLeaksOnShutdown := false;
+
+  if not GlobalCEFApp.StartMainProcess then
+    exit;
+
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+
+end.

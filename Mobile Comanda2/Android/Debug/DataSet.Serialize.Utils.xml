@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="DataSet.Serialize.Utils" platform="Android">
+  <class name="EDataSetSerializeException" file="DataSet.Serialize.Utils.pas" line="21">
+    <devnotes>
+       <summary>
+         API error class (default).
+       </summary>
+    </devnotes>
+    <ancestor name="Exception" namespace="System.SysUtils">
+      <methodref name="Create@" visibility="class private" procflags="class constructor noself">
+      </methodref>
+      <methodref name="Destroy@" visibility="class private" procflags="class destructor noself">
+      </methodref>
+      <methodref name="SetInnerException" visibility="protected">
+      </methodref>
+      <methodref name="SetStackInfo" visibility="protected">
+      </methodref>
+      <methodref name="GetStackTrace" visibility="protected">
+      </methodref>
+      <methodref name="RaisingException" visibility="protected" procflags="virtual">
+      </methodref>
+      <methodref name="Create" visibility="public" procflags="constructor">
+      </methodref>
+      <methodref name="CreateFmt" visibility="public" procflags="constructor">
+      </methodref>
+      <methodref name="CreateRes" visibility="public" procflags="constructor overload">
+      </methodref>
+      <methodref name="CreateRes" visibility="public" procflags="constructor overload">
+      </methodref>
+      <methodref name="CreateResFmt" visibility="public" procflags="constructor overload">
+      </methodref>
+      <methodref name="CreateResFmt" visibility="public" procflags="constructor overload">
+      </methodref>
+      <methodref name="CreateHelp" visibility="public" procflags="constructor">
+      </methodref>
+      <methodref name="CreateFmtHelp" visibility="public" procflags="constructor">
+      </methodref>
+      <methodref name="CreateResHelp" visibility="public" procflags="constructor overload">
+      </methodref>
+      <methodref name="CreateResHelp" visibility="public" procflags="constructor overload">
+      </methodref>
+      <methodref name="CreateResFmtHelp" visibility="public" procflags="constructor overload">
+      </methodref>
+      <methodref name="CreateResFmtHelp" visibility="public" procflags="constructor overload">
+      </methodref>
+      <methodref name="Destroy" visibility="public" procflags="destructor override">
+      </methodref>
+      <methodref name="GetBaseException" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="ToString" visibility="public" procflags="override">
+      </methodref>
+      <propertyref name="BaseException" visibility="public">
+      </propertyref>
+      <propertyref name="HelpContext" visibility="public">
+      </propertyref>
+      <propertyref name="InnerException" visibility="public">
+      </propertyref>
+      <propertyref name="Message" visibility="public">
+      </propertyref>
+      <propertyref name="StackTrace" visibility="public">
+      </propertyref>
+      <propertyref name="StackInfo" visibility="public">
+      </propertyref>
+      <methodref name="RaiseOuterException" visibility="public" procflags="static">
+      </methodref>
+      <methodref name="ThrowOuterException" visibility="public" procflags="static">
+      </methodref>
+      <ancestor name="TObject" namespace="System">
+        <methodref name="Create" visibility="public" procflags="constructor">
+        </methodref>
+        <methodref name="Free" visibility="public">
+        </methodref>
+        <methodref name="DisposeOf" visibility="public" procflags="inline">
+        </methodref>
+        <methodref name="InitInstance" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="CleanupInstance" visibility="public">
+        </methodref>
+        <methodref name="ClassType" visibility="public" procflags="inline">
+        </methodref>
+        <methodref name="ClassName" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="ClassNameIs" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="ClassParent" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="ClassInfo" visibility="public" procflags="class inline">
+        </methodref>
+        <methodref name="InstanceSize" visibility="public" procflags="class inline">
+        </methodref>
+        <methodref name="InheritsFrom" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="MethodAddress" visibility="public" procflags="class overload">
+        </methodref>
+        <methodref name="MethodAddress" visibility="public" procflags="class overload">
+        </methodref>
+        <methodref name="MethodName" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="QualifiedClassName" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="FieldAddress" visibility="public" procflags="overload">
+        </methodref>
+        <methodref name="FieldAddress" visibility="public" procflags="overload">
+        </methodref>
+        <methodref name="GetInterface" visibility="public">
+        </methodref>
+        <methodref name="GetInterfaceEntry" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="GetInterfaceTable" visibility="public" procflags="class inline">
+        </methodref>
+        <methodref name="UnitName" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="UnitScope" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="Equals" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="GetHashCode" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="ToString" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="SafeCallException" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="AfterConstruction" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="BeforeDestruction" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="Dispatch" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="DefaultHandler" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="NewInstance" visibility="public" procflags="class virtual">
+        </methodref>
+        <methodref name="FreeInstance" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="Destroy" visibility="public" procflags="destructor virtual">
+        </methodref>
+        <methodref name="CPP_ABI_1" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="CPP_ABI_2" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="CPP_ABI_3" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="GetDisposed" visibility="protected" procflags="inline">
+        </methodref>
+        <methodref name="CheckDisposed" visibility="protected" procflags="inline">
+        </methodref>
+        <propertyref name="Disposed" visibility="protected">
+        </propertyref>
+      </ancestor>
+    </ancestor>
+  </class>
+  <array name="TKeyValues">
+    <element type="Variant" />
+  </array>
+  <struct name="TFieldStructure" size="32" file="DataSet.Serialize.Utils.pas" line="31">
+    <devnotes>
+       <summary>
+         Record representing the structure of a dataset field.
+       </summary>
+    </devnotes>
+    <field name="Alignment" type="TAlignment" visibility="public" size="1" offset="0" file="DataSet.Serialize.Utils.pas" line="32" />
+    <field name="FieldType" type="TFieldType" visibility="public" size="1" offset="1" file="DataSet.Serialize.Utils.pas" line="33" />
+    <field name="Size" type="Integer" visibility="public" size="4" offset="4" file="DataSet.Serialize.Utils.pas" line="34" />
+    <field name="Precision" type="Integer" visibility="public" size="4" offset="8" file="DataSet.Serialize.Utils.pas" line="35" />
+    <field name="FieldName" type="string" visibility="public" size="4" offset="12" file="DataSet.Serialize.Utils.pas" line="36" />
+    <field name="Origin" type="string" visibility="public" size="4" offset="16" file="DataSet.Serialize.Utils.pas" line="37" />
+    <field name="DisplayLabel" type="string" visibility="public" size="4" offset="20" file="DataSet.Serialize.Utils.pas" line="38" />
+    <field name="Key" type="Boolean" visibility="public" size="1" offset="24" file="DataSet.Serialize.Utils.pas" line="39" />
+    <field name="Required" type="Boolean" visibility="public" size="1" offset="25" file="DataSet.Serialize.Utils.pas" line="40" />
+    <field name="Visible" type="Boolean" visibility="public" size="1" offset="26" file="DataSet.Serialize.Utils.pas" line="41" />
+    <field name="ReadOnly" type="Boolean" visibility="public" size="1" offset="27" file="DataSet.Serialize.Utils.pas" line="42" />
+    <field name="AutoGenerateValue" type="TAutoRefreshFlag" visibility="public" size="1" offset="28" file="DataSet.Serialize.Utils.pas" line="44" />
+  </struct>
+  <class name="TDataSetSerializeUtils" file="DataSet.Serialize.Utils.pas" line="48">
+    <ancestor name="TObject" namespace="System">
+      <methodref name="Create" visibility="public" procflags="constructor">
+      </methodref>
+      <methodref name="Free" visibility="public">
+      </methodref>
+      <methodref name="DisposeOf" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="InitInstance" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="CleanupInstance" visibility="public">
+      </methodref>
+      <methodref name="ClassType" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="ClassName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassNameIs" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassParent" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassInfo" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="InstanceSize" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="InheritsFrom" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="QualifiedClassName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="GetInterface" visibility="public">
+      </methodref>
+      <methodref name="GetInterfaceEntry" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="GetInterfaceTable" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="UnitName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="UnitScope" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="Equals" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="GetHashCode" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="ToString" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="SafeCallException" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="AfterConstruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="BeforeDestruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Dispatch" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="DefaultHandler" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="NewInstance" visibility="public" procflags="class virtual">
+      </methodref>
+      <methodref name="FreeInstance" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Destroy" visibility="public" procflags="destructor virtual">
+      </methodref>
+      <methodref name="CPP_ABI_1" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="CPP_ABI_2" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="CPP_ABI_3" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="GetDisposed" visibility="protected" procflags="inline">
+      </methodref>
+      <methodref name="CheckDisposed" visibility="protected" procflags="inline">
+      </methodref>
+      <propertyref name="Disposed" visibility="protected">
+      </propertyref>
+    </ancestor>
+    <members>
+      <function name="NameToLowerCamelCase" visibility="public" procflags="class" file="DataSet.Serialize.Utils.pas" line="59">
+        <devnotes>
+           <summary>
+             Transform name in lower camel case pattern.
+           </summary>
+           <param name="AFieldName">
+             Field name to format.
+           </param>
+           <returns>
+             Field name in lower camel case format.
+           </returns>
+        </devnotes>
+        <parameters>
+          <parameter name="AFieldName" type="string" paramflags="const" />
+          <retval type="string" />
+        </parameters>
+      </function>
+      <function name="NewDataSetField" visibility="public" procflags="class" file="DataSet.Serialize.Utils.pas" line="72">
+        <devnotes>
+           <summary>
+             Creates a new field in the DataSet.
+           </summary>
+           <param name="AFieldStructure">
+             Field structure to create a new field to dataset.
+           </param>
+           <param name="ADataSet">
+             DataSet that the field will be created.
+           </param>
+           <returns>
+             Return a new field.
+           </returns>
+        </devnotes>
+        <parameters>
+          <parameter name="ADataSet" type="TDataSet" paramflags="const" />
+          <parameter name="AFieldStructure" type="TFieldStructure" paramflags="const" />
+          <retval type="TField" />
+        </parameters>
+      </function>
+      <function name="BooleanFieldToType" visibility="public" procflags="class" file="DataSet.Serialize.Utils.pas" line="82">
+        <devnotes>
+           <summary>
+             Converts a boolean to a TBooleanFieldType.
+           </summary>
+           <param name="ABooleanField">
+             Boolean field type.
+           </param>
+           <returns>
+             Returns a valid boolean field type.
+           </returns>
+        </devnotes>
+        <parameters>
+          <parameter name="ABooleanField" type="TBooleanField" paramflags="const" />
+          <retval type="TBooleanFieldType">
+            <devnotes>
+               <summary>
+               Boolean types handled by the API.
+               </summary>
+            </devnotes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="CreateValidIdentifier" visibility="public" procflags="class" file="DataSet.Serialize.Utils.pas" line="92">
+        <devnotes>
+           <summary>
+             Creates a valid name for the field added to the DataSet.
+           </summary>
+           <param name="AName">
+             Field name.
+           </param>
+           <returns>
+             Returns a valid name.
+           </returns>
+        </devnotes>
+        <parameters>
+          <parameter name="AName" type="string" paramflags="const" />
+          <retval type="string" />
+        </parameters>
+      </function>
+      <function name="BooleanToJSON" visibility="public" procflags="class" file="DataSet.Serialize.Utils.pas" line="102">
+        <devnotes>
+           <summary>
+             Converts a Boolean value to a JSONValue.
+           </summary>
+           <param name="AValue">
+             Refers to the Boolean value (True or False).
+           </param>
+           <returns>
+             Returns a JSONValue.
+           </returns>
+        </devnotes>
+        <parameters>
+          <parameter name="AValue" type="Boolean" paramflags="const" />
+          <retval type="TJSONValue" />
+        </parameters>
+      </function>
+      <function name="FormatDataSetName" visibility="public" procflags="class" file="DataSet.Serialize.Utils.pas" line="106">
+        <devnotes>
+           <summary>
+             Remove the prefix &quot;mt&quot; or &quot;qry&quot; of an child dataset.
+           </summary>
+        </devnotes>
+        <parameters>
+          <parameter name="ADataSetName" type="string" paramflags="const" />
+          <retval type="string" />
+        </parameters>
+      </function>
+      <function name="GetDataType" visibility="public" procflags="class" file="DataSet.Serialize.Utils.pas" line="110">
+        <devnotes>
+           <summary>
+             Get field data type from a JSONValue
+           </summary>
+        </devnotes>
+        <parameters>
+          <parameter name="AJSONValue" type="TJSONValue" paramflags="const" />
+          <retval type="TFieldType" />
+        </parameters>
+      </function>
+    </members>
+  </class>
+</namespace>

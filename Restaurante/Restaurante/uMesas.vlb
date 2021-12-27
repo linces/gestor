@@ -1,0 +1,16 @@
+﻿[Panel1]
+Coordinates=10,10,55,58
+
+[DBCtrlGrid1]
+Coordinates=77,78,84,36
+
+[]
+Coordinates=205,10,53,58
+
+[imgOcupada]
+Coordinates=138,10,57,58
+Visible=True
+
+[imgLivre]
+Coordinates=10,78,57,58
+

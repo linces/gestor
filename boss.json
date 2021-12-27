@@ -1,0 +1,9 @@
+{
+	"name": "System ERP",
+	"description": "",
+	"version": "1.0.0",
+	"homepage": "",
+	"mainsrc": "./",
+	"projects": [],
+	"dependencies": {}
+}

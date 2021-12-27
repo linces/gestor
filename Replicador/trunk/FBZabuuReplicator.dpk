@@ -1,0 +1,66 @@
+package FBZabuuReplicator;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE RELEASE}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  dbrtl,
+  FireDAC,
+  FireDACCommonDriver,
+  FireDACCommon,
+  FireDACIBDriver,
+  vclFireDAC,
+  dsnap,
+  vcl;
+
+contains
+  Replicador.Model.Factory in 'source\Model\Replicador.Model.Factory.pas',
+  Replicador.Model.Interfaces in 'source\Model\Replicador.Model.Interfaces.pas',
+  Replicador.Model.Tipificacoes in 'source\Model\Replicador.Model.Tipificacoes.pas',
+  Replicador.Controller.Conexao in 'source\Controller\Replicador.Controller.Conexao.pas',
+  Replicador.Controller.ETL in 'source\Controller\Replicador.Controller.ETL.pas',
+  Replicador.Controller.Factory in 'source\Controller\Replicador.Controller.Factory.pas',
+  Replicador.Controller.Interfaces in 'source\Controller\Replicador.Controller.Interfaces.pas',
+  Replicador.Controller.Replicacao in 'source\Controller\Replicador.Controller.Replicacao.pas',
+  Replicador.Controller.Tipificacoes in 'source\Controller\Replicador.Controller.Tipificacoes.pas',
+  Replicador.Reg in 'source\Replicador.Reg.pas',
+  FDZabuuReplicator in 'source\View\FDZabuuReplicator.pas',
+  Replicador.Controller.Constantes.Traducao in 'source\Controller\Replicador.Controller.Constantes.Traducao.pas',
+  FBZabuuMetadata in 'source\View\FBZabuuMetadata.pas',
+  Replicador.Controller.Metadata in 'source\Controller\Replicador.Controller.Metadata.pas',
+  Replicador.View.Intefaces in 'source\View\Replicador.View.Intefaces.pas',
+  Replicador.Controller.ThreadSafe in 'source\Controller\Replicador.Controller.ThreadSafe.pas',
+  Replicador.Model.Metadata.Replicador.Script in 'source\Model\Replicador.Model.Metadata.Replicador.Script.pas',
+  Replicador.Model.Conexao.Firedac in 'source\Model\Replicador.Model.Conexao.Firedac.pas',
+  Replicador.Model.Query.Firedac in 'source\Model\Replicador.Model.Query.Firedac.pas',
+  Replicador.Model.Metadata.Master in 'source\Model\Replicador.Model.Metadata.Master.pas',
+  Replicador.Model.ETL in 'source\Model\Replicador.Model.ETL.pas',
+  Replicador.Model.Scripts.Firedac in 'source\Model\Replicador.Model.Scripts.Firedac.pas',
+  Replicador.Model.Log in 'source\Model\Replicador.Model.Log.pas';
+
+end.

@@ -1,0 +1,169 @@
+unit Login;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes,
+  System.Variants, Data.DB,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  FMX.Controls.Presentation, FMX.StdCtrls, FMX.Objects, FMX.Layouts, FMX.Edit,
+  FMX.TabControl, UniProvider, InterBaseUniProvider;
+
+type
+  TFrmLogin = class(TForm)
+    Rectangle1: TRectangle;
+    lbl_titulo: TLabel;
+    TabControl: TTabControl;
+    TabLogin: TTabItem;
+    Layout2: TLayout;
+    Label2: TLabel;
+    edtUsuario: TEdit;
+    rect_login: TRectangle;
+    Label4: TLabel;
+    lbl_config: TLabel;
+    TabConfig: TTabItem;
+    Layout3: TLayout;
+    Label5: TLabel;
+    edt_servidor: TEdit;
+    rect_save_config: TRectangle;
+    Label6: TLabel;
+    edt_caminho: TEdit;
+    Label7: TLabel;
+    Label8: TLabel;
+    edtSenha: TEdit;
+    InterBaseUniProvider1: TInterBaseUniProvider;
+    procedure lbl_configClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure rect_loginClick(Sender: TObject);
+    procedure rect_save_configClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmLogin: TFrmLogin;
+
+implementation
+
+{$R *.fmx}
+
+uses Menu, Modulo;
+
+
+
+procedure TFrmLogin.FormShow(Sender: TObject);
+begin
+  edtusuario.SetFocus;
+
+  {dm.qry_config.Active := false;
+  dm.qry_config.SQL.Clear;
+  dm.qry_config.SQL.Add('SELECT * FROM TAB_USUARIO');
+  dm.qry_config.Active := true;
+
+  if dm.qry_config.FieldByName('SERVIDOR').AsString <> '' then
+  begin
+    TabControl.ActiveTab := TabLogin;
+    edt_servidor.Text := dm.qry_config.FieldByName('SERVIDOR').AsString;
+    edt_caminho.Text := dm.qry_config.FieldByName('CAMINHO').AsString;
+  end
+  else
+  begin
+    lbl_titulo.Text := 'Configurações';
+    TabControl.ActiveTab := TabConfig;
+  end; }
+end;
+
+procedure TFrmLogin.lbl_configClick(Sender: TObject);
+begin
+  TabControl.GotoVisibleTab(1, TTabTransition.Slide);
+  lbl_titulo.Text := 'Configurações';
+end;
+
+procedure TFrmLogin.rect_loginClick(Sender: TObject);
+begin
+ if (edtUsuario.Text <> '') and (EdtSenha.Text <> '') then
+  begin
+    dm.con.Connected := true;
+    dm.queryLogin.Active := true;
+
+    dm.queryLogin.Close;
+    dm.queryLogin.SQL.Clear;
+    dm.queryLogin.SQL.Add
+      ('select * from usuarios where login = :usuario and senha = :senha');
+    dm.queryLogin.ParamByName('usuario').AsString := edtUsuario.Text;
+    dm.queryLogin.ParamByName('senha').AsString := dm.crypt('C', edtSenha.Text);
+    dm.queryLogin.Open;
+
+
+    if not dm.queryLogin.IsEMpty then
+    begin
+
+      // RECUPERAR DADOS DO USUÁRIO LOGADO
+      nomeFuncionario := dm.queryLogin['login'];
+      cargoFuncionario := 'Garçon';
+
+      FrmMenu := TFrmMenu.Create(self);
+      FrmMenu.Show();
+
+    end
+    else
+    begin
+      showMessage('Dados Incorretos');
+    end;
+
+  end
+  else
+  begin
+    showMessage('Preencha os Campos');
+  end;
+
+end;
+
+procedure TFrmLogin.rect_save_configClick(Sender: TObject);
+begin
+  if edt_servidor.Text = '' then
+  begin
+    ShowMessage('Informe o servidor');
+    exit;
+  end;
+
+  with dm.qry_config do
+  begin
+    Active := false;
+    SQL.Clear;
+    SQL.Add('DELETE FROM TAB_USUARIO');
+    ExecSQL;
+
+    Active := false;
+    SQL.Clear;
+    SQL.Add('INSERT INTO TAB_USUARIO(SERVIDOR,CAMINHO)');
+    SQL.Add('VALUES(:SERVIDOR,:CAMINHO)');
+    ParamByName('SERVIDOR').Value := edt_servidor.Text;
+    ParamByName('CAMINHO').Value := edt_caminho.Text;
+    ExecSQL;
+  end;
+
+  try
+   dm.conn.ProviderName := 'InterBase';
+   dm.conn.Server := edt_servidor.text;
+   dm.conn.Username := 'sysdba';
+   dm.conn.Password := 'masterkey';
+   dm.conn.Database := edt_caminho.text;
+   dm.conn.SpecificOptions.Values['ClientLibrary'] := 'fbclient.dll';
+   dm.conn.LoginPrompt := False;
+   dm.conn.Connected := true;
+
+//   192.168.100.3:D:\00Dev\Delphi\System ERP\Dados\DADOS.FDB
+
+   except
+        ShowMessage('Erro ao acessar o banco. Contacte o suporte!');
+   end;
+
+
+  TabControl.GotoVisibleTab(0, TTabTransition.Slide);
+  lbl_titulo.Text := 'Acesso';
+end;
+
+end.

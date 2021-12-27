@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/02/22 17:20:06.000.881,D:\00 ECBrasil\Projetos\endsisframework\Repositorio\Componentes\GeradorChaves\MLFLIB_Berlin.dproj=D:\00 ECBrasil\Projetos\endsisframework\Repositorio\Componentes\GeradorChaves\MLFLIB_2010.dproj</Transaction>
+    <Transaction>2020/07/24 12:30:56.000.581,F:\00 Projetos\02 Delphi\endsisframework\Repositorio\Componentes\10.4\GeradorChaves\MLFLIB_Berlin.dproj=F:\00 Projetos\02 Delphi\endsisframework\Repositorio\Componentes\10.4\GeradorChaves\MLFLIB.dproj</Transaction>
+    <Transaction>2020/09/18 16:13:25.000.438,=vclFireDAC.dcp</Transaction>
+    <Transaction>2020/09/18 16:13:25.000.596,=FireDACCommon.dcp</Transaction>
+    <Transaction>2020/09/18 16:13:25.000.510,=FireDAC.dcp</Transaction>
+    <Transaction>2020/09/18 16:13:25.000.543,=FireDACCommonDriver.dcp</Transaction>
+    <Transaction>2020/09/18 16:13:25.000.402,=dbrtl.dcp</Transaction>
+    <Transaction>2020/09/18 16:13:25.000.631,=FireDACMySQLDriver.dcp</Transaction>
+    <Transaction>2020/09/21 09:35:11.000.823,=F:\00 Projetos\02 Delphi\endsisframework\Repositorio\Componentes\10.4\GeradorChaves\Unit3.pas</Transaction>
+    <Transaction>2020/09/21 09:36:57.000.100,F:\00 Projetos\02 Delphi\endsisframework\Repositorio\Componentes\10.4\GeradorChaves\unSecDados.dfm=F:\00 Projetos\02 Delphi\endsisframework\Repositorio\Componentes\10.4\GeradorChaves\Unit3.dfm</Transaction>
+    <Transaction>2020/09/21 09:36:57.000.100,F:\00 Projetos\02 Delphi\endsisframework\Repositorio\Componentes\10.4\GeradorChaves\unSecDados.pas=F:\00 Projetos\02 Delphi\endsisframework\Repositorio\Componentes\10.4\GeradorChaves\Unit3.pas</Transaction>
+    <Transaction>2020/09/21 09:37:32.000.714,F:\00 Projetos\02 Delphi\endsisframework\Repositorio\Componentes\10.4\GeradorChaves\TLockApplication\unSecDados.dfm=F:\00 Projetos\02 Delphi\endsisframework\Repositorio\Componentes\10.4\GeradorChaves\unSecDados.dfm</Transaction>
+    <Transaction>2020/09/21 09:37:32.000.714,F:\00 Projetos\02 Delphi\endsisframework\Repositorio\Componentes\10.4\GeradorChaves\TLockApplication\unSecDados.pas=F:\00 Projetos\02 Delphi\endsisframework\Repositorio\Componentes\10.4\GeradorChaves\unSecDados.pas</Transaction>
+    <Transaction>2020/09/22 16:58:33.000.552,F:\00 Projetos\02 Delphi\endsisframework\Repositorio\Componentes\10.4\GeradorChaves\MLFLIB.dproj=F:\00 Projetos\02 Delphi\endsisframework\Repositorio\Componentes\10.4\GeradorChaves\LicenseMSoftArena.dproj</Transaction>
+    <Transaction>2020/10/01 17:55:24.000.996,=ZComponent.dcp</Transaction>
+    <Transaction>2020/10/01 17:55:25.000.235,=ZParseSql.dcp</Transaction>
+    <Transaction>2020/10/01 17:55:25.000.138,=ZCore.dcp</Transaction>
+    <Transaction>2020/10/01 17:55:25.000.099,=ZPlain.dcp</Transaction>
+    <Transaction>2020/10/01 17:55:25.000.038,=ZDbc.dcp</Transaction>
+    <Transaction>2020/10/09 18:54:58.000.453,=F:\00 Projetos\02 Delphi\endsisframework\Repositorio\Componentes\10.4\GeradorChaves\delphi-indy-chat-master\Client\UClient.pas</Transaction>
+    <Transaction>2020/10/09 18:55:11.000.246,=F:\00 Projetos\02 Delphi\endsisframework\Repositorio\Componentes\10.4\GeradorChaves\delphi-indy-chat-master\Client_Tools.pas</Transaction>
+    <Transaction>2020/10/09 19:00:05.000.441,=F:\00 Projetos\02 Delphi\endsisframework\Repositorio\Componentes\10.4\GeradorChaves\delphi-indy-chat-master\Chat_Tools.pas</Transaction>
+    <Transaction>2020/12/23 12:17:00.000.738,=dsnap.dcp</Transaction>
+    <Transaction>2020/12/23 12:17:00.000.763,=RESTComponents.dcp</Transaction>
+    <Transaction>2020/12/23 12:17:00.000.817,=CEF4Delphi.dcp</Transaction>
+    <Transaction>2020/12/23 12:17:00.000.790,=TInjectCollection.dcp</Transaction>
+    <Transaction>2020/12/23 12:17:00.000.713,=VclSmp.dcp</Transaction>
+    <Transaction>2020/12/23 12:30:50.000.736,=TInjectCollection.dcp</Transaction>
+    <Transaction>2020/12/23 12:41:22.000.794,=TInjectCollection.dcp</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="TLockApplication"/>
+    <File Path="TLockApplication\CadastroUnt.pas"/>
+    <File Path="TLockApplication\CadastroUnt.dfm"/>
+    <File Path="TLockApplication\LockApplication.dcr"/>
+    <File Path="TLockApplication\LockApplication.pas"/>
+    <File Path="TLockApplication\LockApplicationControle.pas"/>
+    <File Path="TLockApplication\LockApplicationEmail.pas"/>
+    <File Path="TLockApplication\LockApplicationEmailStatus.pas"/>
+    <File Path="TLockApplication\LockApplicationEmailStatus.dfm"/>
+    <File Path="TLockApplication\LockApplicationFunc.pas"/>
+    <File Path="TLockApplication\LockApplicationInterface.pas"/>
+    <File Path="TLockApplication\LockApplicationInterface.dfm"/>
+    <File Path="TLockApplication\LockApplicationVars.pas"/>
+    <File Path="TLockApplication\unSecDados.pas"/>
+    <File Path="TLockApplication\unSecDados.dfm"/>
+    <File Path="dbrtl.dcp"/>
+    <File Path="dsnap.dcp"/>
+    <File Path="FireDAC.dcp"/>
+    <File Path="FireDACCommon.dcp"/>
+    <File Path="FireDACCommonDriver.dcp"/>
+    <File Path="FireDACMySQLDriver.dcp"/>
+    <File Path="IndyCore.dcp"/>
+    <File Path="IndyProtocols.dcp"/>
+    <File Path="RESTComponents.dcp"/>
+    <File Path="rtl.dcp"/>
+    <File Path="vcl.dcp"/>
+    <File Path="vclFireDAC.dcp"/>
+    <File Path="VclSmp.dcp"/>
+    <File Path="ZComponent.dcp"/>
+    <File Path="ZCore.dcp"/>
+    <File Path="ZDbc.dcp"/>
+    <File Path="ZParseSql.dcp"/>
+    <File Path="ZPlain.dcp"/>
+  </ProjectSortOrder>
+</BorlandProject>

@@ -1,0 +1,85 @@
+object Form1: TForm1
+  Left = 301
+  Top = 184
+  Caption = 'Exemplo do Controle de Licen'#231'as'
+  ClientHeight = 385
+  ClientWidth = 427
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 8
+    Top = 8
+    Width = 31
+    Height = 13
+    Caption = 'Label1'
+  end
+  object Label2: TLabel
+    Left = 8
+    Top = 213
+    Width = 81
+    Height = 13
+    Caption = 'Dados do Cliente'
+  end
+  object Button1: TButton
+    Left = 8
+    Top = 179
+    Width = 169
+    Height = 25
+    Caption = 'Renovar licen'#231'a'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object dados: TMemo
+    Left = 8
+    Top = 232
+    Width = 337
+    Height = 113
+    Lines.Strings = (
+      'dados')
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 8
+    Top = 351
+    Width = 169
+    Height = 25
+    Caption = 'Atualizar Cadastro'
+    TabOrder = 2
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 183
+    Top = 351
+    Width = 169
+    Height = 25
+    Caption = 'Enviar Dados por Email'
+    TabOrder = 3
+    OnClick = Button3Click
+  end
+  object IdHTTP1: TIdHTTP
+    ProxyParams.BasicAuthentication = False
+    ProxyParams.ProxyPort = 0
+    Request.ContentLength = -1
+    Request.ContentRangeEnd = -1
+    Request.ContentRangeStart = -1
+    Request.ContentRangeInstanceLength = -1
+    Request.Accept = 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    Request.BasicAuthentication = False
+    Request.UserAgent = 'Mozilla/3.0 (compatible; Indy Library)'
+    Request.Ranges.Units = 'bytes'
+    Request.Ranges = <>
+    HTTPOptions = [hoForceEncodeParams]
+    Left = 64
+    Top = 72
+  end
+end

@@ -1,0 +1,55 @@
+unit uclassCBR_TITULOS;
+
+interface
+
+uses
+  FireDAC.Comp.Client, Forms, SysUtils, Data.DB, System.Classes;
+
+type
+  TCbrTIT = class(TObject)
+  private
+  public
+    function GetNewID:Integer;
+  end;
+
+var
+  oCbrTIT: TCbrTIT;
+
+implementation
+
+uses
+  udtmDefault, uclassEMPRESA;
+
+{ TProduto }
+
+function TCbrTIT.GetNewID: Integer;
+begin
+  Result := 1;
+
+  if oEmpresa.ID <= 0 then
+    raise Exception.Create('Erro com o Identificador da Empresa!');
+
+  try
+    dtmDefault.qryTmp.Close;
+    dtmDefault.qryTmp.SQL.Clear;
+    dtmDefault.qryTmp.SQL.Text := 'select MAX(ID_CBR_TITULOS) from CBR_TITULOS';
+    dtmDefault.qryTmp.Open;
+
+    if Not dtmDefault.qryTmp.IsEmpty then
+      Result := dtmDefault.qryTmp.Fields[0].AsInteger + 1;
+  finally
+    dtmDefault.qryTmp.Close;
+  end;
+
+  if Result <= 0 then
+    raise Exception.Create('Erro na geração do identificador dos Titulos!');
+end;
+
+
+initialization
+  oCbrTIT := TCbrTIT.Create;
+
+finalization
+  FreeAndNil(oCbrTIT);
+
+end.

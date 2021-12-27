@@ -1,0 +1,215 @@
+object dm: Tdm
+  OldCreateOrder = False
+  OnCreate = DataModuleCreate
+  Height = 514
+  Width = 429
+  object qry_config: TFDQuery
+    CachedUpdates = True
+    Connection = connconf
+    SQL.Strings = (
+      'select * from TAB_USUARIO')
+    Left = 184
+    Top = 32
+    object qry_configUSUARIO: TStringField
+      FieldName = 'USUARIO'
+      Origin = 'USUARIO'
+      Size = 50
+    end
+    object qry_configSERVIDOR: TStringField
+      FieldName = 'SERVIDOR'
+      Origin = 'SERVIDOR'
+      Size = 1000
+    end
+    object qry_configcaminho: TStringField
+      FieldName = 'caminho'
+      Origin = 'caminho'
+      Size = 150
+    end
+  end
+  object RESTClient: TRESTClient
+    Authenticator = HTTPBasicAuthenticator
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'utf-8, *;q=0.8'
+    BaseURL = 'http://localhost:9000'
+    ContentType = 'application/x-www-form-urlencoded'
+    Params = <>
+    RaiseExceptionOn500 = False
+    Left = 208
+    Top = 456
+  end
+  object RequestLogin: TRESTRequest
+    AutoCreateParams = False
+    Client = RESTClient
+    Params = <
+      item
+        Name = 'usuario'
+        Value = 'HEBER'
+      end>
+    Resource = 'ValidarLogin'
+    SynchronizedEvents = False
+    Left = 80
+    Top = 184
+  end
+  object HTTPBasicAuthenticator: THTTPBasicAuthenticator
+    Username = 'testserver'
+    Password = 'testserver'
+    Left = 176
+    Top = 240
+  end
+  object RequestListarComanda: TRESTRequest
+    Client = RESTClient
+    Method = rmPOST
+    Params = <
+      item
+        Name = 'usuario'
+        Value = 'HEBER'
+      end>
+    Resource = 'ListarComanda'
+    SynchronizedEvents = False
+    Left = 304
+    Top = 192
+  end
+  object RequestListarProduto: TRESTRequest
+    Client = RESTClient
+    Method = rmPOST
+    Params = <
+      item
+        Name = 'usuario'
+        Value = 'HEBER'
+      end>
+    Resource = 'ListarProduto'
+    SynchronizedEvents = False
+    Left = 80
+    Top = 248
+  end
+  object RequestListarCategoria: TRESTRequest
+    Client = RESTClient
+    Method = rmPOST
+    Params = <
+      item
+        Name = 'usuario'
+        Value = 'HEBER'
+      end>
+    Resource = 'ListarCategoria'
+    SynchronizedEvents = False
+    Left = 309
+    Top = 248
+  end
+  object RequestAdicionarProdutoComanda: TRESTRequest
+    Client = RESTClient
+    Method = rmPOST
+    Params = <
+      item
+        Name = 'usuario'
+        Value = 'HEBER'
+      end>
+    Resource = 'AdicionarProdutoComanda'
+    SynchronizedEvents = False
+    Left = 85
+    Top = 312
+  end
+  object RequestListarProdutoComanda: TRESTRequest
+    Client = RESTClient
+    Method = rmPOST
+    Params = <
+      item
+        Name = 'usuario'
+        Value = 'HEBER'
+      end>
+    Resource = 'ListarProdutoComanda'
+    SynchronizedEvents = False
+    Left = 312
+    Top = 304
+  end
+  object RequestExcluirProdutoComanda: TRESTRequest
+    Client = RESTClient
+    Method = rmPOST
+    Params = <
+      item
+        Name = 'usuario'
+        Value = 'HEBER'
+      end>
+    Resource = 'ExcluirProdutoComanda'
+    SynchronizedEvents = False
+    Left = 85
+    Top = 384
+  end
+  object RequestEncerrarComanda: TRESTRequest
+    Client = RESTClient
+    Method = rmPOST
+    Params = <
+      item
+        Name = 'usuario'
+        Value = 'HEBER'
+      end>
+    Resource = 'EncerrarComanda'
+    SynchronizedEvents = False
+    Left = 309
+    Top = 376
+  end
+  object RequestOpcional: TRESTRequest
+    Client = RESTClient
+    Method = rmPOST
+    Params = <
+      item
+        Name = 'usuario'
+        Value = 'HEBER'
+      end>
+    Resource = 'ListarOpcional'
+    SynchronizedEvents = False
+    Left = 80
+    Top = 448
+  end
+  object conn: TUniConnection
+    ProviderName = 'InterBase'
+    Port = 3050
+    Database = 'D:\00Dev\Delphi\System ERP\Dados\DADOS.FDB'
+    Username = 'sysdba'
+    Server = '192.168.100.3'
+    LoginPrompt = False
+    Left = 280
+    Top = 32
+    EncryptedPassword = '92FF9EFF8CFF8BFF9AFF8DFF94FF9AFF86FF'
+  end
+  object QryLogin: TUniQuery
+    Connection = conn
+    ObjectView = True
+    Left = 112
+    Top = 32
+  end
+  object connconf: TFDConnection
+    Params.Strings = (
+      'DriverID=SQLite'
+      'Database=D:\00Dev\Delphi\System ERP\Comandas\banco.db')
+    LoginPrompt = False
+    Left = 344
+    Top = 32
+  end
+  object InterBaseUniProvider1: TInterBaseUniProvider
+    Left = 24
+    Top = 24
+  end
+  object qryComanda: TUniQuery
+    Connection = conn
+    SQL.Strings = (
+      'Select * from mesas')
+    ObjectView = True
+    Left = 24
+    Top = 104
+  end
+  object qryProdutos: TUniQuery
+    Connection = conn
+    ObjectView = True
+    Left = 96
+    Top = 104
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 360
+    Top = 104
+  end
+  object FDPhysIBDriverLink1: TFDPhysIBDriverLink
+    Left = 272
+    Top = 96
+  end
+end

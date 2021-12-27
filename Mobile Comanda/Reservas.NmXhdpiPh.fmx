@@ -1,0 +1,55 @@
+inherited FrmReservas_NmXhdpiPh: TFrmReservas_NmXhdpiPh
+  ClientHeight = 615
+  ClientWidth = 400
+  DesignerMasterStyle = 0
+  inherited LBackground: TLayout
+    Size.Width = 400.000000000000000000
+    Size.Height = 615.000000000000000000
+    inherited ImgBack: TImage
+      MultiResBitmap.Height = 800
+      MultiResBitmap.Width = 450
+      Size.Width = 400.000000000000000000
+      Size.Height = 615.000000000000000000
+    end
+    inherited LConteudo: TLayout
+      Size.Width = 400.000000000000000000
+      Size.Height = 615.000000000000000000
+      inherited LTopo: TLayout
+        Size.Width = 400.000000000000000000
+        inherited imgBackTopo: TImage
+          MultiResBitmap.Height = 168
+          MultiResBitmap.Width = 450
+          Size.Width = 400.000000000000000000
+          inherited Button2: TButton
+            Position.X = 352.000000000000000000
+          end
+          inherited data: TDateEdit
+            Position.X = 223.000000000000000000
+            Position.Y = 8.000000000000000000
+            Size.Height = 32.000000000000000000
+          end
+        end
+      end
+      inherited LAreaGrid: TLayout
+        Size.Width = 400.000000000000000000
+        Size.Height = 507.000000000000000000
+        inherited lista: TListView
+          Size.Width = 400.000000000000000000
+          Size.Height = 507.000000000000000000
+        end
+      end
+      inherited LRodapeForm: TLayout
+        Position.Y = 555.000000000000000000
+        Size.Width = 400.000000000000000000
+        inherited imgBackRodape: TImage
+          MultiResBitmap.Height = 168
+          MultiResBitmap.Width = 450
+          Size.Width = 400.000000000000000000
+          inherited LTotal: TLayout
+            Position.X = 231.000000000000000000
+          end
+        end
+      end
+    end
+  end
+end

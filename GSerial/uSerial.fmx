@@ -1,0 +1,296 @@
+object FrmSerial: TFrmSerial
+  Left = 0
+  Top = 0
+  Caption = 'Serial'
+  ClientHeight = 456
+  ClientWidth = 299
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 3
+  object ListBox1: TListBox
+    Align = Client
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Size.Width = 289.000000000000000000
+    Size.Height = 398.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 289.000000000000000000
+    Viewport.Height = 398.000000000000000000
+    object lstChave1: TListBoxItem
+      Selectable = False
+      Size.Width = 289.000000000000000000
+      Size.Height = 45.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Layout1: TLayout
+        Align = Left
+        Size.Width = 89.000000000000000000
+        Size.Height = 45.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 9
+        object Edit1: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 9
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Size.Width = 69.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object Layout2: TLayout
+        Align = Left
+        Position.X = 89.000000000000000000
+        Size.Width = 106.000000000000000000
+        Size.Height = 45.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 10
+        object Edit2: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 9
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Size.Width = 86.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object Layout3: TLayout
+        Align = Client
+        Size.Width = 94.000000000000000000
+        Size.Height = 45.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 11
+        object Edit3: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 9
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Size.Width = 74.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+    end
+    object lstChave2: TListBoxItem
+      Selectable = False
+      Position.Y = 45.000000000000000000
+      Size.Width = 289.000000000000000000
+      Size.Height = 45.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Layout4: TLayout
+        Align = Left
+        Size.Width = 89.000000000000000000
+        Size.Height = 45.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 9
+        object Edit4: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 9
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Size.Width = 69.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object Layout5: TLayout
+        Align = Left
+        Position.X = 89.000000000000000000
+        Size.Width = 106.000000000000000000
+        Size.Height = 45.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 10
+        object Edit5: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 9
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Size.Width = 86.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object Layout6: TLayout
+        Align = Client
+        Size.Width = 94.000000000000000000
+        Size.Height = 45.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 11
+        object Edit6: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 9
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Size.Width = 74.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+    end
+    object lstValidade: TListBoxItem
+      Selectable = False
+      Position.Y = 90.000000000000000000
+      Size.Width = 289.000000000000000000
+      Size.Height = 55.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Validade'
+      object DateEdit1: TDateEdit
+        Date = 43832.000000000000000000
+        Format = 'dd/mm/yyyy'
+        TodayDefault = True
+        Align = Right
+        Margins.Right = 5.000000000000000000
+        Position.X = 135.000000000000000000
+        Position.Y = 12.000000000000000000
+        Size.Width = 149.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+    end
+    object lstTerminais: TListBoxItem
+      Position.Y = 145.000000000000000000
+      Size.Width = 289.000000000000000000
+      Size.Height = 55.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'N'#186' Terminais'
+      object Edit8: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Right
+        TabOrder = 8
+        Position.X = 128.000000000000000000
+        Position.Y = 12.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 151.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object ListBoxItem3: TListBoxItem
+      Selectable = False
+      Position.Y = 200.000000000000000000
+      Size.Width = 289.000000000000000000
+      Size.Height = 68.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      object Button1: TButton
+        Align = Center
+        Size.Width = 143.000000000000000000
+        Size.Height = 39.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Gerar Chave'
+        OnClick = Button1Click
+      end
+    end
+    object ListBoxItem4: TListBoxItem
+      Selectable = False
+      Position.Y = 268.000000000000000000
+      Size.Width = 289.000000000000000000
+      Size.Height = 55.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      object Edit7: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Center
+        TabOrder = 10
+        ReadOnly = True
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.HorzAlign = Center
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Size.Width = 285.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family, FontColor]
+        CharCase = ecUpperCase
+      end
+    end
+    object ListBoxItem1: TListBoxItem
+      Selectable = False
+      Position.Y = 323.000000000000000000
+      Size.Width = 289.000000000000000000
+      Size.Height = 55.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      object Button2: TButton
+        Align = Center
+        AutoTranslate = False
+        Size.Width = 146.000000000000000000
+        Size.Height = 39.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Enviar'
+        OnClick = Button2Click
+      end
+    end
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 299.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+    TintColor = claSteelblue
+    object Label1: TLabel
+      Align = Contents
+      StyledSettings = [Family, Size, Style]
+      Size.Width = 299.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Center
+      Text = 'CHAVE DE ACESSO'
+      TabOrder = 0
+    end
+    object Button3: TButton
+      Align = Right
+      IconTintColor = claWhite
+      Margins.Right = 10.000000000000000000
+      Position.X = 241.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'escapetoolbutton'
+      TabOrder = 1
+      Text = 'Button3'
+      OnClick = Button3Click
+    end
+  end
+end

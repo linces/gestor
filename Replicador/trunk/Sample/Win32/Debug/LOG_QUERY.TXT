@@ -1,0 +1,1 @@
+SELECT 1 AS EXISTE FROM rdb$database WHERE EXISTS(SELECT * FROM replicacao WHERE ACAO IN ('D'))

@@ -1,0 +1,15 @@
+﻿[Dados.qryProdutos]
+Visible=False
+
+[Dados.qryMesas]
+Visible=False
+
+[Dados.qryComanda]
+Visible=False
+
+[Dados.qryItens]
+Visible=False
+
+[Dados.qryItensAberto]
+Visible=False
+

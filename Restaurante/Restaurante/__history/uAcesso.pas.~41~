@@ -1,0 +1,122 @@
+unit uAcesso;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics, JPeg,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.StdCtrls, Vcl.Buttons,
+  Vcl.Grids, Vcl.DBGrids, Vcl.ComCtrls, Vcl.ExtCtrls, Vcl.DBCtrls, DBGridEh,
+  DBCtrlsEh, DBLookupEh, Vcl.Mask, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf,
+  FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet,
+  FireDAC.Comp.Client, Vcl.Imaging.pngimage, ACBrBase, ACBrEnterTab,
+  DBGridEhGrouping, ToolCtrlsEh, DBGridEhToolCtrls, DynVarsEh, EhLibVCL,
+  GridsEh, DBAxisGridsEh, Vcl.ExtDlgs, frxClass, frxDBSet, frxExportBaseDialog,
+  frxExportPDF, dxGDIPlusClasses;
+
+type
+  TfrmAcesso = class(TForm)
+    qryUsuarios: TFDQuery;
+    ACBrEnterTab1: TACBrEnterTab;
+    qryUsuariosCODIGO: TSmallintField;
+    qryUsuariosLOGIN: TStringField;
+    qryUsuariosSENHA: TStringField;
+    qryUsuariosHIERARQUIA: TSmallintField;
+    qryUsuariosECAIXA: TStringField;
+    qryUsuariosSUPERVISOR: TStringField;
+    qryUsuariosATIVO: TStringField;
+    qryUsuariosULTIMO_PEDIDO: TIntegerField;
+    qryUsuariosULTIMA_VENDA: TIntegerField;
+    qryUsuariosAPP_SENHA: TStringField;
+    qryUsuariosSENHA_APP: TStringField;
+    qryUsuariosFK_VENDEDOR: TIntegerField;
+    Panel1: TPanel;
+    Label11: TLabel;
+    Image1: TImage;
+    Label2: TLabel;
+    CbUsuario: TDBLookupComboBox;
+    Label1: TLabel;
+    edtSenha: TEdit;
+    BitBtn1: TBitBtn;
+    BitBtn2: TBitBtn;
+    qrySupervisor: TFDQuery;
+    qrySupervisorCODIGO: TSmallintField;
+    qrySupervisorLOGIN: TStringField;
+    qrySupervisorSENHA: TStringField;
+    qrySupervisorHIERARQUIA: TSmallintField;
+    qrySupervisorECAIXA: TStringField;
+    qrySupervisorSUPERVISOR: TStringField;
+    qrySupervisorATIVO: TStringField;
+    dsSupervisor: TDataSource;
+    procedure FormCreate(Sender: TObject);
+    procedure BitBtn1Click(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure BitBtn2Click(Sender: TObject);
+  private
+    PodeFechar: Boolean;
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmAcesso: TfrmAcesso;
+
+implementation
+
+{$R *.dfm}
+
+uses uDados;
+
+procedure TfrmAcesso.BitBtn2Click(Sender: TObject);
+begin
+  Application.Terminate;
+end;
+
+procedure TfrmAcesso.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  if not PodeFechar then
+    Action := caNone;
+end;
+
+procedure TfrmAcesso.FormCreate(Sender: TObject);
+begin
+  PodeFechar := false;
+  qrySupervisor.Close;
+  qrySupervisor.Open;
+  CbUsuario.KeyValue := qrySupervisorCODIGO.Value;
+
+end;
+
+procedure TfrmAcesso.BitBtn1Click(Sender: TObject);
+begin
+
+  qryUsuarios.Close;
+  qryUsuarios.Params[0].Value := CbUsuario.Text;
+  qryUsuarios.Open;
+
+  if not(CbUsuario.KeyValue > 0) then
+  begin
+    ShowMessage('Informe o usuário');
+    exit;
+  end;
+
+  if qryUsuariosSENHA.Value <> edtSenha.Text then
+  begin
+    Application.ProcessMessages;
+    ShowMessage('Senha incorreta!');
+    edtSenha.SetFocus;
+    edtSenha.Clear;
+    exit;
+  end;
+
+  PodeFechar := true;
+
+  Dados.qryTerminal.Close;
+  Dados.qryTerminal.Params[0].Value := Dados.Getcomputer;
+  Dados.qryTerminal.Open;
+
+end;
+
+end.

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/01/20 17:32:53.000.712,=C:\Users\Marcelo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/01/31 18:56:27.000.350,=C:\Users\Marcelo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/02/15 09:13:23.000.158,=C:\Users\Marcelo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/02/27 15:51:38.000.395,=C:\Users\Marcelo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/02/27 15:52:40.000.562,=C:\Aplicativo\Fontes\uAbertura.pas</Transaction>
+    <Transaction>2019/02/27 15:53:08.000.112,C:\Retaurante\uAbertura.pas=C:\Aplicativo\Fontes\uAbertura.pas</Transaction>
+    <Transaction>2019/02/27 15:53:08.000.112,C:\Retaurante\uAbertura.fmx=C:\Aplicativo\Fontes\uAbertura.fmx</Transaction>
+    <Transaction>2019/02/27 15:53:19.000.656,C:\Retaurante\uLogin.fmx=C:\Users\Marcelo\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2019/02/27 15:53:19.000.656,C:\Retaurante\uLogin.pas=C:\Users\Marcelo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/02/27 15:53:26.000.754,C:\Retaurante\Restaurante.dproj=C:\Users\Marcelo\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2019/02/27 16:13:35.000.670,=C:\Retaurante\UMenu.pas</Transaction>
+    <Transaction>2019/03/03 18:59:48.000.919,=C:\Retaurante\Unit1.pas</Transaction>
+    <Transaction>2019/03/03 18:59:58.000.197,C:\Retaurante\uDados.pas=C:\Retaurante\Unit1.pas</Transaction>
+    <Transaction>2019/03/03 18:59:58.000.197,C:\Retaurante\uDados.dfm=C:\Retaurante\Unit1.dfm</Transaction>
+    <Transaction>2019/03/03 21:23:51.000.358,C:\Retaurante\uDados.pas=</Transaction>
+    <Transaction>2019/03/03 21:24:14.000.667,=C:\Retaurante\uDados.pas</Transaction>
+    <Transaction>2019/03/05 20:10:36.000.789,=C:\Aplicativo\Fontes\uConfig.pas</Transaction>
+    <Transaction>2019/03/05 20:10:57.000.122,C:\Aplicativo\Fontes\uConfig.pas=</Transaction>
+    <Transaction>2019/09/14 09:25:02.000.345,=C:\Dev\GRestaurante\ControlMover.pas</Transaction>
+    <Transaction>2019/09/14 09:25:02.000.384,=C:\Dev\GRestaurante\Loading.pas</Transaction>
+    <Transaction>2019/09/17 17:38:11.000.160,=C:\Dev\GRestaurante\Unit1.pas</Transaction>
+    <Transaction>2019/09/17 17:41:08.000.116,C:\Dev\GRestaurante\uConfig.pas=C:\Dev\GRestaurante\Unit1.pas</Transaction>
+    <Transaction>2019/09/17 17:41:08.000.116,C:\Dev\GRestaurante\uConfig.fmx=C:\Dev\GRestaurante\Unit1.fmx</Transaction>
+    <Transaction>2019/09/17 18:03:04.000.888,C:\Dev\GRestaurante\uConfig.pas=</Transaction>
+    <Transaction>2019/11/12 08:01:06.000.801,=E:\Dev\Aplicativos\GRestaurante\Unit1.pas</Transaction>
+    <Transaction>2019/11/12 08:01:32.000.286,=E:\Dev\Aplicativos\GRestaurante\uConfig.pas</Transaction>
+    <Transaction>2019/11/12 09:12:12.000.623,=E:\Dev\Aplicativos\GRestaurante\Unit1.pas</Transaction>
+    <Transaction>2019/11/12 09:15:02.000.503,E:\Dev\Aplicativos\GRestaurante\Unit1.pas=E:\Dev\Aplicativos\GRestaurante\uComanda.pas</Transaction>
+    <Transaction>2019/11/12 09:15:02.000.503,E:\Dev\Aplicativos\GRestaurante\Unit1.fmx=E:\Dev\Aplicativos\GRestaurante\uComanda.fmx</Transaction>
+    <Transaction>2021/05/02 11:49:21.000.447,D:\00Dev\Delphi\System ERP\Restaurante\Cheff\Comandas.dproj=D:\00Dev\Delphi\System ERP\Restaurante\Cheff\Restaurante.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5" Android="" Android64=""/>
+	</ActiveMobileDevice>
+</BorlandProject>

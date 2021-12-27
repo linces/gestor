@@ -1,0 +1,7 @@
+object serverservice: Tserverservice
+  OldCreateOrder = False
+  OnCreate = ServiceCreate
+  DisplayName = 'serverservice'
+  Height = 150
+  Width = 215
+end

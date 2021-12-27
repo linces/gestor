@@ -1,0 +1,236 @@
+unit Modulo;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, Data.DB, MemDS, DBAccess, Uni, UniProvider,
+  MySQLUniProvider, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS,
+  FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, FireDAC.UI.Intf, FireDAC.Stan.Def,
+  FireDAC.Stan.Pool, FireDAC.Phys, FireDAC.FMXUI.Wait, InterBaseUniProvider, FireDAC.Comp.Client, FireDAC.Comp.DataSet,
+  FireDAC.Stan.ExprFuncs, FireDAC.Phys.SQLiteWrapper.Stat, FireDAC.Phys.SQLiteDef, FireDAC.Phys.SQLite, FMX.Dialogs, FMX.Forms, FMX.Objects,
+  System.IOUtils, IdIOHandlerStream, IdBaseComponent, IdComponent, IdIOHandler,
+  IdIOHandlerSocket, IdIOHandlerStack, FireDAC.Comp.UI;
+
+type
+  Tdm = class(TDataModule)
+    con: TUniConnection;
+    queryLogin: TUniQuery;
+    queryPedidosCon: TUniQuery;
+    queryPedidosConid: TIntegerField;
+    queryPedidosConid_venda: TIntegerField;
+    queryPedidosConvalor: TFloatField;
+    queryPedidosConmesa: TStringField;
+    queryPedidosConfuncionario: TStringField;
+    queryPedidosCondata: TDateField;
+    queryPedidosExec: TUniQuery;
+    queryMesasCon: TUniQuery;
+    queryPratosCon: TUniQuery;
+    queryItensPedido: TUniQuery;
+    queryItensPedidoExec: TUniQuery;
+    queryItensPedidoid: TIntegerField;
+    queryItensPedidoid_pedido: TIntegerField;
+    queryItensPedidoprato: TStringField;
+    queryItensPedidovalor: TFloatField;
+    queryItensPedidovalor_total: TFloatField;
+    queryPratosCon2: TUniQuery;
+    queryMovExec: TUniQuery;
+    queryMovCon: TUniQuery;
+    queryReservasCon: TUniQuery;
+    queryProdutosCon: TUniQuery;
+    queryProdutosConid: TIntegerField;
+    queryProdutosConnome: TStringField;
+    queryProdutosCondescricao: TStringField;
+    queryProdutosConvalor: TFloatField;
+    queryProdutosConquantidade: TIntegerField;
+    queryProdutosConimagem: TBlobField;
+    UniTable1: TUniTable;
+    qry_config: TFDQuery;
+    connconf: TFDConnection;
+    InterBaseUniProvider1: TInterBaseUniProvider;
+    FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink;
+    FDGUIxWaitCursor1: TFDGUIxWaitCursor;
+    UniTransaction1: TUniTransaction;
+    IdIOHandlerStack1: TIdIOHandlerStack;
+    IdIOHandlerStream1: TIdIOHandlerStream;
+    qry_configUSUARIO: TStringField;
+    qry_configSERVIDOR: TStringField;
+    qry_configcaminho: TStringField;
+    queryLoginCODIGO: TSmallintField;
+    queryLoginSENHA: TStringField;
+    queryLoginHIERARQUIA: TSmallintField;
+    queryLoginECAIXA: TStringField;
+    queryLoginSUPERVISOR: TStringField;
+    queryLoginATIVO: TStringField;
+    queryLoginULTIMO_PEDIDO: TIntegerField;
+    queryLoginULTIMA_VENDA: TIntegerField;
+    queryLoginSENHA_APP: TStringField;
+    queryLoginAPP_SENHA: TStringField;
+    queryLoginFK_VENDEDOR: TIntegerField;
+    queryLoginFLAG: TStringField;
+    queryLoginLOGIN: TStringField;
+    procedure DataModuleCreate(Sender: TObject);
+    procedure connconfBeforeConnect(Sender: TObject);
+    procedure connconfAfterConnect(Sender: TObject);
+  private
+
+    { Private declarations }
+  public
+    function Crypt(Action, Src: String): String;
+  end;
+
+var
+  dm: Tdm;
+
+  nomeFuncionario: string;
+  cargoFuncionario: string;
+
+  idPedido: string;
+  idItemPedido: string;
+
+implementation
+
+{%CLASSGROUP 'FMX.Controls.TControl'}
+{$R *.dfm}
+
+procedure Tdm.connconfAfterConnect(Sender: TObject);
+begin
+          if connconf.Connected then begin
+            showmessage('conectado');
+          end;
+end;
+
+procedure Tdm.connconfBeforeConnect(Sender: TObject);
+begin
+
+{$IF DEFINED(MSWINDOWS)}
+  connconf.Params.Values['Database'] :=
+    IncludeTrailingBackslash(ExtractFilePath(ParamStr(0))) + 'banco.db';
+{$ELSE}
+  connconf.Params.Values['Database'] := TPath.GetDocumentsPath + PathDelim
+    + 'banco.db';
+{$ENDIF}
+
+end;
+
+function Tdm.Crypt(Action, Src: String): String;
+Label Fim;
+var
+  KeyLen: Integer;
+  KeyPos: Integer;
+  OffSet: Integer;
+  Dest, Key, KeyNew: String;
+  SrcPos: Integer;
+  SrcAsc: Integer;
+  TmpSrcAsc: Integer;
+  Range: Integer;
+begin
+  if (Src = '') Then
+  begin
+    Result := '';
+    Goto Fim;
+  end;
+
+  Key := 'XNGREXCPAJHKQWERYTUIOP98756LKJHASFGMNBVCAXZ13450';
+
+  KeyNew := 'PRODOXCPAJHKQWERYTUIOP98765LKJHASFGMNBVCAXZ01234';
+
+  Dest := '';
+  KeyLen := Length(Key);
+  KeyPos := 0;
+  SrcPos := 0;
+  SrcAsc := 0;
+  Range := 128;
+  if (Action = UpperCase('C')) then
+  begin
+    // Randomize;
+    OffSet := Range;
+    Dest := Format('%1.2x', [OffSet]);
+    for SrcPos := 1 to Length(Src) do
+    begin
+      Application.ProcessMessages;
+      SrcAsc := (Ord(Src[SrcPos]) + OffSet) Mod 255;
+      if KeyPos < KeyLen then
+        KeyPos := KeyPos + 1
+      else
+        KeyPos := 1;
+
+      SrcAsc := SrcAsc Xor Ord(Key[KeyPos]);
+      Dest := Dest + Format('%1.2x', [SrcAsc]);
+      OffSet := SrcAsc;
+    end;
+  end
+  Else if (Action = UpperCase('D')) then
+  begin
+    OffSet := StrToInt('$' + copy(Src, 1, 2));
+    // <--------------- adiciona o $ entra as aspas simples
+    SrcPos := 3;
+    repeat
+      SrcAsc := StrToInt('$' + copy(Src, SrcPos, 2));
+      // <--------------- adiciona o $ entra as aspas simples
+      if (KeyPos < KeyLen) Then
+        KeyPos := KeyPos + 1
+      else
+        KeyPos := 1;
+      TmpSrcAsc := SrcAsc Xor Ord(Key[KeyPos]);
+      if TmpSrcAsc <= OffSet then
+        TmpSrcAsc := 255 + TmpSrcAsc - OffSet
+      else
+        TmpSrcAsc := TmpSrcAsc - OffSet;
+      Dest := Dest + Chr(TmpSrcAsc);
+      OffSet := SrcAsc;
+      SrcPos := SrcPos + 2;
+    until (SrcPos >= Length(Src));
+  end;
+  Result := Dest;
+Fim:
+end;
+
+
+
+procedure Tdm.DataModuleCreate(Sender: TObject);
+begin
+{
+    with connconf do
+    begin
+        Params.Values['DriverID'] := 'SQLite';
+
+        {$IFDEF MSWINDOWS}
+    //      Params.Values['Database'] := System.SysUtils.GetCurrentDir + '\DB\banco.db';
+   //     {$ELSE}
+  //        Params.Values['Database'] := TPath.Combine(TPath.GetDocumentsPath, 'banco.db');
+  //      {$ENDIF}
+
+
+  {
+        try
+            Connected := true;
+            qry_Config.Active := false;
+            qry_Config.SQL.Clear;
+            qry_Config.SQL.Add('SELECT * FROM TAB_USUARIO');
+            qry_Config.Active := true;
+            qry_Config.Open;
+
+            try
+                dm.con.Connected := false;
+                dm.con.ProviderName := 'InterBase';
+                dm.con.Server :=  qry_Config.FieldByName('SERVIDOR').AsString;
+                dm.con.Username := 'sysdba';
+                dm.con.Password := 'masterkey';
+                dm.con.Database := qry_Config.FieldByName('CAMINHO').AsString;
+                dm.con.SpecificOptions.Values['ClientLibrary'] := 'fbclient.dll';
+                dm.con.LoginPrompt := false;
+                dm.con.Connected := true;
+            except on e:exception do
+            raise Exception.Create('Erro ao acessar banco de dados de login: ' + e.Message);
+            end;
+
+
+
+        except on e:exception do
+            raise Exception.Create('Erro de conexão com o banco de dados de configurações: ' + e.Message);
+        end;
+
+    end;       }
+end;
+
+end.

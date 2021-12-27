@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="DataSet.Serialize.Export" platform="Android">
+  <class name="TDataSetSerialize" file="DataSet.Serialize.Export.pas" line="17">
+    <ancestor name="TObject" namespace="System">
+      <methodref name="Create" visibility="public" procflags="constructor">
+      </methodref>
+      <methodref name="Free" visibility="public">
+      </methodref>
+      <methodref name="DisposeOf" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="InitInstance" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="CleanupInstance" visibility="public">
+      </methodref>
+      <methodref name="ClassType" visibility="public" procflags="inline">
+      </methodref>
+      <methodref name="ClassName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassNameIs" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassParent" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassInfo" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="InstanceSize" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="InheritsFrom" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="QualifiedClassName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="GetInterface" visibility="public">
+      </methodref>
+      <methodref name="GetInterfaceEntry" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="GetInterfaceTable" visibility="public" procflags="class inline">
+      </methodref>
+      <methodref name="UnitName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="UnitScope" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="Equals" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="GetHashCode" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="ToString" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="SafeCallException" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="AfterConstruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="BeforeDestruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Dispatch" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="DefaultHandler" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="NewInstance" visibility="public" procflags="class virtual">
+      </methodref>
+      <methodref name="FreeInstance" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Destroy" visibility="public" procflags="destructor virtual">
+      </methodref>
+      <methodref name="CPP_ABI_1" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="CPP_ABI_2" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="CPP_ABI_3" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="GetDisposed" visibility="protected" procflags="inline">
+      </methodref>
+      <methodref name="CheckDisposed" visibility="protected" procflags="inline">
+      </methodref>
+      <propertyref name="Disposed" visibility="protected">
+      </propertyref>
+    </ancestor>
+    <members>
+      <field name="FDataSet" type="TDataSet" visibility="private" size="4" offset="4" file="DataSet.Serialize.Export.pas" line="19" />
+      <field name="FOnlyUpdatedRecords" type="Boolean" visibility="private" size="1" offset="8" file="DataSet.Serialize.Export.pas" line="20" />
+      <field name="FChildRecord" type="Boolean" visibility="private" size="1" offset="9" file="DataSet.Serialize.Export.pas" line="21" />
+      <function name="DataSetToJSONObject" visibility="private" file="DataSet.Serialize.Export.pas" line="34">
+        <devnotes>
+           <summary>
+             Creates a JSON object with the data from the current record of DataSet.
+           </summary>
+           <param name="ADataSet">
+             Refers to the DataSet that you want to export the record.
+           </param>
+           <returns>
+             Returns a JSON object containing the record data.
+           </returns>
+           <remarks>
+             Invisible or null fields will not be exported.
+           </remarks>
+        </devnotes>
+        <parameters>
+          <parameter name="ADataSet" type="TDataSet" paramflags="const" />
+          <retval type="TJSONObject" />
+        </parameters>
+      </function>
+      <function name="DataSetToJSONArray" visibility="private" file="DataSet.Serialize.Export.pas" line="47">
+        <devnotes>
+           <summary>
+             Creates an array of JSON objects with all DataSet records.
+           </summary>
+           <param name="ADataSet">
+             Refers to the DataSet that you want to export the records.
+           </param>
+           <returns>
+             Returns a JSONArray with all records from the DataSet.
+           </returns>
+           <remarks>
+             Invisible or null fields will not be exported.
+           </remarks>
+        </devnotes>
+        <parameters>
+          <parameter name="ADataSet" type="TDataSet" paramflags="const" />
+          <parameter name="IsChild" type="Boolean" paramflags="const">
+            <value>
+              False
+            </value>
+          </parameter>
+          <retval type="TJSONArray" />
+        </parameters>
+      </function>
+      <function name="EncodingBlobField" visibility="private" file="DataSet.Serialize.Export.pas" line="57">
+        <devnotes>
+           <summary>
+             Encrypts a blob field in Base64.
+           </summary>
+           <param name="AField">
+             Refers to the field of type Blob or similar.
+           </param>
+           <returns>
+             Returns a string with the cryptogrammed content in Base64.
+           </returns>
+        </devnotes>
+        <parameters>
+          <parameter name="AField" type="TField" paramflags="const" />
+          <retval type="string" />
+        </parameters>
+      </function>
+      <function name="HasChildModification" visibility="private" file="DataSet.Serialize.Export.pas" line="62">
+        <devnotes>
+           <summary>
+             Verifiy if a DataSet has detail dataset and if has child modification.
+           </summary>
+        </devnotes>
+        <parameters>
+          <parameter name="ADataSet" type="TDataSet" paramflags="const" />
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <constructor name="Create" visibility="public" file="DataSet.Serialize.Export.pas" line="68">
+        <devnotes>
+           <summary>
+             Responsible for creating a new instance of TDataSetSerialize class.
+           </summary>
+        </devnotes>
+        <parameters>
+          <parameter name="ADataSet" type="TDataSet" paramflags="const" />
+          <parameter name="AOnlyUpdatedRecords" type="Boolean" paramflags="const">
+            <value>
+              False
+            </value>
+          </parameter>
+          <parameter name="AChildRecords" type="Boolean" paramflags="const">
+            <value>
+              True
+            </value>
+          </parameter>
+        </parameters>
+      </constructor>
+      <function name="ToJSONArray" visibility="public" file="DataSet.Serialize.Export.pas" line="78">
+        <devnotes>
+           <summary>
+             Creates an array of JSON objects with all DataSet records.
+           </summary>
+           <returns>
+             Returns a JSONArray with all records from the DataSet.
+           </returns>
+           <remarks>
+             Invisible or null fields will not be generated.
+           </remarks>
+        </devnotes>
+        <parameters>
+          <retval type="TJSONArray" />
+        </parameters>
+      </function>
+      <function name="ToJSONObject" visibility="public" file="DataSet.Serialize.Export.pas" line="88">
+        <devnotes>
+           <summary>
+             Creates a JSON object with the data from the current record of DataSet.
+           </summary>
+           <returns>
+             Returns a JSON object containing the record data.
+           </returns>
+           <remarks>
+             Invisible or null fields will not be generated.
+           </remarks>
+        </devnotes>
+        <parameters>
+          <retval type="TJSONObject" />
+        </parameters>
+      </function>
+      <function name="SaveStructure" visibility="public" file="DataSet.Serialize.Export.pas" line="98">
+        <devnotes>
+           <summary>
+             Responsible for exporting the structure of a DataSet in JSON Array format.
+           </summary>
+           <returns>
+             Returns a JSON array with all fields of the DataSet.
+           </returns>
+           <remarks>
+             Invisible fields will not be generated.
+           </remarks>
+        </devnotes>
+        <parameters>
+          <retval type="TJSONArray" />
+        </parameters>
+      </function>
+    </members>
+  </class>
+</namespace>

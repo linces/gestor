@@ -1,0 +1,8 @@
+{
+   "IN4MVOmjPvy672m6akZ9Q9TjfMfib7NqhGdJ6K/GKYU=": {
+      "expiry": 1634163447.00444,
+      "mode": "force-https",
+      "sts_include_subdomains": true,
+      "sts_observed": 1602627447.004443
+   }
+}

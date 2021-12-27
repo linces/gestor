@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="DataSet.Serialize.BooleanField" platform="Android">
+  <const name="bfUnknown" type="TBooleanFieldType" file="DataSet.Serialize.BooleanField.pas" line="13">
+    <value>
+      bfUnknown
+    </value>
+  </const>
+  <const name="bfBoolean" type="TBooleanFieldType" file="DataSet.Serialize.BooleanField.pas" line="13">
+    <value>
+      bfBoolean
+    </value>
+  </const>
+  <const name="bfInteger" type="TBooleanFieldType" file="DataSet.Serialize.BooleanField.pas" line="13">
+    <value>
+      bfInteger
+    </value>
+  </const>
+  <enum name="TBooleanFieldType" file="DataSet.Serialize.BooleanField.pas" line="13">
+    <devnotes>
+       <summary>
+       Boolean types handled by the API.
+       </summary>
+    </devnotes>
+    <element value="0" name="bfUnknown" file="DataSet.Serialize.BooleanField.pas" line="13" />
+    <element value="1" name="bfBoolean" file="DataSet.Serialize.BooleanField.pas" line="13" />
+    <element value="2" name="bfInteger" file="DataSet.Serialize.BooleanField.pas" line="13" />
+  </enum>
+  <helper name="TBooleanFieldTypeHelper" for="TBooleanFieldType" file="DataSet.Serialize.BooleanField.pas" line="15">
+    <members>
+      <function name="ToString" visibility="public" procflags="helper" file="DataSet.Serialize.BooleanField.pas" line="16">
+        <parameters>
+          <retval type="string" />
+        </parameters>
+      </function>
+    </members>
+  </helper>
+</namespace>

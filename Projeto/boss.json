@@ -1,0 +1,19 @@
+{
+	"name": "ERP SoftArena",
+	"description": "",
+	"version": "1.0.0",
+	"homepage": "loja.softarena.com.br",
+	"mainsrc": "./",
+	"projects": [],
+	"dependencies": {
+		"https://github.com/bittencourtthulio/horse-etag": ">0.0.0",
+		"https://github.com/bittencourtthulio/horse-paginate": ">0.0.0",
+		"https://github.com/hashload/horse": "^v2.0.6",
+		"https://github.com/hashload/horse-basic-auth": "^v1.1.3",
+		"https://github.com/hashload/horse-compression": "^v1.1.1",
+		"https://github.com/hashload/horse-cors": "^1.0.2",
+		"https://github.com/hashload/horse-logger": "^0.1.5",
+		"https://github.com/hashload/jhonson": "^1.0.7",
+		"https://github.com/viniciussanchez/restrequest4delphi": "^v2.2.6"
+	}
+}

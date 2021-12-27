@@ -1,0 +1,221 @@
+object dm: Tdm
+  OldCreateOrder = False
+  OnCreate = DataModuleCreate
+  Height = 547
+  Width = 483
+  object qry_config: TFDQuery
+    CachedUpdates = True
+    Connection = connconf
+    SQL.Strings = (
+      'select * from TAB_USUARIO')
+    Left = 24
+    Top = 72
+    object qry_configUSUARIO: TStringField
+      FieldName = 'USUARIO'
+      Origin = 'USUARIO'
+      Size = 50
+    end
+    object qry_configSERVIDOR: TStringField
+      FieldName = 'SERVIDOR'
+      Origin = 'SERVIDOR'
+      Size = 1000
+    end
+    object qry_configcaminho: TStringField
+      FieldName = 'caminho'
+      Origin = 'caminho'
+      Size = 150
+    end
+  end
+  object RESTClient: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'utf-8, *;q=0.8'
+    BaseURL = 'http://localhost:9000'
+    Params = <>
+    RaiseExceptionOn500 = False
+    Left = 368
+    Top = 176
+  end
+  object RequestLogin: TRESTRequest
+    AutoCreateParams = False
+    Client = RESTClient
+    Params = <
+      item
+        Name = 'usuario'
+        Value = 'HEBER'
+      end>
+    Resource = 'ValidarLogin'
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 80
+    Top = 184
+  end
+  object RequestListarComanda: TRESTRequest
+    Client = RESTClient
+    Method = rmPOST
+    Params = <
+      item
+        Name = 'usuario'
+        Value = 'HEBER'
+      end>
+    Resource = 'ListarComanda'
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 200
+    Top = 184
+  end
+  object RequestListarProduto: TRESTRequest
+    Client = RESTClient
+    Method = rmPOST
+    Params = <
+      item
+        Name = 'usuario'
+        Value = 'HEBER'
+      end>
+    Resource = 'ListarProduto'
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 80
+    Top = 248
+  end
+  object RequestListarCategoria: TRESTRequest
+    Client = RESTClient
+    Method = rmPOST
+    Params = <
+      item
+        Name = 'usuario'
+        Value = 'HEBER'
+      end>
+    Resource = 'ListarCategoria'
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 205
+    Top = 240
+  end
+  object RequestAdicionarProdutoComanda: TRESTRequest
+    Client = RESTClient
+    Method = rmPOST
+    Params = <
+      item
+        Name = 'usuario'
+        Value = 'HEBER'
+      end>
+    Resource = 'AdicionarProdutoComanda'
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 85
+    Top = 312
+  end
+  object RequestListarProdutoComanda: TRESTRequest
+    Client = RESTClient
+    Method = rmPOST
+    Params = <
+      item
+        Name = 'usuario'
+        Value = 'HEBER'
+      end>
+    Resource = 'ListarProdutoComanda'
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 208
+    Top = 296
+  end
+  object RequestExcluirProdutoComanda: TRESTRequest
+    Client = RESTClient
+    Method = rmPOST
+    Params = <
+      item
+        Name = 'usuario'
+        Value = 'HEBER'
+      end>
+    Resource = 'ExcluirProdutoComanda'
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 85
+    Top = 384
+  end
+  object RequestEncerrarComanda: TRESTRequest
+    Client = RESTClient
+    Method = rmPOST
+    Params = <
+      item
+        Name = 'usuario'
+        Value = 'HEBER'
+      end>
+    Resource = 'EncerrarComanda'
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 205
+    Top = 368
+  end
+  object RequestOpcional: TRESTRequest
+    Client = RESTClient
+    Method = rmPOST
+    Params = <
+      item
+        Name = 'usuario'
+        Value = 'HEBER'
+      end>
+    Resource = 'ListarOpcional'
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 80
+    Top = 448
+  end
+  object connconf: TFDConnection
+    Params.Strings = (
+      'DriverID=SQLite'
+      'Database=D:\00Dev\Delphi\System ERP\Comandas\banco.db')
+    LoginPrompt = False
+    Left = 16
+    Top = 8
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 104
+    Top = 8
+  end
+  object FDPhysIBDriverLink1: TFDPhysIBDriverLink
+    Left = 216
+    Top = 8
+  end
+  object RESTResponse1: TRESTResponse
+    Left = 368
+    Top = 296
+  end
+  object RESTResponseDataSetAdapter1: TRESTResponseDataSetAdapter
+    Dataset = tblusuarios
+    FieldDefs = <>
+    Response = RESTResponse1
+    Left = 368
+    Top = 352
+  end
+  object tblusuarios: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    Left = 368
+    Top = 408
+  end
+  object RESTRequest1: TRESTRequest
+    Client = RESTClient
+    Params = <>
+    Response = RESTResponse1
+    Left = 368
+    Top = 232
+  end
+  object tblmesas: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    Left = 368
+    Top = 464
+  end
+end

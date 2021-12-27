@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file original="F:\00 Projetos\02 Delphi\endsisframework\Repositorio\Componentes\10.4\GeradorChaves\TLockApplication\LockApplicationEmailStatus.dfm" source-language="pt-BR" target-language="es-ES" datatype="delphiform" tool="ETM v10.0" ts="F:\00 Projetos\02 Delphi\endsisframework\Repositorio\Componentes\10.4\GeradorChaves\TLockApplication\LockApplicationEmailStatus.dfm">
+    <header>
+      <prop-group name="ITEHeaderProp">
+        <prop prop-type="Version">9.0</prop>
+        <prop prop-type="SelfDateTime">44112.4768518519</prop>
+        <prop prop-type="OrigDateTime">44091.8390972222</prop>
+        <prop prop-type="XlatDateTime">44091.8390972222</prop>
+        <prop prop-type="Translated">0</prop>
+        <prop prop-type="UnTranslated">71</prop>
+      </prop-group>
+    </header>
+    <body>
+      <trans-unit id="O:StatusEmail.Left" resname="O:StatusEmail.Left">
+        <source>292</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582639</prop><prop prop-type="Status">0</prop><prop prop-type="Order">0</prop><prop prop-type="Type">TStatusEmail</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.Top" resname="O:StatusEmail.Top">
+        <source>214</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582639</prop><prop prop-type="Status">0</prop><prop prop-type="Order">1</prop><prop prop-type="Type">TStatusEmail</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.BorderStyle" resname="O:StatusEmail.BorderStyle">
+        <source>bsNone</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582639</prop><prop prop-type="Status">0</prop><prop prop-type="Order">2</prop><prop prop-type="Type">TStatusEmail</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.Caption" resname="O:StatusEmail.Caption">
+        <source>'StatusEmail'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582639</prop><prop prop-type="Status">0</prop><prop prop-type="Order">3</prop><prop prop-type="Type">TStatusEmail</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.ClientHeight" resname="O:StatusEmail.ClientHeight">
+        <source>50</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582639</prop><prop prop-type="Status">0</prop><prop prop-type="Order">4</prop><prop prop-type="Type">TStatusEmail</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.ClientWidth" resname="O:StatusEmail.ClientWidth">
+        <source>322</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582639</prop><prop prop-type="Status">0</prop><prop prop-type="Order">5</prop><prop prop-type="Type">TStatusEmail</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.Color" resname="O:StatusEmail.Color">
+        <source>clBtnFace</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582639</prop><prop prop-type="Status">0</prop><prop prop-type="Order">6</prop><prop prop-type="Type">TStatusEmail</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.Font.Charset" resname="O:StatusEmail.Font.Charset">
+        <source>DEFAULT_CHARSET</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582639</prop><prop prop-type="Status">0</prop><prop prop-type="Order">7</prop><prop prop-type="Type">TStatusEmail</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.Font.Color" resname="O:StatusEmail.Font.Color">
+        <source>clWindowText</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582639</prop><prop prop-type="Status">0</prop><prop prop-type="Order">8</prop><prop prop-type="Type">TStatusEmail</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.Font.Height" resname="O:StatusEmail.Font.Height">
+        <source>-11</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582639</prop><prop prop-type="Status">0</prop><prop prop-type="Order">9</prop><prop prop-type="Type">TStatusEmail</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.Font.Name" resname="O:StatusEmail.Font.Name">
+        <source>'Tahoma'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582639</prop><prop prop-type="Status">0</prop><prop prop-type="Order">10</prop><prop prop-type="Type">TStatusEmail</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.Font.Style" resname="O:StatusEmail.Font.Style">
+        <source>[]</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582639</prop><prop prop-type="Status">0</prop><prop prop-type="Order">11</prop><prop prop-type="Type">TStatusEmail</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.OldCreateOrder" resname="O:StatusEmail.OldCreateOrder">
+        <source>False</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582639</prop><prop prop-type="Status">0</prop><prop prop-type="Order">12</prop><prop prop-type="Type">TStatusEmail</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.Position" resname="O:StatusEmail.Position">
+        <source>poScreenCenter</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582639</prop><prop prop-type="Status">0</prop><prop prop-type="Order">13</prop><prop prop-type="Type">TStatusEmail</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.PixelsPerInch" resname="O:StatusEmail.PixelsPerInch">
+        <source>96</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582639</prop><prop prop-type="Status">0</prop><prop prop-type="Order">14</prop><prop prop-type="Type">TStatusEmail</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.TextHeight" resname="O:StatusEmail.TextHeight">
+        <source>13</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582639</prop><prop prop-type="Status">0</prop><prop prop-type="Order">15</prop><prop prop-type="Type">TStatusEmail</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:Panel1.Left" resname="O:StatusEmail.O:Panel1.Left">
+        <source>0</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582639</prop><prop prop-type="Status">0</prop><prop prop-type="Order">16</prop><prop prop-type="Type">TPanel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:Panel1.Top" resname="O:StatusEmail.O:Panel1.Top">
+        <source>0</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582639</prop><prop prop-type="Status">0</prop><prop prop-type="Order">17</prop><prop prop-type="Type">TPanel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:Panel1.Width" resname="O:StatusEmail.O:Panel1.Width">
+        <source>322</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582639</prop><prop prop-type="Status">0</prop><prop prop-type="Order">18</prop><prop prop-type="Type">TPanel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:Panel1.Height" resname="O:StatusEmail.O:Panel1.Height">
+        <source>50</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582639</prop><prop prop-type="Status">0</prop><prop prop-type="Order">19</prop><prop prop-type="Type">TPanel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:Panel1.Align" resname="O:StatusEmail.O:Panel1.Align">
+        <source>alClient</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582639</prop><prop prop-type="Status">0</prop><prop prop-type="Order">20</prop><prop prop-type="Type">TPanel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:Panel1.Caption" resname="O:StatusEmail.O:Panel1.Caption">
+        <source>'Enviando e-mail com informações de licença, Aguarde...'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582639</prop><prop prop-type="Status">0</prop><prop prop-type="Order">21</prop><prop prop-type="Type">TPanel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:Panel1.TabOrder" resname="O:StatusEmail.O:Panel1.TabOrder">
+        <source>0</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582639</prop><prop prop-type="Status">0</prop><prop prop-type="Order">22</prop><prop prop-type="Type">TPanel</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTP1.IOHandler" resname="O:StatusEmail.O:IdSMTP1.IOHandler">
+        <source>IdSSLIOHandlerSocketOpenSSL2</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582639</prop><prop prop-type="Status">0</prop><prop prop-type="Order">23</prop><prop prop-type="Type">TIdSMTP</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTP1.PipeLine" resname="O:StatusEmail.O:IdSMTP1.PipeLine">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582639</prop><prop prop-type="Status">0</prop><prop prop-type="Order">24</prop><prop prop-type="Type">TIdSMTP</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTP1.UseVerp" resname="O:StatusEmail.O:IdSMTP1.UseVerp">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582639</prop><prop prop-type="Status">0</prop><prop prop-type="Order">25</prop><prop prop-type="Type">TIdSMTP</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTP1.SASLMechanisms" resname="O:StatusEmail.O:IdSMTP1.SASLMechanisms">
+        <source>&lt;&gt;</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582639</prop><prop prop-type="Status">0</prop><prop prop-type="Order">26</prop><prop prop-type="Type">TIdSMTP</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTP1.UseTLS" resname="O:StatusEmail.O:IdSMTP1.UseTLS">
+        <source>utUseRequireTLS</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">27</prop><prop prop-type="Type">TIdSMTP</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTP1.Left" resname="O:StatusEmail.O:IdSMTP1.Left">
+        <source>32</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">28</prop><prop prop-type="Type">TIdSMTP</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTP1.Top" resname="O:StatusEmail.O:IdSMTP1.Top">
+        <source>8</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">29</prop><prop prop-type="Type">TIdSMTP</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTPServer1.Bindings" resname="O:StatusEmail.O:IdSMTPServer1.Bindings">
+        <source>&lt;&gt;</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">30</prop><prop prop-type="Type">TIdSMTPServer</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTPServer1.DefaultPort" resname="O:StatusEmail.O:IdSMTPServer1.DefaultPort">
+        <source>587</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">31</prop><prop prop-type="Type">TIdSMTPServer</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTPServer1.IOHandler" resname="O:StatusEmail.O:IdSMTPServer1.IOHandler">
+        <source>IdServerIOHandlerSSLOpenSSL1</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">32</prop><prop prop-type="Type">TIdSMTPServer</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTPServer1.CommandHandlers" resname="O:StatusEmail.O:IdSMTPServer1.CommandHandlers">
+        <source>&lt;&gt;</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">33</prop><prop prop-type="Type">TIdSMTPServer</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTPServer1.ExceptionReply.Code" resname="O:StatusEmail.O:IdSMTPServer1.ExceptionReply.Code">
+        <source>'500'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">34</prop><prop prop-type="Type">TIdSMTPServer</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTPServer1.ExceptionReply.Text.Strings[0]" resname="O:StatusEmail.O:IdSMTPServer1.ExceptionReply.Text.Strings[0]">
+        <source>'Unknown Internal Error'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">35</prop><prop prop-type="Type">TIdSMTPServer</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTPServer1.Greeting.Code" resname="O:StatusEmail.O:IdSMTPServer1.Greeting.Code">
+        <source>'220'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">36</prop><prop prop-type="Type">TIdSMTPServer</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTPServer1.Greeting.Text.Strings[0]" resname="O:StatusEmail.O:IdSMTPServer1.Greeting.Text.Strings[0]">
+        <source>'Welcome to the INDY SMTP Server'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">37</prop><prop prop-type="Type">TIdSMTPServer</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTPServer1.HelpReply.Code" resname="O:StatusEmail.O:IdSMTPServer1.HelpReply.Code">
+        <source>''</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">38</prop><prop prop-type="Type">TIdSMTPServer</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTPServer1.MaxConnectionReply.Code" resname="O:StatusEmail.O:IdSMTPServer1.MaxConnectionReply.Code">
+        <source>'300'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">39</prop><prop prop-type="Type">TIdSMTPServer</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTPServer1.MaxConnectionReply.Text.Strings[0]" resname="O:StatusEmail.O:IdSMTPServer1.MaxConnectionReply.Text.Strings[0]">
+        <source>'Too many connections. Try again later.'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">40</prop><prop prop-type="Type">TIdSMTPServer</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTPServer1.ReplyTexts" resname="O:StatusEmail.O:IdSMTPServer1.ReplyTexts">
+        <source>&lt;&gt;</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">41</prop><prop prop-type="Type">TIdSMTPServer</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTPServer1.ReplyUnknownCommand.Code" resname="O:StatusEmail.O:IdSMTPServer1.ReplyUnknownCommand.Code">
+        <source>'500'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">42</prop><prop prop-type="Type">TIdSMTPServer</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTPServer1.ReplyUnknownCommand.Text.Strings[0]" resname="O:StatusEmail.O:IdSMTPServer1.ReplyUnknownCommand.Text.Strings[0]">
+        <source>'Syntax Error'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">43</prop><prop prop-type="Type">TIdSMTPServer</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTPServer1.ReplyUnknownCommand.EnhancedCode.StatusClass" resname="O:StatusEmail.O:IdSMTPServer1.ReplyUnknownCommand.EnhancedCode.StatusClass">
+        <source>5</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">44</prop><prop prop-type="Type">TIdSMTPServer</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTPServer1.ReplyUnknownCommand.EnhancedCode.Subject" resname="O:StatusEmail.O:IdSMTPServer1.ReplyUnknownCommand.EnhancedCode.Subject">
+        <source>5</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">45</prop><prop prop-type="Type">TIdSMTPServer</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTPServer1.ReplyUnknownCommand.EnhancedCode.Details" resname="O:StatusEmail.O:IdSMTPServer1.ReplyUnknownCommand.EnhancedCode.Details">
+        <source>2</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">46</prop><prop prop-type="Type">TIdSMTPServer</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTPServer1.ReplyUnknownCommand.EnhancedCode.Available" resname="O:StatusEmail.O:IdSMTPServer1.ReplyUnknownCommand.EnhancedCode.Available">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">47</prop><prop prop-type="Type">TIdSMTPServer</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTPServer1.ReplyUnknownCommand.EnhancedCode.ReplyAsStr" resname="O:StatusEmail.O:IdSMTPServer1.ReplyUnknownCommand.EnhancedCode.ReplyAsStr">
+        <source>'5.5.2'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">48</prop><prop prop-type="Type">TIdSMTPServer</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTPServer1.ServerName" resname="O:StatusEmail.O:IdSMTPServer1.ServerName">
+        <source>'Indy SMTP Server'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">49</prop><prop prop-type="Type">TIdSMTPServer</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTPServer1.UseTLS" resname="O:StatusEmail.O:IdSMTPServer1.UseTLS">
+        <source>utUseExplicitTLS</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">50</prop><prop prop-type="Type">TIdSMTPServer</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTPServer1.Left" resname="O:StatusEmail.O:IdSMTPServer1.Left">
+        <source>182</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">51</prop><prop prop-type="Type">TIdSMTPServer</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSMTPServer1.Top" resname="O:StatusEmail.O:IdSMTPServer1.Top">
+        <source>65534</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">52</prop><prop prop-type="Type">TIdSMTPServer</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSSLIOHandlerSocketOpenSSL2.Destination" resname="O:StatusEmail.O:IdSSLIOHandlerSocketOpenSSL2.Destination">
+        <source>':25'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">53</prop><prop prop-type="Type">TIdSSLIOHandlerSocketOpenSSL</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSSLIOHandlerSocketOpenSSL2.MaxLineAction" resname="O:StatusEmail.O:IdSSLIOHandlerSocketOpenSSL2.MaxLineAction">
+        <source>maException</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">54</prop><prop prop-type="Type">TIdSSLIOHandlerSocketOpenSSL</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSSLIOHandlerSocketOpenSSL2.Port" resname="O:StatusEmail.O:IdSSLIOHandlerSocketOpenSSL2.Port">
+        <source>25</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">55</prop><prop prop-type="Type">TIdSSLIOHandlerSocketOpenSSL</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSSLIOHandlerSocketOpenSSL2.DefaultPort" resname="O:StatusEmail.O:IdSSLIOHandlerSocketOpenSSL2.DefaultPort">
+        <source>587</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">56</prop><prop prop-type="Type">TIdSSLIOHandlerSocketOpenSSL</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSSLIOHandlerSocketOpenSSL2.SSLOptions.Method" resname="O:StatusEmail.O:IdSSLIOHandlerSocketOpenSSL2.SSLOptions.Method">
+        <source>sslvSSLv23</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">57</prop><prop prop-type="Type">TIdSSLIOHandlerSocketOpenSSL</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSSLIOHandlerSocketOpenSSL2.SSLOptions.SSLVersions" resname="O:StatusEmail.O:IdSSLIOHandlerSocketOpenSSL2.SSLOptions.SSLVersions">
+        <source>[sslvSSLv2, sslvSSLv3, sslvTLSv1, sslvTLSv1_1, sslvTLSv1_2]</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">58</prop><prop prop-type="Type">TIdSSLIOHandlerSocketOpenSSL</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSSLIOHandlerSocketOpenSSL2.SSLOptions.Mode" resname="O:StatusEmail.O:IdSSLIOHandlerSocketOpenSSL2.SSLOptions.Mode">
+        <source>sslmUnassigned</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">59</prop><prop prop-type="Type">TIdSSLIOHandlerSocketOpenSSL</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSSLIOHandlerSocketOpenSSL2.SSLOptions.VerifyMode" resname="O:StatusEmail.O:IdSSLIOHandlerSocketOpenSSL2.SSLOptions.VerifyMode">
+        <source>[]</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">60</prop><prop prop-type="Type">TIdSSLIOHandlerSocketOpenSSL</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSSLIOHandlerSocketOpenSSL2.SSLOptions.VerifyDepth" resname="O:StatusEmail.O:IdSSLIOHandlerSocketOpenSSL2.SSLOptions.VerifyDepth">
+        <source>0</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">61</prop><prop prop-type="Type">TIdSSLIOHandlerSocketOpenSSL</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSSLIOHandlerSocketOpenSSL2.Left" resname="O:StatusEmail.O:IdSSLIOHandlerSocketOpenSSL2.Left">
+        <source>152</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">62</prop><prop prop-type="Type">TIdSSLIOHandlerSocketOpenSSL</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdSSLIOHandlerSocketOpenSSL2.Top" resname="O:StatusEmail.O:IdSSLIOHandlerSocketOpenSSL2.Top">
+        <source>65534</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">63</prop><prop prop-type="Type">TIdSSLIOHandlerSocketOpenSSL</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdServerIOHandlerSSLOpenSSL1.SSLOptions.Method" resname="O:StatusEmail.O:IdServerIOHandlerSSLOpenSSL1.SSLOptions.Method">
+        <source>sslvSSLv23</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">64</prop><prop prop-type="Type">TIdServerIOHandlerSSLOpenSSL</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdServerIOHandlerSSLOpenSSL1.SSLOptions.SSLVersions" resname="O:StatusEmail.O:IdServerIOHandlerSSLOpenSSL1.SSLOptions.SSLVersions">
+        <source>[sslvSSLv2, sslvSSLv3, sslvTLSv1, sslvTLSv1_1, sslvTLSv1_2]</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">65</prop><prop prop-type="Type">TIdServerIOHandlerSSLOpenSSL</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdServerIOHandlerSSLOpenSSL1.SSLOptions.Mode" resname="O:StatusEmail.O:IdServerIOHandlerSSLOpenSSL1.SSLOptions.Mode">
+        <source>sslmUnassigned</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">66</prop><prop prop-type="Type">TIdServerIOHandlerSSLOpenSSL</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdServerIOHandlerSSLOpenSSL1.SSLOptions.VerifyMode" resname="O:StatusEmail.O:IdServerIOHandlerSSLOpenSSL1.SSLOptions.VerifyMode">
+        <source>[]</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">67</prop><prop prop-type="Type">TIdServerIOHandlerSSLOpenSSL</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdServerIOHandlerSSLOpenSSL1.SSLOptions.VerifyDepth" resname="O:StatusEmail.O:IdServerIOHandlerSSLOpenSSL1.SSLOptions.VerifyDepth">
+        <source>0</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">68</prop><prop prop-type="Type">TIdServerIOHandlerSSLOpenSSL</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdServerIOHandlerSSLOpenSSL1.Left" resname="O:StatusEmail.O:IdServerIOHandlerSSLOpenSSL1.Left">
+        <source>214</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">69</prop><prop prop-type="Type">TIdServerIOHandlerSSLOpenSSL</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:StatusEmail.O:IdServerIOHandlerSSLOpenSSL1.Top" resname="O:StatusEmail.O:IdServerIOHandlerSSLOpenSSL1.Top">
+        <source>65534</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">44112.4768582755</prop><prop prop-type="Status">0</prop><prop prop-type="Order">70</prop><prop prop-type="Type">TIdServerIOHandlerSSLOpenSSL</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

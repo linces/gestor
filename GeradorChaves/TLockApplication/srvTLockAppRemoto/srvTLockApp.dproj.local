@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/12/11 13:18:36.000.429,=C:\Users\Linces Marques\Documents\Embarcadero\Studio\Projects\Unit17.pas</Transaction>
+    <Transaction>2020/12/11 13:19:27.000.191,C:\Users\Linces Marques\Documents\Embarcadero\Studio\Projects\ServidorRest.dproj=C:\Users\Linces Marques\Documents\Embarcadero\Studio\Projects\Project15.dproj</Transaction>
+    <Transaction>2020/12/11 13:19:42.000.008,D:\00Dev\Delphi\System ERP\ServidorREST\unPrincipal.pas=C:\Users\Linces Marques\Documents\Embarcadero\Studio\Projects\Unit17.pas</Transaction>
+    <Transaction>2020/12/11 13:19:42.000.008,D:\00Dev\Delphi\System ERP\ServidorREST\unPrincipal.dfm=C:\Users\Linces Marques\Documents\Embarcadero\Studio\Projects\Unit17.dfm</Transaction>
+    <Transaction>2020/12/11 13:19:44.000.998,D:\00Dev\Delphi\System ERP\ServidorREST\ServidorRest.dproj=C:\Users\Linces Marques\Documents\Embarcadero\Studio\Projects\ServidorRest.dproj</Transaction>
+    <Transaction>2020/12/14 17:21:19.000.207,=D:\00Dev\Delphi\System ERP\ServidorREST\Unit1.pas</Transaction>
+    <Transaction>2020/12/14 17:22:02.000.405,D:\00Dev\Delphi\System ERP\ServidorREST\undm.pas=D:\00Dev\Delphi\System ERP\ServidorREST\Unit1.pas</Transaction>
+    <Transaction>2020/12/14 17:22:02.000.405,D:\00Dev\Delphi\System ERP\ServidorREST\undm.dfm=D:\00Dev\Delphi\System ERP\ServidorREST\Unit1.dfm</Transaction>
+    <Transaction>2020/12/14 17:44:34.000.663,=D:\00Dev\Delphi\System ERP\ServidorREST\classes-uteis\Utils.DataSet.JSON.Helper.pas</Transaction>
+    <Transaction>2020/12/25 17:06:32.453,F:\00 Projetos\02 Delphi\endsisframework\Repositorio\Componentes\10.4\GeradorChaves\TLockApplication\srvTLockApp\srvTLockApp.dproj=F:\00 Projetos\02 Delphi\endsisframework\Repositorio\Componentes\10.4\GeradorChaves\TLockApplication\srvTLockApp\ServidorRest.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

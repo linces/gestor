@@ -1,0 +1,71 @@
+unit uconfig;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.Grids, Vcl.DBGrids,
+  Vcl.StdCtrls, Vcl.Mask, DBCtrlsEh, Vcl.DBCtrls, Vcl.ExtCtrls, Vcl.ComCtrls,
+  Vcl.ExtDlgs, ACBrECF, ACBrBase, ACBrEnterTab, Vcl.Imaging.pngimage;
+
+type
+  TForm1 = class(TForm)
+    Panel1: TPanel;
+    Image1: TImage;
+    ACBrEnterTab1: TACBrEnterTab;
+    ACBrECF1: TACBrECF;
+    OpenPicture: TOpenPictureDialog;
+    dsTerminal: TDataSource;
+    PageControl1: TPageControl;
+    TabSheet2: TTabSheet;
+    Panel7: TPanel;
+    Label8: TLabel;
+    btnCancelar: TLabel;
+    Splitter1: TSplitter;
+    Splitter2: TSplitter;
+    Splitter3: TSplitter;
+    Splitter9: TSplitter;
+    btnSalvar: TLabel;
+    PageControl3: TPageControl;
+    TabSheet11: TTabSheet;
+    Label13: TLabel;
+    Label15: TLabel;
+    Label1: TLabel;
+    Label135: TLabel;
+    DBRadioGroup2: TDBRadioGroup;
+    cbModeloImpressora: TDBComboBox;
+    cbVelocidade: TDBComboBox;
+    cbPortaImpressora: TDBComboBox;
+    cbPaginaCodigo: TDBComboBox;
+    TabSheet12: TTabSheet;
+    Label28: TLabel;
+    Label84: TLabel;
+    Label85: TLabel;
+    Label86: TLabel;
+    Label87: TLabel;
+    Label88: TLabel;
+    Label89: TLabel;
+    DBComboBoxEh28: TDBComboBoxEh;
+    DBComboBoxEh27: TDBComboBoxEh;
+    DBComboBoxEh26: TDBComboBoxEh;
+    DBComboBoxEh25: TDBComboBoxEh;
+    DBComboBox5: TDBComboBox;
+    DBComboBoxEh23: TDBComboBoxEh;
+    DBComboBox4: TDBComboBox;
+    DBGrid1: TDBGrid;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+uses uDados;
+
+end.

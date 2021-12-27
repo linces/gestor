@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/09/18 13:07:48.000.955,=C:\Users\Linces Marques\Documents\Embarcadero\Studio\Projects\Unit17.pas</Transaction>
+    <Transaction>2020/09/18 13:13:04.000.112,=C:\Users\Linces Marques\Documents\Embarcadero\Studio\Projects\Unit17.pas</Transaction>
+    <Transaction>2020/09/24 12:25:04.000.231,=C:\Users\Linces Marques\Documents\Embarcadero\Studio\Projects\Unit17.pas</Transaction>
+    <Transaction>2020/12/06 14:34:01.000.182,=C:\Users\Linces Marques\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2020/12/06 14:34:41.000.376,D:\00Dev\Delphi\System ERP\Comandas\unLogin.pas=C:\Users\Linces Marques\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2020/12/06 14:34:41.000.376,D:\00Dev\Delphi\System ERP\Comandas\unLogin.fmx=C:\Users\Linces Marques\Documents\Embarcadero\Studio\Projects\Unit3.fmx</Transaction>
+    <Transaction>2020/12/06 14:34:48.000.751,D:\00Dev\Delphi\System ERP\Comandas\Comandas.dproj=C:\Users\Linces Marques\Documents\Embarcadero\Studio\Projects\Project14.dproj</Transaction>
+    <Transaction>2020/12/06 14:45:37.000.833,=D:\00Dev\Delphi\System ERP\Comandas\Unit1.pas</Transaction>
+    <Transaction>2020/12/06 14:46:35.000.170,D:\00Dev\Delphi\System ERP\Comandas\undm.dfm=D:\00Dev\Delphi\System ERP\Comandas\Unit1.dfm</Transaction>
+    <Transaction>2020/12/06 14:46:35.000.170,D:\00Dev\Delphi\System ERP\Comandas\undm.pas=D:\00Dev\Delphi\System ERP\Comandas\Unit1.pas</Transaction>
+    <Transaction>2020/12/06 15:42:23.000.317,=D:\00Dev\Delphi\System ERP\Comandas\Unit2.pas</Transaction>
+    <Transaction>2020/12/06 15:42:59.000.337,D:\00Dev\Delphi\System ERP\Comandas\unfrmprincipal.pas=D:\00Dev\Delphi\System ERP\Comandas\Unit2.pas</Transaction>
+    <Transaction>2020/12/06 15:42:59.000.337,D:\00Dev\Delphi\System ERP\Comandas\unfrmprincipal.fmx=D:\00Dev\Delphi\System ERP\Comandas\Unit2.fmx</Transaction>
+    <Transaction>2020/12/06 16:13:44.000.945,=D:\00Dev\Delphi\System ERP\Comandas\Unit1.pas</Transaction>
+    <Transaction>2020/12/06 16:15:01.000.377,D:\00Dev\Delphi\System ERP\Comandas\UNDM2.pas=D:\00Dev\Delphi\System ERP\Comandas\Unit1.pas</Transaction>
+    <Transaction>2020/12/06 16:15:01.000.377,D:\00Dev\Delphi\System ERP\Comandas\UNDM2.dfm=D:\00Dev\Delphi\System ERP\Comandas\Unit1.dfm</Transaction>
+    <Transaction>2020/12/06 17:11:54.000.208,D:\00Dev\Delphi\System ERP\Comandas\UNDM2.pas=</Transaction>
+    <Transaction>2020/12/07 16:37:12.000.178,=D:\00Dev\Delphi\System ERP\Comandas\banco.db</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile Android="" Android64=""/>
+	</ActiveMobileDevice>
+</BorlandProject>
