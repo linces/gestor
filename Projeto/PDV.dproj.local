@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>2020/10/22 09:02:08.000.411,C:\Dev\Projetos\Gestor\Projeto\Frente.dproj=C:\Dev\Projetos\Gestor\Projeto\PDV.dproj</Transaction>
+    <Transaction>2020/10/22 09:02:08.000.411,C:\Dev\Projetos\Gestor\Projeto\PDV.dproj=C:\Dev\Projetos\Gestor\Projeto\Frente.dproj</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
 		<NoProfile Android64=""/>
