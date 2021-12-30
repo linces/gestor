@@ -1,0 +1,5 @@
+question		BITMAP		question.bmp
+warning			BITMAP		warning.bmp
+info					BITMAP		info.bmp
+critical				BITMAP		critical.bmp
+success		BITMAP		success.bmp

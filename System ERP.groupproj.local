@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/11/13 09:21:20.000.643,C:\Users\Linces Marques\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj=D:\00Dev\Delphi\Rogerio\Gestor\Projeto\System ERP.groupproj</Transaction>
+    <Transaction>2021/12/28 12:52:15.835,D:\00Dev\Delphi\System ERP\System ERP.groupproj=D:\00Dev\Delphi\System ERP\Projeto\System ERP.groupproj</Transaction>
+  </Transactions>
+	<Default.Personality>
+		<Projects ActiveProject="D:\00Dev\Delphi\System ERP\Projeto\Gestor.dproj"/>
+	</Default.Personality>
+</BorlandProject>
