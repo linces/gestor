@@ -175,6 +175,10 @@ https://poslive.infnet.edu.br/pos-graduacao-em-banco-de-dados-oracle-sql-server-
 Pós em Banco de Dados 2:
 https://www.cruzeirodosulvirtual.com.br/pos-graduacao/banco-de-dados-e-business-intelligence/
 
-
 Delphi Vs Code:
 https://beyondvelocity.blog/2021/04/25/delphi-in-vscode/
+---> GNU Global "Preciso instalar":
+http://www.gnu.org/software/global/global.html
+
+Regex:
+http://manpages.ubuntu.com/manpages/bionic/pt/man7/regex.7.html
