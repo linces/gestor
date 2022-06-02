@@ -75,7 +75,6 @@ https://stackoverflow.com/jobs/apply/566530?ra=33ZMTBd4xjqg&oqs=a%3D33ZMTBd4xjqg
 https://stackoverflow.com/jobs/524065/python-developer-remote-finsera
 
 
-
 ****** hard reset *******
 https://pt.ifixit.com/Answers/View/247360/No+power+to+laptop
 
@@ -182,3 +181,64 @@ http://www.gnu.org/software/global/global.html
 
 Regex:
 http://manpages.ubuntu.com/manpages/bionic/pt/man7/regex.7.html
+
+Funções Case, Coalesce, e outros:
+https://www.devmedia.com.br/funcoes-case-coalesce-e-nullif-no-interbase/2141
+
+Calotas 1:
+https://shopee.com.br/Jogo-4-Calotas-Esportiva-Velox-Grafite-Aro-13-Fiat-Palio-96-97-98-99-2000-2002-2003-2004-2005-2006-2007-2008-2009-2010-i.342288724.10676466728?sp_atk=2839a37a-3669-404c-ba66-e39766fc929f
+
+Calotas 2:
+https://shopee.com.br/Jogo-4-Calotas-Esportivas-Nitro-Preto-Fosco-Aro-13-Fiat-Palio-96-97-98-99-2000-2002-2003-2004-2005-2006-2007-2008-2009-i.343249189.9961160629?sp_atk=6f3a1548-ecc9-4531-820b-a21320ad1cc9
+
+Amortercedor traseiro COFAP original:
+https://shopee.com.br/Par-Amortecedor-Traseiro-Cofap-Palio-96-97-98-99-2000-Kits-i.522194340.16524746970?sp_atk=28034661-0162-43c8-a670-2c276770c1c2
+
+Kit Suspensão 1:
+https://shopee.com.br/4-Amortecedor-Kit-Palio-96-97-98-99-00-Dianteiro-Traseiro-i.509829803.11929296737?sp_atk=149abe41-8ce3-4b61-b948-28dd5ca3ee76
+
+Brake Light:
+https://shopee.com.br/Brake-Light-Luz-De-Freio-Auxiliar-Vermelho-20-Leds-26cm-12v-i.319917667.13127937766?gclid=EAIaIQobChMI-J_m27769gIVhRGRCh3GkACDEAQYAiABEgJGdPD_BwE
+
+Suporte de copo + celular:
+https://shopee.com.br/2-Em-1-Suporte-De-Copo-Cintar-Bebidas-Carro-Garrafa-E-Do-Telefone-Universal-Air-Vent-Titular-Multifuncional-i.734864236.16437619276?sp_atk=41e53336-1f60-46ac-958c-a39a4c85b4ef
+
+Suporte de copo simples:
+https://shopee.com.br/Buraco-duplo-antiderrapante-porta-copo-carro-Suporte-Universal-de-Bebidas-para-Carro-i.710318686.16821262711?sp_atk=8887b9ca-6c69-4846-a4d0-7bfee474c5d3&xptdk=8887b9ca-6c69-4846-a4d0-7bfee474c5d3
+
+
+https://pt.stackoverflow.com/questions/110186/selecionar-os-dados-de-duas-tabelas-para-exibir-em-uma-coluna
+
+Microsoft DEV DOC:
+https://docs.microsoft.com/en-us/windows/win32/dataxchg/standard-clipboard-formats
+
+ORM com nodejs:
+https://blog.logrocket.com/typeorm-object-relational-mapping-node-js/
+
+Tutorial Redux:     
+https://redux.js.org/tutorials/essentials/part-1-overview-concepts
+
+F UPX - para compactar arquivos .exe:
+https://www.pazera-software.com/products/free-upx/  
+
+TEBE Sensores de vibração:
+https://tebesensor.com/blog/tag/analise-de-vibracao/    
+
+TRACTIAN Sensores:
+https://tractian.com/
+
+LEON Sensores de etiqueta:
+https://www.lionprecision.com/pt/products/label-sensors/
+
+Wheys da Growth ou 3w da Max Titanium
+
+WeDelphi:
+https://wedelphi.com/
+
+
+02/05 15:01 - 	Linces Marques: 	https://images.app.goo.gl/GZjgkkQchyfC2zP67
+02/05 15:02 - 	Linces Marques: 	https://images.app.goo.gl/ohfT7oh3jpknK3hr8
+02/05 15:02 - 	Linces Marques: 	https://images.app.goo.gl/r9wQa3uuA81JEbfN7
+02/05 15:03 - 	Linces Marques: 	https://images.app.goo.gl/QtcnffQpxnHW9ynQ8
+02/05 15:06 - 	Linces Marques: 	https://images.app.goo.gl/bLmrQhjCZPTHhW6o9
+02/05 15:07 - 	Linces Marques: 	https://images.app.goo.gl/wavtKpfXFvPQrwPM7
