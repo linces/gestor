@@ -1,18 +1,17 @@
 
 **Projeto Gestor 2022
 
-**Colabore com o proejto. 
-**Fique a vontade para dar fork no projeto ou enviar suas dúvidas e sugestões
+**Colabore com o proejto.<br> 
+**Fique a vontade para dar fork no projeto ou enviar suas dúvidas e sugestões<br>
 
 Emissão de cupom fiscal - Consulta rápida de preços - Bloqueio de clientes inadimplentes - Leitura de etiqueta de balança - Suporte a código de barras - Registro de ocorrências duvidosas, etc..
 
 
-*  - Atualização do Controle de rotas pelo Google mapas, agora mostra detalhado nome das ruas e distancia em km 
-*  - Criação de teclado virtual para segurança e Controle de telas sensiveis ao toque 
-*  - Nova criptografica de ativação, mil vezes mas seguro informando ID da Bios e HD 
-*  - Atualização da Barra Dock 
-*  - Criação de geração dos arquivos da Nota Fiscal Alagoana, para impressoras térmicas 
-*  - Criação do recurso e-Balanço para controle de estoque
+* Atualização do Controle de rotas pelo Google mapas, agora mostra detalhado nome das ruas e distancia em km 
+* Criação de teclado virtual para segurança e Controle de telas sensiveis ao toque 
+* Atualização da Barra Dock 
+* Criação de geração dos arquivos da Nota Fiscal Alagoana, para impressoras térmicas 
+
  
  **Recursos do Sistema
  
