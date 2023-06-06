@@ -1,7 +1,7 @@
 
 **Projeto Gestor 2022
 
-**Colabore com o proejto.<br> 
+**Colabore com o projoto.<br> 
 **Fique a vontade para dar fork no projeto ou enviar suas dúvidas e sugestões<br>
 
 Emissão de cupom fiscal - Consulta rápida de preços - Bloqueio de clientes inadimplentes - Leitura de etiqueta de balança - Suporte a código de barras - Registro de ocorrências duvidosas, etc..
